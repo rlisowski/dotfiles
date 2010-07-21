@@ -1,0 +1,13 @@
+[user]
+	email = lisukorin@gmail.com
+	name = Rafał
+
+[alias]
+	st = status
+	ci = commit
+	b = branch
+	co = checkout
+	df = diff
+	lg = log -p
+	who = shortlog -s --
+	gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
