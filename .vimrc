@@ -162,6 +162,8 @@ nmap <C-]> >>
 nmap <C-[> gv<
 nmap <C-]> gv>
 
+" NERD_tree
+nmap <C-p> :NERDTreeToggle<CR>
 set hidden
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " search in a singe file. This will confuse Latex-Suite. Set your grep
