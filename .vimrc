@@ -136,11 +136,44 @@ function! <SID>StripTrailingWhitespaces()
 	let @/=_s
 	call cursor(l, c)
 endfunction
-nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
-nmap <F6> :g/^$/d<CR>
+nnoremap <silent> <F3> :call <SID>StripTrailingWhitespaces()<CR>
+nmap <F4> :g/^$/d<CR>
 " work with windows
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+" cotrol tabs
+map <C-S-]> gt
+map <C-S-[> gT
+map <C-1> 1gt
+map <C-2> 2gt
+map <C-3> 3gt
+map <C-4> 4gt
+map <C-5> 5gt
+map <C-6> 6gt
+map <C-7> 7gt
+map <C-8> 8gt
+map <C-9> 9gt
+map <C-0> :tablast<CR>
+" selection and tabs
+nmap <C-[> <<
+nmap <C-]> >>
+nmap <C-[> gv<
+nmap <C-]> gv>
 
+set hidden
+" IMPORTANT: grep will sometimes skip displaying the file name if you
+" search in a singe file. This will confuse Latex-Suite. Set your grep
+" program to always generate a file-name.
+set grepprg=grep\ -nH\ $*
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'
+
+" TIP: if you write your \label's as \label{fig:something}, then if you
+" type in \ref{fig: and press <C-n> you will automatically cycle through
+" all the figure labels. Very useful!
+set iskeyword+=:
