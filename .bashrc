@@ -99,3 +99,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+export JAVA_HOME="/home/rlisowski/opt/jdk1.6.0_21"
+export JDK_HOME="/home/rlisowski/opt/jdk1.6.0_21"
