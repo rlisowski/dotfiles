@@ -8,3 +8,7 @@ git
 ---------------------------------------------
 Git config file and gitignore list.
 
+bash
+---------------------------------------------
+terminal aliases and settings
+
