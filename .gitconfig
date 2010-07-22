@@ -1,13 +1,34 @@
-[user]
-	email = lisukorin@gmail.com
-	name = Rafał
+[core]
+    excludesfile = /home/tlisowski/.gitignore
+
+[color]
+    diff = auto
+    branch = auto
+    status = auto
+
+[diff]
+    renames = true
 
 [alias]
-	st = status
-	ci = commit
-	b = branch
-	co = checkout
-	df = diff
-	lg = log -p
-	who = shortlog -s --
-	gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
+    st = status
+    d = diff
+    ci = commit -v
+    cia = commit -v -a
+    co = checkout
+    cp = cherry-pick
+    l = log
+    ls = log --oneline
+    ll = log -p
+    lt = log trunk..
+    llt = log -p trunk..
+    lm = log master..
+    llm = log -p master..
+    b = branch
+    gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
+#	pager = !/home/tlisowski/bin/git-pager
+#	info = !/home/tlisowski/bin/git-info
+	info = !/home/tlisowski/bin/git-info-short
+
+[user]
+	name = Rafał Lisowski
+	email = rlisowski@arte026
