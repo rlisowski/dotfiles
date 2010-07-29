@@ -10,3 +10,4 @@ public/stylesheets/cache/*
 ._*
 .*
 *~
+db/*.sqlite3

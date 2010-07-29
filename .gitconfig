@@ -1,5 +1,5 @@
 [core]
-    excludesfile = /home/tlisowski/.gitignore
+    excludesfile = /home/rlisowski/.gitignore
 
 [color]
     diff = auto
@@ -27,8 +27,8 @@
     gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
 #	pager = !/home/tlisowski/bin/git-pager
 #	info = !/home/tlisowski/bin/git-info
-	info = !/home/tlisowski/bin/git-info-short
+	info = !/home/rlisowski/bin/git-info-short
 
 [user]
 	name = Rafał Lisowski
-	email = rlisowski@arte026
+	email = lisukorin@gmail.com
