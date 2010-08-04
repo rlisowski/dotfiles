@@ -81,7 +81,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias rsense='~/.vim/rsense/bin/rsense'
+alias rsense='ruby ~/.vim/rsense/etc/config.rb > ~/.rsense && ~/.vim/rsense/bin/rsense'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
