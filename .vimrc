@@ -192,3 +192,7 @@ vnoremap <A-j> :m'>+<CR>gv=gv
 vnoremap <A-k> :m-2<CR>gv=gv
 " show lines number
 set nu
+
+" rsense
+let g:rsenseHome = "/home/rlisowski/workspace/vim/rsense"
+let g:rsenseUseOmniFunc = 1

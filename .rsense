@@ -1,0 +1,3 @@
+home = /media/media/workspace/vim/rsense
+load-path = /home/rlisowski/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8:/home/rlisowski/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/x86_64-linux:/home/rlisowski/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/site_ruby:/home/rlisowski/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/vendor_ruby/1.8:/home/rlisowski/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/vendor_ruby/1.8/x86_64-linux:/home/rlisowski/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/vendor_ruby:/home/rlisowski/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8:/home/rlisowski/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/x86_64-linux:.
+gem-path = /home/rlisowski/.rvm/gems/ruby-1.8.7-p174:/home/rlisowski/.rvm/gems/ruby-1.8.7-p174@global

@@ -81,6 +81,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias rsense='~/.vim/rsense/bin/rsense'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -102,4 +103,4 @@ fi
 
 export JAVA_HOME="/home/rlisowski/opt/jdk1.6.0_21"
 export JDK_HOME="/home/rlisowski/opt/jdk1.6.0_21"
-
+export RSENSE_HOME="/home/rlisowski/.vim/rsense"
