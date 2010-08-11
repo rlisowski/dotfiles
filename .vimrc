@@ -193,6 +193,14 @@ vnoremap <A-k> :m-2<CR>gv=gv
 " show lines number
 set nu
 
+" unix end of lines
+set ff=unix
+
+" taglist
+let Tlist_Show_One_File = 1
+nnoremap <silent> <F4> :TlistToggle<CR>
+nnoremap <silent> <F5> :TlistUpdate<CR>
+
 " rsense
 let g:rsenseHome = "/home/rlisowski/workspace/vim/rsense"
-let g:rsenseUseOmniFunc = 1
+"let g:rsenseUseOmniFunc = 1
