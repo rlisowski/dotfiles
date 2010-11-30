@@ -183,6 +183,9 @@ let g:tex_flavor='latex'
 " all the figure labels. Very useful!
 set iskeyword+=:
 
+" FuzzyFinder
+nnoremap <S-f> :FufFile<CR>
+nnoremap <C-f> :FufCoverageFile<CR>
 " move lines
 nnoremap <A-j> :m+<CR>==
 nnoremap <A-k> :m-2<CR>==
