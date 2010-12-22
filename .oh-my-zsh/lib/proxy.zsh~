@@ -1,0 +1,7 @@
+ftp_proxy=http://proxy.non.3dart.com:3128
+
+http_proxy=http://proxy.non.3dart.com:3128
+HTTP_PROXY=http://proxy.non.3dart.com:3128
+
+https_proxy=http://proxy.non.3dart.com:3128
+HTTPS_PROXY=http://proxy.non.3dart.com:3128
