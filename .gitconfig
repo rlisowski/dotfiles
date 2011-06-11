@@ -43,5 +43,5 @@
 	one = show -s --pretty='format:%h (%s)'
 	recursive-update = "!sh -c 'find \"${@-.}\" -type d -name .git -exec dirname {} \\; -exec git --git-dir={} remote update \\;' recursive-update"
 	rlog = !sh -c 'git log --color \"$@\"|fmt -s -w 79|less -FRSX' git-rlog
-	summary = log --abbrev-commit --pretty=oneline --author="Rafał.Lisowski" --since=last.mon --reverse
+	summary = log --abbrev-commit --pretty=format:'%h | %ad | %ar | %s' --author="Rafał.Lisowski" --since=last.mon --reverse
 
