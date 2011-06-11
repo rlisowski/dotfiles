@@ -1,32 +1,47 @@
+# http://www.kernel.org/pub/software/scm/git/docs/git-config.html
 [core]
-    excludesfile = ~/.gitignore
-
-[color]
-    diff = auto
-    branch = auto
-    status = auto
-
-[diff]
-    renames = true
-
-[alias]
-    st = status
-    d = diff
-    ci = commit -v
-    cia = commit -v -a
-    co = checkout
-    cp = cherry-pick
-    l = log
-    ls = log --oneline
-    ll = log -p
-    lt = log trunk..
-    llt = log -p trunk..
-    lm = log master..
-    llm = log -p master..
-    b = branch
-    gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
-    i = !~/bin/git-info-short
-
+	excludesfile = ~/.gitignore
+	pager = less -S
 [user]
 	name = Rafał Lisowski
 	email = lisukorin@gmail.com
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	grep = auto
+[branch]
+	autosetupmerge = always
+	autosetuprebase = always
+[help]
+	autocorrect = 10
+[merge]
+	summary = true
+[push]
+	default = tracking # deprecated synonym for upstream
+[diff]
+	renames = true
+[alias]
+	st = status
+	d = diff
+	ci = commit -v
+	cia = commit -v -a
+	co = checkout
+	cp = cherry-pick
+	l = log
+	ls = log --oneline
+	ll = log -p
+	lt = log trunk..
+	llt = log -p trunk..
+	lm = log master..
+	llm = log -p master..
+	b = branch
+	gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
+	i = !~/bin/git-info-short
+	one = show -s --pretty='format:%h (%s)'
+	recursive-update = "!sh -c 'find \"${@-.}\" -type d -name .git -exec dirname {} \\; -exec git --git-dir={} remote update \\;' recursive-update"
+	rlog = !sh -c 'git log --color \"$@\"|fmt -s -w 79|less -FRSX' git-rlog
+	summary = log --abbrev-commit --pretty=oneline --author="Rafał.Lisowski" --since=last.mon --reverse
+
