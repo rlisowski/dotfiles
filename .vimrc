@@ -15,6 +15,10 @@ if v:progname =~? "evim"
   finish
 endif
 
+
+silent! call pathogen#runtime_append_all_bundles()
+" silent! call pathogen#runtime_prepend_subdirectories("~/src/vim/bundle")
+
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -117,7 +121,10 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
-colorscheme railscasts
+syntax enable
+set background=dark
+colorscheme solarized
+
 "Invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
