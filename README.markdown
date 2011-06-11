@@ -1,18 +1,10 @@
-My config files
+My dotfiles
 =============================================
-vim
+how to use
 ---------------------------------------------
-I have some plugins and config properies.
+git clone git://github.com/korin/home.git korin-dotfiles
+cd korin-dotfiles
+git submodule init
+git submodule update
 
-ruby auto complete plugin
-RSense http://cx4a.org/software/rsense/
-
-
-git
----------------------------------------------
-Git config file and gitignore list.
-
-bash
----------------------------------------------
-terminal aliases and settings
-
+grab what you need
