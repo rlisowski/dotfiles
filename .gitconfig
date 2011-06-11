@@ -16,7 +16,7 @@
 	autosetupmerge = always
 	autosetuprebase = always
 [help]
-	autocorrect = 10
+	autocorrect = 50
 [merge]
 	summary = true
 [push]
