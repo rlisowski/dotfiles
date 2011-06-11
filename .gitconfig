@@ -1,5 +1,5 @@
 [core]
-    excludesfile = /home/rlisowski/.gitignore
+    excludesfile = ~/.gitignore
 
 [color]
     diff = auto
