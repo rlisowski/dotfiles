@@ -25,9 +25,7 @@
     llm = log -p master..
     b = branch
     gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
-#	pager = !/home/tlisowski/bin/git-pager
-#	info = !/home/tlisowski/bin/git-info
-	info = !/home/rlisowski/bin/git-info-short
+    i = !~/bin/git-info-short
 
 [user]
 	name = Rafał Lisowski
