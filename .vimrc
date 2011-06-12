@@ -34,7 +34,7 @@ endif
 set cmdheight=1 " command line height
 set complete-=i " Searching includes can be slow
 set dictionary+=/usr/share/dict/words " dictionary
-set display=lastline " 
+set display=lastline "
 if has("eval")
 	let &fileencodings = substitute(&fileencodings,"latin2","cp1250","")
 endif
@@ -190,7 +190,7 @@ if has("autocmd")
 		autocmd FileType bst  setlocal ai sta sw=2 sts=2
 		autocmd FileType cobol setlocal ai et sta sw=4 sts=4 tw=72 makeprg=cobc\ -x\ -Wall\ %
 		autocmd FileType cs   silent! compiler cs | setlocal makeprg=gmcs\ %
-	autocmd FileType scss,sass,css  silent! setlocal omnifunc=csscomplete#CompleteCSS
+		autocmd FileType scss,sass,css  silent! setlocal omnifunc=csscomplete#CompleteCSS
 		autocmd FileType cucumber silent! compiler cucumber | imap <buffer><expr> <Tab> pumvisible() ? "\<C-N>" : (CucumberComplete(1,'') >= 0 ? "\<C-X>\<C-O>" : (getline('.') =~ '\S' ? ' ' : "\<C-I>"))
 		autocmd FileType git,gitcommit setlocal foldmethod=syntax foldlevel=1
 		autocmd FileType gitcommit setlocal spell
@@ -242,7 +242,7 @@ colorscheme solarized
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 set list
-set ts=2 sts=2 sw=2 expandtab
+set ts=2 sts=2 sw=2 noexpandtab
 function! <SID>StripTrailingWhitespaces()
 	" Preparation: save last search, and cursor position.
 	let _s=@/
