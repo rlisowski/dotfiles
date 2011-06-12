@@ -205,6 +205,7 @@ if has("autocmd")
 		autocmd FileType pdf  setlocal foldmethod=syntax foldlevel=1
 		autocmd FileType ruby silent! compiler ruby | setlocal tw=79 isfname+=: makeprg=rake comments=:#\  | let &includeexpr = 'tolower(substitute(substitute('.&includeexpr.',"\\(\\u\\+\\)\\(\\u\\l\\)","\\1_\\2","g"),"\\(\\l\\|\\d\\)\\(\\u\\)","\\1_\\2","g"))' | imap <buffer> <C-Z> <CR>end<C-O>O
 		autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml " Treat .rss files as XML
+		autocmd BufNewFile,BufRead *.json setfiletype json
 		autocmd FileType text,txt setlocal tw=78 linebreak nolist
 		autocmd FileType tex  silent! compiler tex | setlocal makeprg=latex\ -interaction=nonstopmode\ % formatoptions+=l
 		autocmd FileType tex if exists("*IMAP")|
@@ -255,7 +256,7 @@ function! <SID>StripTrailingWhitespaces()
 	call cursor(l, c)
 endfunction
 nnoremap <silent> <F3> :call <SID>StripTrailingWhitespaces()<CR>
-nmap <F4> :g/^$/d<CR>
+" nmap <F4> :g/^$/d<CR>
 " work with windows
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -306,9 +307,8 @@ set nu
 " unix end of line
 set ff=unix
 " taglist
-let Tlist_Show_One_File = 1
-nnoremap <silent> <F4> :TlistToggle<CR>
-nnoremap <silent> <F5> :TlistUpdate<CR>
+" nnoremap <silent> <F4> :TagbarToggle<CR>
+nnoremap <silent> <F4> :TagbarOpenAutoClose<CR>
 " rsense
 let g:rsenseHome = "/home/rlisowski/.vim/rsense"
 " let g:rsenseUseOmniFunc = 1
@@ -340,6 +340,10 @@ set statusline+=%*
 set statusline+=%{StatuslineTrailingSpaceWarning()}
 "
 set statusline+=%{StatuslineLongLineWarning()}
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 "
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
