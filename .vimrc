@@ -239,6 +239,9 @@ nmap <leader>l :set list!<CR>
 syntax enable
 set background=dark
 colorscheme solarized
+" font
+"set guifont=consolas
+set guifont=monaco
 "Invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
