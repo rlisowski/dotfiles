@@ -76,3 +76,7 @@
 [submodule ".vim/bundle/gist-vim"]
 	path = .vim/bundle/gist-vim
 	url = https://github.com/mattn/gist-vim.git
+[submodule ".vim/bundle/snipmate-snippets/snippets"]
+	path = .vim/bundle/snipmate-snippets/snippets
+	url = https://github.com/scrooloose/snipmate-snippets.git
+
