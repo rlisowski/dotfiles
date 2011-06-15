@@ -2,6 +2,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	pager = less -S
+	autocrlf = input # http://help.github.com/line-endings/
 [user]
 	name = Rafał Lisowski
 	email = lisukorin@gmail.com
@@ -12,6 +13,11 @@
 	branch = auto
 	interactive = auto
 	grep = auto
+[color "status"]
+	changed = blue
+	untracked = blue
+[color "diff"]
+	old = blue
 [branch]
 	autosetupmerge = always
 	autosetuprebase = always
