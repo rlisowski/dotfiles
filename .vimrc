@@ -48,7 +48,7 @@ set incsearch " Incremental search
 set joinspaces " Put spaces between lines joined with the > command.
 set laststatus=2 " Always show status line
 set lazyredraw " Do not redraw the screen during macro execution.
-set listchars=tab:▸\ ,eol:¬ " Define how list mode appears, Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬,trail:· " Define how list mode appears, Use the same symbols as TextMate for tabstops and EOLs
 set modelines=5 " Debian likes to disable this, The number of lines at the top and bottom to look for modelines.
 set mousemodel=popup " the right mouse button causes a small pop-up menu to appear
 " set pastetoggle=<F2>
