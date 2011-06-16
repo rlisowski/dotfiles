@@ -35,6 +35,8 @@ set cmdheight=1 " command line height
 set complete-=i " Searching includes can be slow
 set dictionary+=/usr/share/dict/words " dictionary
 set display=lastline "
+" Encoding
+set encoding=utf8
 if has("eval")
 	let &fileencodings = substitute(&fileencodings,"latin2","cp1250","")
 endif
