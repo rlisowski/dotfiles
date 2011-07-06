@@ -16,5 +16,5 @@ function rvm_ruby_prompt {
   }
 }
 # Rubies are red, and my rprompt is too
-RPROMPT='%{$fg[red]%}$(rvm_ruby_prompt)%{$reset_color%}%'
+RPROMPT='%{$fg[blue]%}$(rvm_ruby_prompt)%{$reset_color%}%'
 
