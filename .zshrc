@@ -29,4 +29,6 @@ if [[ -s "${TM_PROJECT_DIRECTORY}/.rvmrc" ]]
 then
 	source "${TM_PROJECT_DIReCTORY}/.rvmrc"
 fi
+export EDITOR=gvim
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 #[[ -s "~/.rvm/scripts/rvm" ]] && . "~/.rvm/scripts/rvm"  # This loads RVM into a shell session.
