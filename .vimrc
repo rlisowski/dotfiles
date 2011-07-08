@@ -131,6 +131,7 @@ command! -nargs=1 OpenURL :call OpenURL(<q-args>)
 nnoremap gb :OpenURL <cfile><CR>
 nnoremap gA :OpenURL http://www.answers.com/<cword><CR>
 nnoremap gG :OpenURL http://www.google.com/search?q=<cword><CR>
+nnoremap gD :OpenURL http://translate.google.com/\#auto\|pl\|<cword><CR>
 nnoremap gW :OpenURL http://en.wikipedia.org/wiki/Special:Search?search=<cword><CR>
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
