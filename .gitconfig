@@ -2,7 +2,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	pager = less -S
-	autocrlf = input # http://help.github.com/line-endings/
+	# autocrlf = input # http://help.github.com/line-endings/
 [user]
 	name = Rafał Lisowski
 	email = lisukorin@gmail.com
@@ -51,3 +51,5 @@
 	rlog = !sh -c 'git log --color \"$@\"|fmt -s -w 79|less -FRSX' git-rlog
 	summary = log --abbrev-commit --pretty=format:'%h | %ad | %ar | %s' --author="Rafał.Lisowski" --since=last.mon --reverse
 
+[init]
+	templatedir = ~/.git_template
