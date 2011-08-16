@@ -269,8 +269,8 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 " cotrol tabs
-map <C-S-]> gt
-map <C-S-[> gT
+map <C-S-'> gt
+map <C-S-'> gT
 map <C-1> 1gt
 map <C-2> 2gt
 map <C-3> 3gt
@@ -282,10 +282,10 @@ map <C-8> 8gt
 map <C-9> 9gt
 map <C-0> :tablast<CR>
 " selection and tabs
-nmap <C-[> <<
-nmap <C-]> >>
-nmap <C-[> gv<
-nmap <C-]> gv>
+nmap <C-'> <<
+nmap <C-'> >>
+nmap <C-'> gv<
+nmap <C-'> gv>
 " NERD_tree
 nmap <C-p> :NERDTreeToggle<CR>
 " allow leave edited buffor without prompt
