@@ -79,4 +79,6 @@
 [submodule ".vim/bundle/snipmate-snippets/snippets"]
 	path = .vim/bundle/snipmate-snippets/snippets
 	url = https://github.com/scrooloose/snipmate-snippets.git
-
+[submodule ".vim/bundle/vim-bundler"]
+	path = .vim/bundle/vim-bundler
+	url = https://github.com/tpope/vim-bundler.git
