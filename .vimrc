@@ -6,8 +6,9 @@
 if v:progname =~? "evim"
 	finish
 endif
+let mapleader = ","
 if has("eval")
-	let g:pathogen_disabled = ['minibufexpl'] " disable some plugins
+	let g:pathogen_disabled = ['minibufexpl', 'nerdcommenter'] " disable some plugins
 endif
 silent! call pathogen#runtime_append_all_bundles()
 " silent! call pathogen#runtime_prepend_subdirectories("~/src/vim/bundle")
