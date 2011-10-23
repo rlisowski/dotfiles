@@ -19,8 +19,8 @@
 [color "diff"]
 	old = blue
 [branch]
-	autosetupmerge = always
-	autosetuprebase = always
+	# autosetupmerge = always
+	# autosetuprebase = always
 [help]
 	autocorrect = 50
 [merge]
