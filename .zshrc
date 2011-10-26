@@ -22,6 +22,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+setopt auto_cd
+cdpath=($HOME/workspace)
+
 # Customize to your needs...
 unsetopt auto_name_dirs
 source "${HOME}/.rvm/scripts/rvm"
