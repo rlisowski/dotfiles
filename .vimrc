@@ -287,6 +287,17 @@ nmap <C-'> <<
 nmap <C-'> >>
 nmap <C-'> gv<
 nmap <C-'> gv>
+"------------------------------------ buffers
+" Switch between buffers
+noremap <tab> :bn<CR>
+noremap <S-tab> :bp<CR>
+" Close buffer
+nmap <leader>d :bprevious<CR>:bdelete #<CR>
+" Close all buffers
+nmap <leader>D :bufdo bd<CR>
+" Switch between last two buffers
+nnoremap <leader><leader> <C-^>
+
 " NERD_tree
 nmap <C-p> :NERDTreeToggle<CR>
 " allow leave edited buffor without prompt
