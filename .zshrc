@@ -1,11 +1,6 @@
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
-
-# Set to the name theme to load.
-# Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="rlisowski"
-#export ZSH_THEME="robbyrussell"
-#export ZSH_THEME="geoffgarside"
+export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -22,6 +17,8 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+source $HOME/.oh-my-zsh-custom/rlisowski.zsh-theme
+
 setopt auto_cd
 cdpath=($HOME/workspace)
 
@@ -34,4 +31,3 @@ then
 fi
 export EDITOR=gvim
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
-#[[ -s "~/.rvm/scripts/rvm" ]] && . "~/.rvm/scripts/rvm"  # This loads RVM into a shell session.

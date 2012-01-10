@@ -103,3 +103,6 @@
 [submodule ".vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
 	url = http://github.com/kchmck/vim-coffee-script.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = http://github.com/robbyrussell/oh-my-zsh.git
