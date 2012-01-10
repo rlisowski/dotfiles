@@ -17,8 +17,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-source $HOME/.oh-my-zsh-custom/rlisowski.zsh-theme
-
 setopt auto_cd
 cdpath=($HOME/workspace)
 
