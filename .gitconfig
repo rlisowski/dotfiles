@@ -25,10 +25,12 @@
 	autocorrect = 50
 [merge]
 	summary = true
+	tool = gvimdiff
 [push]
 	default = tracking # deprecated synonym for upstream
 [diff]
 	renames = true
+	tool = gvimdiff
 [alias]
 	st = status
 	d = diff
