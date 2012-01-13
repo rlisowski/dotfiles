@@ -32,7 +32,7 @@
 	renames = true
 	tool = gvimdiff
 [alias]
-	st = status
+	st = status -s
 	d = diff
 	ci = commit -v
 	cia = commit -v -a

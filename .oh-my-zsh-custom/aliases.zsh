@@ -61,3 +61,7 @@ alias rmgit='find . -name '.git' -exec rm -rf {} \;'
 
 #administration
 alias ports='sudo netstat -pant'
+
+# git
+alias gst='git st'
+
