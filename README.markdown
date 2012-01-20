@@ -8,7 +8,7 @@ how to use
 	git submodule init
 	git submodule update
 
-### how to update submodules (git 1.7.3 or never)
+### how to update submodules (git 1.7.3 or newer)
 	git pull --recurse-submodules
 	git submodule update
 
