@@ -44,8 +44,8 @@ alias j=jobs
 alias cd..="cd .." #work around a common typo
 
 #ruby aliases
-alias rdoc="rdoc -N -U -c utf-8 -n README -f html -U"
-alias rdoc_a="rdoc -N -d -c utf-8"
+# alias rdoc="rdoc -N -U -c utf-8 -n README -f html -U"
+# alias rdoc_a="rdoc -N -d -c utf-8"
 
 #
 alias c="clear"
