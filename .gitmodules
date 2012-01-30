@@ -106,3 +106,6 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = http://github.com/robbyrussell/oh-my-zsh.git
+[submodule ".vim/bundle/vim-numbertoggle"]
+	path = .vim/bundle/vim-numbertoggle
+	url = http://github.com/jeffkreeftmeijer/vim-numbertoggle.git
