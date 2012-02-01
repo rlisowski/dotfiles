@@ -210,6 +210,8 @@ if has("autocmd")
 		autocmd FileType ruby silent! compiler ruby | setlocal tw=79 isfname+=: makeprg=rake comments=:#\  | let &includeexpr = 'tolower(substitute(substitute('.&includeexpr.',"\\(\\u\\+\\)\\(\\u\\l\\)","\\1_\\2","g"),"\\(\\l\\|\\d\\)\\(\\u\\)","\\1_\\2","g"))' | imap <buffer> <C-Z> <CR>end<C-O>O
 		autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml " Treat .rss files as XML
 		autocmd BufNewFile,BufRead *.json setfiletype json
+		autocmd BufNewFile,BufRead,FileType *.coffee,*.coffee.*,*Cakefile,*.coffeekup set filetype=coffee
+		autocmd FileType coffee setlocal ai et sta sw=2 sts=2 ts=2
 		autocmd FileType text,txt setlocal tw=78 linebreak nolist
 		autocmd FileType tex  silent! compiler tex | setlocal makeprg=latex\ -interaction=nonstopmode\ % formatoptions+=l
 		autocmd FileType tex if exists("*IMAP")|
