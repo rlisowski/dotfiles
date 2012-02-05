@@ -22,12 +22,14 @@
 	# autosetupmerge = always
 	# autosetuprebase = always
 [help]
-	autocorrect = 50
+	autocorrect = 10
 [merge]
 	summary = true
 	tool = gvimdiff
 [push]
 	default = tracking # deprecated synonym for upstream
+[rebase]
+	autosquash = true
 [diff]
 	renames = true
 	tool = gvimdiff
@@ -52,6 +54,7 @@
 	recursive-update = "!sh -c 'find \"${@-.}\" -type d -name .git -exec dirname {} \\; -exec git --git-dir={} remote update \\;' recursive-update"
 	rlog = !sh -c 'git log --color \"$@\"|fmt -s -w 79|less -FRSX' git-rlog
 	summary = log --abbrev-commit --pretty=format:'%h | %ad | %ar | %s' --author="Rafał.Lisowski" --since=last.mon --reverse
+	ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
 
 [init]
 	templatedir = ~/.git_template
