@@ -1,0 +1,7 @@
+video/*;                        vlc %s
+text/html;                      elinks -dump %s; nametemplate=%s.html; copiousoutput
+image/*;                        gthumb %s
+application/ms-excel;           libreoffice %s
+application/vnd.ms-excel;       libreoffice %s
+application/msword;             libreoffice %s
+application/pdf;                evince s%
