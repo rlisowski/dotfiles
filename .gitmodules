@@ -94,9 +94,6 @@
 [submodule ".vim/bundle/vim-ruby-refactoring"]
 	path = .vim/bundle/vim-ruby-refactoring
 	url = http://github.com/ecomba/vim-ruby-refactoring.git
-[submodule ".vim/bundle/nerdcommenter"]
-	path = .vim/bundle/nerdcommenter
-	url = http://github.com/scrooloose/nerdcommenter.git
 [submodule ".vim/bundle/vim-jquery"]
 	path = .vim/bundle/vim-jquery
 	url = http://github.com/itspriddle/vim-jquery.git
@@ -109,3 +106,6 @@
 [submodule ".vim/bundle/vim-numbertoggle"]
 	path = .vim/bundle/vim-numbertoggle
 	url = http://github.com/jeffkreeftmeijer/vim-numbertoggle.git
+[submodule ".vim/bundle/vim-commentary"]
+	path = .vim/bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
