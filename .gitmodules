@@ -37,9 +37,6 @@
 [submodule "vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = http://github.com/tpope/vim-fugitive.git
-[submodule ".vim/bundle/tComment"]
-	path = .vim/bundle/tComment
-	url = http://github.com/vim-scripts/tComment.git
 [submodule ".vim/bundle/vim-ragtag"]
 	path = .vim/bundle/vim-ragtag
 	url = http://github.com/tpope/vim-ragtag.git
