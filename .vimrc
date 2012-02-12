@@ -1,3 +1,5 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+
 " sources:
 " https://github.com/tpope/tpope/blob/master/.vimrc
 " ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf
@@ -11,6 +13,7 @@ if has("eval")
 	let g:pathogen_disabled = ['minibufexpl', 'nerdcommenter'] " disable some plugins
 endif
 silent! call pathogen#runtime_append_all_bundles()
+silent! call pathogen#helptags()
 " silent! call pathogen#runtime_prepend_subdirectories("~/src/vim/bundle")
 set nocompatible
 set autoindent
