@@ -76,6 +76,7 @@ ignore "DKIM-Signature:"
 
 # Section: Bindings
 # ----------------------
+bind index G imap-fetch-mail
 bind pager , previous-line
 bind pager _ previous-line
 bind pager < previous-line
