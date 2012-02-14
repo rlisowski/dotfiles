@@ -73,9 +73,6 @@
 [submodule ".vim/bundle/gist-vim"]
 	path = .vim/bundle/gist-vim
 	url = http://github.com/mattn/gist-vim.git
-[submodule ".vim/bundle/snipmate-snippets/snippets"]
-	path = .vim/bundle/snipmate-snippets/snippets
-	url = http://github.com/scrooloose/snipmate-snippets.git
 [submodule ".vim/bundle/vim-bundler"]
 	path = .vim/bundle/vim-bundler
 	url = http://github.com/tpope/vim-bundler.git
@@ -115,3 +112,6 @@
 [submodule ".vim/bundle/ZoomWin"]
 	path = .vim/bundle/ZoomWin
 	url = http://github.com/vim-scripts/ZoomWin.git
+[submodule ".vim/bundle/snippets"]
+	path = .vim/bundle/snippets
+	url = http://github.com/scrooloose/snipmate-snippets.git
