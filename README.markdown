@@ -5,11 +5,8 @@ how to use
 
 	git clone git://github.com/korin/home.git korin-dotfiles
 	cd korin-dotfiles
-	git submodule init
-	git submodule update
 
-### how to update submodules (git 1.7.3 or newer)
-	git pull --recurse-submodules
-	git submodule update
+### how to update
+	I'm using [Vundle]{https://github.com/gmarik/vundle} go there to see details
 
 ### grab what you need

@@ -66,5 +66,5 @@ alias ports='sudo netstat -pant'
 alias gst='git st'
 
 # gvim
-alias gvim='gvim -f &' # https://bugs.launchpad.net/ubuntu/+source/vim/+bug/771810
+gv() { gvim "$@" -f &; }
 

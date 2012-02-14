@@ -1,20 +1,78 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+set nocompatible               " be iMproved
+filetype off                   " required!
 
-" sources:
-" https://github.com/tpope/tpope/blob/master/.vimrc
-" ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
 "
-" When started as "evim", evim.vim will already have done these settings.
+" original repos on github
+
+
+Bundle 'scrooloose/nerdtree'
+Bundle 'msanders/snipmate.vim'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-pastie'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-ragtag'
+Bundle 'scrooloose/syntastic'
+Bundle 'hallison/vim-markdown'
+Bundle 'mileszs/ack.vim'
+Bundle 'tpope/vim-git'
+Bundle 'michaeljsmith/vim-indent-object'
+Bundle 'pangloss/vim-javascript'
+Bundle 'vim-scripts/Tagbar'
+Bundle 'ervandew/supertab'
+Bundle 'taq/vim-rspec'
+Bundle 'mattn/gist-vim'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-repeat'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'kana/vim-textobj-user'
+Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'itspriddle/vim-jquery'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'robbyrussell/oh-my-zsh'
+Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+Bundle 'tpope/vim-commentary'
+Bundle 'godlygeek/tabular'
+Bundle 'vim-scripts/ZoomWin'
+Bundle 'scrooloose/snipmate-snippets'
+
+Bundle 'L9'
+Bundle 'vim-scripts/FuzzyFinder'
+" ...
+
+filetype plugin indent on     " required!
+"
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
+
+
+
 if v:progname =~? "evim"
 	finish
 endif
 let mapleader = ","
-if has("eval")
-	let g:pathogen_disabled = ['minibufexpl', 'nerdcommenter'] " disable some plugins
-endif
-silent! call pathogen#runtime_append_all_bundles()
-silent! call pathogen#helptags()
-" silent! call pathogen#runtime_prepend_subdirectories("~/src/vim/bundle")
+
+
 set nocompatible
 set autoindent
 set autowrite " Automatically save before commands like :next and :make
