@@ -140,7 +140,6 @@ set listchars=tab:▸\ ,eol:¬,trail:· " Define how list mode appears, Use the 
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 set modelines=5                     " Debian likes to disable this, The number of lines at the top and bottom to look for modelines.
-set mousemodel=popup                " the right mouse button causes a small pop-up menu to appear
 set scrolloff=1                     " Number of lines to keep above or below the cursor.
 
 " -------------
@@ -154,30 +153,23 @@ endif
 " ---------------
 " Behaviors
 " ---------------
-" set visualbell       " disable annoying window blink
-set ts=2 sts=2 sw=2 noexpandtab
-set nu                 " show lines number
-set ff=unix            " unix end of line
 syntax enable
+
 set hlsearch
 set textwidth=120
-set autoread           " Automatically reload changes if detected
-set wildmenu           " Turn on WiLd menu
-" set hidden           " Change buffer - without saving
-set history=768        " Number of things to remember in history.
-set cf                 " Enable error files & error jumping.
-set clipboard+=unnamed " Yanks go on clipboard instead.
-set autowrite          " Writes on make/shell commands
-set timeoutlen=350     " Time to wait for a command (after leader for example)
-set ttimeoutlen=50     " Make Esc work faster
-set foldlevelstart=99  " Remove folds
+set autoread                    " Automatically reload changes if detected
+set wildmenu                    " Turn on WiLd menu
+set history=768                 " Number of things to remember in history.
+set cf                          " Enable error files & error jumping.
+set clipboard+=unnamed          " Yanks go on clipboard instead.
+set autowrite                   " Writes on make/shell commands
+set timeoutlen=350              " Time to wait for a command (after leader for example)
+set ttimeoutlen=50              " Make Esc work faster
 set formatoptions=crql
-set splitbelow         " Split windows at bottom
-set suffixes+=.dvi     " Lower priority in wildcards
-" set showcmd          " Show (partial) command in status line.
-set showmatch          " Show matching brackets.
-set smartcase          " Case insensitive searches become sensitive with capitals
-set smarttab           " sw at the start of the line, sts everywhere else
+set suffixes+=.dvi              " Lower priority in wildcards
+set showmatch                   " Show matching brackets.
+set smartcase                   " Case insensitive searches become sensitive with capitals
+set smarttab                    " sw at the start of the line, sts everywhere else
 if v:version >= 700
   set viminfo=!,'20,<50,s10,h
 endif
@@ -185,13 +177,34 @@ set virtualedit=block
 set wildmode=longest:full,full
 set wildignore+=*~
 set winaltkeys=no
-set foldmethod=marker         " The kind of folding used
-set sidescrolloff=5           " set printoptions=paper:letter
-nmap <leader>l :set list!<CR> " Shortcut to rapidly toggle `set list`
-set guifont=monaco            " font
-"set mouse=nvi
-set mouse=a
+set sidescrolloff=5             " set printoptions=paper:letter
+
+set splitbelow                  " Split windows at bottom
+set splitright
+
+set guifont=monaco              " font
+
+set ts=2 sts=2 sw=2 noexpandtab
+set nu                          " show lines number
+set ff=unix                     " unix end of line
 set list
+nmap <leader>l :set list!<CR>   " Shortcut to rapidly toggle `set list`
+
+" ---------------
+" folding
+" --------------- {{
+set foldenable                                   " Turn on folding
+set foldmethod=marker                            " Fold on the marker
+set foldlevel=100                                " Don't autofold anything (but I can still fold manually)
+set foldlevelstart=99                            " Remove folds
+set foldopen=block,hor,mark,percent,quickfix,tag " what movements open fold
+
+" ---------------
+" mouse
+" --------------- {{
+set mouse=a                     " enable mouse
+set mousehide                   " Hide mouse after chars typed
+set mousemodel=popup            " the right mouse button causes a small pop-up menu to appear
 
 " ---------------
 " work with windows
@@ -232,6 +245,19 @@ vmap <A-j> ]egv=gv
 vmap <A-k> [egv=gv
 " }}
 
+" ---------------
+" reopen file on last known position
+" --------------- {{
+" When editing a file, always jump to the last known cursor position.
+" Don't do it when the position is invalid or when inside an event handler
+" (happens when dropping a file on gvim).
+" Also don't do it when the mark is in the first line, that is the default
+" position when opening a file.
+autocmd BufReadPost *
+      \ if line("'\"") > 1 && line("'\"") <= line("$") |
+      \   exe "normal! g`\"" |
+      \ endif
+" }}
 
 
 " ----------------------------------------
