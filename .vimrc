@@ -146,8 +146,9 @@ set scrolloff=1                     " Number of lines to keep above or below the
 "  lang
 " -------------
 if exists("+spelllang")
+  let g:spellfile_URL = 'http://ftp.vim.org/vim/runtime/spell'
+  set spelllang=en_us,pl
   set spell
-  set spelllang=en_us
 endif
 
 " ---------------
