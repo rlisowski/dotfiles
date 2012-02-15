@@ -85,6 +85,11 @@ Bundle 'http://github.com/scrooloose/snipmate-snippets.git'
 Bundle 'http://github.com/vim-scripts/L9.git'
 Bundle 'http://github.com/vim-scripts/FuzzyFinder.git'
 " {{
+let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|swp|png|jpg|jpeg|gif|psd)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|tmp|vendor/bundle/.*'
+let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|png|jpg|jpeg|gif|psd)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|tmp|vendor/bundle/.*'
+let g:fuf_dir_exclude = '\v(^|[/\\])\.(hg|git|bzr)($|[/\\])|tmp|vendor/bundle/.*'
+let g:fuf_enumeratingLimit = 10
+let g:fuf_maxMenuWidth = 120
 nnoremap <S-f> :FufFile<CR>
 nnoremap <C-f> :FufCoverageFile<CR>
 " }}
@@ -167,7 +172,7 @@ set history=768                 " Number of things to remember in history.
 set cf                          " Enable error files & error jumping.
 set clipboard+=unnamed          " Yanks go on clipboard instead.
 set autowrite                   " Writes on make/shell commands
-set timeoutlen=350              " Time to wait for a command (after leader for example)
+set timeoutlen=500              " Time to wait for a command (after leader for example)
 set ttimeoutlen=50              " Make Esc work faster
 set formatoptions=crql
 set suffixes+=.dvi              " Lower priority in wildcards
