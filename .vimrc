@@ -173,8 +173,8 @@ set history=768                 " Number of things to remember in history.
 set cf                          " Enable error files & error jumping.
 set clipboard+=unnamed          " Yanks go on clipboard instead.
 set autowrite                   " Writes on make/shell commands
-set timeoutlen=500              " Time to wait for a command (after leader for example)
-set ttimeoutlen=50              " Make Esc work faster
+" set timeoutlen=500            " Time to wait for a command (after leader for example)
+" set ttimeoutlen=50            " Make Esc work faster
 set formatoptions=crql
 set suffixes+=.dvi              " Lower priority in wildcards
 set showmatch                   " Show matching brackets.
@@ -278,9 +278,9 @@ autocmd BufReadPost *
 " ---------------
 " Vundle
 " --------------- {{
-nmap <Leader>bi :BundleInstall<CR>
-nmap <Leader>bu :BundleInstall!<CR> " Because this also updates
-nmap <Leader>bc :BundleClean<CR>
+" nmap <Leader>bi BundleInstall<CR>
+" nmap <Leader>bu BundleInstall!<CR> " Because this also updates
+" nmap <Leader>bc BundleClean
 " }}
 
 
