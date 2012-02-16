@@ -84,6 +84,10 @@ Bundle 'http://github.com/vim-scripts/ZoomWin.git'
 nmap <silent> <leader>wo :ZoomWin<CR>
 " }}
 Bundle 'http://github.com/scrooloose/snipmate-snippets.git'
+Bundle 'http://github.com/sjl/gundo.vim.git'
+" {{
+nnoremap <F5> :GundoToggle<CR>
+" }}
 
 Bundle 'http://github.com/vim-scripts/L9.git'
 Bundle 'http://github.com/vim-scripts/FuzzyFinder.git'
