@@ -26,7 +26,15 @@ let NERDTreeMinimalUI = 1
 nmap <C-p> :NERDTreeToggle<CR>
 nmap :sit :NERDTreeFind
 " }}
-Bundle 'http://github.com/msanders/snipmate.vim.git'
+
+" snippets
+Bundle 'http://github.com/MarcWeber/vim-addon-mw-utils.git'
+Bundle 'http://github.com/tomtom/tlib_vim.git'
+Bundle 'http://github.com/honza/snipmate-snippets.git'
+Bundle 'http://github.com/garbas/vim-snipmate.git'
+" Bundle 'http://github.com/scrooloose/snipmate-snippets.git'
+" Bundle 'http://github.com/msanders/snipmate.vim.git'
+
 Bundle 'http://github.com/altercation/vim-colors-solarized.git'
 Bundle 'http://github.com/tpope/vim-cucumber.git'
 Bundle 'http://github.com/tpope/vim-endwise.git'
@@ -83,7 +91,6 @@ Bundle 'http://github.com/vim-scripts/ZoomWin.git'
 " {{
 nmap <silent> <leader>wo :ZoomWin<CR>
 " }}
-Bundle 'http://github.com/scrooloose/snipmate-snippets.git'
 Bundle 'http://github.com/sjl/gundo.vim.git'
 " {{
 nnoremap <F5> :GundoToggle<CR>
