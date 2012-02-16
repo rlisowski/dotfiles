@@ -22,6 +22,7 @@ set laststatus=2 " Always show status line
 " }}
 Bundle 'http://github.com/scrooloose/nerdtree.git'
 " {{
+let NERDTreeMinimalUI = 1
 nmap <C-p> :NERDTreeToggle<CR>
 nmap :sit :NERDTreeFind
 " }}
