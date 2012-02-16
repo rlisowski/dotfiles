@@ -23,6 +23,7 @@ set laststatus=2 " Always show status line
 Bundle 'http://github.com/scrooloose/nerdtree.git'
 " {{
 nmap <C-p> :NERDTreeToggle<CR>
+nmap :sit :NERDTreeFind
 " }}
 Bundle 'http://github.com/msanders/snipmate.vim.git'
 Bundle 'http://github.com/altercation/vim-colors-solarized.git'
