@@ -239,15 +239,6 @@ map <C-l> <C-w>l
 " }}
 
 " ---------------
-" selection and tabs
-" --------------- {{
-nmap <C-'> <<
-nmap <C-'> >>
-nmap <C-'> gv<
-nmap <C-'> gv>
-" }}
-
-" ---------------
 " Switch between buffers
 " --------------- {{
 noremap <tab> :bn<CR>
@@ -280,6 +271,22 @@ autocmd BufReadPost *
       \ if line("'\"") > 1 && line("'\"") <= line("$") |
       \   exe "normal! g`\"" |
       \ endif
+" }}
+
+
+
+" ---------------
+" easy editing .vimrc file
+" --------------- {{
+nmap <Leader>rc :source ~/.vimrc<CR>
+nmap <Leader>rt :tabnew ~/.vimrc<CR>
+nmap <Leader>re :e ~/.vimrc<CR>
+" }}
+
+" ----------------
+" Split line(opposite to S-J joining line)
+" ---------------- {{
+nnoremap <silent> <C-J> gEa<CR><ESC>ew
 " }}
 
 
