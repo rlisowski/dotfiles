@@ -274,7 +274,6 @@ autocmd BufReadPost *
 " }}
 
 
-
 " ---------------
 " easy editing .vimrc file
 " --------------- {{
@@ -283,11 +282,6 @@ nmap <Leader>rt :tabnew ~/.vimrc<CR>
 nmap <Leader>re :e ~/.vimrc<CR>
 " }}
 
-" ----------------
-" Split line(opposite to S-J joining line)
-" ---------------- {{
-nnoremap <silent> <C-J> gEa<CR><ESC>ew
-" }}
 
 
 " ----------------------------------------
