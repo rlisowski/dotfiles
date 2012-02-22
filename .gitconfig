@@ -27,6 +27,7 @@
 [merge]
 	summary = true
 	tool = gvimdiff
+	conflictstyle = diff3
 [push]
 	default = tracking # deprecated synonym for upstream
 [rebase]
