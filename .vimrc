@@ -108,6 +108,13 @@ nnoremap <S-f> :FufFile<CR>
 nnoremap <C-f> :FufCoverageFile<CR>
 " }}
 
+" sessions manager
+Bundle 'http://github.com/vim-scripts/session.vim--Odding.git'
+" {{
+let g:session_autosave = 'no'
+let g:session_autoload = 'no'
+" }}
+
 filetype plugin indent on     " required!
 "
 " Brief help
