@@ -70,7 +70,10 @@ Bundle 'http://github.com/tpope/vim-bundler.git'
 Bundle 'http://github.com/tpope/vim-repeat.git'
 Bundle 'http://github.com/nelstrom/vim-textobj-rubyblock.git'
 Bundle 'http://github.com/kana/vim-textobj-user.git'
+
+Bundle 'http://github.com/vim-scripts/matchit.zip.git'
 Bundle 'http://github.com/ecomba/vim-ruby-refactoring.git'
+
 Bundle 'http://github.com/itspriddle/vim-jquery.git'
 Bundle 'http://github.com/kchmck/vim-coffee-script.git'
 Bundle 'http://github.com/robbyrussell/oh-my-zsh.git'
