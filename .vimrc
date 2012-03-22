@@ -168,12 +168,19 @@ set complete-=i                     " Searching includes can be slow
 set display=lastline                "
 set joinspaces                      " Put spaces between lines joined with the > command.
 set lazyredraw                      " Do not redraw the screen during macro execution.
-set listchars=tab:▸\ ,eol:¬,trail:· " Define how list mode appears, Use the same symbols as TextMate for tabstops and EOLs
+set list
+set listchars=tab:▸\ ,eol:¬,trail:·,extends:❯,precedes:❮ " Define how list mode appears, Use the same symbols as TextMate for tabstops and EOLs
+nmap <leader>l :set list!<CR>       " Shortcut to rapidly toggle `set list`
                                     "Invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 set modelines=5                     " Debian likes to disable this, The number of lines at the top and bottom to look for modelines.
 set scrolloff=1                     " Number of lines to keep above or below the cursor.
+
+if exists('+colorcolumn')
+  set colorcolumn=120
+endif
+
 
 " -------------
 "  lang
@@ -190,6 +197,8 @@ endif
 syntax enable
 
 set hlsearch
+noremap <Leader>/ :set invhls<CR>
+
 set textwidth=120
 set autoread                    " Automatically reload changes if detected
 set wildmenu                    " Turn on WiLd menu
@@ -221,8 +230,6 @@ set guifont=monaco              " font
 set ts=2 sts=2 sw=2 noexpandtab
 set nu                          " show lines number
 set ff=unix                     " unix end of line
-set list
-nmap <leader>l :set list!<CR>   " Shortcut to rapidly toggle `set list`
 
 " ---------------
 " folding
