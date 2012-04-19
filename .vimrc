@@ -23,6 +23,9 @@ set laststatus=2 " Always show status line
 Bundle 'http://github.com/scrooloose/nerdtree.git'
 " {{
 let NERDTreeMinimalUI = 1
+let NERDTreeQuitOnOpen = 1
+let NERDTreeHighlightCursorline = 1
+let NERDTreeIgnore=['^bin$', '^tmp$', '^log$']
 nmap <C-p> :NERDTreeToggle<CR>
 nmap :sit :NERDTreeFind
 " }}
