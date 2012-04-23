@@ -228,7 +228,7 @@ set sidescrolloff=5             " set printoptions=paper:letter
 set splitbelow                  " Split windows at bottom
 set splitright
 
-set guifont=monaco              " font
+set guifont=monaco\ 11          " font
 
 set ts=2 sts=2 sw=2 noexpandtab
 set nu                          " show lines number
