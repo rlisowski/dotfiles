@@ -21,12 +21,15 @@ let g:Powerline_symbols = 'fancy'
 set laststatus=2 " Always show status line
 " }}
 Bundle 'http://github.com/scrooloose/nerdtree.git'
+Bundle 'http://github.com/jistr/vim-nerdtree-tabs.git'
 " {{
 let NERDTreeMinimalUI = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeHighlightCursorline = 1
 let NERDTreeIgnore=['^bin$', '^tmp$', '^log$']
-nmap <C-p> :NERDTreeToggle<CR>
+let nerdtree_tabs_open_on_gui_startup = 0
+" nmap <C-p> :NERDTreeToggle<CR>
+nmap <C-p> :NERDTreeMirrorToggle<CR>
 nmap :sit :NERDTreeFind
 " }}
 
@@ -60,6 +63,7 @@ let g:syntastic_loc_list_height=3
 Bundle 'http://github.com/hallison/vim-markdown.git'
 Bundle 'http://github.com/mileszs/ack.vim.git'
 Bundle 'http://github.com/tpope/vim-git.git'
+Bundle 'http://github.com/gregsexton/gitv.git'
 Bundle 'http://github.com/michaeljsmith/vim-indent-object.git'
 Bundle 'http://github.com/pangloss/vim-javascript.git'
 Bundle 'http://github.com/vim-scripts/Tagbar.git'
@@ -121,6 +125,11 @@ Bundle 'http://github.com/vim-scripts/session.vim--Odding.git'
 let g:session_autosave = 'no'
 let g:session_autoload = 'no'
 " }}
+
+Bundle 'http://github.com/AndrewRadev/splitjoin.vim'
+Bundle 'http://github.com/vim-scripts/Specky.git'
+Bundle 'http://github.com/mmalecki/vim-node.js.git'
+Bundle 'http://github.com/jeetsukumaran/vim-buffergator.git'
 
 filetype plugin indent on     " required!
 "
