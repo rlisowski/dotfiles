@@ -127,6 +127,10 @@ let g:session_autoload = 'no'
 " }}
 
 Bundle 'http://github.com/AndrewRadev/splitjoin.vim'
+" {{
+nmap <Leader>j :SplitjoinJoin<cr>
+nmap <Leader>s :SplitjoinSplit<cr>
+" }}
 Bundle 'http://github.com/vim-scripts/Specky.git'
 Bundle 'http://github.com/mmalecki/vim-node.js.git'
 Bundle 'http://github.com/jeetsukumaran/vim-buffergator.git'
@@ -224,6 +228,15 @@ set formatoptions=crql
 set suffixes+=.dvi              " Lower priority in wildcards
 set showmatch                   " Show matching brackets.
 set smartcase                   " Case insensitive searches become sensitive with capitals
+" Keep search pattern at the center of the screen.
+" {{
+nnoremap <silent> n nzz
+nnoremap <silent> N Nzz
+nnoremap <silent> * *zz
+nnoremap <silent> # #zz
+nnoremap <silent> g* g*zz
+nnoremap <silent> g# g#zz
+" }}
 set smarttab                    " sw at the start of the line, sts everywhere else
 if v:version >= 700
   set viminfo=!,'20,<50,s10,h
