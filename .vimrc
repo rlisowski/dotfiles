@@ -30,7 +30,7 @@ let NERDTreeIgnore=['^bin$', '^tmp$', '^log$']
 let nerdtree_tabs_open_on_gui_startup = 0
 " nmap <C-p> :NERDTreeToggle<CR>
 nmap <C-p> :NERDTreeMirrorToggle<CR>
-nmap :sit :NERDTreeFind
+nmap <C-s> :NERDTreeFind<CR>
 " }}
 
 " snippets
@@ -105,6 +105,18 @@ nmap <silent> <leader>wo :ZoomWin<CR>
 Bundle 'http://github.com/sjl/gundo.vim.git'
 " {{
 nnoremap <F5> :GundoToggle<CR>
+if exists("+undofile")
+  " undofile - This allows you to use undos after exiting and restarting
+  " This, like swap and backups, uses .vim-undo first, then ~/.vim/undo
+  " :help undo-persistence
+  " This is only present in 7.3+
+  if isdirectory($HOME . '/.vim/undo') == 0
+    :silent !mkdir -p ~/.vim/undo > /dev/null 2>&1
+  endif
+  set undodir=./.vim-undo//
+  set undodir+=~/.vim/undo//
+  set undofile
+endif
 " }}
 
 Bundle 'http://github.com/vim-scripts/L9.git'
@@ -171,6 +183,8 @@ set directory=~/.vim/tmp
 " UI
 " ---------------
 set ruler                           " show the cursor position all the time
+set cursorline                      " Only have cursorline in current window
+
 if has("balloon_eval") && has("unix")
   set ballooneval
 endif
