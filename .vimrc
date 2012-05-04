@@ -84,7 +84,6 @@ Bundle 'http://github.com/danchoi/ri.vim.git'
 
 Bundle 'http://github.com/itspriddle/vim-jquery.git'
 Bundle 'http://github.com/kchmck/vim-coffee-script.git'
-Bundle 'http://github.com/robbyrussell/oh-my-zsh.git'
 Bundle 'http://github.com/jeffkreeftmeijer/vim-numbertoggle.git'
 Bundle 'http://github.com/tpope/vim-commentary.git'
 Bundle 'http://github.com/godlygeek/tabular.git'
