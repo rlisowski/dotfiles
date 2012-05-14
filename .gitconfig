@@ -42,20 +42,13 @@
 	cia = commit -v -a
 	co = checkout
 	cp = cherry-pick
-	l = log
-	ls = log --oneline
-	ll = log -p
-	lt = log trunk..
-	llt = log -p trunk..
-	lm = log master..
-	llm = log -p master..
+	l = log --graph
+	ls = log --oneline --graph
+	lp = log --graph --abbrev-commit --pretty=format:'%h | %ar | %an | %s'
+	lsum = log --abbrev-commit --pretty=format:'%h | %ar | %an | %s' --author="Rafał.Lisowski" --since=last.mon --reverse
+	i = !~/bin/git-info-short
 	b = branch
 	gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
-	i = !~/bin/git-info-short
-	one = show -s --pretty='format:%h (%s)'
-	recursive-update = "!sh -c 'find \"${@-.}\" -type d -name .git -exec dirname {} \\; -exec git --git-dir={} remote update \\;' recursive-update"
-	rlog = !sh -c 'git log --color \"$@\"|fmt -s -w 79|less -FRSX' git-rlog
-	summary = log --abbrev-commit --pretty=format:'%h | %ad | %ar | %s' --author="Rafał.Lisowski" --since=last.mon --reverse
 	ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
 
 [init]
