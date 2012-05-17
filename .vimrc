@@ -66,7 +66,9 @@ Bundle 'http://github.com/tpope/vim-git.git'
 Bundle 'http://github.com/gregsexton/gitv.git'
 Bundle 'http://github.com/michaeljsmith/vim-indent-object.git'
 Bundle 'http://github.com/pangloss/vim-javascript.git'
-Bundle 'http://github.com/vim-scripts/Tagbar.git'
+
+" Bundle 'http://github.com/vim-scripts/Tagbar.git'
+Bundle 'http://github.com/majutsushi/tagbar.git'
 " {{
 nnoremap <silent> <F4> :TagbarOpenAutoClose<CR>
 " }}
@@ -75,10 +77,13 @@ Bundle 'http://github.com/taq/vim-rspec.git'
 Bundle 'http://github.com/mattn/gist-vim.git'
 Bundle 'http://github.com/tpope/vim-bundler.git'
 Bundle 'http://github.com/tpope/vim-repeat.git'
-Bundle 'http://github.com/nelstrom/vim-textobj-rubyblock.git'
-Bundle 'http://github.com/kana/vim-textobj-user.git'
-
 Bundle 'http://github.com/vim-scripts/matchit.zip.git'
+" {{
+runtime macros/matchit.vim
+" }}
+Bundle 'http://github.com/kana/vim-textobj-user.git'
+Bundle 'http://github.com/nelstrom/vim-textobj-rubyblock.git'
+
 Bundle 'http://github.com/ecomba/vim-ruby-refactoring.git'
 Bundle 'http://github.com/danchoi/ri.vim.git'
 
@@ -145,6 +150,9 @@ nmap <Leader>s :SplitjoinSplit<cr>
 Bundle 'http://github.com/vim-scripts/Specky.git'
 Bundle 'http://github.com/mmalecki/vim-node.js.git'
 Bundle 'http://github.com/jeetsukumaran/vim-buffergator.git'
+
+Bundle 'http://github.com/VimEz/ShowMarks.git'
+Bundle 'http://github.com/nathanaelkane/vim-indent-guides.git'
 
 filetype plugin indent on     " required!
 "
