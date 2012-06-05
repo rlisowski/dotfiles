@@ -234,6 +234,7 @@ endif
 syntax enable
 
 set hlsearch
+set incsearch
 noremap <Leader>/ :set invhls<CR>
 
 set textwidth=120
