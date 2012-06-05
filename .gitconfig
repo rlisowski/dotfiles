@@ -45,6 +45,7 @@
 	l = log --graph
 	ls = log --oneline --graph
 	lp = log --graph --abbrev-commit --pretty=format:'%h | %ar | %an | %s'
+	lm = log --graph -30  --abbrev-commit --relative-date --format='%Cred%h%Cgreen %aN%Cblue %ar %Creset %s'
 	lsum = log --abbrev-commit --pretty=format:'%h | %ar | %an | %s' --author="Rafał.Lisowski" --since=last.mon --reverse
 	i = !~/bin/git-info-short
 	b = branch
