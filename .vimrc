@@ -151,7 +151,7 @@ Bundle 'http://github.com/vim-scripts/Specky.git'
 Bundle 'http://github.com/mmalecki/vim-node.js.git'
 Bundle 'http://github.com/jeetsukumaran/vim-buffergator.git'
 
-Bundle 'http://github.com/VimEz/ShowMarks.git'
+" Bundle 'http://github.com/VimEz/ShowMarks.git'
 Bundle 'http://github.com/nathanaelkane/vim-indent-guides.git'
 
 filetype plugin indent on     " required!
