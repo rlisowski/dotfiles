@@ -2,7 +2,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	pager = less -S
-	editor = gvim -f &
+	editor = gvim --nofork
 	# autocrlf = input # http://help.github.com/line-endings/
 [user]
 	name = Rafał Lisowski
