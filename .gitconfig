@@ -42,11 +42,8 @@
 	cia = commit -v -a
 	co = checkout
 	cp = cherry-pick
-	l = log --graph
-	ls = log --oneline --graph
-	lp = log --graph --abbrev-commit --pretty=format:'%h | %ar | %an | %s'
-	lm = log --graph -30  --abbrev-commit --relative-date --format='%Cred%h%Cgreen %aN%Cblue %ar %Creset %s'
-	lsum = log --abbrev-commit --pretty=format:'%h | %ar | %an | %s' --author="Rafał.Lisowski" --since=last.mon --reverse
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%aN - %cr) %C(bold blue)%Creset' --abbrev-commit
+	ls = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%aN - %cr) %C(bold blue)%Creset' --abbrev-commit --since=last.mon --author="Rafał.Lisowski"
 	i = !~/bin/git-info-short
 	b = branch
 	gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
