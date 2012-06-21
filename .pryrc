@@ -1,15 +1,25 @@
 require "rubygems"
-require "awesome_print"
 
-Pry.print = proc { |output, value| output.puts value.ai }
-
-require 'hirb'
-
-Hirb.enable
-
-Pry.config.print = proc do |output, value|
-  Hirb::View.view_or_page_output(value) || Pry::DEFAULT_PRINT.call(output, value)
+begin
+	require "awesome_print"
+	Pry.config.print = proc { |output, value| output.puts value.ai }
+rescue LoadError => err
+	warn "Couldn't load awesome_print: #{err}"
 end
+
+begin
+	require 'hirb'
+
+	Hirb.enable
+
+	old_print = Pry.config.print
+	Pry.config.print = proc do |output, value|
+		Hirb::View.view_or_page_output(value) || old_print.call(output, value)
+	end
+rescue LoadError => err
+	warn "Couldn't load Hirb: #{err}"
+end
+
 
 # vim FTW
 Pry.config.editor = "gvim --nofork"
@@ -21,7 +31,6 @@ Pry.prompt = [proc { |obj, nest_level| "#{RUBY_VERSION} (#{obj}):#{nest_level} >
 # If you have Pry in your Gemfile, you can pass: ./script/console --irb=pry instead.
 # If you don't, you can load it through the lines below :)
 rails = File.join Dir.getwd, 'config', 'environment.rb'
-
 if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
   require rails
 
