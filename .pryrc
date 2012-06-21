@@ -45,5 +45,7 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
   end
   if defined?(Rails) && Rails.env
     extend Rails::ConsoleMethods
+    ActiveRecord::Base.logger = Logger.new(STDOUT)
+    reload!
   end
 end
