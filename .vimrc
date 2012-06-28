@@ -23,6 +23,7 @@ set laststatus=2 " Always show status line
 Bundle 'http://github.com/scrooloose/nerdtree.git'
 Bundle 'http://github.com/jistr/vim-nerdtree-tabs.git'
 " {{
+let NERDTreeWinPos = "right"
 let NERDTreeMinimalUI = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeHighlightCursorline = 1
