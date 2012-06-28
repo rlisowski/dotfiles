@@ -10,3 +10,6 @@ map <silent> <F2> :if &guioptions =~# 'T' <Bar>
 \else <Bar>
 \set guioptions+=T <Bar>
 \endif<CR>
+
+" I don't known why this not work in .vimrc
+color codeschool

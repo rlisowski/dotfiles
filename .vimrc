@@ -32,6 +32,7 @@ let nerdtree_tabs_open_on_gui_startup = 0
 " nmap <C-p> :NERDTreeToggle<CR>
 nmap <C-p> :NERDTreeMirrorToggle<CR>
 nmap <C-s> :NERDTreeFind<CR>
+autocmd FileType nerdtree setlocal norelativenumber
 " }}
 
 " snippets
@@ -72,6 +73,7 @@ Bundle 'http://github.com/pangloss/vim-javascript.git'
 Bundle 'http://github.com/majutsushi/tagbar.git'
 " {{
 nnoremap <silent> <F4> :TagbarOpenAutoClose<CR>
+autocmd FileType taglist setlocal norelativenumber
 " }}
 Bundle 'http://github.com/ervandew/supertab.git'
 Bundle 'http://github.com/taq/vim-rspec.git'
