@@ -156,6 +156,11 @@ Bundle 'http://github.com/jeetsukumaran/vim-buffergator.git'
 
 " Bundle 'http://github.com/VimEz/ShowMarks.git'
 Bundle 'http://github.com/nathanaelkane/vim-indent-guides.git'
+Bundle 'http://github.com/vim-scripts/Rename2.git'
+Bundle 'http://github.com/chrisbra/NrrwRgn.git'
+Bundle 'http://github.com/rgarver/Kwbd.vim.git'
+Bundle 'http://github.com/Lokaltog/vim-easymotion.git'
+Bundle 'http://github.com/ap/vim-css-color.git'
 
 filetype plugin indent on     " required!
 "
