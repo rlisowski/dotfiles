@@ -221,7 +221,8 @@ highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 set modelines=5                     " Debian likes to disable this, The number of lines at the top and bottom to look for modelines.
 set scrolloff=1                     " Number of lines to keep above or below the cursor.
-set cpoptions+=$
+set cpoptions+=$                    " show $ on the end of selection
+set virtualedit=all                 " enable virtualedit, useful for visual block editing
 
 if exists('+colorcolumn')
   set colorcolumn=120
