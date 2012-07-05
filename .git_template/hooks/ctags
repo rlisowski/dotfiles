@@ -1,4 +1,4 @@
 #!/bin/sh
 rm -f .git/tags
-ctags --tag-relative -Rf.git/tags --exclude=.git --exclude=vendor/budle --languages=-javascript,sql
+ctags --tag-relative -Rf.git/tags --exclude=.rsync_cache --exclude=.git --exclude=vendor/budle --languages=-javascript,sql
 
