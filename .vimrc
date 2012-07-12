@@ -24,6 +24,7 @@ Bundle 'http://github.com/scrooloose/nerdtree.git'
 Bundle 'http://github.com/jistr/vim-nerdtree-tabs.git'
 " {{
 let NERDTreeWinPos = "right"
+let NERDTreeWinSize = 50
 let NERDTreeMinimalUI = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeHighlightCursorline = 1
@@ -228,6 +229,7 @@ if exists('+colorcolumn')
   set colorcolumn=120
 endif
 
+cmap w!! w !sudo tee % >/dev/null   ” :w!! saves a file as root
 
 " -------------
 "  lang
