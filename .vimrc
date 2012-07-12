@@ -77,6 +77,9 @@ nnoremap <silent> <F4> :TagbarOpenAutoClose<CR>
 autocmd FileType taglist setlocal norelativenumber
 " }}
 Bundle 'http://github.com/ervandew/supertab.git'
+" {{
+let g:SuperTabDefaultCompletionType = "context"
+" }}
 Bundle 'http://github.com/taq/vim-rspec.git'
 Bundle 'http://github.com/mattn/gist-vim.git'
 Bundle 'http://github.com/tpope/vim-bundler.git'
