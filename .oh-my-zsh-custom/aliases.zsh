@@ -67,5 +67,5 @@ alias gst='git st'
 
 # gvim
 gv() { gvim -f --remote-silent "$@" &; }
-alias vu='gv +BundleInstall! +qall'
+alias vu='gvim +BundleInstall! +qall'
 
