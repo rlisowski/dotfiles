@@ -66,6 +66,7 @@ alias ports='sudo netstat -pant'
 alias gst='git st'
 
 # gvim
-gv() { gvim -f --remote-silent "$@" &; }
+# gv() { gvim -f --remote-silent "$@" &; }
+gv() { gvim -f "$@" &; }
 alias vu='gvim +BundleInstall! +qall'
 
