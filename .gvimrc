@@ -1,5 +1,5 @@
 "Toggle Menu and Toolbar
-" set guioptions-=m
+set guioptions-=m " hide the menu
 set guioptions-=T " hide the toolbar
 set guioptions-=r " hide the scrollbars
 set guioptions-=R " hide the scrollbars with vertical split
