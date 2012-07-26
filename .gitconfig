@@ -36,6 +36,7 @@
 	renames = true
 	tool = gvimdiff
 [alias]
+	h = help
 	st = status -s
 	d = diff
 	ci = commit -v
