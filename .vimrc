@@ -89,7 +89,8 @@ Bundle 'http://github.com/vim-scripts/matchit.zip.git'
 runtime macros/matchit.vim
 " }}
 Bundle 'http://github.com/kana/vim-textobj-user.git'
-Bundle 'http://github.com/nelstrom/vim-textobj-rubyblock.git'
+" Bundle 'http://github.com/nelstrom/vim-textobj-rubyblock.git'
+Bundle 'http://github.com/vim-ruby/vim-ruby.git'
 
 Bundle 'http://github.com/ecomba/vim-ruby-refactoring.git'
 Bundle 'http://github.com/danchoi/ri.vim.git'
