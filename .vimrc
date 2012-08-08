@@ -79,6 +79,8 @@ autocmd FileType taglist setlocal norelativenumber
 Bundle 'http://github.com/ervandew/supertab.git'
 " {{
 let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabMappingForward = '<c-space>'
+let g:SuperTabMappingBackward = '<s-c-space>'
 " }}
 Bundle 'http://github.com/taq/vim-rspec.git'
 Bundle 'http://github.com/mattn/gist-vim.git'
