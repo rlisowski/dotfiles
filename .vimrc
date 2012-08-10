@@ -265,6 +265,7 @@ set autowrite                   " Writes on make/shell commands
 " set timeoutlen=500            " Time to wait for a command (after leader for example)
 " set ttimeoutlen=50            " Make Esc work faster
 set formatoptions=crql
+set nrformats=
 set suffixes+=.dvi              " Lower priority in wildcards
 set showmatch                   " Show matching brackets.
 set smartcase                   " Case insensitive searches become sensitive with capitals
