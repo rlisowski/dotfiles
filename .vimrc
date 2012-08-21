@@ -37,6 +37,10 @@ autocmd FileType nerdtree setlocal norelativenumber
 " }}
 
 " snippets
+Bundle 'http://github.com/ervandew/supertab.git'
+" {{
+let g:SuperTabDefaultCompletionType = "context"
+" }}
 Bundle 'http://github.com/MarcWeber/vim-addon-mw-utils.git'
 Bundle 'http://github.com/tomtom/tlib_vim.git'
 Bundle 'http://github.com/honza/snipmate-snippets.git'
@@ -75,12 +79,6 @@ Bundle 'http://github.com/majutsushi/tagbar.git'
 " {{
 nnoremap <silent> <F4> :TagbarOpenAutoClose<CR>
 autocmd FileType taglist setlocal norelativenumber
-" }}
-Bundle 'http://github.com/ervandew/supertab.git'
-" {{
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabMappingForward = '<c-space>'
-let g:SuperTabMappingBackward = '<s-c-space>'
 " }}
 Bundle 'http://github.com/taq/vim-rspec.git'
 Bundle 'http://github.com/mattn/gist-vim.git'
