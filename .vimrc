@@ -101,6 +101,8 @@ Bundle 'http://github.com/jeffkreeftmeijer/vim-numbertoggle.git'
 Bundle 'http://github.com/tpope/vim-commentary.git'
 Bundle 'http://github.com/godlygeek/tabular.git'
 " {{
+nmap <Leader>t# :Tabularize /=<CR>
+vmap <Leader>t# :Tabularize /=<CR>
 nmap <Leader>t= :Tabularize /=<CR>
 vmap <Leader>t= :Tabularize /=<CR>
 nmap <Leader>t: :Tabularize /:\zs<CR>
