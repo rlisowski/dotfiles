@@ -13,7 +13,7 @@ export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git svn)
+plugins=(git svn cap gem bundler rails3 git-flow node)
 
 source $ZSH/oh-my-zsh.sh
 
