@@ -168,6 +168,7 @@ Bundle 'http://github.com/chrisbra/NrrwRgn.git'
 Bundle 'http://github.com/rgarver/Kwbd.vim.git'
 Bundle 'http://github.com/Lokaltog/vim-easymotion.git'
 Bundle 'http://github.com/ap/vim-css-color.git'
+Bundle 'http://github.com/vim-scripts/VisIncr.git'
 
 filetype plugin indent on     " required!
 "
