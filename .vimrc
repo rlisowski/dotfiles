@@ -166,6 +166,9 @@ Bundle 'http://github.com/nathanaelkane/vim-indent-guides.git'
 Bundle 'http://github.com/vim-scripts/Rename2.git'
 Bundle 'http://github.com/chrisbra/NrrwRgn.git'
 Bundle 'http://github.com/rgarver/Kwbd.vim.git'
+" {{
+nmap <C-W>! <Plug>Kwbd
+" }}
 Bundle 'http://github.com/Lokaltog/vim-easymotion.git'
 Bundle 'http://github.com/ap/vim-css-color.git'
 Bundle 'http://github.com/vim-scripts/VisIncr.git'
