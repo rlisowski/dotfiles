@@ -169,6 +169,7 @@ Bundle 'http://github.com/rgarver/Kwbd.vim.git'
 Bundle 'http://github.com/Lokaltog/vim-easymotion.git'
 Bundle 'http://github.com/ap/vim-css-color.git'
 Bundle 'http://github.com/vim-scripts/VisIncr.git'
+Bundle 'http://github.com/spolu/dwm.vim.git'
 
 filetype plugin indent on     " required!
 "
@@ -231,6 +232,7 @@ set modelines=5                     " Debian likes to disable this, The number o
 set scrolloff=1                     " Number of lines to keep above or below the cursor.
 set cpoptions+=$                    " show $ on the end of selection
 set virtualedit=all                 " enable virtualedit, useful for visual block editing
+set linespace=2                     " more space between lines
 
 if exists('+colorcolumn')
   set colorcolumn=120
