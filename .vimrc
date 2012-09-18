@@ -98,6 +98,9 @@ Bundle 'http://github.com/danchoi/ri.vim.git'
 Bundle 'http://github.com/itspriddle/vim-jquery.git'
 Bundle 'http://github.com/kchmck/vim-coffee-script.git'
 Bundle 'http://github.com/jeffkreeftmeijer/vim-numbertoggle.git'
+" {{
+let g:NumberToggleTrigger="<F3>"
+" }}
 Bundle 'http://github.com/tpope/vim-commentary.git'
 Bundle 'http://github.com/godlygeek/tabular.git'
 " {{
@@ -301,6 +304,7 @@ set guifont=monaco\ 11          " font
 
 set ts=2 sts=2 sw=2 noexpandtab
 set nu                          " show lines number
+set nuw=6                       " column with line numbers is 6 chars width
 set ff=unix                     " unix end of line
 
 " ---------------
