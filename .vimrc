@@ -175,6 +175,7 @@ nmap <C-W>! <Plug>Kwbd
 Bundle 'http://github.com/Lokaltog/vim-easymotion.git'
 Bundle 'http://github.com/ap/vim-css-color.git'
 Bundle 'http://github.com/hail2u/vim-css3-syntax'
+Bundle 'http://github.com/cakebaker/scss-syntax.vim'
 Bundle 'http://github.com/groenewege/vim-less'
 " {{
 nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
