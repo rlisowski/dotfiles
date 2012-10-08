@@ -29,9 +29,9 @@ let NERDTreeMinimalUI = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeHighlightCursorline = 1
 let NERDTreeIgnore=['^bin$', '^tmp$', '^log$']
-let nerdtree_tabs_open_on_gui_startup = 0
+let nerdtree_tabs_open_on_gui_startup = 1
 " nmap <C-p> :NERDTreeToggle<CR>
-nmap <C-p> :NERDTreeMirrorToggle<CR>
+nmap <C-p> :NERDTreeTabsToggle<CR>
 nmap <C-s> :NERDTreeFind<CR>
 autocmd FileType nerdtree setlocal norelativenumber
 " }}
@@ -183,6 +183,7 @@ nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
 " }}
 Bundle 'http://github.com/vim-scripts/VisIncr.git'
 Bundle 'http://github.com/spolu/dwm.vim.git'
+Bundle 'http://github.com/vim-scripts/lua-support.git'
 
 filetype plugin indent on     " required!
 "
