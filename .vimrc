@@ -49,6 +49,7 @@ Bundle 'http://github.com/garbas/vim-snipmate.git'
 " Bundle 'http://github.com/msanders/snipmate.vim.git'
 
 Bundle 'http://github.com/altercation/vim-colors-solarized.git'
+Bundle 'http://github.com/vim-scripts/molokai.git'
 Bundle 'http://github.com/tpope/vim-cucumber.git'
 Bundle 'http://github.com/tpope/vim-endwise.git'
 Bundle 'http://github.com/tpope/vim-haml.git'
