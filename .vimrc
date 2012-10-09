@@ -29,7 +29,7 @@ let NERDTreeMinimalUI = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeHighlightCursorline = 1
 let NERDTreeIgnore=['^bin$', '^tmp$', '^log$']
-let nerdtree_tabs_open_on_gui_startup = 1
+let nerdtree_tabs_open_on_gui_startup = 0
 " nmap <C-p> :NERDTreeToggle<CR>
 nmap <C-p> :NERDTreeTabsToggle<CR>
 nmap <C-s> :NERDTreeFind<CR>
@@ -184,6 +184,12 @@ nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
 Bundle 'http://github.com/vim-scripts/VisIncr.git'
 Bundle 'http://github.com/spolu/dwm.vim.git'
 Bundle 'http://github.com/vim-scripts/lua-support.git'
+Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
+" {{
+nnoremap <silent> <F11> :YRShow<CR>
+" }}
+Bundle 'https://github.com/Raimondi/delimitMate.git'
+Bundle 'http://github.com/godlygeek/csapprox.git'
 
 filetype plugin indent on     " required!
 "
