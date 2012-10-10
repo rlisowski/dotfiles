@@ -187,6 +187,8 @@ Bundle 'http://github.com/vim-scripts/lua-support.git'
 Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
 " {{
 nnoremap <silent> <F11> :YRShow<CR>
+let g:yankring_replace_n_pkey = '<C-S-p>'
+let g:yankring_replace_n_nkey = '<C-S-n>'
 " }}
 Bundle 'https://github.com/Raimondi/delimitMate.git'
 Bundle 'http://github.com/godlygeek/csapprox.git'
