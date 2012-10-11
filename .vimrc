@@ -20,6 +20,10 @@ Bundle 'http://github.com/Lokaltog/vim-powerline.git'
 let g:Powerline_symbols = 'fancy'
 set laststatus=2 " Always show status line
 " }}
+Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
+" {{
+nnoremap <silent> <F11> :YRShow<CR>
+" }}
 Bundle 'http://github.com/scrooloose/nerdtree.git'
 Bundle 'http://github.com/jistr/vim-nerdtree-tabs.git'
 " {{
@@ -31,8 +35,8 @@ let NERDTreeHighlightCursorline = 1
 let NERDTreeIgnore=['^bin$', '^tmp$', '^log$']
 let nerdtree_tabs_open_on_gui_startup = 0
 " nmap <C-p> :NERDTreeToggle<CR>
-nmap <C-p> :NERDTreeTabsToggle<CR>
-nmap <C-s> :NERDTreeFind<CR>
+nmap <leader>\ :NERDTreeTabsToggle<CR>
+nmap <C-\> :NERDTreeFind<CR>
 autocmd FileType nerdtree setlocal norelativenumber
 " }}
 
@@ -184,12 +188,6 @@ nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
 Bundle 'http://github.com/vim-scripts/VisIncr.git'
 Bundle 'http://github.com/spolu/dwm.vim.git'
 Bundle 'http://github.com/vim-scripts/lua-support.git'
-Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
-" {{
-nnoremap <silent> <F11> :YRShow<CR>
-let g:yankring_replace_n_pkey = '<C-S-p>'
-let g:yankring_replace_n_nkey = '<C-S-n>'
-" }}
 Bundle 'https://github.com/Raimondi/delimitMate.git'
 Bundle 'http://github.com/godlygeek/csapprox.git'
 
