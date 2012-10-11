@@ -7,9 +7,5 @@ socket_name: rails # Not needed.  Remove to use default socket
 pre: sudo service mysql start
 tabs:
   - editor: vim
-  - tools:
-      layout: main-vertical
-      panes:
-        - passenger start
-        - git pull
-        - bundle exec rails c
+  - zsh: git status
+  - server: passenger start
