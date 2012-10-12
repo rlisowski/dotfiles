@@ -70,3 +70,5 @@ alias gst='git st'
 gv() { gvim -f "$@" &; }
 alias vu='gvim +BundleInstall! +qall'
 
+# tmux
+alias t='tmux new-session -s'
