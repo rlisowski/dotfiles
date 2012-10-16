@@ -1,5 +1,4 @@
-PROMPT='%B%~%b %{$reset_color%}
-$ '
+PROMPT='%B%~%b %{$reset_color%}$ '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%B"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
