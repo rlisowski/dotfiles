@@ -47,11 +47,6 @@ alias cd..="cd .." #work around a common typo
 # alias rdoc="rdoc -N -U -c utf-8 -n README -f html -U"
 # alias rdoc_a="rdoc -N -d -c utf-8"
 
-#
-alias c="clear"
-alias e="exit"
-alias s="sudo"
-
 #touch passenger
 alias tpass='touch tmp/restart.txt'
 
