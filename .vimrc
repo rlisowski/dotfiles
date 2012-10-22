@@ -69,8 +69,11 @@ Bundle 'http://github.com/scrooloose/syntastic.git'
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_enable_balloons = 1
-let g:syntastic_auto_jump=1
-let g:syntastic_loc_list_height=3
+let g:syntastic_auto_jump=0
+let g:syntastic_loc_list_height=2
+let g:syntastic_mode_map = { 'mode': 'active',
+      \ 'active_filetypes': ['ruby'],
+      \ 'passive_filetypes': ['javascript'] }
 " }}
 Bundle 'http://github.com/hallison/vim-markdown.git'
 Bundle 'http://github.com/mileszs/ack.vim.git'
