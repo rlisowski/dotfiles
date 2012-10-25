@@ -449,4 +449,19 @@ endfunction
 command! QuickSpellingFix call QuickSpellingFix()
 nmap <silent> <leader>z :QuickSpellingFix<CR>
 " }}
-"
+
+" ---------------
+" File types settings
+" --------------- {{
+" CSS (tab width 2 chr)
+autocmd FileType css set et
+autocmd FileType css set sw=2
+autocmd FileType css set ts=2
+autocmd FileType css set sts=2
+" JavaScript (tab width 2 chr)
+autocmd FileType javascript set et
+autocmd FileType javascript set sw=2
+autocmd FileType javascript set ts=2
+autocmd FileType javascript set sts=2
+"  }}
+
