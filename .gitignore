@@ -24,3 +24,10 @@ Session.vim
 tags
 doc/*
 bin
+Dropbox/
+Pulpit/
+examples.desktop
+vpn*
+workspace
+*.log
+*.txt
