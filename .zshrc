@@ -19,7 +19,7 @@ source $ZSH/oh-my-zsh.sh
 
 setopt auto_cd
 cdpath=($HOME/workspace)
-cdpath=($HOME/workspace/arte)
+cdpath+=($HOME/workspace/arte)
 
 # Customize to your needs...
 unsetopt auto_name_dirs
