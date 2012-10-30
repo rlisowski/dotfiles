@@ -1,7 +1,5 @@
-PROMPT='%B%~%b %{$reset_color%}$ '
-
-ZSH_THEME_GIT_PROMPT_PREFIX="%B"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[yellow]%}›%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%b %{$fg[yellow]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_AHEAD="%b %{$fg[yellow]%}♦%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%b"
@@ -23,5 +21,22 @@ function prompt_info() {
   fi
 }
 
-RPROMPT='%B$(~/.rvm/bin/rvm-prompt) $(prompt_info)%{$reset_color%}'
+local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
+
+local user_host='%{$terminfo[bold]$fg[green]%}%n@%m%{$reset_color%}'
+local current_dir='%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}'
+local rvm_ruby=''
+if which rvm-prompt &> /dev/null; then
+  rvm_ruby='%{$fg[red]%}‹$(rvm-prompt i v g)›%{$reset_color%}'
+else
+  if which rbenv &> /dev/null; then
+    rvm_ruby='%{$fg[red]%}‹$(rbenv version | sed -e "s/ (set.*$//")›%{$reset_color%}'
+  fi
+fi
+local rev_info='$(prompt_info)%{$reset_color%}'
+
+PROMPT="╭─ ${rvm_ruby} ${rev_info}${current_dir}
+╰─%B$%b "
+# RPS1="${return_code}"
+RPS1="%D{[%I:%M:%S]}"
 
