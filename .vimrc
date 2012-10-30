@@ -450,6 +450,13 @@ command! QuickSpellingFix call QuickSpellingFix()
 nmap <silent> <leader>z :QuickSpellingFix<CR>
 " }}
 
+
+" ---------------
+" subversion blame
+" --------------- {{
+vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
+" }}
+
 " ---------------
 " File types settings
 " --------------- {{
