@@ -191,8 +191,9 @@ nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
 Bundle 'http://github.com/vim-scripts/VisIncr.git'
 Bundle 'http://github.com/spolu/dwm.vim.git'
 Bundle 'http://github.com/vim-scripts/lua-support.git'
-Bundle 'https://github.com/Raimondi/delimitMate.git'
+Bundle 'http://github.com/Raimondi/delimitMate.git'
 Bundle 'http://github.com/godlygeek/csapprox.git'
+Bundle 'http://github.com/kshenoy/vim-signature.git'
 
 filetype plugin indent on     " required!
 "
