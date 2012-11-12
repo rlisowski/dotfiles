@@ -35,8 +35,8 @@ let NERDTreeHighlightCursorline = 1
 let NERDTreeIgnore=['^bin$', '^tmp$', '^log$']
 let nerdtree_tabs_open_on_gui_startup = 0
 " nmap <C-p> :NERDTreeToggle<CR>
-nmap <C-\> :NERDTreeTabsToggle<CR>
-nmap <leader>\ :NERDTreeFind<CR>
+nmap <leader>\ :NERDTreeTabsToggle<CR>
+nmap <C-\> :NERDTreeFind<CR>
 autocmd FileType nerdtree setlocal norelativenumber
 " }}
 
