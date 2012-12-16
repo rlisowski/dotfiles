@@ -1,4 +1,8 @@
-nnoremap <F5> :GundoToggle<CR>
+nnoremap ,u :GundoToggle<CR>
+" open on the right so as not to compete with the nerdtree
+let g:gundo_right = 1
+" a little wider for wider screens
+let g:gundo_width = 60
 if exists("+undofile")
   " undofile - This allows you to use undos after exiting and restarting
   " This, like swap and backups, uses .vim-undo first, then ~/.vim/undo
