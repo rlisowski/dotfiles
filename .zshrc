@@ -24,7 +24,7 @@ cdpath+=($HOME/workspace/arte)
 # Customize to your needs...
 unsetopt auto_name_dirs
 source "${HOME}/.rvm/scripts/rvm"
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin:/opt/vagrant/bin # Add RVM to PATH for scripting
 if [[ -s "${TM_PROJECT_DIRECTORY}/.rvmrc" ]]
 then
 	source "${TM_PROJECT_DIReCTORY}/.rvmrc"
