@@ -16,42 +16,14 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 Bundle 'http://github.com/Lokaltog/vim-powerline.git'
-" {{
-let g:Powerline_symbols = 'fancy'
-set laststatus=2 " Always show status line
-" }}
 Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
-" {{
-nnoremap <silent> <F11> :YRShow<CR>
-" }}
 Bundle 'http://github.com/scrooloose/nerdtree.git'
 Bundle 'http://github.com/jistr/vim-nerdtree-tabs.git'
-" {{
-let NERDTreeWinPos = "right"
-let NERDTreeWinSize = 50
-let NERDTreeMinimalUI = 1
-let NERDTreeQuitOnOpen = 1
-let NERDTreeHighlightCursorline = 1
-let NERDTreeIgnore=['^bin$', '^tmp$', '^log$']
-let nerdtree_tabs_open_on_gui_startup = 0
-" nmap <C-p> :NERDTreeToggle<CR>
-nmap <leader>\ :NERDTreeTabsToggle<CR>
-nmap <C-\> :NERDTreeFind<CR>
-autocmd FileType nerdtree setlocal norelativenumber
-" }}
-
-" snippets
 Bundle 'http://github.com/ervandew/supertab.git'
-" {{
-let g:SuperTabDefaultCompletionType = "context"
-" }}
 Bundle 'http://github.com/MarcWeber/vim-addon-mw-utils.git'
 Bundle 'http://github.com/tomtom/tlib_vim.git'
 Bundle 'http://github.com/honza/snipmate-snippets.git'
 Bundle 'http://github.com/garbas/vim-snipmate.git'
-" Bundle 'http://github.com/scrooloose/snipmate-snippets.git'
-" Bundle 'http://github.com/msanders/snipmate.vim.git'
-
 Bundle 'http://github.com/altercation/vim-colors-solarized.git'
 Bundle 'http://github.com/vim-scripts/molokai.git'
 Bundle 'http://github.com/tpope/vim-cucumber.git'
@@ -65,139 +37,54 @@ Bundle 'http://github.com/tpope/vim-unimpaired.git'
 Bundle 'http://github.com/tpope/vim-fugitive.git'
 Bundle 'http://github.com/tpope/vim-ragtag.git'
 Bundle 'http://github.com/scrooloose/syntastic.git'
-" {{
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_enable_balloons = 1
-let g:syntastic_auto_jump=0
-let g:syntastic_loc_list_height=2
-let g:syntastic_mode_map = { 'mode': 'active',
-      \ 'active_filetypes': ['ruby'],
-      \ 'passive_filetypes': ['javascript'] }
-" }}
 Bundle 'http://github.com/hallison/vim-markdown.git'
 Bundle 'http://github.com/mileszs/ack.vim.git'
 Bundle 'http://github.com/tpope/vim-git.git'
 Bundle 'http://github.com/gregsexton/gitv.git'
 Bundle 'http://github.com/michaeljsmith/vim-indent-object.git'
 Bundle 'http://github.com/pangloss/vim-javascript.git'
-
-" Bundle 'http://github.com/vim-scripts/Tagbar.git'
 Bundle 'http://github.com/majutsushi/tagbar.git'
-" {{
-nnoremap <silent> <F4> :TagbarOpenAutoClose<CR>
-autocmd FileType taglist setlocal norelativenumber
-" }}
 Bundle 'http://github.com/taq/vim-rspec.git'
 Bundle 'http://github.com/mattn/gist-vim.git'
 Bundle 'http://github.com/tpope/vim-bundler.git'
 Bundle 'http://github.com/tpope/vim-repeat.git'
 Bundle 'http://github.com/vim-scripts/matchit.zip.git'
-" {{
-runtime macros/matchit.vim
-" }}
 Bundle 'http://github.com/kana/vim-textobj-user.git'
 Bundle 'http://github.com/kana/vim-textobj-entire.git'
 Bundle 'http://github.com/vim-ruby/vim-ruby.git'
-
 Bundle 'http://github.com/ecomba/vim-ruby-refactoring.git'
 Bundle 'http://github.com/danchoi/ri.vim.git'
-
 Bundle 'http://github.com/itspriddle/vim-jquery.git'
 Bundle 'http://github.com/kchmck/vim-coffee-script.git'
 Bundle 'http://github.com/jeffkreeftmeijer/vim-numbertoggle.git'
-" {{
-let g:NumberToggleTrigger="<F3>"
-" }}
 Bundle 'http://github.com/tpope/vim-commentary.git'
 Bundle 'http://github.com/godlygeek/tabular.git'
-" {{
-nmap <Leader>t# :Tabularize /=<CR>
-vmap <Leader>t# :Tabularize /=<CR>
-nmap <Leader>t= :Tabularize /=<CR>
-vmap <Leader>t= :Tabularize /=<CR>
-nmap <Leader>t: :Tabularize /:\zs<CR>
-vmap <Leader>t: :Tabularize /:\zs<CR>
-nmap <Leader>t, :Tabularize /,\zs<CR>
-vmap <Leader>t, :Tabularize /,\zs<CR>
-nmap <Leader>t> :Tabularize /=>\zs<CR>
-vmap <Leader>t> :Tabularize /=>\zs<CR>
-nmap <Leader>t{ :Tabularize /{<CR>
-vmap <Leader>t{ :Tabularize /{<CR>
-nmap <Leader>t} :Tabularize /}<CR>
-vmap <Leader>t} :Tabularize /}<CR>
-" }}
 Bundle 'http://github.com/vim-scripts/ZoomWin.git'
-" {{
-nmap <silent> <leader>wo :ZoomWin<CR>
-" }}
 Bundle 'http://github.com/sjl/gundo.vim.git'
-" {{
-nnoremap <F5> :GundoToggle<CR>
-if exists("+undofile")
-  " undofile - This allows you to use undos after exiting and restarting
-  " This, like swap and backups, uses .vim-undo first, then ~/.vim/undo
-  " :help undo-persistence
-  " This is only present in 7.3+
-  if isdirectory($HOME . '/.vim/undo') == 0
-    :silent !mkdir -p ~/.vim/undo > /dev/null 2>&1
-  endif
-  set undodir=./.vim-undo//
-  set undodir+=~/.vim/undo//
-  set undofile
-endif
-" }}
-
 Bundle 'http://github.com/vim-scripts/L9.git'
-" Bundle 'http://github.com/vim-scripts/FuzzyFinder.git'
-" " {{
-" let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|swp|png|jpg|jpeg|gif|psd)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|tmp|vendor/bundle/.*'
-" let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|png|jpg|jpeg|gif|psd)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|tmp|vendor/bundle/.*'
-" let g:fuf_dir_exclude = '\v(^|[/\\])\.(hg|git|bzr)($|[/\\])|tmp|vendor/bundle/.*'
-" let g:fuf_enumeratingLimit = 10
-" let g:fuf_maxMenuWidth = 120
-" nnoremap <S-f> :FufFile<CR>
-" nnoremap <C-f> :FufCoverageFile<CR>
-" " }}
-
-" sessions manager
 Bundle 'http://github.com/vim-scripts/session.vim--Odding.git'
-" {{
-let g:session_autosave = 'no'
-let g:session_autoload = 'no'
-" }}
-
 Bundle 'http://github.com/AndrewRadev/splitjoin.vim'
-" {{
-nmap <Leader>j :SplitjoinJoin<cr>
-nmap <Leader>s :SplitjoinSplit<cr>
-" }}
 Bundle 'http://github.com/vim-scripts/Specky.git'
 Bundle 'http://github.com/mmalecki/vim-node.js.git'
 Bundle 'http://github.com/jeetsukumaran/vim-buffergator.git'
-
-" Bundle 'http://github.com/VimEz/ShowMarks.git'
 Bundle 'http://github.com/nathanaelkane/vim-indent-guides.git'
 Bundle 'http://github.com/vim-scripts/Rename2.git'
 Bundle 'http://github.com/chrisbra/NrrwRgn.git'
 Bundle 'http://github.com/rgarver/Kwbd.vim.git'
-" {{
-nmap <C-W>! <Plug>Kwbd
-" }}
 Bundle 'http://github.com/Lokaltog/vim-easymotion.git'
 Bundle 'http://github.com/ap/vim-css-color.git'
 Bundle 'http://github.com/hail2u/vim-css3-syntax'
 Bundle 'http://github.com/cakebaker/scss-syntax.vim'
 Bundle 'http://github.com/groenewege/vim-less'
-" {{
-nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
-" }}
 Bundle 'http://github.com/vim-scripts/VisIncr.git'
 Bundle 'http://github.com/spolu/dwm.vim.git'
 Bundle 'http://github.com/vim-scripts/lua-support.git'
 Bundle 'http://github.com/Raimondi/delimitMate.git'
 Bundle 'http://github.com/godlygeek/csapprox.git'
 Bundle 'http://github.com/kshenoy/vim-signature.git'
+Bundle 'http://github.com/mrmargolis/dogmatic.vim.git'
+Bundle 'http://github.com/vim-scripts/mru.vim.git'
+Bundle 'http://github.com/Shougo/neocomplcache.git'
 
 filetype plugin indent on     " required!
 "
