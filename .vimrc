@@ -85,6 +85,7 @@ Bundle 'http://github.com/kshenoy/vim-signature.git'
 Bundle 'http://github.com/mrmargolis/dogmatic.vim.git'
 Bundle 'http://github.com/vim-scripts/mru.vim.git'
 Bundle 'http://github.com/Shougo/neocomplcache.git'
+Bundle 'http://github.com/rodjek/vim-puppet.git'
 
 filetype plugin indent on     " required!
 "
