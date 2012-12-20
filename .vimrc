@@ -16,7 +16,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 Bundle 'http://github.com/Lokaltog/vim-powerline.git'
-Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
+Bundle 'http://github.com/vim-scripts/YankRing.vim.git'
 Bundle 'http://github.com/scrooloose/nerdtree.git'
 Bundle 'http://github.com/jistr/vim-nerdtree-tabs.git'
 Bundle 'http://github.com/ervandew/supertab.git'
@@ -86,6 +86,8 @@ Bundle 'http://github.com/mrmargolis/dogmatic.vim.git'
 Bundle 'http://github.com/vim-scripts/mru.vim.git'
 Bundle 'http://github.com/Shougo/neocomplcache.git'
 Bundle 'http://github.com/rodjek/vim-puppet.git'
+Bundle 'http://github.com/jelera/vim-javascript-syntax.git'
+Bundle 'http://github.com/rgrove/vim-yui3.git'
 
 filetype plugin indent on     " required!
 "
