@@ -7,6 +7,12 @@ how to use
 	cd korin-dotfiles
 
 ### how to update
-	I'm using [Vundle]{https://github.com/gmarik/vundle} go there to see details
+I'm using [Vundle](https://github.com/gmarik/vundle) go there to see details
 
 ### grab what you need
+
+additional sources
+---------------------------------------------
+
+### firewall
+[iptables-boilerplate](https://github.com/bmaeser/iptables-boilerplate) is a nice place to start
