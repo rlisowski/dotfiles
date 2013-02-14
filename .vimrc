@@ -241,6 +241,7 @@ set ts=2 sts=2 sw=2 noexpandtab
 set nu                          " show lines number
 set nuw=6                       " column with line numbers is 6 chars width
 set ff=unix                     " unix end of line
+set cryptmethod=blowfish
 
 " ---------------
 " folding
