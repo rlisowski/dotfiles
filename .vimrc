@@ -40,6 +40,10 @@ Bundle 'http://github.com/scrooloose/syntastic.git'
 Bundle 'http://github.com/tpope/vim-markdown.git'
 Bundle 'http://github.com/suan/vim-instant-markdown.git'
 Bundle 'http://github.com/mileszs/ack.vim.git'
+" {{
+" use ag instead of ack https://github.com/ggreer/the_silver_searcher
+let g:ackprg = 'ag --nogroup --nocolor --column'
+" }}
 Bundle 'http://github.com/tpope/vim-git.git'
 Bundle 'http://github.com/gregsexton/gitv.git'
 Bundle 'http://github.com/michaeljsmith/vim-indent-object.git'
@@ -192,6 +196,7 @@ set nrformats=
 set suffixes+=.dvi              " Lower priority in wildcards
 set showmatch                   " Show matching brackets.
 set smartcase                   " Case insensitive searches become sensitive with capitals
+set encoding=utf-8              " Use UTF-8 everywhere.
 " Keep search pattern at the center of the screen.
 " {{
 nnoremap <silent> n nzz
@@ -214,7 +219,8 @@ set sidescrolloff=5             " set printoptions=paper:letter
 set splitbelow                  " Split windows at bottom
 set splitright
 
-set guifont=monaco\ 11          " font
+" set guifont=monaco\ 11          " font
+set guifont=inconsolata\ 12       " font
 
 set ts=2 sts=2 sw=2 noexpandtab
 set nu                          " show lines number
