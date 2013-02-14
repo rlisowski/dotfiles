@@ -73,6 +73,7 @@ Bundle 'http://github.com/AndrewRadev/splitjoin.vim'
 Bundle 'http://github.com/vim-scripts/Specky.git'
 Bundle 'http://github.com/mmalecki/vim-node.js.git'
 Bundle 'http://github.com/jeetsukumaran/vim-buffergator.git'
+Bundle 'http://github.com/vim-scripts/bufexplorer.zip.git'
 Bundle 'http://github.com/nathanaelkane/vim-indent-guides.git'
 Bundle 'http://github.com/vim-scripts/Rename2.git'
 Bundle 'http://github.com/chrisbra/NrrwRgn.git'
@@ -94,6 +95,8 @@ Bundle 'http://github.com/Shougo/neocomplcache.git'
 Bundle 'http://github.com/rodjek/vim-puppet.git'
 Bundle 'http://github.com/jelera/vim-javascript-syntax.git'
 Bundle 'http://github.com/rgrove/vim-yui3.git'
+Bundle 'http://github.com/tpope/vim-eunuch'
+Bundle 'http://github.com/tpope/vim-sleuth'
 
 filetype plugin indent on     " required!
 "
@@ -147,7 +150,7 @@ set display=lastline                "
 set joinspaces                      " Put spaces between lines joined with the > command.
 set lazyredraw                      " Do not redraw the screen during macro execution.
 set list
-set listchars=tab:▸\ ,eol:¬,trail:·,extends:❯,precedes:❮ " Define how list mode appears, Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬,trail:·,extends:❯,precedes:❮,nbsp:+ " Define how list mode appears, Use the same symbols as TextMate for tabstops and EOLs
 nmap <leader>l :set list!<CR>       " Shortcut to rapidly toggle `set list`
                                     "Invisible character colors
 highlight NonText guifg=#4a4a59
@@ -196,6 +199,18 @@ set nrformats=
 set suffixes+=.dvi              " Lower priority in wildcards
 set showmatch                   " Show matching brackets.
 set smartcase                   " Case insensitive searches become sensitive with capitals
+set shiftround                  " round shift
+set laststatus=2
+set showcmd
+if !&scrolloff
+  set scrolloff=1
+endif
+if !&sidescrolloff
+  set sidescrolloff=5
+endif
+set display+=lastline
+set autoread                    " read file from disk when changed in another editor
+set autowrite                   " auto write file on several commands
 set encoding=utf-8              " Use UTF-8 everywhere.
 " Keep search pattern at the center of the screen.
 " {{
