@@ -142,7 +142,7 @@ endif
 if exists(" &breakindent")
   set breakindent showbreak=+++
 elseif has("gui_running")
-  set showbreak=+++
+  set showbreak=↪
 endif
 set cmdheight=1                     " command line height
 set complete-=i                     " Searching includes can be slow
