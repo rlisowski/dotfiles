@@ -40,10 +40,6 @@ Bundle 'http://github.com/scrooloose/syntastic.git'
 Bundle 'http://github.com/tpope/vim-markdown.git'
 Bundle 'http://github.com/suan/vim-instant-markdown.git'
 Bundle 'http://github.com/mileszs/ack.vim.git'
-" {{
-" use ag instead of ack https://github.com/ggreer/the_silver_searcher
-let g:ackprg = 'ag --nogroup --nocolor --column'
-" }}
 Bundle 'http://github.com/tpope/vim-git.git'
 Bundle 'http://github.com/gregsexton/gitv.git'
 Bundle 'http://github.com/michaeljsmith/vim-indent-object.git'
