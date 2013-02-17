@@ -93,6 +93,7 @@ Bundle 'http://github.com/jelera/vim-javascript-syntax.git'
 Bundle 'http://github.com/rgrove/vim-yui3.git'
 Bundle 'http://github.com/tpope/vim-eunuch'
 Bundle 'http://github.com/tpope/vim-sleuth'
+Bundle 'http://github.com/gregsexton/MatchTag'
 
 filetype plugin indent on     " required!
 "
