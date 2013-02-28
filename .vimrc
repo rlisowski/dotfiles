@@ -94,6 +94,7 @@ Bundle 'http://github.com/rgrove/vim-yui3.git'
 Bundle 'http://github.com/tpope/vim-eunuch'
 Bundle 'http://github.com/tpope/vim-sleuth'
 Bundle 'http://github.com/gregsexton/MatchTag'
+Bundle 'http://github.com/airblade/vim-gitgutter.git'
 
 filetype plugin indent on     " required!
 "
@@ -118,6 +119,7 @@ set backspace=indent,eol,start " allow backspacing over everything in insert mod
 " ---------------
 set background=dark
 colorscheme solarized
+highlight clear SignColumn
 
 " ---------------
 " Backups
