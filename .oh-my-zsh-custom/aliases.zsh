@@ -59,7 +59,7 @@ alias rmgit='find . -name '.git' -exec rm -rf {} \;'
 alias ports='sudo netstat -pant'
 
 # git
-alias gst='git st'
+alias gst='git st -sb'
 
 # gvim
 # gv() { gvim -f --remote-silent "$@" &; }
