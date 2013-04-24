@@ -28,6 +28,7 @@
 	summary = true
 	tool = gvimdiff
 	conflictstyle = diff3
+	verbosity = 1
 [push]
 	default = tracking # deprecated synonym for upstream
 [rebase]
@@ -35,18 +36,42 @@
 [diff]
 	renames = true
 	tool = gvimdiff
+	# Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
+	# instead of a/b/c/d as prefixes for patches
+	mnemonicprefix = true
+[rerere]
+	# Remember my merges
+	# http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
+	enabled = true
 [alias]
 	h = help
 	st = status -s
 	d = diff
+	b = branch -v                     # branch (verbose)
+
+	# commit
+	c = commit -m                     # commit with message
+	ca = commit -am                   # commit all with message
 	ci = commit -v
 	cia = commit -v -a
-	co = checkout
+
+	# cherry-pick
 	cp = cherry-pick
+	cpx = cherry-pick -x
+
+	co = checkout
+
+	# log
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%aN - %cr) %C(bold blue)%Creset' --abbrev-commit
 	ls = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%aN - %cr) %C(bold blue)%Creset' --abbrev-commit --since=last.mon --author="Rafał.Lisowski"
+
+	# reset
+	unstage = reset HEAD              # remove files from index (tracking)
+	uncommit = reset --soft HEAD^     # go back before last commit, with files in uncommitted state
+	filelog = log -u                  # show changes to a file
+	mt = mergetool                    # fire up the merge tool
+
 	i = !~/bin/git-info-short
-	b = branch
 	gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
 	ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
 	stats = "!(echo \"\nby hour\n--------------\") && (for i in 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23; do echo $( echo "$i\t"; git shortlog  -n --format='%ad %s' | grep " $i:" | wc -l); done) && (echo \"\n\nby day\n--------------\") && (for i in Mon Tue Wed Thu Fri Sat Sun; do echo $( echo "$i\t"; git shortlog  -n --format='%ad %s'| grep "$i " | wc -l); done) && (echo \"\n\nby user\n--------------\") && (git shortlog  -ns)"
