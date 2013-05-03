@@ -1,1 +1,1 @@
-let g:NumberToggleTrigger="<F3>"
+" let g:NumberToggleTrigger="<F3>"

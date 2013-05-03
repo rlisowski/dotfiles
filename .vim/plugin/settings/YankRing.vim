@@ -1,1 +1,1 @@
-nnoremap <silent> <F11> :YRShow<CR>
+" nnoremap <silent> <F11> :YRShow<CR>

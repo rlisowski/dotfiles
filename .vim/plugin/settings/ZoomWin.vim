@@ -1,1 +1,1 @@
-nmap <silent> <leader>wo :ZoomWin<CR>
+" nmap <silent> <leader>wo :ZoomWin<CR>
