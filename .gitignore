@@ -28,6 +28,7 @@ log/*
 nbproject
 pickle-email-*.html
 public/download/assets/*
+public/assets/*
 public/system/*
 rails_best_practices_output.html
 rerun.txt
