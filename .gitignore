@@ -26,6 +26,7 @@ db/schema.sql
 db/uploads
 log/*
 nbproject
+node_modules
 pickle-email-*.html
 public/download/assets/*
 public/assets/*

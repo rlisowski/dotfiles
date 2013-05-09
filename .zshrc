@@ -22,8 +22,9 @@ cdpath=($HOME/workspace)
 
 # Customize to your needs...
 unsetopt auto_name_dirs
-source "${HOME}/.rvm/scripts/rvm"
-PATH=$PATH:$HOME/.rvm/bin:/opt/vagrant/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+[[ -s /home/rlisowski/.nvm/nvm.sh ]] && source /home/rlisowski/.nvm/nvm.sh # This loads NVM
+PATH=$PATH:$HOME/node_modules/.bin:$HOME/.rvm/bin:$HOME/.rvm/bin:/opt/vagrant/bin # Add RVM to PATH for scripting
 if [[ -s "${TM_PROJECT_DIRECTORY}/.rvmrc" ]]
 then
 	source "${TM_PROJECT_DIReCTORY}/.rvmrc"
