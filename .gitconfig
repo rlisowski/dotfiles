@@ -45,7 +45,7 @@
 	enabled = true
 [alias]
 	h = help
-	st = status -s
+	st = status -sb
 	d = diff
 	b = branch -v                     # branch (verbose)
 
