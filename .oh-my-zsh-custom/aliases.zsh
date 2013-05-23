@@ -8,6 +8,9 @@ alias .=' pwd'
 alias ...='cd ../..'
 alias -- -='cd -'
 
+# date
+alias now='date +%Y-%m-%d_%H:%M:%S'
+
 # Super user
 alias _='sudo'
 
