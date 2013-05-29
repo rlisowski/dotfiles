@@ -1,7 +1,9 @@
 **.orig
+*.log
 *.rbc
 *.sassc
 *.swp
+*.txt
 *~
 .*
 ._*
@@ -13,7 +15,17 @@
 .rvmrc
 .sass-cache
 .svn
+Biblioteka calibre
+Dokumenty
+Dropbox
+Obrazy
+Pobrane
+Publiczny
+Pulpit
 Session.vim
+Ubuntu One
+VirtualBox VMs
+Wideo
 bin
 capybara-*.html
 config/application.yml
@@ -24,33 +36,21 @@ db/*.sqlite3
 db/schema.rb
 db/schema.sql
 db/uploads
+examples.desktop
 log/*
 nbproject
 node_modules
+opt
 pickle-email-*.html
-public/download/assets/*
 public/assets/*
+public/download/assets/*
 public/system/*
 rails_best_practices_output.html
 rerun.txt
 spec/tmp/*
+stopka
 tags
 tmp/*
 vendor/bundle
-
-*.log
-*.txt
-Dokumenty
-Dropbox
-Obrazy
-Pobrane
-Publiczny
-Pulpit
-Ubuntu One
-VirtualBox VMs
-Wideo
-examples.desktop
-opt
-stopka
 vpn*
 workspace
