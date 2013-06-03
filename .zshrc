@@ -6,7 +6,7 @@ export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 # export CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
-# export DISABLE_AUTO_UPDATE="true"
+export DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # export DISABLE_LS_COLORS="true"
@@ -28,7 +28,7 @@ export COFFEELINT_CONFIG=$HOME/.coffeelint.json
 PATH=$PATH:$HOME/node_modules/.bin:$HOME/.rvm/bin:$HOME/.rvm/bin:/opt/vagrant/bin # Add RVM to PATH for scripting
 if [[ -s "${TM_PROJECT_DIRECTORY}/.rvmrc" ]]
 then
-	source "${TM_PROJECT_DIReCTORY}/.rvmrc"
+	source "${TM_PROJECT_DIRECTORY}/.rvmrc"
 fi
 export EDITOR=gvim
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
