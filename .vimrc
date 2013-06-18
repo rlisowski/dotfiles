@@ -290,6 +290,21 @@ vmap <A-k> [egv=gv
 " }}
 
 " ---------------
+" switch tabs
+" --------------- {{
+map <A-1> 1gt
+map <A-2> 2gt
+map <A-3> 3gt
+map <A-4> 4gt
+map <A-5> 5gt
+map <A-6> 6gt
+map <A-7> 7gt
+map <A-8> 8gt
+map <A-9> 9gt
+map <A-0> :tablast<CR>
+" }}
+
+" ---------------
 " reopen file on last known position
 " --------------- {{
 " When editing a file, always jump to the last known cursor position.
