@@ -95,6 +95,7 @@ Bundle 'http://github.com/tpope/vim-eunuch'
 Bundle 'http://github.com/tpope/vim-sleuth'
 " Bundle 'http://github.com/gregsexton/MatchTag'
 " Bundle 'http://github.com/airblade/vim-gitgutter.git'
+Bundle 'http://github.com/airblade/vim-rooter.git'
 
 filetype plugin indent on     " required!
 "
