@@ -30,5 +30,4 @@ if [[ -s "${TM_PROJECT_DIRECTORY}/.rvmrc" ]]
 then
 	source "${TM_PROJECT_DIRECTORY}/.rvmrc"
 fi
-export EDITOR=gvim
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
