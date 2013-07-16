@@ -1,0 +1,17 @@
+project_name: Redmine
+project_root: /home/rlisowski/workspace/redmine
+socket_name: redmine # Not needed.  Remove to use default socket
+pre: sudo redis-server /etc/redis/redis.conf
+tabs:
+  - logs:
+      layout: main-vertical
+      panes:
+        -
+          - be passenger stop
+          - be passenger start
+        - sh script/sidekiq restart development; tailf log/sidekiq.log
+        - sh script/clockwork restart; tailf log/clockworkd.redmine.output
+        - redis-cli
+  - zsh: gst
+  - capistrano:
+  - server: ssh redmine
