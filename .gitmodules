@@ -4,3 +4,6 @@
 [submodule ".nvm"]
 	path = .nvm
 	url = http://github.com/creationix/nvm.git
+[submodule "prax"]
+	path = prax
+	url = https://github.com/ysbaddaden/prax.git
