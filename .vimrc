@@ -46,6 +46,7 @@ Bundle 'https://github.com/michaeljsmith/vim-indent-object.git'
 Bundle 'https://github.com/pangloss/vim-javascript.git'
 Bundle 'https://github.com/majutsushi/tagbar.git'
 Bundle 'https://github.com/taq/vim-rspec.git'
+Bundle 'https://github.com/sunaku/vim-ruby-minitest.git'
 " Bundle 'https://github.com/mattn/gist-vim.git'
 Bundle 'https://github.com/tpope/vim-bundler.git'
 Bundle 'https://github.com/tpope/vim-repeat.git'
@@ -120,7 +121,7 @@ set backspace=indent,eol,start " allow backspacing over everything in insert mod
 " Color
 " ---------------
 set background=dark
-colorscheme solarized
+colorscheme codeschool
 highlight clear SignColumn
 
 " ---------------
