@@ -3,15 +3,18 @@ project_root: /home/rlisowski/workspace/redmine
 socket_name: redmine # Not needed.  Remove to use default socket
 pre: sudo redis-server /etc/redis/redis.conf
 tabs:
+  - zsh: gv
   - logs:
       layout: main-vertical
       panes:
+        # app server
         -
-          - be passenger stop
+          - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi
           - be passenger start
-        - sh script/sidekiq restart development; tailf log/sidekiq.log
-        - sh script/clockwork restart; tailf log/clockworkd.redmine.output
-        - redis-cli
-  - zsh: gst
-  - capistrano:
-  - server: ssh redmine
+        # sidekiq
+        -
+          - redis-cli FLUSHALL # make sure there is nothing to do, in development it's ok
+          - sh script/sidekiq restart development; tailf log/sidekiq.log
+        # clockwork
+        - sh script/clockwork restart development; tailf log/clockworkd.redmine.output
+  - 'rails c': be rails c
