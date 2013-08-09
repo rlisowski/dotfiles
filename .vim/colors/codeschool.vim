@@ -51,14 +51,15 @@ hi SpellRare guifg=NONE guibg=NONE gui=undercurl ctermfg=NONE ctermbg=NONE cterm
 " hi ModeMsg guifg=black guibg=#C6C5FE gui=BOLD ctermfg=black ctermbg=cyan cterm=BOLD
 
 if version >= 700 " Vim 7.x specific colors
- hi CursorLine ctermfg=NONE ctermbg=238 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
- hi CursorColumn ctermfg=NONE ctermbg=238 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
+ hi CursorLine ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
+ hi CursorColumn ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
  hi MatchParen ctermfg=180 ctermbg=NONE cterm=underline guifg=#dda790 guibg=NONE gui=underline
  hi Pmenu ctermfg=153 ctermbg=NONE cterm=NONE guifg=#bcdbff guibg=NONE gui=NONE
  hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3f4b52 gui=NONE
  hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
  " ?"
- hi ColorColumn ctermfg=NONE ctermbg=238 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
+ hi ColorColumn ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
+ let &colorcolumn="80,".join(range(120,999),",")
  hi IncSearch ctermfg=16 ctermbg=107 cterm=NONE guifg=#182227 guibg=#8bb664 gui=NONE
  hi Directory ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3c98d9 guibg=NONE gui=NONE
 endif
