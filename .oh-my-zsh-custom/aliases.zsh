@@ -71,6 +71,7 @@ alias vu='gvim +BundleInstall! +qall'
 
 # tmux
 alias t='tmux new-session -s'
+alias htop='TERM=screen htop'
 
 # zsh help
 zman() {
@@ -87,3 +88,4 @@ fi
 chpwd() {
   print -l $PWD ${(u)dirstack} >$DIRSTACKFILE
 }
+
