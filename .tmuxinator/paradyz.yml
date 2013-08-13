@@ -1,0 +1,11 @@
+project_name: Paradyz
+project_root: /home/rlisowski/workspace/paradyz
+socket_name: paradyz # Not needed.  Remove to use default socket
+tabs:
+  - logs:
+    - prax start
+    - echo '' > log/development.log
+    - tailf log/development.log
+  - 'rails c': be rails c
+  - zsh:
+  - ssh: ssh blade101
