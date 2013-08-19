@@ -23,7 +23,10 @@ cdpath=($HOME/workspace)
 # Customize to your needs...
 unsetopt auto_name_dirs
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export rvmsudo_secure_path=1
+
 [[ -s /home/rlisowski/.nvm/nvm.sh ]] && source /home/rlisowski/.nvm/nvm.sh # This loads NVM
+
 export COFFEELINT_CONFIG=$HOME/.coffeelint.json
 PATH=$PATH:$HOME/node_modules/.bin:$HOME/.rvm/bin:$HOME/.rvm/bin:/opt/vagrant/bin # Add RVM to PATH for scripting
 if [[ -s "${TM_PROJECT_DIRECTORY}/.rvmrc" ]]
