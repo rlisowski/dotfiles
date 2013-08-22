@@ -1,11 +1,15 @@
 # ~/.tmuxinator/rails.yml
 # you can make as many tabs as you wish...
 
-project_name: Rails
+project_name: rails
 project_root: .
-socket_name: rails # Not needed.  Remove to use default socket
 pre: sudo service mysql start
 tabs:
-  - editor: vim
-  - zsh: git status
-  - server: passenger start
+  - zsh:
+    - gv
+    - gst
+  - 'rails c': be rails c
+  - logs:
+    -
+      - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi
+      - be passenger start

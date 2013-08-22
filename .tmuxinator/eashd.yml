@@ -1,8 +1,9 @@
-project_name: Eashd
+project_name: eashd
 project_root: /home/rlisowski/workspace/eashd
-socket_name: eashd # Not needed.  Remove to use default socket
 pre: rvmsudo bundle exec ruby bin/eashd restart
 tabs:
-  - zsh: gv
+  - zsh:
+    - gv
+    - gst
   - syslog: tailf /var/log/syslog
-  - htop: sudo htop
+  - htop: sudo TERM=screen htop

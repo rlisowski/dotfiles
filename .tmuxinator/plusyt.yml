@@ -1,5 +1,5 @@
-project_name: paradyz
-project_root: /home/rlisowski/workspace/paradyz
+project_name: plusyt
+project_root: /home/rlisowski/workspace/plusyt
 tabs:
   - zsh:
     - gv
@@ -9,4 +9,3 @@ tabs:
     -
       - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi
       - be passenger start
-  - ssh: ssh blade101

@@ -1,9 +1,11 @@
-project_name: Redmine
+project_name: redmine
 project_root: /home/rlisowski/workspace/redmine
-socket_name: redmine # Not needed.  Remove to use default socket
 pre: sudo redis-server /etc/redis/redis.conf
 tabs:
-  - zsh: gv
+  - zsh:
+    - gv
+    - gst
+  - 'rails c': be rails c
   - logs:
       layout: main-vertical
       panes:
@@ -17,4 +19,3 @@ tabs:
           - sh script/sidekiq restart development; tailf log/sidekiq.log
         # clockwork
         - sh script/clockwork restart development; tailf log/clockworkd.redmine.output
-  - 'rails c': be rails c

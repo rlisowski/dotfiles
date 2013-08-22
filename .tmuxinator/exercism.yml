@@ -1,0 +1,6 @@
+project_name: exercism
+project_root: /home/rlisowski/workspace/exercism
+tabs:
+  - zsh:
+    - gv
+    - gst
