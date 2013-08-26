@@ -1,6 +1,6 @@
 project_name: redmine_domains
 project_root: /home/rlisowski/workspace/redmine_domains
-tabs:
+windows:
   - zsh:
     - gv
     - gst

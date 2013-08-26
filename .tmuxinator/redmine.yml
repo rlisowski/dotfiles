@@ -1,7 +1,7 @@
 project_name: redmine
 project_root: /home/rlisowski/workspace/redmine
 pre: sudo redis-server /etc/redis/redis.conf
-tabs:
+windows:
   - zsh:
     - gv
     - gst

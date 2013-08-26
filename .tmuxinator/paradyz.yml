@@ -1,6 +1,6 @@
 project_name: paradyz
 project_root: /home/rlisowski/workspace/paradyz
-tabs:
+windows:
   - zsh:
     - gv
     - gst

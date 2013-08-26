@@ -1,6 +1,6 @@
 project_name: plusyt
 project_root: /home/rlisowski/workspace/plusyt
-tabs:
+windows:
   - zsh:
     - gv
     - gst

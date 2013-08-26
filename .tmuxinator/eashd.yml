@@ -1,7 +1,7 @@
 project_name: eashd
 project_root: /home/rlisowski/workspace/eashd
 pre: rvmsudo bundle exec ruby bin/eashd restart
-tabs:
+windows:
   - zsh:
     - gv
     - gst

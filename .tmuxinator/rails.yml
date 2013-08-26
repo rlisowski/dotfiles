@@ -4,7 +4,7 @@
 project_name: rails
 project_root: .
 pre: sudo service mysql start
-tabs:
+windows:
   - zsh:
     - gv
     - gst
