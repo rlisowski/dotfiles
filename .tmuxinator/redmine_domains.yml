@@ -1,0 +1,13 @@
+project_name: redmine_domains
+project_root: /home/rlisowski/workspace/redmine_domains
+tabs:
+  - zsh:
+    - gv
+    - gst
+  - 'dummy - rails c':
+    - cd test/dummy
+    - be rails c
+  - 'dummy - server':
+    - cd test/dummy
+    - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi
+    - be passenger start
