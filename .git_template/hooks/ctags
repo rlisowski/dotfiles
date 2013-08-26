@@ -3,4 +3,6 @@ set -e
 PATH="/usr/local/bin:$PATH"
 trap "rm -f .git/tags.$$" EXIT
 ctags --tag-relative -Rf.git/tags.$$ --exclude=.git --exclude=.rsync_cache --languages=-javascript,sql
+# https://github.com/tmm1/ripper-tags
+# ripper-tags --tag-relative -R -f .git/tags.$$ --exclude=.git --exclude=.rsync_cache
 mv .git/tags.$$ .git/tags
