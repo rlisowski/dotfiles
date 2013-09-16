@@ -166,7 +166,8 @@ if exists('+colorcolumn')
   set colorcolumn=120
 endif
 
-cmap w!! w !sudo tee % >/dev/null   ” :w!! saves a file as root
+" :w!! saves a file as root
+cmap w!! w !sudo tee % >/dev/null<CR>
 
 " -------------
 "  lang
