@@ -3,19 +3,15 @@ project_root: /home/rlisowski/workspace/redmine
 pre: sudo redis-server /etc/redis/redis.conf
 windows:
   - zsh:
-    - gv
+    - gv .
     - gst
   - 'rails c': be rails c
   - logs:
-    layout: main-vertical
-    panes:
-      # app server
-      -
-        - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi
-        - be passenger start
-      # sidekiq
-      -
-        - redis-cli FLUSHALL # make sure there is nothing to do, in development it's ok
-        - sh script/sidekiq restart development; tailf log/sidekiq.log
-      # clockwork
-      - sh script/clockwork restart development; tailf log/clockworkd.redmine.output
+      layout: main-vertical
+      panes:
+        # app server
+        - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi; be passenger start
+        # sidekiq
+        - redis-cli FLUSHALL; sh script/sidekiq restart development; tailf log/sidekiq.log
+        # clockwork
+        - sh script/clockwork restart development; tailf log/clockworkd.redmine.output

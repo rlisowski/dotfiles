@@ -2,7 +2,7 @@ project_name: redmine_domains
 project_root: /home/rlisowski/workspace/redmine_domains
 windows:
   - zsh:
-    - gv
+    - gv .
     - gst
   - 'dummy - rails c':
     - cd test/dummy

@@ -2,5 +2,5 @@ project_name: exercism
 project_root: /home/rlisowski/workspace/exercism
 windows:
   - zsh:
-    - gv
+    - gv .
     - gst

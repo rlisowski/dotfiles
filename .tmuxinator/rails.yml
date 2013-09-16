@@ -6,7 +6,7 @@ project_root: .
 pre: sudo service mysql start
 windows:
   - zsh:
-    - gv
+    - gv .
     - gst
   - 'rails c': be rails c
   - logs:

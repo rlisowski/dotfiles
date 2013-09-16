@@ -3,7 +3,7 @@ project_root: /home/rlisowski/workspace/eashd
 pre: rvmsudo bundle exec ruby bin/eashd restart
 windows:
   - zsh:
-    - gv
+    - gv .
     - gst
   - syslog: tailf /var/log/syslog
   - htop: sudo TERM=screen htop
