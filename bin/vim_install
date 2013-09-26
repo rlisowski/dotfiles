@@ -1,0 +1,66 @@
+#!/bin/bash
+#  Shell script to download and install Vim with the latest patches applied.
+#
+
+# install required packages
+sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev ruby-dev mercurial
+
+# remove standard vim package
+sudo apt-get remove vim vim-runtime gvim
+
+# vim src directory
+SRCDDIR=$HOME/workspace/vim
+
+# create the install directory if it does not exists
+if [ ! -d $SRCDDIR ]; then
+  hg clone https://vim.googlecode.com/hg/ $SRCDDIR
+fi
+
+echo Moving to $SRCDDIR
+cd $SRCDDIR
+
+echo Fetching changes
+hg pull
+hg update
+
+
+# clear after last install
+make distclean
+
+# configure it!
+./configure \
+--with-features=huge \
+--enable-gnome-check \
+--enable-perlinterp \
+--enable-pythoninterp \
+--with-python-config-dir=/usr/bin/python-config \
+--enable-rubyinterp \
+--enable-cscope \
+--enable-multibyte \
+--enable-fontset \
+--enable-luainterp \
+--with-compiledby=$COMPILEDBY \
+--enable-gui=gtk2 \
+--prefix=/usr
+
+# if there were some erros, get out
+if [ "$?" -ne "0" ]; then
+  echo Seems there were some problems configuring.
+  echo After fix please run
+  echo make
+  echo and
+  echo make install
+  echo to complete the installation.
+  exit 4
+fi
+
+# and here we go
+make VIMRUNTIMEDIR=/usr/share/vim/vim74
+sudo make install
+
+# update-alternatives
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/vim 1
+sudo update-alternatives --set editor /usr/bin/vim
+sudo update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
+sudo update-alternatives --set vi /usr/bin/vim
+exit 0
