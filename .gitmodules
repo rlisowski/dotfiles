@@ -7,3 +7,6 @@
 [submodule "prax"]
 	path = prax
 	url = https://github.com/ysbaddaden/prax.git
+[submodule ".rvm"]
+	path = .rvm
+	url = https://github.com/wayneeseguin/rvm.git
