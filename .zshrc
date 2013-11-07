@@ -18,7 +18,7 @@ plugins=(git svn cap gem bundler rails3 git-flow node)
 source $ZSH/oh-my-zsh.sh
 
 setopt auto_cd
-cdpath=($HOME/workspace)
+cdpath=($HOME/workspace $HOME/workspace2)
 
 # Customize to your needs...
 unsetopt auto_name_dirs
