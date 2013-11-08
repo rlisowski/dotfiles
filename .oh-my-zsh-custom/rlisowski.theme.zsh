@@ -29,8 +29,8 @@ local rvm_ruby='%{$fg[red]%}‹$(rvm-prompt i v p g)›%{$reset_color%}'
 # local rvm_ruby='%{$fg[red]%}‹$(rbenv version | sed -e "s/ (set.*$//")›%{$reset_color%}'
 local rev_info='$(prompt_info)%{$reset_color%}'
 
-PROMPT="╭─ ${rvm_ruby} ${rev_info}${current_dir}
-╰─%B$%b "
+PROMPT="%(!.$fg[red].)╭─ ${rvm_ruby} ${rev_info}${current_dir}
+%(!.$fg[red].)╰─%B%(!.#.$)%b "
 # RPS1="${return_code}"
 RPS1="%D{[%I:%M:%S]}"
 
