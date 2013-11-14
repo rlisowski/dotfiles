@@ -49,10 +49,11 @@ rails = File.join Dir.getwd, 'config', 'environment.rb'
 if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
   require rails
 
-  if Rails.version[0..0] == "2"
+  case Rails.version[0..0]
+  when "2"
     require 'console_app'
     require 'console_with_helpers'
-  elsif Rails.version[0..0] == "3"
+  when "3","4"
     require 'rails/console/app'
     require 'rails/console/helpers'
   else
