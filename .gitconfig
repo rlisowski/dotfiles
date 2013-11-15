@@ -64,6 +64,8 @@
 	# log
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr - %cd) %C(bold blue)<%cn>%Creset %C(bold blue)%Creset' --abbrev-commit
 	ls = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%aN - %cr) %C(bold blue)%Creset' --abbrev-commit --since=last.mon --author="Rafał.Lisowski"
+	today = log --since=midnight --author='Rafał Lisowski' --oneline --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr - %cd) %C(bold blue)<%cn>%Creset %C(bold blue)%Creset' --abbrev-commit
+	yesterday = log --since=day.before.yesterday.midnight --until=midnight --author='Rafał Lisowski' --oneline --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr - %cd) %C(bold blue)<%cn>%Creset %C(bold blue)%Creset' --abbrev-commit
 
 	# reset
 	unstage = reset HEAD              # remove files from index (tracking)
