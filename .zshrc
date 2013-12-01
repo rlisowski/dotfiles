@@ -22,13 +22,11 @@ cdpath=($HOME/workspace $HOME/workspace2)
 
 # Customize to your needs...
 unsetopt auto_name_dirs
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 export rvmsudo_secure_path=1
 
 [[ -s /home/rlisowski/.nvm/nvm.sh ]] && source /home/rlisowski/.nvm/nvm.sh # This loads NVM
 
 export COFFEELINT_CONFIG=$HOME/.coffeelint.json
-PATH=$PATH:$HOME/node_modules/.bin:$HOME/.rvm/bin:$HOME/.rvm/bin:/opt/vagrant/bin # Add RVM to PATH for scripting
 if [[ -s "${TM_PROJECT_DIRECTORY}/.rvmrc" ]]
 then
 	source "${TM_PROJECT_DIRECTORY}/.rvmrc"
@@ -37,3 +35,10 @@ fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Add RVM to PATH for scripting
+export PATH=$PATH:$HOME/.rvm/bin
+
+# Add NVM to PATH
+export PATH=$PATH:$HOME/node_modules/.bin
+
