@@ -13,7 +13,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git svn cap gem bundler rails3 git-flow node)
+plugins=(git svn cap gem bundler rails git-flow node)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -34,3 +34,6 @@ then
 	source "${TM_PROJECT_DIRECTORY}/.rvmrc"
 fi
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator.zsh ]] && source $HOME/.tmuxinator/scripts/tmuxinator.zsh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
