@@ -15,7 +15,8 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 "
-Bundle 'https://github.com/Lokaltog/vim-powerline.git'
+" Bundle 'https://github.com/Lokaltog/vim-powerline.git'
+Bundle 'https://github.com/bling/vim-airline.git'
 " Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
 Bundle 'https://github.com/scrooloose/nerdtree.git'
 Bundle 'https://github.com/jistr/vim-nerdtree-tabs.git'
@@ -238,8 +239,7 @@ set sidescrolloff=5             " set printoptions=paper:letter
 set splitbelow                  " Split windows at bottom
 set splitright
 
-" set guifont=monaco\ 11          " font
-set guifont=inconsolata\ 12       " font
+set guifont=Inconsolata\ for\ Powerline\ 12
 
 set ts=2 sts=2 sw=2 noexpandtab
 set relativenumber                " show lines number
