@@ -2,8 +2,9 @@ project_name: redmine
 project_root: /home/rlisowski/workspace/redmine
 pre: sudo redis-server /etc/redis/redis.conf
 windows:
-  - zsh: gst
-  - vim: vim .
+  - zsh:
+    - gv .
+    - gst
   - 'rails c': be rails c
   - logs:
       layout: main-vertical

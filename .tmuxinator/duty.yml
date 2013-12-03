@@ -1,0 +1,11 @@
+project_name: duty
+project_root: /home/rlisowski/workspace/efiduty
+windows:
+  - zsh:
+    - gv .
+    - gst
+  - 'rails c': be rails c
+  - logs:
+    -
+      - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi
+      - be passenger start
