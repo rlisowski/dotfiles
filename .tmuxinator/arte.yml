@@ -1,11 +1,15 @@
 project_name: arte
 project_root: /home/rlisowski/workspace/arte
+pre: sudo redis-server /etc/redis/redis.conf
 windows:
   - zsh:
     - gv .
     - gst
   - 'rails c': be rails c
   - logs:
-    -
-      - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi
-      - be passenger start
+      layout: main-vertical
+      panes:
+        # app server
+        - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi; be passenger start
+        # sidekiq
+        - redis-cli FLUSHALL; sh script/sidekiq restart development; tailf log/sidekiq.log

@@ -1,5 +1,8 @@
 project_name: duty
 project_root: /home/rlisowski/workspace/efiduty
+pre:
+  - cd /home/rlisowski/workspace/efiduty
+  - vagrant up
 windows:
   - zsh:
     - gv .
