@@ -98,6 +98,7 @@ Bundle 'https://github.com/tpope/vim-sleuth'
 " Bundle 'https://github.com/airblade/vim-gitgutter.git'
 Bundle 'https://github.com/airblade/vim-rooter.git'
 Bundle 'https://github.com/t9md/vim-ruby-xmpfilter.git'
+Bundle 'https://github.com/dockyard/vim-easydir.git'
 
 filetype plugin indent on     " required!
 "
