@@ -7,7 +7,7 @@ windows:
     - gst
   - 'rails c': be rails c
   - logs:
-      layout: main-vertical
+      layout: main-horizontal
       panes:
         # app server
         - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi; be passenger start
