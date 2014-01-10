@@ -99,8 +99,4 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 	. /etc/bash_completion
 fi
 
-export JAVA_HOME="/home/rlisowski/opt/jdk1.6.0_21"
-export JDK_HOME="/home/rlisowski/opt/jdk1.6.0_21"
-export RSENSE_HOME="/home/rlisowski/.vim/rsense"
-
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
