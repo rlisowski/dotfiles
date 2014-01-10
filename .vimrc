@@ -14,7 +14,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-"
+
+Bundle 'https://github.com/MarcWeber/vim-addon-local-vimrc.git'
 " Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'https://github.com/bling/vim-airline.git'
 " Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
@@ -77,11 +78,11 @@ Bundle 'https://github.com/nathanaelkane/vim-indent-guides.git'
 " Bundle 'https://github.com/rgarver/Kwbd.vim.git'
 Bundle 'https://github.com/Lokaltog/vim-easymotion.git'
 " Bundle 'https://github.com/ap/vim-css-color.git'
-" Bundle 'https://github.com/hail2u/vim-css3-syntax'
+Bundle 'https://github.com/hail2u/vim-css3-syntax'
 " Bundle 'https://github.com/cakebaker/scss-syntax.vim'
 Bundle 'https://github.com/groenewege/vim-less.git'
 Bundle 'https://github.com/vim-scripts/VisIncr.git'
-Bundle 'https://github.com/spolu/dwm.vim.git'
+" Bundle 'https://github.com/spolu/dwm.vim.git'
 " Bundle 'https://github.com/vim-scripts/lua-support.git'
 Bundle 'https://github.com/Raimondi/delimitMate.git'
 " Bundle 'https://github.com/godlygeek/csapprox.git'
@@ -100,6 +101,10 @@ Bundle 'https://github.com/tpope/vim-sleuth'
 Bundle 'https://github.com/airblade/vim-rooter.git'
 Bundle 'https://github.com/t9md/vim-ruby-xmpfilter.git'
 Bundle 'https://github.com/dockyard/vim-easydir.git'
+Bundle 'https://github.com/othree/html5.vim.git'
+Bundle 'https://github.com/matthewsimo/angular-vim-snippets.git'
+Bundle 'https://github.com/othree/javascript-libraries-syntax.vim.git'
+Bundle 'https://github.com/marijnh/tern_for_vim.git'
 
 filetype plugin indent on     " required!
 "
@@ -240,6 +245,7 @@ set splitbelow                  " Split windows at bottom
 set splitright
 
 set guifont=Inconsolata\ for\ Powerline\ 12
+" set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
 
 set ts=2 sts=2 sw=2 noexpandtab
 set relativenumber                " show lines number
@@ -286,6 +292,16 @@ nnoremap <leader><leader> <C-^>             " Switch between last two buffers
 " ---------------
 " move lines
 " --------------- {{
+if !has('gui_running')
+  let c='a'
+  while c <= 'z'
+    exec "set <A-".c.">=\e".c
+    exec "imap \e".c." <A-".c.">"
+    let c = nr2char(1+char2nr(c))
+  endw
+  set timeout ttimeoutlen=50
+endif
+
 nmap <A-j> ]e==
 nmap <A-k> [e==
 imap <A-j> <Esc>]e==i
