@@ -42,3 +42,12 @@ export PATH=$PATH:$HOME/.rvm/bin
 # Add NVM to PATH
 export PATH=$PATH:$HOME/node_modules/.bin
 
+# JAVA
+JAVA_HOME=/usr/local/java/jdk1.7.0_45
+ANT_HOME=/usr/local/java/apache-ant-1.9.3
+PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin
+export JAVA_HOME
+export ANT_HOME
+export PATH
+
+
