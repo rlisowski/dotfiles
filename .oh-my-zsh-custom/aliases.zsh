@@ -4,7 +4,7 @@ alias po='popd'
 
 # Basic directory operations
 alias pwd=' pwd'
-alias .=' pwd'
+# alias .=' pwd'
 alias ...='cd ../..'
 alias -- -='cd -'
 
