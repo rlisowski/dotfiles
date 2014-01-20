@@ -105,6 +105,7 @@ Bundle 'https://github.com/othree/html5.vim.git'
 Bundle 'https://github.com/matthewsimo/angular-vim-snippets.git'
 Bundle 'https://github.com/othree/javascript-libraries-syntax.vim.git'
 Bundle 'https://github.com/marijnh/tern_for_vim.git'
+Bundle 'https://github.com/rstacruz/sparkup.git'
 
 filetype plugin indent on     " required!
 "
