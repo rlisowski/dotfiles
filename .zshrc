@@ -22,7 +22,6 @@ cdpath=($HOME/workspace $HOME/workspace2)
 
 # Customize to your needs...
 unsetopt auto_name_dirs
-export rvmsudo_secure_path=1
 
 [[ -s /home/rlisowski/.nvm/nvm.sh ]] && source /home/rlisowski/.nvm/nvm.sh # This loads NVM
 
@@ -32,14 +31,10 @@ then
 	source "${TM_PROJECT_DIRECTORY}/.rvmrc"
 fi
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator.zsh ]] && source $HOME/.tmuxinator/scripts/tmuxinator.zsh
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 [[ -s $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# Add RVM to PATH for scripting
-export PATH=$PATH:$HOME/.rvm/bin
 
 # Add NVM to PATH
 export PATH=$PATH:$HOME/node_modules/.bin
@@ -52,4 +47,5 @@ export JAVA_HOME
 export ANT_HOME
 export PATH
 
-
+# Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
