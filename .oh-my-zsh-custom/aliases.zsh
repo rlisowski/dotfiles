@@ -67,6 +67,9 @@ alias gst='git st -sb'
 # gvim
 # gv() { gvim -f --remote-silent "$@" &; }
 gv() { gvim -f "$@" &; }
+gvm() { gvim -f -p $(git status --short | awk ' { print $2 } '); }
+gvc() { gvim -f -p $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
+
 alias vu='gvim +BundleInstall! +qall'
 
 # tmux
