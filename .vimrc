@@ -40,7 +40,7 @@ Bundle 'https://github.com/tpope/vim-fugitive.git'
 " Bundle 'https://github.com/tpope/vim-ragtag.git'
 Bundle 'https://github.com/scrooloose/syntastic.git'
 Bundle 'https://github.com/tpope/vim-markdown.git'
-" Bundle 'https://github.com/suan/vim-instant-markdown.git'
+Bundle 'https://github.com/suan/vim-instant-markdown.git'
 Bundle 'https://github.com/mileszs/ack.vim.git'
 Bundle 'https://github.com/tpope/vim-git.git'
 Bundle 'https://github.com/gregsexton/gitv.git'
@@ -106,6 +106,7 @@ Bundle 'https://github.com/matthewsimo/angular-vim-snippets.git'
 Bundle 'https://github.com/othree/javascript-libraries-syntax.vim.git'
 Bundle 'https://github.com/marijnh/tern_for_vim.git'
 Bundle 'https://github.com/rstacruz/sparkup.git'
+Bundle 'https://github.com/kien/ctrlp.vim.git'
 
 filetype plugin indent on     " required!
 "
@@ -239,6 +240,7 @@ endif
 set virtualedit=block
 set wildmode=longest:full,full
 set wildignore+=*~
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.md5.*
 set winaltkeys=no
 set sidescrolloff=5             " set printoptions=paper:letter
 
