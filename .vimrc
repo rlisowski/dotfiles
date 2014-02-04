@@ -15,10 +15,13 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 
+Bundle 'https://github.com/kien/rainbow_parentheses.vim.git'
+Bundle 'https://github.com/nathanaelkane/vim-indent-guides.git'
 Bundle 'https://github.com/tpope/vim-abolish.git'
 " Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'https://github.com/bling/vim-airline.git'
-Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
+" Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
+" Bundle 'https://github.com/maxbrunsfeld/vim-yankstack.git'
 Bundle 'https://github.com/scrooloose/nerdtree.git'
 Bundle 'https://github.com/jistr/vim-nerdtree-tabs.git'
 Bundle 'https://github.com/ervandew/supertab.git'
