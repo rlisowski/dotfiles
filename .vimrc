@@ -15,10 +15,10 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 
-Bundle 'https://github.com/MarcWeber/vim-addon-local-vimrc.git'
+Bundle 'https://github.com/tpope/vim-abolish.git'
 " Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'https://github.com/bling/vim-airline.git'
-" Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
+Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
 Bundle 'https://github.com/scrooloose/nerdtree.git'
 Bundle 'https://github.com/jistr/vim-nerdtree-tabs.git'
 Bundle 'https://github.com/ervandew/supertab.git'
@@ -153,7 +153,7 @@ endif
 if exists(" &breakindent")
   set breakindent showbreak=+++
 elseif has("gui_running")
-  set showbreak=↪
+  set showbreak=⇇
 endif
 set cmdheight=1                     " command line height
 set complete-=i                     " Searching includes can be slow
@@ -163,9 +163,6 @@ set lazyredraw                      " Do not redraw the screen during macro exec
 set list
 set listchars=tab:▸\ ,eol:¬,trail:·,extends:❯,precedes:❮,nbsp:+ " Define how list mode appears, Use the same symbols as TextMate for tabstops and EOLs
 nmap <leader>l :set list!<CR>       " Shortcut to rapidly toggle `set list`
-                                    "Invisible character colors
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
 set modelines=5                     " Debian likes to disable this, The number of lines at the top and bottom to look for modelines.
 set scrolloff=1                     " Number of lines to keep above or below the cursor.
 set cpoptions+=$                    " show $ on the end of selection
