@@ -1,0 +1,12 @@
+project_name: idea
+project_root: /home/rlisowski/workspace/ideabank/ideabank
+windows:
+  - zsh:
+    - gv .
+    - gst
+  - jetty:
+      layout: main-horizontal
+      panes:
+        - cd ~/jetty && ./start.sh
+        - cd /home/rlisowski/workspace/ideabank/ideabank
+        - cd /home/rlisowski/workspace/ideabank/ideasso
