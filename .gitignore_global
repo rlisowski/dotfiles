@@ -39,3 +39,4 @@ tags
 tmp/*
 vendor/bundle
 vpn*
+*.md5.*
