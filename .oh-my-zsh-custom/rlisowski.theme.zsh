@@ -79,5 +79,5 @@ local rev_info='$(prompt_info)%{$reset_color%}'
 PROMPT="%(!.$fg[red].)╭─ ${rvm_ruby} ${rev_info}${current_dir}
 %(!.$fg[red].)╰─%B%(!.#.$)%b "
 # RPS1="${return_code}"
-RPS1="%D{[%I:%M:%S]}"
+# RPS1="%D{[%I:%M:%S]}"
 
