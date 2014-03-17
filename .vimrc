@@ -44,7 +44,8 @@ Bundle 'https://github.com/tpope/vim-fugitive.git'
 Bundle 'https://github.com/scrooloose/syntastic.git'
 Bundle 'https://github.com/tpope/vim-markdown.git'
 Bundle 'https://github.com/suan/vim-instant-markdown.git'
-Bundle 'https://github.com/mileszs/ack.vim.git'
+" Bundle 'https://github.com/mileszs/ack.vim.git'
+Bundle 'https://github.com/rking/ag.vim.git'
 Bundle 'https://github.com/tpope/vim-git.git'
 Bundle 'https://github.com/gregsexton/gitv.git'
 Bundle 'https://github.com/michaeljsmith/vim-indent-object.git'
@@ -454,8 +455,8 @@ autocmd FileType css set ts=2
 autocmd FileType css set sts=2
 " JavaScript (tab width 2 chr)
 autocmd FileType javascript set et
-autocmd FileType javascript set sw=2
-autocmd FileType javascript set ts=2
-autocmd FileType javascript set sts=2
+autocmd FileType javascript set sw=4
+autocmd FileType javascript set ts=4
+autocmd FileType javascript set sts=4
 "  }}
 
