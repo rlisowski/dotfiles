@@ -470,3 +470,7 @@ autocmd FileType html set ts=2
 autocmd FileType html set sts=2
 "  }}
 
+
+if filereadable(".vimrc.local")
+  so .vimrc.local
+endif
