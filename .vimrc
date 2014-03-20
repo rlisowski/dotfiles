@@ -453,10 +453,20 @@ autocmd FileType css set et
 autocmd FileType css set sw=2
 autocmd FileType css set ts=2
 autocmd FileType css set sts=2
+" less (tab width 2 chr)
+autocmd FileType less set et
+autocmd FileType less set sw=2
+autocmd FileType less set ts=2
+autocmd FileType less set sts=2
 " JavaScript (tab width 2 chr)
 autocmd FileType javascript set et
-autocmd FileType javascript set sw=4
-autocmd FileType javascript set ts=4
-autocmd FileType javascript set sts=4
+autocmd FileType javascript set sw=2
+autocmd FileType javascript set ts=2
+autocmd FileType javascript set sts=2
+" HTML (tab width 2 chr)
+autocmd FileType html set et
+autocmd FileType html set sw=2
+autocmd FileType html set ts=2
+autocmd FileType html set sts=2
 "  }}
 
