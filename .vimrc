@@ -375,20 +375,25 @@ nmap <Leader>re :e ~/.vimrc<CR>
 " ---------------
 " Trailing Whitespaces
 " --------------- {{
-function! <SID>StripTrailingWhitespaces()
-  " Preparation: save last search, and cursor position.
-  let _s=@/
-  let l = line(".")
-  let c = col(".")
-  " Do the business:
-  %s/\s\+$//e
-  " Clean up: restore previous search history, and cursor position
-  let @/=_s
-  call cursor(l, c)
+function! <SID>StripTrailingWhitespaces(manual)
+  let current_filetype = &filetype
+  if current_filetype != 'markdown'
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+  elseif a:manual
+    echoerr "Trailing whitespaces are part of Markdown syntax. Clean them yourself."
+  endif
 endfunction
 
-nnoremap <silent> <F3> :call <SID>StripTrailingWhitespaces()<CR>
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+nnoremap <silent> <F3> :call <SID>StripTrailingWhitespaces(1)<CR>
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces(0)
 " }}
 
 " ---------------
