@@ -290,7 +290,6 @@ noremap <tab> :bn<CR>
 noremap <S-tab> :bp<CR>
 nmap <leader>d :bprevious<CR>:bdelete #<CR> " Close buffer
 nmap <leader>D :bufdo bd<CR>                " Close all buffers
-nnoremap <leader><leader> <C-^>             " Switch between last two buffers
 " }}
 
 " ---------------
