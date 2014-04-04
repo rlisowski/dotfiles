@@ -70,6 +70,9 @@ gv() { gvim -f "$@" &; }
 gvm() { gvim -f -p $(git status --short | awk ' { print $2 } ') &; }
 gvc() { gvim -f -p $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d') &; }
 
+sublm() { subl $(git status --short | awk ' { print $2 } ') &; }
+sublc() { subl $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d') &; }
+
 alias vu='gvim +BundleInstall! +qall'
 
 # tmux
