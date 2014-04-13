@@ -112,6 +112,7 @@ Bundle 'https://github.com/marijnh/tern_for_vim.git'
 Bundle 'https://github.com/rstacruz/sparkup.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
 Bundle 'https://github.com/szw/vim-ctrlspace.git'
+Bundle 'https://github.com/othree/xml.vim.git'
 
 filetype plugin indent on     " required!
 "
