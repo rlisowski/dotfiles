@@ -35,6 +35,7 @@ make distclean
 --enable-pythoninterp \
 --with-python-config-dir=/usr/bin/python-config \
 --enable-rubyinterp \
+--with-ruby-command=`rvm which ruby` \
 --enable-cscope \
 --enable-multibyte \
 --enable-fontset \

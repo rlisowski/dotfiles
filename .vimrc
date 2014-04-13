@@ -111,6 +111,7 @@ Bundle 'https://github.com/othree/javascript-libraries-syntax.vim.git'
 Bundle 'https://github.com/marijnh/tern_for_vim.git'
 Bundle 'https://github.com/rstacruz/sparkup.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
+Bundle 'https://github.com/szw/vim-ctrlspace.git'
 
 filetype plugin indent on     " required!
 "
@@ -123,7 +124,7 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 
-
+set shell=/bin/sh
 set nocompatible
 set autoindent
 set autowrite " Automatically save before commands like :next and :make

@@ -173,6 +173,10 @@ hi cssValueLength ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3c98d9 guibg=NONE gu
 hi cssCommonAttr ctermfg=151 ctermbg=NONE cterm=NONE guifg=#a7cfa3 guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 
-" ---
+" Special for Ctrl-Space
+hi CtrlSpaceSelected ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
+hi CtrlSpaceNormal ctermfg=231 ctermbg=0 cterm=NONE guifg=#f0f0f0 guibg=#252c31 gui=NONE
+hi CtrlSpaceFound ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
 
+" ---
 
