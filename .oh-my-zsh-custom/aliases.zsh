@@ -73,7 +73,7 @@ gvc() { gvim -f -p $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id 
 sublm() { subl $(git status --short | awk ' { print $2 } ') &; }
 sublc() { subl $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d') &; }
 
-alias vu='gvim +BundleInstall! +qall'
+alias vu='gvim +PluginInstall! +qall'
 
 # tmux
 alias t='tmux new-session -s'

@@ -6,123 +6,126 @@ let mapleader = ","
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'https://github.com/gmarik/Vundle.vim'
 
-" My Bundles here:
+" My Plugins here:
 
-Bundle 'https://github.com/kien/rainbow_parentheses.vim.git'
-Bundle 'https://github.com/nathanaelkane/vim-indent-guides.git'
-Bundle 'https://github.com/tpope/vim-abolish.git'
-" Bundle 'https://github.com/Lokaltog/vim-powerline.git'
-Bundle 'https://github.com/bling/vim-airline.git'
-" Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
-" Bundle 'https://github.com/maxbrunsfeld/vim-yankstack.git'
-Bundle 'https://github.com/scrooloose/nerdtree.git'
-Bundle 'https://github.com/jistr/vim-nerdtree-tabs.git'
-Bundle 'https://github.com/ervandew/supertab.git'
-Bundle 'https://github.com/MarcWeber/vim-addon-mw-utils.git'
-Bundle 'https://github.com/tomtom/tlib_vim.git'
-Bundle 'https://github.com/honza/vim-snippets.git'
-Bundle 'https://github.com/garbas/vim-snipmate.git'
-Bundle 'https://github.com/altercation/vim-colors-solarized.git'
-" Bundle 'https://github.com/vim-scripts/molokai.git'
-" Bundle 'https://github.com/tpope/vim-cucumber.git'
-Bundle 'https://github.com/tpope/vim-endwise.git'
-Bundle 'https://github.com/tpope/vim-haml.git'
-" Bundle 'https://github.com/tpope/vim-pastie.git'
-Bundle 'https://github.com/tpope/vim-rails.git'
-Bundle 'https://github.com/tpope/vim-rake.git'
-Bundle 'https://github.com/tpope/vim-surround.git'
-Bundle 'https://github.com/tpope/vim-unimpaired.git'
-Bundle 'https://github.com/tpope/vim-fugitive.git'
-" Bundle 'https://github.com/tpope/vim-ragtag.git'
-Bundle 'https://github.com/scrooloose/syntastic.git'
-Bundle 'https://github.com/tpope/vim-markdown.git'
-Bundle 'https://github.com/suan/vim-instant-markdown.git'
-" Bundle 'https://github.com/mileszs/ack.vim.git'
-Bundle 'https://github.com/rking/ag.vim.git'
-Bundle 'https://github.com/tpope/vim-git.git'
-Bundle 'https://github.com/gregsexton/gitv.git'
-Bundle 'https://github.com/michaeljsmith/vim-indent-object.git'
-Bundle 'https://github.com/pangloss/vim-javascript.git'
-Bundle 'https://github.com/majutsushi/tagbar.git'
-Bundle 'https://github.com/sunaku/vim-ruby-minitest.git'
-" Bundle 'https://github.com/mattn/gist-vim.git'
-Bundle 'https://github.com/tpope/vim-bundler.git'
-Bundle 'https://github.com/tpope/vim-repeat.git'
-Bundle 'https://github.com/vim-scripts/matchit.zip.git'
-Bundle 'https://github.com/kana/vim-textobj-user.git'
-Bundle 'https://github.com/kana/vim-textobj-entire.git'
-Bundle 'https://github.com/kana/vim-textobj-datetime.git'
-Bundle 'https://github.com/nelstrom/vim-textobj-rubyblock.git'
-Bundle 'https://github.com/vim-ruby/vim-ruby.git'
-Bundle 'https://github.com/ecomba/vim-ruby-refactoring.git'
-Bundle 'https://github.com/danchoi/ri.vim.git'
-Bundle 'https://github.com/itspriddle/vim-jquery.git'
-Bundle 'https://github.com/kchmck/vim-coffee-script.git'
-" Bundle 'https://github.com/jeffkreeftmeijer/vim-numbertoggle.git'
-Bundle 'https://github.com/tpope/vim-commentary.git'
-Bundle 'https://github.com/godlygeek/tabular.git'
-" Bundle 'https://github.com/vim-scripts/ZoomWin.git'
-Bundle 'https://github.com/sjl/gundo.vim.git'
-Bundle 'https://github.com/vim-scripts/L9.git'
-" Bundle 'https://github.com/vim-scripts/session.vim--Odding.git'
-Bundle 'https://github.com/AndrewRadev/splitjoin.vim'
-" Bundle 'https://github.com/vim-scripts/Specky.git'
-Bundle 'https://github.com/mmalecki/vim-node.js.git'
-Bundle 'https://github.com/jeetsukumaran/vim-buffergator.git'
-" Bundle 'https://github.com/vim-scripts/bufexplorer.zip.git'
-" Bundle 'https://github.com/chrisbra/NrrwRgn.git'
-" Bundle 'https://github.com/rgarver/Kwbd.vim.git'
-Bundle 'https://github.com/Lokaltog/vim-easymotion.git'
-" Bundle 'https://github.com/ap/vim-css-color.git'
-Bundle 'https://github.com/hail2u/vim-css3-syntax'
-" Bundle 'https://github.com/cakebaker/scss-syntax.vim'
-Bundle 'https://github.com/groenewege/vim-less.git'
-Bundle 'https://github.com/vim-scripts/VisIncr.git'
-" Bundle 'https://github.com/spolu/dwm.vim.git'
-" Bundle 'https://github.com/vim-scripts/lua-support.git'
-Bundle 'https://github.com/Raimondi/delimitMate.git'
-" Bundle 'https://github.com/godlygeek/csapprox.git'
-Bundle 'https://github.com/kshenoy/vim-signature.git'
-Bundle 'https://github.com/mrmargolis/dogmatic.vim.git'
-Bundle 'https://github.com/vim-scripts/mru.vim.git'
-Bundle 'https://github.com/Shougo/neocomplcache.git'
-Bundle 'https://github.com/rodjek/vim-puppet.git'
-Bundle 'https://github.com/jelera/vim-javascript-syntax.git'
-" Bundle 'https://github.com/rgrove/vim-yui3.git'
-Bundle 'https://github.com/tpope/vim-eunuch'
-" Bundle 'https://github.com/vim-scripts/Rename2.git'
-Bundle 'https://github.com/tpope/vim-sleuth'
-" Bundle 'https://github.com/gregsexton/MatchTag'
-" Bundle 'https://github.com/airblade/vim-gitgutter.git'
-Bundle 'https://github.com/airblade/vim-rooter.git'
-Bundle 'https://github.com/t9md/vim-ruby-xmpfilter.git'
-Bundle 'https://github.com/dockyard/vim-easydir.git'
-Bundle 'https://github.com/othree/html5.vim.git'
-Bundle 'https://github.com/matthewsimo/angular-vim-snippets.git'
-Bundle 'https://github.com/othree/javascript-libraries-syntax.vim.git'
-" Bundle 'https://github.com/marijnh/tern_for_vim.git'
-Bundle 'https://github.com/rstacruz/sparkup.git'
-Bundle 'https://github.com/kien/ctrlp.vim.git'
-Bundle 'https://github.com/szw/vim-ctrlspace.git'
-Bundle 'https://github.com/othree/xml.vim.git'
+Plugin 'https://github.com/kien/rainbow_parentheses.vim.git'
+Plugin 'https://github.com/nathanaelkane/vim-indent-guides.git'
+Plugin 'https://github.com/tpope/vim-abolish.git'
+" Plugin 'https://github.com/Lokaltog/vim-powerline.git'
+Plugin 'https://github.com/bling/vim-airline.git'
+" Plugin 'https://github.com/vim-scripts/YankRing.vim.git'
+" Plugin 'https://github.com/maxbrunsfeld/vim-yankstack.git'
+Plugin 'https://github.com/scrooloose/nerdtree.git'
+Plugin 'https://github.com/jistr/vim-nerdtree-tabs.git'
+Plugin 'https://github.com/ervandew/supertab.git'
+Plugin 'https://github.com/MarcWeber/vim-addon-mw-utils.git'
+Plugin 'https://github.com/tomtom/tlib_vim.git'
+Plugin 'https://github.com/honza/vim-snippets.git'
+Plugin 'https://github.com/garbas/vim-snipmate.git'
+Plugin 'https://github.com/altercation/vim-colors-solarized.git'
+" Plugin 'https://github.com/vim-scripts/molokai.git'
+" Plugin 'https://github.com/tpope/vim-cucumber.git'
+Plugin 'https://github.com/tpope/vim-endwise.git'
+Plugin 'https://github.com/tpope/vim-haml.git'
+" Plugin 'https://github.com/tpope/vim-pastie.git'
+Plugin 'https://github.com/tpope/vim-rails.git'
+Plugin 'https://github.com/tpope/vim-rake.git'
+Plugin 'https://github.com/tpope/vim-surround.git'
+Plugin 'https://github.com/tpope/vim-unimpaired.git'
+Plugin 'https://github.com/tpope/vim-fugitive.git'
+" Plugin 'https://github.com/tpope/vim-ragtag.git'
+Plugin 'https://github.com/scrooloose/syntastic.git'
+Plugin 'https://github.com/tpope/vim-markdown.git'
+Plugin 'https://github.com/suan/vim-instant-markdown.git'
+" Plugin 'https://github.com/mileszs/ack.vim.git'
+Plugin 'https://github.com/rking/ag.vim.git'
+Plugin 'https://github.com/tpope/vim-git.git'
+Plugin 'https://github.com/gregsexton/gitv.git'
+Plugin 'https://github.com/michaeljsmith/vim-indent-object.git'
+Plugin 'https://github.com/pangloss/vim-javascript.git'
+Plugin 'https://github.com/majutsushi/tagbar.git'
+Plugin 'https://github.com/sunaku/vim-ruby-minitest.git'
+" Plugin 'https://github.com/mattn/gist-vim.git'
+Plugin 'https://github.com/tpope/vim-bundler.git'
+Plugin 'https://github.com/tpope/vim-repeat.git'
+Plugin 'https://github.com/vim-scripts/matchit.zip.git'
+Plugin 'https://github.com/kana/vim-textobj-user.git'
+Plugin 'https://github.com/kana/vim-textobj-entire.git'
+Plugin 'https://github.com/kana/vim-textobj-datetime.git'
+Plugin 'https://github.com/nelstrom/vim-textobj-rubyblock.git'
+Plugin 'https://github.com/vim-ruby/vim-ruby.git'
+Plugin 'https://github.com/ecomba/vim-ruby-refactoring.git'
+Plugin 'https://github.com/danchoi/ri.vim.git'
+Plugin 'https://github.com/itspriddle/vim-jquery.git'
+Plugin 'https://github.com/kchmck/vim-coffee-script.git'
+" Plugin 'https://github.com/jeffkreeftmeijer/vim-numbertoggle.git'
+Plugin 'https://github.com/tpope/vim-commentary.git'
+Plugin 'https://github.com/godlygeek/tabular.git'
+" Plugin 'https://github.com/vim-scripts/ZoomWin.git'
+Plugin 'https://github.com/sjl/gundo.vim.git'
+Plugin 'https://github.com/vim-scripts/L9.git'
+" Plugin 'https://github.com/vim-scripts/session.vim--Odding.git'
+Plugin 'https://github.com/AndrewRadev/splitjoin.vim'
+" Plugin 'https://github.com/vim-scripts/Specky.git'
+Plugin 'https://github.com/mmalecki/vim-node.js.git'
+Plugin 'https://github.com/jeetsukumaran/vim-buffergator.git'
+" Plugin 'https://github.com/vim-scripts/bufexplorer.zip.git'
+" Plugin 'https://github.com/chrisbra/NrrwRgn.git'
+" Plugin 'https://github.com/rgarver/Kwbd.vim.git'
+Plugin 'https://github.com/Lokaltog/vim-easymotion.git'
+" Plugin 'https://github.com/ap/vim-css-color.git'
+Plugin 'https://github.com/hail2u/vim-css3-syntax'
+" Plugin 'https://github.com/cakebaker/scss-syntax.vim'
+Plugin 'https://github.com/groenewege/vim-less.git'
+Plugin 'https://github.com/vim-scripts/VisIncr.git'
+" Plugin 'https://github.com/spolu/dwm.vim.git'
+" Plugin 'https://github.com/vim-scripts/lua-support.git'
+Plugin 'https://github.com/Raimondi/delimitMate.git'
+" Plugin 'https://github.com/godlygeek/csapprox.git'
+Plugin 'https://github.com/kshenoy/vim-signature.git'
+Plugin 'https://github.com/mrmargolis/dogmatic.vim.git'
+Plugin 'https://github.com/vim-scripts/mru.vim.git'
+Plugin 'https://github.com/Shougo/neocomplcache.git'
+Plugin 'https://github.com/rodjek/vim-puppet.git'
+Plugin 'https://github.com/jelera/vim-javascript-syntax.git'
+" Plugin 'https://github.com/rgrove/vim-yui3.git'
+Plugin 'https://github.com/tpope/vim-eunuch'
+" Plugin 'https://github.com/vim-scripts/Rename2.git'
+Plugin 'https://github.com/tpope/vim-sleuth'
+" Plugin 'https://github.com/gregsexton/MatchTag'
+" Plugin 'https://github.com/airblade/vim-gitgutter.git'
+Plugin 'https://github.com/airblade/vim-rooter.git'
+Plugin 'https://github.com/t9md/vim-ruby-xmpfilter.git'
+Plugin 'https://github.com/dockyard/vim-easydir.git'
+Plugin 'https://github.com/othree/html5.vim.git'
+Plugin 'https://github.com/matthewsimo/angular-vim-snippets.git'
+Plugin 'https://github.com/othree/javascript-libraries-syntax.vim.git'
+" Plugin 'https://github.com/marijnh/tern_for_vim.git'
+Plugin 'https://github.com/rstacruz/sparkup.git'
+Plugin 'https://github.com/kien/ctrlp.vim.git'
+Plugin 'https://github.com/szw/vim-ctrlspace.git'
+Plugin 'https://github.com/othree/xml.vim.git'
+
+" All of your Plugins must be added before the following line
+call vundle#end()             " required
 
 filetype plugin indent on     " required!
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured bundles
+" :PluginInstall(!)    - install(update) bundles
+" :PluginSearch(!) foo - search(or refresh cache first) for foo
+" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" Put your non-Plugin stuff after this line
 
 set shell=/bin/sh
 set nocompatible
@@ -362,9 +365,9 @@ nmap <Leader>re :e ~/.vimrc<CR>
 " ---------------
 " Vundle
 " --------------- {{
-" nmap <Leader>bi BundleInstall<CR>
-" nmap <Leader>bu BundleInstall!<CR> " Because this also updates
-" nmap <Leader>bc BundleClean
+" nmap <Leader>bi PluginInstall<CR>
+" nmap <Leader>bu PluginInstall!<CR> " Because this also updates
+" nmap <Leader>bc PluginClean
 " }}
 
 

@@ -9,6 +9,6 @@
 # codeschool
 gconftool-2 --set "/apps/gnome-terminal/profiles/Default/use_theme_background" --type bool false
 gconftool-2 --set "/apps/gnome-terminal/profiles/Default/use_theme_colors" --type bool false
-gconftool-2 --set "/apps/gnome-terminal/profiles/Default/palette" --type string "#000000000000:#FA0551AC51AC:#4E4E9A9A0606:#C4C4A0A00000:#34346565A4A4:#757550507B7B:#060698209A9A:#D3D3D7D7CFCF:#555557575353:#FA0551AC51AC:#8A8AE2E23434:#FCFCE9E94F4F:#72729F9FCFCF:#ADAD7F7FA8A8:#3434E2E2E2E2:#EEEEEEEEECEC"
-gconftool-2 --set "/apps/gnome-terminal/profiles/Default/background_color" --type string "#000000000000"
+gconftool-2 --set "/apps/gnome-terminal/profiles/Default/palette" --type string "#25002c003100:#FA0551AC51AC:#4E4E9A9A0606:#C4C4A0A00000:#34346565A4A4:#757550507B7B:#060698209A9A:#D3D3D7D7CFCF:#555557575353:#FA0551AC51AC:#8A8AE2E23434:#FCFCE9E94F4F:#72729F9FCFCF:#ADAD7F7FA8A8:#3434E2E2E2E2:#EEEEEEEEECEC"
+gconftool-2 --set "/apps/gnome-terminal/profiles/Default/background_color" --type string "#25002c003100"
 gconftool-2 --set "/apps/gnome-terminal/profiles/Default/foreground_color" --type string "#F0F0F0F0F0F0"
