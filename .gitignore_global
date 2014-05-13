@@ -40,3 +40,14 @@ tmp/*
 vendor/bundle
 vpn*
 *.md5.*
+
+RELEASE
+archives/
+config/alias
+environments/
+installed.at
+rubies/
+share/
+src/
+user/
+wrappers/
