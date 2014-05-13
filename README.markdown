@@ -64,7 +64,7 @@ additional sources
 	8. check dirs (your version may be different)
 
 			$  ls -1
-			jdk1.7.0_45/
+			jdk1.8.0_05/
 			apache-ant-1.9.3/
 
 	9. set ENV vars in /etc/profile
@@ -73,7 +73,7 @@ additional sources
 
 		put at the end of file
 
-			JAVA_HOME=/usr/local/java/jdk1.7.0_45
+			JAVA_HOME=/usr/local/java/jdk1.8.0_05
 			ANT_HOME=/usr/local/java/apache-ant-1.9.3
 			PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin
 			export JAVA_HOME
@@ -82,16 +82,16 @@ additional sources
 
 	10. Inform your system where your Oracle Java
 
-			$ sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jdk1.7.0_45/jre/bin/java" 1
-			$ sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.7.0_45/bin/javac" 1
-			$ sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/jdk1.7.0_45/jre/bin/javaws" 1
+			$ sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jdk1.8.0_05/jre/bin/java" 1
+			$ sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.8.0_05/bin/javac" 1
+			$ sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/jdk1.8.0_05/jre/bin/javaws" 1
 
 	11. check ENV
 
 			$ source /etc/profile
 			$ java -version
-			java version "1.7.0_45"
-			Java(TM) SE Runtime Environment (build 1.7.0_45-b18)
+			java version "1.8.0_05"
+			Java(TM) SE Runtime Environment (build 1.8.0_05-b18)
 			Java HotSpot(TM) 64-Bit Server VM (build 24.45-b08, mixed mode)
 
 
