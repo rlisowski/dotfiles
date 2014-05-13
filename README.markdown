@@ -17,6 +17,18 @@ additional sources
 ### firewall
 [iptables-boilerplate](https://github.com/bmaeser/iptables-boilerplate) is a nice place to start
 
+### ssh to github over 443 port via proxy
+	$ sudo apt-get install proxytunnel
+
+put it into `.ssh/config`
+
+	Host github.com
+		User user_name
+		Hostname ssh.github.com
+		Port 443
+		ProxyCommand proxytunnel -p proxy:3128 -d ssh.github.com:443
+
+
 ### oracle java and ant
 [original instruction](http://www.wikihow.com/Install-Oracle-Java-on-Ubuntu-Linux)
 
