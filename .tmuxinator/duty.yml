@@ -1,14 +1,9 @@
 project_name: duty
 project_root: /home/rlisowski/workspace/efiduty
-pre:
-  - cd /home/rlisowski/workspace/efiduty
-  - vagrant up
 windows:
   - zsh:
     - gv .
     - gst
-  - 'rails c': be rails c
-  - logs:
-    -
-      - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi
-      - be passenger start
+  - server:
+    - vagrant up postgres rabiitmq
+    - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi; be passenger start -e vagrant
