@@ -2,6 +2,8 @@
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
+fpath=($HOME/.oh-my-zsh-custom/completion $fpath)
+
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
 
