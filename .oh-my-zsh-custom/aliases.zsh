@@ -76,7 +76,7 @@ sublc() { subl $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | se
 alias vu='gvim +PluginInstall! +qall'
 
 # tmux
-alias t='tmux new-session -s'
+t() { tmux attach-session -t $@ || tmux new-session -s $@ -c `pwd` }
 alias htop='TERM=screen htop'
 
 # zsh help
