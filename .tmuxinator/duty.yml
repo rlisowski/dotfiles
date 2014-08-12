@@ -5,5 +5,7 @@ windows:
     - gv .
     - gst
   - server:
-    - vagrant up postgres rabiitmq
+    - vagrant up postgres rabbitmq
     - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi; be passenger start -e vagrant
+  - 'rails c':
+    - be rails c vagrant
