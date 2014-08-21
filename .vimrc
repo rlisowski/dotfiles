@@ -115,6 +115,7 @@ Plugin 'https://github.com/rstacruz/sparkup.git'
 Plugin 'https://github.com/kien/ctrlp.vim.git'
 Plugin 'https://github.com/szw/vim-ctrlspace.git'
 Plugin 'https://github.com/othree/xml.vim.git'
+Plugin 'https://github.com/terryma/vim-expand-region.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()             " required
