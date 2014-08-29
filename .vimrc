@@ -117,6 +117,9 @@ Plugin 'https://github.com/szw/vim-ctrlspace.git'
 Plugin 'https://github.com/othree/xml.vim.git'
 Plugin 'https://github.com/terryma/vim-expand-region.git'
 
+Plugin 'https://github.com/vim-scripts/CursorLineCurrentWindow.git'
+Plugin 'https://github.com/inside/vim-search-pulse.git'
+
 " All of your Plugins must be added before the following line
 call vundle#end()             " required
 
@@ -176,10 +179,10 @@ set list
 set listchars=tab:▸\ ,eol:¬,trail:·,extends:❯,precedes:❮,nbsp:+ " Define how list mode appears, Use the same symbols as TextMate for tabstops and EOLs
 nmap <leader>l :set list!<CR>       " Shortcut to rapidly toggle `set list`
 set modelines=5                     " Debian likes to disable this, The number of lines at the top and bottom to look for modelines.
-set scrolloff=1                     " Number of lines to keep above or below the cursor.
 set cpoptions+=$                    " show $ on the end of selection
 set virtualedit=all                 " enable virtualedit, useful for visual block editing
 set linespace=2                     " more space between lines
+set guicursor+=a:blinkon0           " Disable gui cursor blinking "
 
 if exists('+colorcolumn')
   set colorcolumn=120
@@ -223,9 +226,11 @@ set smartcase                   " Case insensitive searches become sensitive wit
 set shiftround                  " round shift
 set laststatus=2
 set showcmd
+" Number of lines to keep above or below the cursor.
 if !&scrolloff
-  set scrolloff=1
+  set scrolloff=3
 endif
+" set printoptions=paper:letter
 if !&sidescrolloff
   set sidescrolloff=5
 endif
@@ -251,20 +256,19 @@ set wildmode=longest:full,full
 set wildignore+=*~
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.md5.*
 set winaltkeys=no
-set sidescrolloff=5             " set printoptions=paper:letter
 
 set splitbelow                  " Split windows at bottom
 set splitright
 
-set guifont=Inconsolata\ for\ Powerline\ 12
-" set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
+" set guifont=Inconsolata\ for\ Powerline\ 12
+set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
 
 set ts=2 sts=2 sw=2 noexpandtab
 set relativenumber                " show lines number
 set number                        " show lines number
 " set nuw=6                       " column with line numbers is 6 chars width
 set ff=unix                       " unix end of line
-set cryptmethod=blowfish
+set cryptmethod=blowfish2         " encryption method :X or -x in command line
 
 " ---------------
 " folding
