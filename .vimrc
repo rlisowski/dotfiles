@@ -119,6 +119,7 @@ Plugin 'https://github.com/terryma/vim-expand-region.git'
 
 Plugin 'https://github.com/vim-scripts/CursorLineCurrentWindow.git'
 Plugin 'https://github.com/inside/vim-search-pulse.git'
+Plugin 'https://github.com/tpope/vim-obsession.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()             " required
