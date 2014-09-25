@@ -43,6 +43,7 @@ Plugin 'https://github.com/tpope/vim-rake.git'
 Plugin 'https://github.com/tpope/vim-surround.git'
 Plugin 'https://github.com/tpope/vim-unimpaired.git'
 Plugin 'https://github.com/tpope/vim-fugitive.git'
+Plugin 'https://github.com/tpope/git-bump.git'
 " Plugin 'https://github.com/tpope/vim-ragtag.git'
 Plugin 'https://github.com/scrooloose/syntastic.git'
 Plugin 'https://github.com/tpope/vim-markdown.git'
@@ -122,6 +123,10 @@ Plugin 'https://github.com/terryma/vim-expand-region.git'
 Plugin 'https://github.com/vim-scripts/CursorLineCurrentWindow.git'
 Plugin 'https://github.com/inside/vim-search-pulse.git'
 Plugin 'https://github.com/tpope/vim-obsession.git'
+Plugin 'https://github.com/Yggdroot/indentLine.git'
+
+" games
+Plugin 'https://github.com/katono/rogue.vim.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()             " required
