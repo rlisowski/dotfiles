@@ -490,6 +490,6 @@ autocmd FileType html set sts=2
 "  }}
 
 
-if filereadable(".vimrc.local")
-  so .vimrc.local
+if filereadable($HOME."/.vimrc.local")
+  source $HOME/.vimrc.local
 endif
