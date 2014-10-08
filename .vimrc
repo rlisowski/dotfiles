@@ -161,8 +161,8 @@ highlight clear SignColumn
 " ---------------
 set backup
 set backupskip+=*.tmp,crontab.* " do not make backup for this files
-set backupdir=~/.vim/backup
-set directory=~/.vim/tmp
+set backupdir=$HOME/.vim/backup
+set directory=$HOME/.vim/tmp
 
 " ---------------
 " UI
@@ -190,7 +190,8 @@ set modelines=5                     " Debian likes to disable this, The number o
 set cpoptions+=$                    " show $ on the end of selection
 set virtualedit=all                 " enable virtualedit, useful for visual block editing
 set linespace=2                     " more space between lines
-set guicursor+=a:blinkon0           " Disable gui cursor blinking "
+set guicursor+=a:blinkon0           " Disable gui cursor blinking
+set ttyfast                         " Indicates a fast terminal connection.
 
 if exists('+colorcolumn')
   set colorcolumn=120
@@ -444,7 +445,7 @@ vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR
 " ---------------
 " shifting tabs
 " --------------- {{
-function ShiftTab(direction)
+function! ShiftTab(direction)
      let tab_number = tabpagenr()
      if a:direction == 0
          if tab_number == 1
