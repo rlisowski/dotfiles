@@ -1,11 +1,49 @@
 project_name: duty
 project_root: /home/rlisowski/workspace/efiduty
+pre: sudo service postgresql start
+pre: sudo redis-server /etc/redis/redis.conf
 windows:
   - zsh:
+    - google-chrome http://localhost:15672/ http://efigence.efigence.local.non.3dart.com:3000/
+    - cd front
     - gv .
+    - g fetch
     - gst
   - server:
-    - vagrant up postgres rabbitmq
-    - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi; be passenger start -e vagrant
+    - cd front
+    - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi; be passenger start
   - 'rails c':
-    - be rails c vagrant
+    - cd front
+    - be rails c
+  - config_sender:
+    - cd config_sender
+    - g pull --no-rebase
+    - be ruby bin/sender
+  - aerial:
+    - cd aerial
+    - g pull --no-rebase
+    - be ruby bin/aerial
+  - bureau:
+    - cd bureau
+    - g pull --no-rebase
+    - be ruby bin/bureau
+  - sondy:
+      layout: main-horizontal
+      panes:
+        - clock:
+          - cd sondy
+          - g pull --no-rebase
+          - be ruby ./bin/clock
+        - workers:
+          - cd sondy
+          - g pull --no-rebase
+          - be ruby ./bin/workers
+        - sidekiq-web:
+          - cd sondy
+          - be rackup -E development
+  # - elastic_schedule:
+  #   - cd elastic_schedule
+  #   - g pull
+  # - simplebuild:
+  #   - cd simplebuild
+  #   - g pull
