@@ -37,7 +37,6 @@ Plugin 'https://github.com/tpope/vim-fugitive.git'     " git wrapper
 Plugin 'https://github.com/tpope/vim-git.git'          " git helpers, commit msg, diff etc
 Plugin 'https://github.com/gregsexton/gitv.git'        " gitk clone aka repository viewer
 Plugin 'https://github.com/airblade/vim-gitgutter.git' " mark changed lines in sign column
-Plugin 'https://github.com/tpope/git-bump.git'         " standardize versioning in git
 
 " ---------------
 " BEHAVIOR
