@@ -179,11 +179,9 @@ set cursorline                      " Only have cursorline in current window
 if has("balloon_eval") && has("unix")
   set ballooneval
 endif
-if exists(" &breakindent")
-  set breakindent showbreak=+++
-elseif has("gui_running")
-  set showbreak=⇇
-endif
+set breakindent
+" set showbreak=↖
+let &showbreak='↖ '
 set cmdheight=1                     " command line height
 set complete-=i                     " Searching includes can be slow
 set display=lastline                "
