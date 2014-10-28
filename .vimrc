@@ -58,6 +58,7 @@ Plug 'https://github.com/kshenoy/vim-signature.git'           " place, toggle an
 Plug 'https://github.com/vim-scripts/VisIncr.git'             " making a column of increasing or decreasing numbers, dates, or daynames
 Plug 'https://github.com/tpope/vim-commentary.git'            " easyli toggle lines as comments
 Plug 'https://github.com/Lokaltog/vim-easymotion.git'         " simpler way to use some motions
+Plug 'https://github.com/vim-scripts/BufOnly.vim.git'         " close any other buffers
 
 " ---------------
 " SNIPPETS
