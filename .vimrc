@@ -23,6 +23,7 @@ Plug 'https://github.com/Yggdroot/indentLine.git'                 " shiw indenta
 Plug 'https://github.com/sjl/gundo.vim.git'                       " undo view
 Plug 'https://github.com/vim-scripts/CursorLineCurrentWindow.git' " cursor line only in current window
 Plug 'https://github.com/inside/vim-search-pulse.git'             " highlight search
+Plug 'https://github.com/drmikehenry/vim-fontsize.git'            " adjust quickly font size
 
 " ---------------
 " GIT
