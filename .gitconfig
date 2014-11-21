@@ -30,7 +30,7 @@
 	conflictstyle = diff3
 	verbosity = 1
 [push]
-	default = tracking # deprecated synonym for upstream
+	default = simple
 [rebase]
 	autosquash = true
 [diff]
