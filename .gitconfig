@@ -47,6 +47,7 @@
 	h = help
 	st = status -sb
 	d = diff
+	id = icdiff                       # https://github.com/jeffkaufman/icdiff
 	b = branch -v                     # branch (verbose)
 
 	# commit
