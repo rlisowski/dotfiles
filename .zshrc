@@ -49,4 +49,4 @@ export JAVA_HOME
 export ANT_HOME
 export PATH
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
