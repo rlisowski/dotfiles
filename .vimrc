@@ -14,10 +14,9 @@ filetype plugin indent on     " required!
 
 set shell=/bin/sh
 set nocompatible
-set autoindent
-set autowrite " Automatically save before commands like :next and :make
+set autoindent                 " Copy indent from current line when starting a new line
+set autowriteall               " Automatically save before commands like :next and :make
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
-
 
 " ---------------
 " Color
@@ -43,16 +42,22 @@ set cursorline                      " Only have cursorline in current window
 if has("balloon_eval") && has("unix")
   set ballooneval
 endif
-set breakindent
-" set showbreak=↖
-let &showbreak='↖ '
-set cmdheight=1                     " command line height
-set complete-=i                     " Searching includes can be slow
-set display=lastline                "
-set joinspaces                      " Put spaces between lines joined with the > command.
-set lazyredraw                      " Do not redraw the screen during macro execution.
-set list
+set breakindent                         " Every wrapped line will continue visually indented
+let &showbreak='↖ '                     " String to put at the start of lines that have been wrapped.
+set cmdheight=1                         " command line height
+set complete-=i,w,b,u,t                 " Searching includes can be slow
+set completeopt=longest,menuone,preview " A comma separated list of options for Insert mode completion
+set display=lastline                    " Change the way text is displayed.
+set joinspaces                          " Put spaces between lines joined with the > command.
+set lazyredraw                          " Do not redraw the screen during macro execution.
+set list                                " Useful to see the difference between tabs and spaces and for trailing blanks
 set listchars=tab:▸\ ,eol:¬,trail:·,extends:❯,precedes:❮,nbsp:+ " Define how list mode appears, Use the same symbols as TextMate for tabstops and EOLs
+" show trailing whitespace when not on insert mode
+augroup trailing
+    au!
+    au InsertEnter * :set listchars-=trail:·
+    au InsertLeave * :set listchars+=trail:·
+augroup END
 nmap <leader>l :set list!<CR>       " Shortcut to rapidly toggle `set list`
 set modelines=5                     " Debian likes to disable this, The number of lines at the top and bottom to look for modelines.
 set cpoptions+=$                    " show $ on the end of selection
@@ -82,8 +87,10 @@ endif
 " ---------------
 syntax enable
 
-set hlsearch
-set incsearch
+set synmaxcol=300
+
+set hlsearch " When there is a previous search pattern, highlight all its matches.
+set incsearch " While typing a search command, show where the pattern, as it was typed so far, matches.
 noremap <Leader>/ :set invhls<CR> " toggle highlight
 
 set textwidth=120
@@ -93,21 +100,20 @@ set history=768                 " Number of things to remember in history.
 set cf                          " Enable error files & error jumping.
 set clipboard+=unnamed          " Yanks go on clipboard instead.
 set autowrite                   " Writes on make/shell commands
-" set timeoutlen=500            " Time to wait for a command (after leader for example)
-" set ttimeoutlen=50            " Make Esc work faster
 set formatoptions=crql
 set nrformats=
 set suffixes+=.dvi              " Lower priority in wildcards
 set showmatch                   " Show matching brackets.
+set ignorecase                  " Ignoring case in a pattern
 set smartcase                   " Case insensitive searches become sensitive with capitals
-set shiftround                  " round shift
-set laststatus=2
-set showcmd
+set shiftround                  " Round indent to multiple of 'shiftwidth'
+set laststatus=2                " always show status line
+set showcmd                     " Show (partial) command in the last line of the screen
+set linebreak                   " If on, Vim will wrap long lines at a character in 'breakat' rather than at the last character that fits on the screen
 " Number of lines to keep above or below the cursor.
 if !&scrolloff
   set scrolloff=3
 endif
-" set printoptions=paper:letter
 if !&sidescrolloff
   set sidescrolloff=5
 endif
@@ -130,12 +136,23 @@ if v:version >= 700
 endif
 set virtualedit=block
 set wildmode=longest:full,full
-set wildignore+=*~
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.md5.*
+set wildignore+=*~                                    " temporary files
+set wildignore+=/tmp/*,*/tmp/*                        " tmp files
+set wildignore+=*.zip,*.tar,*.tar.gz,*.gz,*.rar,*.7z  " archives
+set wildignore+=*.md5.*                               " spring md5 files
+set wildignore+=.hg,.git,.svn                         " Version control
+set wildignore+=*.aux,*.out,*.toc                     " LaTeX intermediate files
+set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg        " binary images
+set wildignore+=*.o,*.so,*.obj,*.exe,*.dll,*.manifest " compiled object files
+set wildignore+=*.spl                                 " compiled spelling word lists
+set wildignore+=*.sw?                                 " Vim swap files
+set wildignore+=*.DS_Store                            " OSX bullshit
+set wildignore+=*.orig                                " Merge resolution files
+
 set winaltkeys=no
 
-set splitbelow                  " Split windows at bottom
-set splitright
+set splitbelow                  " Split windows at bottom with :split
+set splitright                  " Split windows on right with :vsplit
 
 " set guifont=Inconsolata\ for\ Powerline\ 12
 set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
@@ -146,6 +163,7 @@ set number                        " show lines number
 " set nuw=6                       " column with line numbers is 6 chars width
 set ff=unix                       " unix end of line
 set cryptmethod=blowfish2         " encryption method :X or -x in command line
+au VimResized * :wincmd =         " Resize splits when the window is resized
 
 " ---------------
 " folding
@@ -184,6 +202,8 @@ nmap <leader>D :bufdo bd<CR>                " Close all buffers
 " ---------------
 " move lines
 " --------------- {{
+
+" without that moving lines in console vim not working
 if !has('gui_running')
   let c='a'
   while c <= 'z'
@@ -191,8 +211,13 @@ if !has('gui_running')
     exec "imap \e".c." <A-".c.">"
     let c = nr2char(1+char2nr(c))
   endw
-  set timeout ttimeoutlen=50
 endif
+
+" These two options together determine the behavior when part of a
+" mapped key sequence or keyboard code has been received
+set notimeout
+set ttimeout
+set ttimeoutlen=50
 
 nmap <A-j> ]e==
 nmap <A-k> [e==
