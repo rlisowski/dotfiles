@@ -240,22 +240,6 @@ nmap <Leader>rt :tabnew ~/.vimrc<CR>
 nmap <Leader>re :e ~/.vimrc<CR>
 " }}
 
-
-
-" ----------------------------------------
-" Plugins
-" ----------------------------------------
-
-
-" ---------------
-" Vundle
-" --------------- {{
-" nmap <Leader>bi PluginInstall<CR>
-" nmap <Leader>bu PluginInstall!<CR> " Because this also updates
-" nmap <Leader>bc PluginClean
-" }}
-
-
 " ----------------------------------------
 " Functions
 " ----------------------------------------
