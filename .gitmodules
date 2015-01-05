@@ -7,9 +7,6 @@
 [submodule "prax"]
 	path = prax
 	url = https://github.com/ysbaddaden/prax.git
-[submodule ".rvm"]
-	path = .rvm
-	url = https://github.com/wayneeseguin/rvm.git
 [submodule ".zsh-syntax-highlighting"]
 	path = .zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
