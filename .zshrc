@@ -15,7 +15,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git svn cap gem bundler rails git-flow node)
+plugins=(git gitfast svn cap gem bundler rails git-flow node)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -25,21 +25,12 @@ cdpath=($HOME/workspace $HOME/workspace2)
 # Customize to your needs...
 unsetopt auto_name_dirs
 
-[[ -s /home/rlisowski/.nvm/nvm.sh ]] && source /home/rlisowski/.nvm/nvm.sh # This loads NVM
-
 export COFFEELINT_CONFIG=$HOME/.coffeelint.json
-if [[ -s "${TM_PROJECT_DIRECTORY}/.rvmrc" ]]
-then
-	source "${TM_PROJECT_DIRECTORY}/.rvmrc"
-fi
+export PATH=$PATH:$HOME/node_modules/.bin:$HOME/bin
+[[ -s $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator.zsh ]] && source $HOME/.tmuxinator/scripts/tmuxinator.zsh
 [[ -s $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# Add NVM to PATH
-export PATH=$PATH:$HOME/node_modules/.bin:$HOME/bin
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 # JAVA
 JAVA_HOME=/usr/local/java/jdk1.8.0_05
@@ -48,5 +39,3 @@ PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin
 export JAVA_HOME
 export ANT_HOME
 export PATH
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
