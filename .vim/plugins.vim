@@ -91,6 +91,7 @@ Plug 'https://github.com/mustache/vim-mustache-handlebars.git'
 Plug 'https://github.com/tpope/vim-markdown.git'
 Plug 'https://github.com/suan/vim-instant-markdown.git'
 Plug 'https://github.com/rstacruz/sparkup.git'                 " write html faster
+Plug 'https://github.com/tmux-plugins/vim-tmux.git'
 
 " ---------------
 " NAVIGATION
