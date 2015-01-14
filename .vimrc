@@ -12,7 +12,7 @@ endif
 
 filetype plugin indent on     " required!
 
-set shell=/bin/sh
+set shell=/bin/bash
 set nocompatible
 set autoindent                 " Copy indent from current line when starting a new line
 set autowriteall               " Automatically save before commands like :next and :make
