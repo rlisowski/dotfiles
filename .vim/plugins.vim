@@ -127,6 +127,7 @@ Plug 'https://github.com/groenewege/vim-less.git'
 " Plug 'https://github.com/ap/vim-css-color.git'
 " Plug 'https://github.com/hail2u/vim-css3-syntax'
 " Plug 'https://github.com/cakebaker/scss-syntax.vim'
+Plug 'https://github.com/chrisbra/csv.vim.git'                        " CSV formatter
 
 " ---------------
 " GAMES ;)
