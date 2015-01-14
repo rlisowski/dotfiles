@@ -13,7 +13,7 @@ endif
 filetype plugin indent on     " required!
 
 set shell=/bin/bash
-set nocompatible
+set noexrc                     " don't use local version of .(g)vimrc, .exrc
 set autoindent                 " Copy indent from current line when starting a new line
 set autowriteall               " Automatically save before commands like :next and :make
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
@@ -109,6 +109,7 @@ set smartcase                   " Case insensitive searches become sensitive wit
 set shiftround                  " Round indent to multiple of 'shiftwidth'
 set laststatus=2                " always show status line
 set showcmd                     " Show (partial) command in the last line of the screen
+set shortmess=aOstT             " shortens messages to avoid 'press a key' prompt
 set linebreak                   " If on, Vim will wrap long lines at a character in 'breakat' rather than at the last character that fits on the screen
 " Number of lines to keep above or below the cursor.
 if !&scrolloff
@@ -157,7 +158,7 @@ set splitright                  " Split windows on right with :vsplit
 " set guifont=Inconsolata\ for\ Powerline\ 12
 set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
 
-set ts=2 sts=2 sw=2 noexpandtab
+set ts=2 sts=2 sw=2 noexpandtab   " default indentation 2 spaces
 set relativenumber                " show lines number
 set number                        " show lines number
 " set nuw=6                       " column with line numbers is 6 chars width
@@ -173,6 +174,14 @@ set foldmethod=syntax                            " Fold on the marker
 set foldlevel=100                                " Don't autofold anything (but I can still fold manually)
 set foldlevelstart=99                            " Remove folds
 set foldopen=block,hor,mark,percent,quickfix,tag " what movements open fold
+
+" ---------------
+" mouse
+" --------------- {{
+" Treat long lines as break lines (useful when moving around in them)
+map j gj
+map k gk
+" }}
 
 " ---------------
 " mouse
@@ -254,15 +263,6 @@ autocmd BufReadPost *
       \ if line("'\"") > 1 && line("'\"") <= line("$") |
       \   exe "normal! g`\"" |
       \ endif
-" }}
-
-
-" ---------------
-" easy editing .vimrc file
-" --------------- {{
-nmap <Leader>rc :source ~/.vimrc<CR>
-nmap <Leader>rt :tabnew ~/.vimrc<CR>
-nmap <Leader>re :e ~/.vimrc<CR>
 " }}
 
 " ----------------------------------------
