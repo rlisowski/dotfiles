@@ -95,20 +95,6 @@ Plug 'https://github.com/rstacruz/sparkup.git'                 " write html fast
 Plug 'https://github.com/tmux-plugins/vim-tmux.git'
 
 " ---------------
-" NAVIGATION
-" ---------------
-Plug 'https://github.com/scrooloose/nerdtree.git'     " project tree navigation window
-Plug 'https://github.com/tpope/vim-vinegar.git'       " improwments for netrw
-Plug 'https://github.com/kien/ctrlp.vim.git'          " find file/buffer
-Plug 'https://github.com/szw/vim-ctrlspace.git'       " list open buffers
-Plug 'https://github.com/majutsushi/tagbar.git'       " navigate by tags
-Plug 'https://github.com/lukaszkorecki/CoffeeTags.git'
-Plug 'https://github.com/vim-scripts/mru.vim.git'     " most recent used files
-Plug 'https://github.com/rking/ag.vim.git'            " search plugin
-Plug 'https://github.com/vim-scripts/matchit.zip.git' " % behavior
-Plug 'https://github.com/dockyard/vim-easydir.git'    " simple way to create, edit and save files and directories
-
-" ---------------
 " SYNTAX
 " ---------------
 Plug 'https://github.com/scrooloose/syntastic.git'                   " syntax checker
@@ -128,6 +114,21 @@ Plug 'https://github.com/groenewege/vim-less.git'
 " Plug 'https://github.com/hail2u/vim-css3-syntax'
 " Plug 'https://github.com/cakebaker/scss-syntax.vim'
 Plug 'https://github.com/chrisbra/csv.vim.git'                        " CSV formatter
+
+" ---------------
+" NAVIGATION
+" ---------------
+Plug 'https://github.com/scrooloose/nerdtree.git'     " project tree navigation window
+Plug 'https://github.com/tpope/vim-vinegar.git'       " improwments for netrw
+Plug 'https://github.com/kien/ctrlp.vim.git'          " find file/buffer
+Plug 'https://github.com/szw/vim-ctrlspace.git'       " list open buffers
+Plug 'https://github.com/majutsushi/tagbar.git'       " navigate by tags
+Plug 'https://github.com/lukaszkorecki/CoffeeTags.git'
+Plug 'https://github.com/vim-scripts/mru.vim.git'     " most recent used files
+Plug 'https://github.com/rking/ag.vim.git'            " search plugin
+Plug 'https://github.com/vim-scripts/matchit.zip.git' " % behavior
+Plug 'https://github.com/dockyard/vim-easydir.git'    " simple way to create, edit and save files and directories
+Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 
 " ---------------
 " GAMES ;)
