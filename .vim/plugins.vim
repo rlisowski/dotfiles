@@ -134,4 +134,10 @@ Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 " GAMES ;)
 " ---------------
 Plug 'https://github.com/katono/rogue.vim.git'
+
+" ---------------
+" CONFIG
+" ---------------
+Plug 'https://github.com/korin/korin_vim_settings.git'
+
 call plug#end()
