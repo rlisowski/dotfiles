@@ -17,6 +17,8 @@ set noexrc                     " don't use local version of .(g)vimrc, .exrc
 set autoindent                 " Copy indent from current line when starting a new line
 set autowriteall               " Automatically save before commands like :next and :make
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
+set encoding=utf-8             " Use UTF-8 everywhere.
+scriptencoding utf-8
 
 " ---------------
 " Color
@@ -121,7 +123,6 @@ endif
 set display+=lastline
 set autoread                    " read file from disk when changed in another editor
 set autowrite                   " auto write file on several commands
-set encoding=utf-8              " Use UTF-8 everywhere.
 " Keep search pattern at the center of the screen.
 " {{
 nnoremap <silent> n nzz
@@ -164,7 +165,12 @@ set number                        " show lines number
 " set nuw=6                       " column with line numbers is 6 chars width
 set ff=unix                       " unix end of line
 set cryptmethod=blowfish2         " encryption method :X or -x in command line
-au VimResized * :wincmd =         " Resize splits when the window is resized
+
+augroup vimrc
+  autocmd!
+augroup END
+
+autocmd vimrc VimResized * :wincmd =         " Resize splits when the window is resized
 
 " ---------------
 " folding
@@ -259,7 +265,7 @@ map <A-0> :tablast<CR>
 " (happens when dropping a file on gvim).
 " Also don't do it when the mark is in the first line, that is the default
 " position when opening a file.
-autocmd BufReadPost *
+autocmd vimrc BufReadPost *
       \ if line("'\"") > 1 && line("'\"") <= line("$") |
       \   exe "normal! g`\"" |
       \ endif
@@ -290,7 +296,7 @@ function! <SID>StripTrailingWhitespaces(manual)
 endfunction
 
 nnoremap <silent> <F3> :call <SID>StripTrailingWhitespaces(1)<CR>
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces(0)
+autocmd vimrc BufWritePre * :call <SID>StripTrailingWhitespaces(0)
 " }}
 
 " ---------------
@@ -351,25 +357,25 @@ noremap <silent> <C-S-PageDown> :call ShiftTab(1)<CR>
 " File types settings
 " --------------- {{
 " CSS (tab width 2 chr)
-autocmd FileType css set et
-autocmd FileType css set sw=2
-autocmd FileType css set ts=2
-autocmd FileType css set sts=2
+autocmd vimrc FileType css set et
+autocmd vimrc FileType css set sw=2
+autocmd vimrc FileType css set ts=2
+autocmd vimrc FileType css set sts=2
 " less (tab width 2 chr)
-autocmd FileType less set et
-autocmd FileType less set sw=2
-autocmd FileType less set ts=2
-autocmd FileType less set sts=2
+autocmd vimrc FileType less set et
+autocmd vimrc FileType less set sw=2
+autocmd vimrc FileType less set ts=2
+autocmd vimrc FileType less set sts=2
 " JavaScript (tab width 2 chr)
-autocmd FileType javascript set et
-autocmd FileType javascript set sw=2
-autocmd FileType javascript set ts=2
-autocmd FileType javascript set sts=2
+autocmd vimrc FileType javascript set et
+autocmd vimrc FileType javascript set sw=2
+autocmd vimrc FileType javascript set ts=2
+autocmd vimrc FileType javascript set sts=2
 " HTML (tab width 2 chr)
-autocmd FileType html set et
-autocmd FileType html set sw=2
-autocmd FileType html set ts=2
-autocmd FileType html set sts=2
+autocmd vimrc FileType html set et
+autocmd vimrc FileType html set sw=2
+autocmd vimrc FileType html set ts=2
+autocmd vimrc FileType html set sts=2
 "  }}
 
 
