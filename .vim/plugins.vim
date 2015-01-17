@@ -62,6 +62,7 @@ Plug 'https://github.com/vim-scripts/BufOnly.vim.git'         " close any other 
 Plug 'https://github.com/vim-scripts/SyntaxRange.git'         " syntax highlight for region, required by vimdeck
 Plug 'https://github.com/vim-scripts/LargeFile.git'           " disables certain features of vim for large files
 Plug 'https://github.com/EinfachToll/DidYouMean.git'          " ask if I misspelled filename
+Plug 'https://github.com/Z1MM32M4N/vim-superman.git'          " man pages in vim
 
 " ---------------
 " SNIPPETS

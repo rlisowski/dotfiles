@@ -39,3 +39,12 @@ PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin
 export JAVA_HOME
 export ANT_HOME
 export PATH
+
+vman() {
+  vim -c "SuperMan $*"
+
+  if [ "$?" != "0" ]; then
+    echo "No manual entry for $*"
+  fi
+}
+compdef vman="man"
