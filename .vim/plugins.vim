@@ -61,6 +61,7 @@ Plug 'https://github.com/Lokaltog/vim-easymotion.git'         " simpler way to u
 Plug 'https://github.com/vim-scripts/BufOnly.vim.git'         " close any other buffers
 Plug 'https://github.com/vim-scripts/SyntaxRange.git'         " syntax highlight for region, required by vimdeck
 Plug 'https://github.com/vim-scripts/LargeFile.git'           " disables certain features of vim for large files
+Plug 'https://github.com/EinfachToll/DidYouMean.git'          " ask if I misspelled filename
 
 " ---------------
 " SNIPPETS
