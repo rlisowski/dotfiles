@@ -140,6 +140,6 @@ Plug 'https://github.com/katono/rogue.vim.git'
 " ---------------
 " CONFIG
 " ---------------
-Plug 'https://github.com/korin/korin_vim_settings.git'
+Plug 'https://github.com/korin/vim_plugins_settings.git'
 
 call plug#end()
