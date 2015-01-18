@@ -63,7 +63,7 @@ Plug 'https://github.com/vim-scripts/SyntaxRange.git'         " syntax highlight
 Plug 'https://github.com/vim-scripts/LargeFile.git'           " disables certain features of vim for large files
 Plug 'https://github.com/EinfachToll/DidYouMean.git'          " ask if I misspelled filename
 Plug 'https://github.com/Z1MM32M4N/vim-superman.git'          " man pages in vim
-Plug 'https://github.com/edkolev/tmuxline.vim.git'            " generate tmux status line from vim
+" Plug 'https://github.com/edkolev/tmuxline.vim.git'            " generate tmux status line from vim
 
 " ---------------
 " SNIPPETS
