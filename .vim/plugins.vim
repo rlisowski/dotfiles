@@ -13,8 +13,6 @@ Plug 'https://github.com/kien/rainbow_parentheses.vim.git'        " mark parenth
 Plug 'https://github.com/bling/vim-airline.git'                   " status bar
 Plug 'https://github.com/Yggdroot/indentLine.git'                 " shiw indentation with neat lines
 Plug 'https://github.com/sjl/gundo.vim.git'                       " undo view
-Plug 'https://github.com/vim-scripts/CursorLineCurrentWindow.git' " cursor line only in current window
-Plug 'https://github.com/inside/vim-search-pulse.git'             " highlight search
 Plug 'https://github.com/drmikehenry/vim-fontsize.git'            " adjust quickly font size
 
 " ---------------
