@@ -7,12 +7,6 @@ Plug 'https://github.com/vim-scripts/L9.git'
 " Plug 'https://github.com/MarcWeber/vim-addon-mw-utils.git'
 
 " ---------------
-" ColorSchemes
-" ---------------
-Plug 'https://github.com/vim-scripts/ScrollColors.git' " colorscheme Scroller/Chooser/Browser
-Plug 'https://github.com/vim-scripts/Colour-Sampler-Pack.git' " top 100(ish) rated color schemes on vim.sf.net
-
-" ---------------
 " UI
 " ---------------
 Plug 'https://github.com/kien/rainbow_parentheses.vim.git'        " mark parentheses with colors
