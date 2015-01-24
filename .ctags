@@ -1,4 +1,6 @@
+--recurse
 --tag-relative
+
 --exclude=.git
 --exclude=.svn
 --exclude=node_modules
