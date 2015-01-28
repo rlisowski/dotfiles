@@ -41,6 +41,7 @@ Plug 'https://github.com/michaeljsmith/vim-indent-object.git' " text object by i
 Plug 'https://github.com/kana/vim-textobj-user.git'           " create your own text objects
 Plug 'https://github.com/kana/vim-textobj-entire.git'         " text object entire file
 Plug 'https://github.com/kana/vim-textobj-datetime.git'       " ext objects for date and time
+Plug 'https://github.com/wellle/targets.vim.git'              " additional text objects like cin) da, etc.
 Plug 'https://github.com/terryma/vim-expand-region.git'       " easily expand region eg visual highlight
 Plug 'https://github.com/tpope/vim-rsi.git'                   " Readline key bindings in insert and command line mode
 Plug 'https://github.com/tpope/vim-sleuth'                    " keep shiftwidth and expandtab as in other file in the project
@@ -58,6 +59,8 @@ Plug 'https://github.com/Z1MM32M4N/vim-superman.git'          " man pages in vim
 " Plug 'https://github.com/edkolev/tmuxline.vim.git'            " generate tmux status line from vim
 Plug 'https://github.com/dietsche/vim-lastplace.git'          " reopen files where you left off
 Plug 'https://github.com/szw/vim-maximizer.git'               " maximize current window on demand
+" Plug 'https://github.com/maxbrunsfeld/vim-yankstack.git'      " implementation of kill-ring
+" Plug 'https://github.com/vim-scripts/YankRing.vim.git'        "  implementation of kill-ring
 
 " ---------------
 " SNIPPETS
