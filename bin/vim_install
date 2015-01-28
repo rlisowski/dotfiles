@@ -67,4 +67,21 @@ sudo update-alternatives --install /usr/bin/editor editor /usr/bin/vim 1
 sudo update-alternatives --set editor /usr/bin/vim
 sudo update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
 sudo update-alternatives --set vi /usr/bin/vim
+
+shortcut="
+[Desktop Entry]
+Version=1.0
+Name=GVIM
+Comment=GVIM, graphical Vi IMproved
+Exec=/usr/bin/gvim -f
+TryExec=gvim
+Terminal=false
+Type=Application
+Icon=$HOME/.vim/icons/ico.ico
+MimeType=text/plain;
+Categories=Utility;TextEditor;
+"
+shortcut_path="$HOME/.local/share/applications/gvim.desktop"
+echo "$shortcut" > $shortcut_path
+chmod a+rx $shortcut_path
 exit 0
