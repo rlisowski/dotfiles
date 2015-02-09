@@ -30,6 +30,7 @@ Plug 'https://github.com/airblade/vim-gitgutter.git' " mark changed lines in sig
 Plug 'https://github.com/tpope/vim-abolish.git'               " mostly for better find and replace eg :%s/{S,s}ome/{O,o}ther/g
 Plug 'https://github.com/AndrewRadev/splitjoin.vim'           " easyli split/join ruby hashmap, json, javascript object
 Plug 'https://github.com/tpope/vim-obsession.git'             " save/restore vim session
+Plug 'https://github.com/dhruvasagar/vim-prosession.git'      " handle sessions like a pro requires vim-obsession
 Plug 'https://github.com/airblade/vim-rooter.git'             " set working directory
 Plug 'https://github.com/godlygeek/tabular.git'               " easy align by char
 Plug 'https://github.com/Raimondi/delimitMate.git'            " automatically close parentheses
