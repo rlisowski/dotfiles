@@ -1,6 +1,7 @@
 project_name: redmine
 project_root: /home/rlisowski/workspace/redmine
 pre: sudo redis-server /etc/redis/redis.conf
+pre_window: rvm use 2.1.5
 windows:
   - zsh:
     - gv .
