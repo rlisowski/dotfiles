@@ -118,6 +118,7 @@ Plug 'https://github.com/groenewege/vim-less.git'
 " Plug 'https://github.com/cakebaker/scss-syntax.vim'
 Plug 'https://github.com/chrisbra/csv.vim.git'                        " CSV formatter
 Plug 'https://github.com/ekalinin/Dockerfile.vim.git'                 " docker file syntax
+Plug 'https://github.com/tmatilai/gitolite.vim.git'                   " gitolite syntax
 
 " ---------------
 " NAVIGATION
