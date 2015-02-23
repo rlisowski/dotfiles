@@ -26,7 +26,7 @@ cdpath=($HOME/workspace $HOME/workspace2)
 unsetopt auto_name_dirs
 
 export COFFEELINT_CONFIG=$HOME/.coffeelint.json
-export PATH=$PATH:$HOME/node_modules/.bin:$HOME/bin
+export PATH=$PATH:$HOME/node_modules/.bin:$HOME/bin:$HOME/.cabal/bin
 [[ -s $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator.zsh ]] && source $HOME/.tmuxinator/scripts/tmuxinator.zsh
 [[ -s $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
