@@ -60,8 +60,6 @@ Plug 'https://github.com/Z1MM32M4N/vim-superman.git'          " man pages in vim
 " Plug 'https://github.com/edkolev/tmuxline.vim.git'            " generate tmux status line from vim
 Plug 'https://github.com/dietsche/vim-lastplace.git'          " reopen files where you left off
 Plug 'https://github.com/szw/vim-maximizer.git'               " maximize current window on demand
-" Plug 'https://github.com/maxbrunsfeld/vim-yankstack.git'      " implementation of kill-ring
-" Plug 'https://github.com/vim-scripts/YankRing.vim.git'        "  implementation of kill-ring
 Plug 'https://github.com/joonty/vdebug.git'                   " debug with vim
 Plug 'https://github.com/ashisha/image.vim.git'               " image preview
 
