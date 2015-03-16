@@ -42,6 +42,7 @@ Plug 'https://github.com/michaeljsmith/vim-indent-object.git' " text object by i
 Plug 'https://github.com/kana/vim-textobj-user.git'           " create your own text objects
 Plug 'https://github.com/kana/vim-textobj-entire.git'         " text object entire file
 Plug 'https://github.com/kana/vim-textobj-datetime.git'       " ext objects for date and time
+Plug 'https://github.com/tpope/vim-speeddating.git'           " use CTRL-A/CTRL-X to increment dates, times, and more
 Plug 'https://github.com/wellle/targets.vim.git'              " additional text objects like cin) da, etc.
 Plug 'https://github.com/terryma/vim-expand-region.git'       " easily expand region eg visual highlight
 Plug 'https://github.com/tpope/vim-rsi.git'                   " Readline key bindings in insert and command line mode
@@ -88,9 +89,10 @@ Plug 'https://github.com/danchoi/ri.vim.git'                 " search and naviga
 " MARKUP
 " ---------------
 Plug 'https://github.com/tpope/vim-haml.git'
-Plug 'https://github.com/slim-template/vim-slim.git'
+Plug 'https://github.com/slim-template/vim-slim.git'          " slim syntax highlighting
 Plug 'https://github.com/mustache/vim-mustache-handlebars.git'
-Plug 'https://github.com/tpope/vim-markdown.git'
+" Plug 'https://github.com/tpope/vim-markdown.git'
+Plug 'https://github.com/gabrielelana/vim-markdown.git'        " environment to create Markdown files with a syntax highlight
 Plug 'https://github.com/suan/vim-instant-markdown.git'
 Plug 'https://github.com/rstacruz/sparkup.git'                 " write html faster
 Plug 'https://github.com/tmux-plugins/vim-tmux.git'
