@@ -131,7 +131,8 @@ Plug 'https://github.com/szw/vim-ctrlspace.git'       " list open buffers
 Plug 'https://github.com/majutsushi/tagbar.git'       " navigate by tags
 Plug 'https://github.com/lukaszkorecki/CoffeeTags.git'
 Plug 'https://github.com/vim-scripts/mru.vim.git'     " most recent used files
-Plug 'https://github.com/rking/ag.vim.git'            " search plugin
+" Plug 'https://github.com/rking/ag.vim.git'            " search plugin
+Plug 'https://github.com/gabesoft/vim-ags.git'        " Silver searcher (AG) plugin
 Plug 'https://github.com/vim-scripts/matchit.zip.git' " % behavior
 Plug 'https://github.com/dockyard/vim-easydir.git'    " simple way to create, edit and save files and directories
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
