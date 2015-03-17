@@ -1,7 +1,9 @@
 project_name: duty
 project_root: /home/rlisowski/workspace/efiduty
-pre: sudo service postgresql start
+pre: sudo service postgresql restart
 pre: sudo redis-server /etc/redis/redis.conf
+pre: sudo service elasticsearch restart
+pre: sudo service influxdb restart
 pre_window: rvm use 2.1.5
 windows:
   - zsh:
