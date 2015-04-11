@@ -8,7 +8,7 @@ from libqtile.config import Drag, Click, Group, Key, Match, Screen
 
 # Theme defaults
 bar_defaults = dict(
-    size=28,
+    size=26,
     background=['#222222', '#111111'],
 )
 
@@ -20,7 +20,7 @@ layout_defaults = dict(
 )
 
 widget_defaults = dict(
-    font='Ubuntu',
+    font='Ubuntu Mono',
     fontsize=14,
     padding=5,
     background=bar_defaults['background'],
@@ -96,21 +96,23 @@ class Widget(object):
 
 # Commands to spawn
 class Commands(object):
+    gvim = 'gvim -f "$@" &'
     browser = 'google-chrome'
-    dmenu = 'dmenu_run -i -b -p ">>>" -fn "-*-fixed-*-*-*-*-18-*-*-*-*-*-*-*" -nb "#15181a" -nf "#fff" -sb "#333" -sf "#fff"'
     file_manager = 'nautilus --no-desktop'
     lock_screen = 'gnome-screensaver-command -l'
     screenshot = 'gnome-screenshot'
     terminal = 'gnome-terminal'
     tmux = 'gnome-terminal -e tmux'
     trackpad_toggle = "synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')"
-    volume_up = 'amixer -q -c 1 sset Master 5dB+'
-    volume_down = 'amixer -q -c 1 sset Master 5dB-'
+    volume_up = 'amixer -q -c 0 sset Master 5dB+'
+    volume_down = 'amixer -q -c 0 sset Master 5dB-'
     volume_toggle = 'amixer -q -D pulse sset Master 1+ toggle'
 
 
 # Keybindings
 mod = 'mod4'
+alt = "mod1"
+ctl = "control"
 keys = [
     # Window Manager Controls
     Key([mod, 'control'], 'r', lazy.restart()),
@@ -121,17 +123,6 @@ keys = [
     Key([mod], 'w', lazy.window.kill()),
     Key([mod], 'f', lazy.window.toggle_floating()),
 
-    # Layout, group, and screen modifiers
-    #Key([mod], 'j', lazy.layout.up()),
-    #Key([mod], 'k', lazy.layout.down()),
-    #Key([mod, 'shift'], 'j', lazy.layout.shuffle_up()),
-    #Key([mod, 'shift'], 'k', lazy.layout.shuffle_down()),
-    #Key([mod, 'shift'], 'g', lazy.layout.grow()),
-    #Key([mod, 'shift'], 's', lazy.layout.shrink()),
-    #Key([mod, 'shift'], 'n', lazy.layout.normalize()),
-    #Key([mod, 'shift'], 'm', lazy.layout.maximize()),
-    #Key([mod, 'shift'], 'space', lazy.layout.flip()),
-
     # Switch groups
     Key([mod], 'Left', lazy.screen.prevgroup()),
     Key([mod], 'Right', lazy.screen.nextgroup()),
@@ -140,16 +131,28 @@ keys = [
     Key([mod], 'Up', lazy.nextlayout()),
     Key([mod], 'Down', lazy.prevlayout()),
 
-    # Change window focus
-    Key([mod], 'Tab', lazy.layout.next()),
-    Key([mod, 'shift'], 'Tab', lazy.layout.previous()),
+    # Switch between windows in current stack pane
+    Key([mod], "k", lazy.layout.down()),
+    Key([mod], "j", lazy.layout.up()),
+
+    # Move windows up or down in current stack
+    Key([mod, "control"], "k", lazy.layout.shuffle_down()),
+    Key([mod, "control"], "j", lazy.layout.shuffle_up()),
+
+    Key([mod], "r", lazy.spawncmd()),
+
+    # Toggle between split and unsplit sides of stack.
+    # Split = all windows displayed
+    # Unsplit = 1 window displayed, like Max layout, but still with
+    # multiple stack panes
+    Key([mod, "shift"], "|", lazy.layout.toggle_split()),
 
     # Switch focus to other screens
     Key([mod], 'h', lazy.to_screen(0)),  # left
     Key([mod], 'l', lazy.to_screen(1)),  # right
 
     # Commands: Application Launchers
-    Key([mod], 'space', lazy.spawn(Commands.dmenu)),
+    Key([mod], 'g', lazy.spawn(Commands.gvim)),
     Key([mod], 'n', lazy.spawn(Commands.browser)),
     Key([mod], 'e', lazy.spawn(Commands.file_manager)),
     Key([mod], 'Return', lazy.spawn(Commands.terminal)),
@@ -175,7 +178,7 @@ group_setup = (
     }),
     ('2', {  # fa-code
         'layout': 'max',
-        'matches': [Match(wm_class=('Sublime', 'Vim', 'gVim'))],
+        'matches': [Match(wm_class=('Sublime', 'Vim', 'gVim', 'VIM', 'GVIM'))],
     }),
     ('3', {}),  # fa-terminal
     ('4', {'layout': 'max'}),
@@ -224,6 +227,7 @@ screens = [
         # bottom=bar.Bar(widgets=[Powerline()], **bar_defaults),
         top=bar.Bar(widgets=[
             widget.GroupBox(**Widget.groupbox),
+            widget.Prompt(),
             widget.WindowName(),
 
             widget.CPUGraph(graph_color='#18BAEB', fill_color='#1667EB.3', **Widget.graph),
@@ -242,10 +246,9 @@ screens = [
             widget.Systray(**Widget.systray),
             # widget.BatteryIcon(**Widget.battery),
             # widget.Battery(**Widget.battery_text),
-            widget.Volume(theme_path='/usr/share/icons/Humanity/status/22/', cardid=1),
-            # widget.YahooWeather(location='Fresno, CA', **Widget.weather),
+            widget.Volume(theme_path='/usr/share/icons/Humanity/status/24/', cardid=0),
             widget.Sep(**Widget.sep),
-            widget.Clock(fmt='%a %d %b %I:%M %p'),
+            widget.Clock(fmt='%a %d %b %H:%M %p'),
             ], **bar_defaults),
     ),
     Screen(
