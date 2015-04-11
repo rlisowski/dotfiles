@@ -145,7 +145,7 @@ keys = [
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
-    Key([mod, "shift"], "|", lazy.layout.toggle_split()),
+    # Key([mod, "shift"], "|", lazy.layout.toggle_split()),
 
     # Switch focus to other screens
     Key([mod], 'h', lazy.to_screen(0)),  # left
