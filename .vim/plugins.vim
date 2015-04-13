@@ -87,6 +87,13 @@ Plug 'https://github.com/tpope/vim-bundler.git'              " bundler helpers
 Plug 'https://github.com/danchoi/ri.vim.git'                 " search and navigate Ruby library and gem documentation
 
 " ---------------
+" ELIXIR
+" ---------------
+Plug 'https://github.com/elixir-lang/vim-elixir.git'         " elixir support
+Plug 'https://github.com/edkolev/erlang-motions.vim.git'
+Plug 'https://github.com/jimenezrick/vimerl.git'
+
+" ---------------
 " MARKUP
 " ---------------
 Plug 'https://github.com/tpope/vim-haml.git'
