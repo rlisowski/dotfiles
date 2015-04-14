@@ -6,6 +6,7 @@ pre:
 pre_window: rvm use 2.1.5
 windows:
   - zsh:
+    - g fetch
     - gv .
     - gst
   - 'rails c': be rails c
@@ -13,7 +14,7 @@ windows:
       layout: main-horizontal
       panes:
         # app server
-        - if ( be passenger status | grep -q "running on" ) then ( be passenger stop ) fi; be passenger start
+        - be rails s -p 5000
         # sidekiq
         - echo 'redis-cli FLUSHALL; sh script/sidekiq restart development proxy:3128; tailf log/sidekiq.log'
         # clockwork
