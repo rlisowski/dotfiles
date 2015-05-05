@@ -83,7 +83,7 @@ Plug 'https://github.com/sunaku/vim-ruby-minitest.git'       " syntax and comple
 Plug 'https://github.com/ecomba/vim-ruby-refactoring.git'    " refactoring helpers
 Plug 'https://github.com/nelstrom/vim-textobj-rubyblock.git' " ruby textobject
 Plug 'https://github.com/t9md/vim-ruby-xmpfilter.git'        " display result in comment
-Plug 'https://github.com/tpope/vim-bundler.git'              " bundler helpers
+" Plug 'https://github.com/tpope/vim-bundler.git'              " bundler helpers
 Plug 'https://github.com/danchoi/ri.vim.git'                 " search and navigate Ruby library and gem documentation
 
 " ---------------
