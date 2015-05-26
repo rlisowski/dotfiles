@@ -64,6 +64,8 @@ Plug 'https://github.com/dietsche/vim-lastplace.git'          " reopen files whe
 Plug 'https://github.com/szw/vim-maximizer.git'               " maximize current window on demand
 Plug 'https://github.com/joonty/vdebug.git'                   " debug with vim
 Plug 'https://github.com/ashisha/image.vim.git'               " image preview
+Plug 'https://github.com/tpope/vim-dispatch.git'              " async vim dispatcher
+Plug 'https://github.com/janko-m/vim-test.git'                " run any test
 
 " ---------------
 " SNIPPETS
