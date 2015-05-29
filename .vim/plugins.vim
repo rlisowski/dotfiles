@@ -66,6 +66,7 @@ Plug 'https://github.com/joonty/vdebug.git'                   " debug with vim
 Plug 'https://github.com/ashisha/image.vim.git'               " image preview
 Plug 'https://github.com/tpope/vim-dispatch.git'              " async vim dispatcher
 Plug 'https://github.com/janko-m/vim-test.git'                " run any test
+Plug 'https://github.com/diepm/vim-rest-console.git'          " REST console
 
 " ---------------
 " SNIPPETS
