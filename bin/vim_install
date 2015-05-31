@@ -13,15 +13,18 @@ SRCDDIR=$HOME/workspace/vim
 
 # create the install directory if it does not exists
 if [ ! -d $SRCDDIR ]; then
-  hg clone https://vim.googlecode.com/hg/ $SRCDDIR
+  # hg clone https://vim.googlecode.com/hg/ $SRCDDIR
+  git clone https://github.com/vim/vim.git $SRCDDIR
 fi
 
 echo Moving to $SRCDDIR
 cd $SRCDDIR
 
 echo Fetching changes
-hg pull
-hg update
+# hg pull
+# hg update
+git reset --hard
+git pull
 
 
 # clear after last install
