@@ -140,7 +140,9 @@ Plug 'https://github.com/tpope/vim-vinegar.git'       " improwments for netrw
 Plug 'https://github.com/kien/ctrlp.vim.git'          " find file/buffer
 Plug 'https://github.com/szw/vim-ctrlspace.git'       " list open buffers
 Plug 'https://github.com/majutsushi/tagbar.git'       " navigate by tags
-Plug 'https://github.com/lukaszkorecki/CoffeeTags.git'
+if !has('nvim')
+	Plug 'https://github.com/lukaszkorecki/CoffeeTags.git'
+endif
 Plug 'https://github.com/vim-scripts/mru.vim.git'     " most recent used files
 " Plug 'https://github.com/rking/ag.vim.git'            " search plugin
 Plug 'https://github.com/gabesoft/vim-ags.git'        " Silver searcher (AG) plugin

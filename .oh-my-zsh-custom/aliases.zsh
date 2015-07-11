@@ -72,6 +72,8 @@ gvc() { gvim -f $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | s
 vm() { vim $(git status --short | awk ' { print $2 } '); }
 vc() { vim $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
 
+alias nvim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
+
 sublm() { subl $(git status --short | awk ' { print $2 } ') &; }
 sublc() { subl $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d') &; }
 
