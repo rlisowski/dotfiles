@@ -16,7 +16,6 @@
 .sass-cache
 .svn
 Session.vim
-bin
 capybara-*.html
 config/application.yml
 config/database.yml
