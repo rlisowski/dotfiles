@@ -75,7 +75,7 @@ Plug 'https://github.com/chrisbra/Recover.vim.git'            " Show differences
 " ---------------
 " SNIPPETS
 " ---------------
-Plug 'https://github.com/ervandew/supertab.git'  " use tab as a expansion key
+Plug 'https://github.com/Valloric/YouCompleteMe.git', { 'do': './install.sh' } " code-completion engine
 Plug 'https://github.com/SirVer/ultisnips.git'   " snippets engine
 Plug 'https://github.com/honza/vim-snippets.git' " great snippers collection
 " Plug 'https://github.com/matthewsimo/angular-vim-snippets.git' " broken
