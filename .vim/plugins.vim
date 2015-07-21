@@ -71,6 +71,7 @@ Plug 'https://github.com/janko-m/vim-test.git'                " run any test
 Plug 'https://github.com/diepm/vim-rest-console.git'          " REST console
 Plug 'https://github.com/ConradIrwin/vim-bracketed-paste.git' " transparent pasting into vim
 Plug 'https://github.com/chrisbra/Recover.vim.git'            " Show differences for recovered files
+Plug 'https://github.com/mhinz/vim-startify.git'              " A fancy start screen for Vim
 
 " ---------------
 " SNIPPETS
