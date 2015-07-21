@@ -43,6 +43,8 @@ Plug 'https://github.com/michaeljsmith/vim-indent-object.git' " text object by i
 Plug 'https://github.com/kana/vim-textobj-user.git'           " create your own text objects
 Plug 'https://github.com/kana/vim-textobj-entire.git'         " text object entire file
 Plug 'https://github.com/kana/vim-textobj-datetime.git'       " ext objects for date and time
+Plug 'https://github.com/kana/vim-textobj-indent.git'         " ext object for indentation
+Plug 'https://github.com/glts/vim-textobj-indblock.git'       " ext object of indentation whitespace
 Plug 'https://github.com/tpope/vim-speeddating.git'           " use CTRL-A/CTRL-X to increment dates, times, and more
 Plug 'https://github.com/wellle/targets.vim.git'              " additional text objects like cin) da, etc.
 Plug 'https://github.com/terryma/vim-expand-region.git'       " easily expand region eg visual highlight
@@ -68,6 +70,7 @@ Plug 'https://github.com/tpope/vim-dispatch.git'              " async vim dispat
 Plug 'https://github.com/janko-m/vim-test.git'                " run any test
 Plug 'https://github.com/diepm/vim-rest-console.git'          " REST console
 Plug 'https://github.com/ConradIrwin/vim-bracketed-paste.git' " transparent pasting into vim
+Plug 'https://github.com/chrisbra/Recover.vim.git'            " Show differences for recovered files
 
 " ---------------
 " SNIPPETS
