@@ -64,6 +64,9 @@ alias ports='sudo netstat -pant'
 # git
 alias gst='git st -sb'
 
+# rails
+alias remigrate='rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare'
+
 # gvim
 # gv() { gvim -f --remote-silent "$@" &; }
 gv() { gvim -f "$@" &; }
