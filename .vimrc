@@ -4,6 +4,7 @@ endif
 let mapleader = ","
 
 set nocompatible               " be iMproved
+set hidden
 filetype off                   " required!
 
 if filereadable($HOME."/.vim/plugins.vim")
