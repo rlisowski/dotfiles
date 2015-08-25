@@ -88,6 +88,7 @@ Plug 'https://github.com/honza/vim-snippets.git' " great snippers collection
 Plug 'https://github.com/vim-ruby/vim-ruby.git'              " help vim understand ruby, motions textobjects etc
 Plug 'https://github.com/tpope/vim-rails.git'                " rails helpers, navigation etc
 Plug 'https://github.com/tpope/vim-rake.git'                 " rake wraper
+Plug 'git@github.com:keith/rspec.vim.git'                    " Better rspec syntax highlighting
 Plug 'https://github.com/sunaku/vim-ruby-minitest.git'       " syntax and completion for ruby minitest
 Plug 'https://github.com/ecomba/vim-ruby-refactoring.git'    " refactoring helpers
 Plug 'https://github.com/nelstrom/vim-textobj-rubyblock.git' " ruby textobject
