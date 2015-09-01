@@ -143,7 +143,7 @@ Plug 'https://github.com/tmatilai/gitolite.vim.git'                   " gitolite
 " ---------------
 Plug 'https://github.com/scrooloose/nerdtree.git'     " project tree navigation window
 Plug 'https://github.com/tpope/vim-vinegar.git'       " improwments for netrw
-Plug 'https://github.com/kien/ctrlp.vim.git'          " find file/buffer
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'      " find file/buffer
 Plug 'https://github.com/szw/vim-ctrlspace.git'       " list open buffers
 Plug 'https://github.com/majutsushi/tagbar.git'       " navigate by tags
 if !has('nvim')
