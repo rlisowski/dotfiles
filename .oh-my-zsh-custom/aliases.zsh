@@ -67,6 +67,9 @@ alias gst='git st -sb'
 # rails
 alias remigrate='rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare'
 
+# npm
+alias npm-exec='PATH=$(npm bin):$PATH'
+
 # gvim
 # gv() { gvim -f --remote-silent "$@" &; }
 gv() { gvim -f "$@" &; }
