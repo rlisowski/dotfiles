@@ -7,6 +7,10 @@
 [user]
 	name = Rafał Lisowski
 	email = lisukorin@gmail.com
+[filter "lfs"]
+        clean = git-lfs clean %f
+        smudge = git-lfs smudge %f
+        required = true
 [color]
 	ui = auto
 	diff = auto
