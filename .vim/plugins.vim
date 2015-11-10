@@ -137,6 +137,7 @@ Plug 'https://github.com/groenewege/vim-less.git'
 Plug 'https://github.com/chrisbra/csv.vim.git'                        " CSV formatter
 Plug 'https://github.com/ekalinin/Dockerfile.vim.git'                 " docker file syntax
 Plug 'https://github.com/tmatilai/gitolite.vim.git'                   " gitolite syntax
+Plug 'https://github.com/tpope/vim-dotenv.git'                        " Basic support for .env and Procfile
 
 " ---------------
 " NAVIGATION
@@ -165,7 +166,7 @@ Plug 'https://github.com/katono/rogue.vim.git'
 " ---------------
 " CONFIG
 " ---------------
-Plug 'https://github.com/korin/vim_plugins_settings.git'
-Plug 'https://github.com/korin/vim_core_settings.git'
+Plug 'https://github.com/rlisowski/vim_plugins_settings.git'
+Plug 'https://github.com/rlisowski/vim_core_settings.git'
 
 call plug#end()
