@@ -67,10 +67,24 @@ function prompt_info() {
   fi
 }
 
+function current_pwd {
+  # echo $(pwd | awk -F\/ '{print $(NF-1),$(NF)}' | sed 's/ /\//')
+  # echo $(pwd | sed -e "s,^$HOME,~,")
+  pwd_length=14
+  pwd_symbol="..."
+  newPWD="${PWD/#$HOME/~}"
+  if [ $(echo -n $newPWD | wc -c | tr -d " ") -gt $pwd_length ]
+  then
+    newPWD=$(echo -n $newPWD | awk -F '/' '{
+    print $1 "/" $2 "/.../" $(NF-1) "/" $(NF)}')
+  fi
+    echo $newPWD
+}
+
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 local user_host='%{$terminfo[bold]$fg[green]%}%n@%m%{$reset_color%}'
-local current_dir='%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}'
+local current_dir='%{$terminfo[bold]$fg[yellow]%} $(current_pwd)%{$reset_color%}'
 local rvm_ruby='%{$fg[red]%}‹$(rvm-prompt i v p g)›%{$reset_color%}'
 # local rvm_ruby='%{$fg[red]%}‹$(rbenv version | sed -e "s/ (set.*$//")›%{$reset_color%}'
 local rev_info='$(prompt_info)%{$reset_color%}'
