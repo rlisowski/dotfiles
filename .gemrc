@@ -2,7 +2,6 @@
 :backtrace: false
 :bulk_threshold: 1000
 :sources:
-  - http://gembox:8080/
   - https://rubygems.org/
 :update_sources: true
 :verbose: true
