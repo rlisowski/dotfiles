@@ -48,3 +48,7 @@ vman() {
   fi
 }
 compdef vman="man"
+
+EDITOR=nv
+export EDITOR
+alias e=$EDITOR
