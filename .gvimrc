@@ -13,4 +13,6 @@ map <silent> <F2> :if &guioptions =~# 'T' <Bar>
 
 " I don't known why this not work in .vimrc
 color codeschool
+hi NonText ctermfg=59 ctermbg=0 cterm=NONE guifg=#414e58 guibg=#252c31 gui=NONE
+
 highlight clear SignColumn
