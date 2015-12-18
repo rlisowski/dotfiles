@@ -72,6 +72,8 @@ alias npm-exec='PATH=$(npm bin):$PATH'
 
 # gvim
 # gv() { gvim -f --remote-silent "$@" &; }
+# alias gvim="gvim --servername $(gvim --serverlist | head -1 || 'default') --remote-tab-silent"
+gvim () { command gvim --remote-silent-tab "$@" || command gvim "$@"; }
 gv() { gvim -f "$@" &; }
 gvm() { gvim -f $(git status --short | awk ' { print $2 } ') &; }
 gvc() { gvim -f $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d') &; }
