@@ -2,6 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
+fpath=(/usr/local/share/zsh-completions $fpath)
 fpath=($HOME/.oh-my-zsh-custom/completion $fpath)
 
 # Set to this to use case-sensitive completion
@@ -31,6 +32,7 @@ export PATH=$PATH:$HOME/node_modules/.bin:$HOME/bin:$HOME/.cabal/bin
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator.zsh ]] && source $HOME/.tmuxinator/scripts/tmuxinator.zsh
 [[ -s $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # JAVA
 JAVA_HOME=/usr/local/java/jdk1.8.0_05
@@ -49,6 +51,8 @@ vman() {
 }
 compdef vman="man"
 
-EDITOR=nv
+EDITOR=mvim
 export EDITOR
 alias e=$EDITOR
+
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
