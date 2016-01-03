@@ -73,6 +73,11 @@ Plug 'https://github.com/ConradIrwin/vim-bracketed-paste.git' " transparent past
 Plug 'https://github.com/chrisbra/Recover.vim.git'            " Show differences for recovered files
 Plug 'https://github.com/mhinz/vim-startify.git'              " A fancy start screen for Vim
 Plug 'https://github.com/haya14busa/incsearch.vim.git'
+Plug 'https://github.com/wellle/visual-split.vim.git'         " Vim plugin to control splits with visual selections or text objects
+Plug 'https://github.com/unblevable/quick-scope.git'          " Lightning fast left-right movement in Vim
+Plug 'https://github.com/AndrewRadev/switch.vim.git'          " switch segments of text with predefined replacements
+Plug 'https://github.com/mhinz/vim-randomtag.git'             " Jump to random Vim documentation
+Plug 'https://github.com/sk1418/Join.git'                     " a better (hopefully) :Join command in vim
 
 " ---------------
 " SNIPPETS
@@ -103,6 +108,7 @@ Plug 'https://github.com/elixir-lang/vim-elixir.git'         " elixir support
 Plug 'https://github.com/edkolev/erlang-motions.vim.git'
 Plug 'https://github.com/jimenezrick/vimerl.git'
 
+Plug 'https://github.com/toyamarinyon/vim-swift.git'
 " ---------------
 " MARKUP
 " ---------------
