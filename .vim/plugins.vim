@@ -78,6 +78,7 @@ Plug 'https://github.com/unblevable/quick-scope.git'          " Lightning fast l
 Plug 'https://github.com/AndrewRadev/switch.vim.git'          " switch segments of text with predefined replacements
 Plug 'https://github.com/mhinz/vim-randomtag.git'             " Jump to random Vim documentation
 Plug 'https://github.com/sk1418/Join.git'                     " a better (hopefully) :Join command in vim
+Plug 'https://github.com/junegunn/vim-peekaboo.git'           " Peekaboo extends \" and @ in normal mode and <CTRL-R> in insert mode so you can see the contents of the registers.
 
 " ---------------
 " SNIPPETS
