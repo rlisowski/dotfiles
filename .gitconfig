@@ -11,18 +11,18 @@
         clean = git-lfs clean %f
         smudge = git-lfs smudge %f
         required = true
-[color]
-	ui = auto
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
-	grep = auto
-[color "status"]
-	changed = blue
-	untracked = blue
-[color "diff"]
-	old = blue
+; [color]
+; 	ui = auto
+; 	diff = auto
+; 	status = auto
+; 	branch = auto
+; 	interactive = auto
+; 	grep = auto
+; [color "status"]
+; 	changed = blue
+; 	untracked = blue
+; [color "diff"]
+; 	old = blue
 [branch]
 	# autosetupmerge = always
 	# autosetuprebase = always
