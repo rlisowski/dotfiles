@@ -29,7 +29,6 @@ log/*
 nbproject
 node_modules
 pickle-email-*.html
-public/assets/*
 public/download/assets/*
 public/system/*
 rails_best_practices_output.html
