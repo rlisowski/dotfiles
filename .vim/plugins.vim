@@ -19,7 +19,7 @@ Plug 'https://github.com/drmikehenry/vim-fontsize.git'            " adjust quick
 Plug 'https://github.com/tpope/vim-git.git'              " git helpers, commit msg, diff etc
 Plug 'https://github.com/chrisbra/vim-diff-enhanced.git' " creating better diffs (sometimes)
 Plug 'https://github.com/rhysd/committia.vim.git'        " More Pleasant Editing on Commit Message
-Plug 'https://github.com/airblade/vim-gitgutter.git'     " mark changed lines in sign column
+" Plug 'https://github.com/airblade/vim-gitgutter.git'     " mark changed lines in sign column
 " Plug 'https://github.com/tpope/vim-fugitive.git'         " git wrapper
 " Plug 'https://github.com/gregsexton/gitv.git'            " gitk clone aka repository viewer
 
@@ -71,7 +71,7 @@ Plug 'https://github.com/diepm/vim-rest-console.git'          " REST console
 Plug 'https://github.com/ConradIrwin/vim-bracketed-paste.git' " transparent pasting into vim
 Plug 'https://github.com/chrisbra/Recover.vim.git'            " Show differences for recovered files
 Plug 'https://github.com/mhinz/vim-startify.git'              " A fancy start screen for Vim
-Plug 'https://github.com/haya14busa/incsearch.vim.git'
+" Plug 'https://github.com/haya14busa/incsearch.vim.git'
 Plug 'https://github.com/wellle/visual-split.vim.git'         " Vim plugin to control splits with visual selections or text objects
 " Plug 'https://github.com/unblevable/quick-scope.git'          " Lightning fast left-right movement in Vim
 Plug 'https://github.com/AndrewRadev/switch.vim.git'          " switch segments of text with predefined replacements
