@@ -100,3 +100,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# added by travis gem
+[ -f /Users/rlisowski/.travis/travis.sh ] && source /Users/rlisowski/.travis/travis.sh

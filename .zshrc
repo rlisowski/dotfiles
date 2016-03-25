@@ -56,3 +56,6 @@ export EDITOR
 alias e=$EDITOR
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+
+# added by travis gem
+[ -f /Users/rlisowski/.travis/travis.sh ] && source /Users/rlisowski/.travis/travis.sh
