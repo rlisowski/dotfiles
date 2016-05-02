@@ -9,7 +9,7 @@ Plug 'https://github.com/vim-scripts/L9.git'
 " UI
 " ---------------
 Plug 'https://github.com/bling/vim-airline.git'                   " status bar
-Plug 'https://github.com/Yggdroot/indentLine.git'                 " shiw indentation with neat lines
+" Plug 'https://github.com/Yggdroot/indentLine.git'                 " shiw indentation with neat lines
 Plug 'https://github.com/sjl/gundo.vim.git'                       " undo view
 Plug 'https://github.com/drmikehenry/vim-fontsize.git'            " adjust quickly font size
 
