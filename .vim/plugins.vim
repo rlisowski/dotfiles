@@ -153,6 +153,7 @@ Plug 'https://github.com/tpope/vim-dotenv.git'                        " Basic su
 Plug 'https://github.com/scrooloose/nerdtree.git'     " project tree navigation window
 " Plug 'https://github.com/tpope/vim-vinegar.git'       " improwments for netrw
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'      " find file/buffer
+Plug 'https://github.com/FelikZ/ctrlp-py-matcher.git' " Fast vim CtrlP matcher based on python
 Plug 'https://github.com/szw/vim-ctrlspace.git'       " list open buffers
 " Plug 'https://github.com/majutsushi/tagbar.git'       " navigate by tags
 if !has('nvim')
