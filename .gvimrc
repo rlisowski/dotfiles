@@ -16,3 +16,7 @@ color codeschool
 hi NonText ctermfg=59 ctermbg=0 cterm=NONE guifg=#414e58 guibg=#252c31 gui=NONE
 
 highlight clear SignColumn
+
+if has("gui_macvim")
+  macmenu File.Print key=<nop>
+endif
