@@ -5,7 +5,7 @@
 *.swp
 *.txt
 *~
-.*
+.DS_Store
 ._*
 .bundle
 .idea
