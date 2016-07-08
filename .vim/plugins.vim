@@ -146,6 +146,9 @@ Plug 'https://github.com/cakebaker/scss-syntax.vim'
 " Plug 'https://github.com/ekalinin/Dockerfile.vim.git'                 " docker file syntax
 " Plug 'https://github.com/tmatilai/gitolite.vim.git'                   " gitolite syntax
 Plug 'https://github.com/tpope/vim-dotenv.git'                        " Basic support for .env and Procfile
+Plug 'https://github.com/millermedeiros/vim-esformatter.git'          " ES formatter
+Plug 'https://github.com/kewah/vim-stylefmt.git'                      " [S]CSS formatter
+Plug 'https://github.com/mxw/vim-jsx.git'
 
 " ---------------
 " NAVIGATION
