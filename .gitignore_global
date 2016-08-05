@@ -15,6 +15,7 @@
 .rvmrc
 .sass-cache
 .svn
+.byebug_history
 Session.vim
 capybara-*.html
 config/application.yml
