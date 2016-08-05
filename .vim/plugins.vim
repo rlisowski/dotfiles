@@ -59,6 +59,7 @@ Plug 'https://github.com/vim-scripts/BufOnly.vim.git'         " close any other 
 Plug 'https://github.com/vim-scripts/SyntaxRange.git'         " syntax highlight for region, required by vimdeck
 Plug 'https://github.com/vim-scripts/LargeFile.git'           " disables certain features of vim for large files
 Plug 'https://github.com/EinfachToll/DidYouMean.git'          " ask if I misspelled filename
+Plug 'https://github.com/DataWraith/auto_mkdir.git'           " save files into directories that do not exist yet
 Plug 'https://github.com/Z1MM32M4N/vim-superman.git'          " man pages in vim
 " Plug 'https://github.com/edkolev/tmuxline.vim.git'            " generate tmux status line from vim
 Plug 'https://github.com/dietsche/vim-lastplace.git'          " reopen files where you left off
@@ -93,6 +94,7 @@ Plug 'https://github.com/honza/vim-snippets.git' " great snippers collection
 " RUBY
 " ---------------
 Plug 'https://github.com/vim-ruby/vim-ruby.git'              " help vim understand ruby, motions textobjects etc
+Plug 'https://github.com/tpope/vim-projectionist.git'        " granular project configuration
 Plug 'https://github.com/tpope/vim-rails.git'                " rails helpers, navigation etc
 Plug 'https://github.com/tpope/vim-rake.git'                 " rake wraper
 Plug 'git@github.com:keith/rspec.vim.git'                    " Better rspec syntax highlighting
