@@ -35,12 +35,13 @@ export PATH=$PATH:$HOME/node_modules/.bin:$HOME/bin:$HOME/.cabal/bin
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # JAVA
-JAVA_HOME=/usr/local/java/jdk1.8.0_05
-ANT_HOME=/usr/local/java/apache-ant-1.9.3
-PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin
+# JAVA_HOME=/usr/local/java/jdk1.8.0_05
+JAVA_HOME=`/usr/libexec/java_home`
+# ANT_HOME=/usr/local/java/apache-ant-1.9.3
+# PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin
 export JAVA_HOME
-export ANT_HOME
-export PATH
+# export ANT_HOME
+# export PATH
 
 vman() {
   vim -c "SuperMan $*"
