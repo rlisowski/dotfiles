@@ -47,6 +47,8 @@
 	# Remember my merges
 	# http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
 	enabled = true
+[commit]
+	template = ~/.gitmessage
 [alias]
 	h = help
 	st = status -sb
