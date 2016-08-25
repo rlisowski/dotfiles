@@ -1,4 +1,4 @@
-Some awesome title
+
 
 Why:
 
@@ -8,6 +8,10 @@ This change addresses the need by:
 
 *
 
-# 50-character subject line
-#
-# 72-character wrapped longer description.
+# Separate subject from body with a blank line
+# Limit the subject line to 50 characters (69 is a hard limit)
+# Capitalize the subject line
+# Do not end the subject line with a period
+# Use the imperative mood in the subject line
+# Wrap the body at 72 characters
+# Use the body to explain what and why vs. how
