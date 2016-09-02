@@ -67,7 +67,7 @@ Plug 'https://github.com/dietsche/vim-lastplace.git'          " reopen files whe
 " Plug 'https://github.com/joonty/vdebug.git'                   " debug with vim
 " Plug 'https://github.com/ashisha/image.vim.git'               " image preview
 Plug 'https://github.com/tpope/vim-dispatch.git'              " async vim dispatcher
-" Plug 'https://github.com/janko-m/vim-test.git'                " run any test
+Plug 'https://github.com/janko-m/vim-test.git'                " run any test
 Plug 'https://github.com/diepm/vim-rest-console.git'          " REST console
 Plug 'https://github.com/ConradIrwin/vim-bracketed-paste.git' " transparent pasting into vim
 Plug 'https://github.com/chrisbra/Recover.vim.git'            " Show differences for recovered files
@@ -127,7 +127,12 @@ Plug 'https://github.com/tmux-plugins/vim-tmux.git'
 " ---------------
 " SYNTAX
 " ---------------
-Plug 'https://github.com/scrooloose/syntastic.git'                   " syntax checker
+if has('nvim')
+	Plug 'https://github.com/metakirby5/codi.vim.git'                    " The interactive scratchpad
+	Plug 'https://github.com/neomake/neomake.git'                        " syntax checker
+else
+	Plug 'https://github.com/scrooloose/syntastic.git'                   " syntax checker
+endif
 Plug 'https://github.com/mmalecki/vim-node.js.git'                   " File type detect plugin for vim which detects node.js shebang
 Plug 'https://github.com/pangloss/vim-javascript.git'                " provides syntax and indent for javascript
 Plug 'https://github.com/burnettk/vim-angular.git'
