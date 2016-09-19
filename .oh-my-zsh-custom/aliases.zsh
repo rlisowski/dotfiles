@@ -70,24 +70,23 @@ alias remigrate='rake db:migrate && rake db:migrate:redo && rake db:schema:dump 
 # npm
 alias npm-exec='PATH=$(npm bin):$PATH'
 
-# gvim
-# gv() { gvim -f --remote-silent "$@" &; }
-# alias gvim="gvim --servername $(gvim --serverlist | head -1 || 'default') --remote-tab-silent"
-gvim () { command gvim --remote-silent-tab "$@" || command gvim "$@"; }
-gv() { gvim -f "$@" &; }
-gvm() { gvim -f $(git status --short | awk ' { print $2 } ') &; }
-gvc() { gvim -f $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d') &; }
 vm() { vim $(git status --short | awk ' { print $2 } '); }
 vc() { vim $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
 
-alias nv='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
-nvm() { nv $(git status --short | awk ' { print $2 } '); }
-nvc() { nv $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
+nvm() { nvim $(git status --short | awk ' { print $2 } '); }
+nvc() { nvim $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
 
-sublm() { subl $(git status --short | awk ' { print $2 } ') &; }
-sublc() { subl $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d') &; }
-
-alias vu='gvim +PluginInstall! +qall'
+codi() {
+  local syntax="${1:-python}"
+  shift
+  vim -c \
+    "let g:startify_disable_at_vimenter = 1 |\
+    set bt=nofile ls=0 noru nonu nornu |\
+    hi ColorColumn ctermbg=NONE |\
+    hi VertSplit ctermbg=NONE |\
+    hi NonText ctermfg=0 |\
+    Codi $syntax" "$@"
+}
 
 # tmux
 alias tmux="TERM=screen-256color-bce tmux"
