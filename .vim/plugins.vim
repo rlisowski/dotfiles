@@ -81,6 +81,7 @@ Plug 'https://github.com/sk1418/Join.git'                     " a better (hopefu
 Plug 'https://github.com/junegunn/vim-peekaboo.git'           " Peekaboo extends \" and @ in normal mode and <CTRL-R> in insert mode so you can see the contents of the registers.
 Plug 'https://github.com/wincent/terminus.git'                " Enhanced terminal integration for Vim
 " Plug 'https://github.com/wincent/loupe.git'                   " Enhanced in-file search for Vim
+" Plug 'https://github.com/bogado/file-line.git'                " opening a file in a given line
 
 " ---------------
 " SNIPPETS
@@ -127,8 +128,8 @@ Plug 'https://github.com/tmux-plugins/vim-tmux.git'
 " ---------------
 " SYNTAX
 " ---------------
+Plug 'https://github.com/metakirby5/codi.vim.git'                    " The interactive scratchpad
 if has('nvim')
-	Plug 'https://github.com/metakirby5/codi.vim.git'                    " The interactive scratchpad
 	Plug 'https://github.com/neomake/neomake.git'                        " syntax checker
 else
 	Plug 'https://github.com/scrooloose/syntastic.git'                   " syntax checker
