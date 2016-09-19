@@ -2,7 +2,7 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	pager = diff-highlight | less -S
-	editor = gvim --nofork
+	editor = vim
 	# autocrlf = input # http://help.github.com/line-endings/
 [user]
 	name = Rafał Lisowski
@@ -30,7 +30,7 @@
 	autocorrect = 10
 [merge]
 	summary = true
-	tool = gvimdiff
+	tool = vimdiff
 	conflictstyle = diff3
 	verbosity = 1
 [push]
@@ -39,7 +39,7 @@
 	autosquash = true
 [diff]
 	renames = true
-	tool = gvimdiff
+	tool = vimdiff
 	# Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
 	# instead of a/b/c/d as prefixes for patches
 	mnemonicprefix = true
