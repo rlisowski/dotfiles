@@ -177,7 +177,7 @@ Plug 'https://github.com/gabesoft/vim-ags.git'        " Silver searcher (AG) plu
 " Plug 'https://github.com/wincent/ferret.git'          " multi-file search
 Plug 'https://github.com/vim-scripts/matchit.zip.git' " % behavior
 Plug 'https://github.com/dockyard/vim-easydir.git'    " simple way to create, edit and save files and directories
-" Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
+Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 
 " ---------------
 " GAMES ;)
