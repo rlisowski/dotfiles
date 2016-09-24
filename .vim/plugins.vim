@@ -77,7 +77,7 @@ Plug 'https://github.com/wellle/visual-split.vim.git'         " Vim plugin to co
 " Plug 'https://github.com/unblevable/quick-scope.git'          " Lightning fast left-right movement in Vim
 Plug 'https://github.com/AndrewRadev/switch.vim.git'          " switch segments of text with predefined replacements
 " Plug 'https://github.com/mhinz/vim-randomtag.git'             " Jump to random Vim documentation
-Plug 'https://github.com/sk1418/Join.git'                     " a better (hopefully) :Join command in vim
+" Plug 'https://github.com/sk1418/Join.git'                     " a better (hopefully) :Join command in vim
 Plug 'https://github.com/junegunn/vim-peekaboo.git'           " Peekaboo extends \" and @ in normal mode and <CTRL-R> in insert mode so you can see the contents of the registers.
 Plug 'https://github.com/wincent/terminus.git'                " Enhanced terminal integration for Vim
 " Plug 'https://github.com/wincent/loupe.git'                   " Enhanced in-file search for Vim
@@ -110,21 +110,21 @@ Plug 'https://github.com/tpope/vim-bundler.git'              " bundler helpers
 " ---------------
 " ELIXIR
 " ---------------
-Plug 'https://github.com/elixir-lang/vim-elixir.git'         " elixir support
-Plug 'https://github.com/edkolev/erlang-motions.vim.git'
-Plug 'https://github.com/jimenezrick/vimerl.git'
+" Plug 'https://github.com/elixir-lang/vim-elixir.git'         " elixir support
+" Plug 'https://github.com/edkolev/erlang-motions.vim.git'
+" Plug 'https://github.com/jimenezrick/vimerl.git'
 
 " ---------------
 " MARKUP
 " ---------------
 Plug 'https://github.com/tpope/vim-haml.git'
-Plug 'https://github.com/slim-template/vim-slim.git'          " slim syntax highlighting
-Plug 'https://github.com/mustache/vim-mustache-handlebars.git'
+" Plug 'https://github.com/slim-template/vim-slim.git'          " slim syntax highlighting
+" Plug 'https://github.com/mustache/vim-mustache-handlebars.git'
 " Plug 'https://github.com/tpope/vim-markdown.git'
-Plug 'https://github.com/gabrielelana/vim-markdown.git'        " environment to create Markdown files with a syntax highlight
-Plug 'https://github.com/suan/vim-instant-markdown.git'
+" Plug 'https://github.com/gabrielelana/vim-markdown.git'        " environment to create Markdown files with a syntax highlight
+" Plug 'https://github.com/suan/vim-instant-markdown.git'
 Plug 'https://github.com/rstacruz/sparkup.git'                 " write html faster
-Plug 'https://github.com/tmux-plugins/vim-tmux.git'
+" Plug 'https://github.com/tmux-plugins/vim-tmux.git'
 
 " ---------------
 " SYNTAX
@@ -137,17 +137,17 @@ else
 endif
 Plug 'https://github.com/mmalecki/vim-node.js.git'                   " File type detect plugin for vim which detects node.js shebang
 Plug 'https://github.com/pangloss/vim-javascript.git'                " provides syntax and indent for javascript
-Plug 'https://github.com/burnettk/vim-angular.git'
+" Plug 'https://github.com/burnettk/vim-angular.git'
 Plug 'https://github.com/jelera/vim-javascript-syntax.git'
 Plug 'https://github.com/isRuslan/vim-es6.git'
 " Plug 'https://github.com/othree/javascript-libraries-syntax.vim.git'
-Plug 'https://github.com/othree/xml.vim.git'
-Plug 'https://github.com/kchmck/vim-coffee-script.git'
+" Plug 'https://github.com/othree/xml.vim.git'
+" Plug 'https://github.com/kchmck/vim-coffee-script.git'
 Plug 'https://github.com/othree/html5.vim.git'
 " Plug 'https://github.com/rodjek/vim-puppet.git'
 " Plug 'https://github.com/vim-scripts/lua-support.git'
 " Plug 'https://github.com/itspriddle/vim-jquery.git'
-Plug 'https://github.com/groenewege/vim-less.git'
+" Plug 'https://github.com/groenewege/vim-less.git'
 " Plug 'https://github.com/ap/vim-css-color.git'
 " Plug 'https://github.com/hail2u/vim-css3-syntax'
 Plug 'https://github.com/cakebaker/scss-syntax.vim'
@@ -177,7 +177,7 @@ Plug 'https://github.com/gabesoft/vim-ags.git'        " Silver searcher (AG) plu
 " Plug 'https://github.com/wincent/ferret.git'          " multi-file search
 Plug 'https://github.com/vim-scripts/matchit.zip.git' " % behavior
 Plug 'https://github.com/dockyard/vim-easydir.git'    " simple way to create, edit and save files and directories
-Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
+" Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 
 " ---------------
 " GAMES ;)
