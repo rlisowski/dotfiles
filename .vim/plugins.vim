@@ -20,7 +20,7 @@ Plug 'https://github.com/tpope/vim-git.git'              " git helpers, commit m
 Plug 'https://github.com/chrisbra/vim-diff-enhanced.git' " creating better diffs (sometimes)
 Plug 'https://github.com/rhysd/committia.vim.git'        " More Pleasant Editing on Commit Message
 " Plug 'https://github.com/airblade/vim-gitgutter.git'     " mark changed lines in sign column
-" Plug 'https://github.com/tpope/vim-fugitive.git'         " git wrapper
+Plug 'https://github.com/tpope/vim-fugitive.git'         " git wrapper
 " Plug 'https://github.com/gregsexton/gitv.git'            " gitk clone aka repository viewer
 
 " ---------------
