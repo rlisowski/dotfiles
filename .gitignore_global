@@ -49,3 +49,5 @@ share/
 src/
 user/
 wrappers/
+.projections.json
+config/projections.json
