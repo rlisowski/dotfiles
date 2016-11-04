@@ -1,28 +1,28 @@
 require "rubygems"
 
 begin
-	require "awesome_print"
-	# The following line enables awesome_print for all pry output,
-	# and it also enables paging
-	Pry.config.print = proc {|output, value| Pry::Helpers::BaseHelpers.stagger_output("=> #{value.ai}", output)}
+  require "awesome_print"
+  # The following line enables awesome_print for all pry output,
+  # and it also enables paging
+  Pry.config.print = proc {|output, value| Pry::Helpers::BaseHelpers.stagger_output("=> #{value.ai}", output)}
 
-	# If you want awesome_print without automatic pagination, use the line below
-	# Pry.config.print = proc { |output, value| output.puts value.ai }
+  # If you want awesome_print without automatic pagination, use the line below
+  # Pry.config.print = proc { |output, value| output.puts value.ai }
 rescue LoadError => err
-	warn "Couldn't load awesome_print: #{err}"
+  warn "Couldn't load awesome_print: #{err}"
 end
 
 begin
-	require 'hirb'
+  require 'hirb'
 
-	Hirb.enable
+  Hirb.enable
 
-	old_print = Pry.config.print
-	Pry.config.print = proc do |output, value|
-		Hirb::View.view_or_page_output(value) || old_print.call(output, value)
-	end
+  old_print = Pry.config.print
+  Pry.config.print = proc do |output, value|
+    Hirb::View.view_or_page_output(value) || old_print.call(output, value)
+  end
 rescue LoadError => err
-	warn "Couldn't load Hirb: #{err}"
+  warn "Couldn't load Hirb: #{err}"
 end
 
 if defined?(PryByebug)
@@ -49,6 +49,7 @@ Pry.config.ls.heading_color = :magenta
 Pry.config.ls.public_method_color = :green
 Pry.config.ls.protected_method_color = :yellow
 Pry.config.ls.private_method_color = :bright_black
+Pry.config.history.file = "#{ENV['HOME']}/.irb-save-history"
 
 # Prompt with ruby version
 Pry.prompt = [proc { |obj, nest_level| "#{RUBY_VERSION} (#{obj}):#{nest_level} > " }, proc { |obj, nest_level| "#{RUBY_VERSION} (#{obj}):#{nest_level} * " }]
