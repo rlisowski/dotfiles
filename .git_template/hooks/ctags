@@ -1,8 +1,10 @@
 #!/bin/sh
 set -e
-PATH="/usr/local/bin:$PATH"
 trap "rm -f .git/tags.$$" EXIT
-ctags -f .git/tags.$$
-# https://github.com/tmm1/ripper-tags
-# ripper-tags --tag-relative -R -f .git/tags.$$ --exclude=.git --exclude=.rsync_cache
+ripper=$(which ripper-tags)
+if [ -x "$ripper" ] ; then
+	ripper-tags --tag-relative --extra=q -R -f .git/tags.$$ --exclude=.git --exclude=.rsync_cache
+else
+	ctags -f .git/tags.$$
+fi
 mv .git/tags.$$ .git/tags
