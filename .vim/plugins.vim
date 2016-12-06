@@ -11,7 +11,7 @@ Plug 'https://github.com/vim-scripts/L9.git'
 Plug 'https://github.com/bling/vim-airline.git'                   " status bar
 " Plug 'https://github.com/Yggdroot/indentLine.git'                 " shiw indentation with neat lines
 Plug 'https://github.com/sjl/gundo.vim.git'                       " undo view
-Plug 'https://github.com/drmikehenry/vim-fontsize.git'            " adjust quickly font size
+" Plug 'https://github.com/drmikehenry/vim-fontsize.git'            " adjust quickly font size
 
 " ---------------
 " GIT
@@ -83,6 +83,8 @@ Plug 'https://github.com/wincent/terminus.git'                " Enhanced termina
 " Plug 'https://github.com/wincent/loupe.git'                   " Enhanced in-file search for Vim
 " Plug 'https://github.com/bogado/file-line.git'                " opening a file in a given line
 " Plug 'https://github.com/kana/vim-submode.git'                " Create your own submodes
+Plug 'https://github.com/xolox/vim-misc.git'
+Plug 'https://github.com/xolox/vim-notes.git'                 " Take notes in vim
 
 " ---------------
 " SNIPPETS
@@ -130,11 +132,11 @@ Plug 'https://github.com/rstacruz/sparkup.git'                 " write html fast
 " SYNTAX
 " ---------------
 Plug 'https://github.com/metakirby5/codi.vim.git'                    " The interactive scratchpad
-if has('nvim')
+" if has('nvim')
 	Plug 'https://github.com/neomake/neomake.git'                        " syntax checker
-else
-	Plug 'https://github.com/scrooloose/syntastic.git'                   " syntax checker
-endif
+" else
+" 	Plug 'https://github.com/vim-syntastic/syntastic.git'                   " syntax checker
+" endif
 Plug 'https://github.com/mmalecki/vim-node.js.git'                   " File type detect plugin for vim which detects node.js shebang
 Plug 'https://github.com/pangloss/vim-javascript.git'                " provides syntax and indent for javascript
 " Plug 'https://github.com/burnettk/vim-angular.git'
@@ -158,19 +160,19 @@ Plug 'https://github.com/tpope/vim-dotenv.git'                        " Basic su
 Plug 'https://github.com/millermedeiros/vim-esformatter.git'          " ES formatter
 Plug 'https://github.com/kewah/vim-stylefmt.git'                      " [S]CSS formatter
 Plug 'https://github.com/mxw/vim-jsx.git'
+Plug 'https://github.com/aklt/plantuml-syntax.git'                    " PlantUML syntax
+Plug 'https://github.com/scrooloose/vim-slumlord.git'                 " PlantUML live preview
 
 " ---------------
 " NAVIGATION
 " ---------------
-Plug 'https://github.com/scrooloose/nerdtree.git'     " project tree navigation window
-" Plug 'https://github.com/tpope/vim-vinegar.git'       " improwments for netrw
-Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'      " find file/buffer
-Plug 'https://github.com/FelikZ/ctrlp-py-matcher.git' " Fast vim CtrlP matcher based on python
-Plug 'https://github.com/szw/vim-ctrlspace.git'       " list open buffers
-" Plug 'https://github.com/majutsushi/tagbar.git'       " navigate by tags
-if !has('nvim')
-	" Plug 'https://github.com/lukaszkorecki/CoffeeTags.git'
-endif
+Plug 'https://github.com/scrooloose/nerdtree.git', {'on': ['NERDTree', 'NERDTreeFind']}          " project tree navigation window
+" Plug 'https://github.com/tpope/vim-vinegar.git'            " improwments for netrw
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'           " find file/buffer
+Plug 'https://github.com/FelikZ/ctrlp-py-matcher.git'      " Fast vim CtrlP matcher based on python
+Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'  " list open buffers
+" Plug 'https://github.com/majutsushi/tagbar.git'            " navigate by tags
+" Plug 'https://github.com/lukaszkorecki/CoffeeTags.git'
 Plug 'https://github.com/vim-scripts/mru.vim.git'     " most recent used files
 " Plug 'https://github.com/rking/ag.vim.git'            " search plugin
 Plug 'https://github.com/gabesoft/vim-ags.git'        " Silver searcher (AG) plugin
