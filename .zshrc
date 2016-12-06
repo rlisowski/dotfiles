@@ -51,7 +51,7 @@ vman() {
 }
 compdef vman="man"
 
-EDITOR=nvim
+EDITOR=vim
 export EDITOR
 alias e=$EDITOR
 
