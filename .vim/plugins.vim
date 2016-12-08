@@ -166,7 +166,7 @@ Plug 'https://github.com/scrooloose/vim-slumlord.git'                 " PlantUML
 " ---------------
 " NAVIGATION
 " ---------------
-Plug 'https://github.com/scrooloose/nerdtree.git', {'on': ['NERDTree', 'NERDTreeFind']}          " project tree navigation window
+Plug 'https://github.com/scrooloose/nerdtree.git'          " project tree navigation window
 " Plug 'https://github.com/tpope/vim-vinegar.git'            " improwments for netrw
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'           " find file/buffer
 Plug 'https://github.com/FelikZ/ctrlp-py-matcher.git'      " Fast vim CtrlP matcher based on python
