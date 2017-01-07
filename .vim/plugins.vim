@@ -43,6 +43,7 @@ Plug 'https://github.com/kana/vim-textobj-user.git'           " create your own 
 Plug 'https://github.com/kana/vim-textobj-entire.git'         " text object entire file
 Plug 'https://github.com/kana/vim-textobj-datetime.git'       " ext objects for date and time
 Plug 'https://github.com/kana/vim-textobj-indent.git'         " ext object for indentation
+Plug 'https://github.com/kana/vim-textobj-line.git'           " ext object for line
 Plug 'https://github.com/glts/vim-textobj-indblock.git'       " ext object of indentation whitespace
 Plug 'https://github.com/tpope/vim-speeddating.git'           " use CTRL-A/CTRL-X to increment dates, times, and more
 Plug 'https://github.com/wellle/targets.vim.git'              " additional text objects like cin) da, etc.
@@ -54,7 +55,7 @@ Plug 'https://github.com/tpope/vim-sleuth'                    " keep shiftwidth 
 Plug 'https://github.com/kshenoy/vim-signature.git'           " place, toggle and display marks
 Plug 'https://github.com/vim-scripts/VisIncr.git'             " making a column of increasing or decreasing numbers, dates, or daynames
 Plug 'https://github.com/tpope/vim-commentary.git'            " easyli toggle lines as comments
-" Plug 'https://github.com/Lokaltog/vim-easymotion.git'         " simpler way to use some motions
+Plug 'https://github.com/Lokaltog/vim-easymotion.git'         " simpler way to use some motions
 Plug 'https://github.com/vim-scripts/BufOnly.vim.git'         " close any other buffers
 Plug 'https://github.com/vim-scripts/SyntaxRange.git'         " syntax highlight for region, required by vimdeck
 Plug 'https://github.com/vim-scripts/LargeFile.git'           " disables certain features of vim for large files
@@ -85,6 +86,8 @@ Plug 'https://github.com/wincent/terminus.git'                " Enhanced termina
 " Plug 'https://github.com/kana/vim-submode.git'                " Create your own submodes
 Plug 'https://github.com/xolox/vim-misc.git'
 Plug 'https://github.com/xolox/vim-notes.git'                 " Take notes in vim
+Plug 'https://github.com/t9md/vim-choosewin.git'              " display-pane feature, which enables you to choose a window interactively
+Plug 'https://github.com/chrisbra/unicode.vim.git'            " handling of unicode and digraphs chars
 
 " ---------------
 " SNIPPETS
@@ -180,6 +183,7 @@ Plug 'https://github.com/gabesoft/vim-ags.git'        " Silver searcher (AG) plu
 Plug 'https://github.com/vim-scripts/matchit.zip.git' " % behavior
 Plug 'https://github.com/dockyard/vim-easydir.git'    " simple way to create, edit and save files and directories
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
+Plug 'https://github.com/yuttie/comfortable-motion.vim.git' " physics-based smooth scrolling
 
 " ---------------
 " GAMES ;)
