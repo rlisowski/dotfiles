@@ -51,3 +51,4 @@ user/
 wrappers/
 .projections.json
 config/projections.json
+.gtm/

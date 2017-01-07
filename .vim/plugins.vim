@@ -88,6 +88,7 @@ Plug 'https://github.com/xolox/vim-misc.git'
 Plug 'https://github.com/xolox/vim-notes.git'                 " Take notes in vim
 Plug 'https://github.com/t9md/vim-choosewin.git'              " display-pane feature, which enables you to choose a window interactively
 Plug 'https://github.com/chrisbra/unicode.vim.git'            " handling of unicode and digraphs chars
+Plug 'https://github.com/git-time-metric/gtm-vim-plugin.git'  " automatically track time spent reading and working on code
 
 " ---------------
 " SNIPPETS
