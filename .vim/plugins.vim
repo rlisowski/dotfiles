@@ -93,7 +93,7 @@ Plug 'https://github.com/git-time-metric/gtm-vim-plugin.git'  " automatically tr
 " ---------------
 " SNIPPETS
 " ---------------
-Plug 'https://github.com/Valloric/YouCompleteMe.git', { 'do': './install.sh' } " code-completion engine
+Plug 'https://github.com/Valloric/YouCompleteMe.git', { 'do': './install.py' } " code-completion engine
 Plug 'https://github.com/SirVer/ultisnips.git'   " snippets engine
 Plug 'https://github.com/honza/vim-snippets.git' " great snippers collection
 " Plug 'https://github.com/matthewsimo/angular-vim-snippets.git' " broken
