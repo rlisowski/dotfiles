@@ -62,3 +62,4 @@ test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_in
 [ -f /Users/rlisowski/.travis/travis.sh ] && source /Users/rlisowski/.travis/travis.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export DISABLE_AUTO_TITLE=true
