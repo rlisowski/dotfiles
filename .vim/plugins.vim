@@ -105,9 +105,9 @@ Plug 'https://github.com/honza/vim-snippets.git' " great snippers collection
 " RUBY
 " ---------------
 Plug 'https://github.com/vim-ruby/vim-ruby.git'              " help vim understand ruby, motions textobjects etc
-Plug 'https://github.com/tpope/vim-projectionist.git'        " granular project configuration
-Plug 'https://github.com/tpope/vim-rails.git'                " rails helpers, navigation etc
 Plug 'https://github.com/tpope/vim-rake.git'                 " rake wraper
+Plug 'https://github.com/tpope/vim-rails.git'                " rails helpers, navigation etc
+Plug 'https://github.com/tpope/vim-projectionist.git'        " granular project configuration
 Plug 'https://github.com/keith/rspec.vim.git'                " Better rspec syntax highlighting
 Plug 'https://github.com/sunaku/vim-ruby-minitest.git'       " syntax and completion for ruby minitest
 " Plug 'https://github.com/ecomba/vim-ruby-refactoring.git'    " refactoring helpers
