@@ -9,4 +9,4 @@ export HISTSIZE=10000         # Increases size of history
 export SAVEHIST=10000
 export HISTIGNORE="gst:be *:g *:gv(| *):cd(| *):(ls|dir)(| *):(rm|mv|cp|ln|scp|rmdir|mkdir) *:man *:(which|whence|type)(| *):pwd:.:..:..."
 
-export EDITOR=gvim
+export EDITOR=vim
