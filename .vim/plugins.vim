@@ -90,6 +90,7 @@ Plug 'https://github.com/xolox/vim-notes.git'                 " Take notes in vi
 Plug 'https://github.com/t9md/vim-choosewin.git'              " display-pane feature, which enables you to choose a window interactively
 Plug 'https://github.com/chrisbra/unicode.vim.git'            " handling of unicode and digraphs chars
 Plug 'https://github.com/git-time-metric/gtm-vim-plugin.git'  " automatically track time spent reading and working on code
+" Plug 'https://github.com/kana/vim-smartword.git'              " provide {motion}s on |word|s which are smarter
 
 " ---------------
 " SNIPPETS
