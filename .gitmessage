@@ -15,3 +15,10 @@ This change addresses the need by:
 # Use the imperative mood in the subject line
 # Wrap the body at 72 characters
 # Use the body to explain what and why vs. how
+# http://chris.beams.io/posts/git-commit/
+#
+# If applied, this commit will refactor subsystem X for readability
+# If applied, this commit will update getting started documentation
+# If applied, this commit will remove deprecated methods
+# If applied, this commit will release version 1.0.0
+# If applied, this commit will merge pull request #123 from user/branch
