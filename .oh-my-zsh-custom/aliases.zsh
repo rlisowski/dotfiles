@@ -92,9 +92,11 @@ codi() {
 }
 
 # tmux
-alias tmux="TERM=screen-256color-bce tmux"
-t() { tmux attach-session -t $@ || tmux new-session -s $@ -c `pwd` }
-alias htop='TERM=screen htop'
+# alias tmux="TERM=screen-256color-bce tmux"
+# t() { tmux attach-session -t $@ || tmux new-session -s $@ -c `pwd` }
+# alias htop='TERM=screen htop'
+alias tmux='tmux -2'  # for 256color
+alias tmux='tmux -u'  # to get rid of unicode rendering problem
 
 # zsh help
 zman() {
