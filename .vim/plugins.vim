@@ -91,6 +91,7 @@ Plug 'https://github.com/t9md/vim-choosewin.git'              " display-pane fea
 Plug 'https://github.com/chrisbra/unicode.vim.git'            " handling of unicode and digraphs chars
 Plug 'https://github.com/git-time-metric/gtm-vim-plugin.git'  " automatically track time spent reading and working on code
 " Plug 'https://github.com/kana/vim-smartword.git'              " provide {motion}s on |word|s which are smarter
+" Plug 'https://github.com/ktonga/vim-follow-my-lead.git'       " showing all your <Leader> mappings
 
 " ---------------
 " SNIPPETS
