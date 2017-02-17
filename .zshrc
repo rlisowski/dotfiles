@@ -19,6 +19,7 @@ export DISABLE_AUTO_UPDATE="true"
 plugins=(git gitfast svn cap gem bundler rails git-flow node zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+source ~/bin/tmuxinator.zsh
 
 setopt auto_cd
 cdpath=($HOME/workspace $HOME/workspace2)
