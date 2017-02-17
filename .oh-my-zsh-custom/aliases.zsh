@@ -114,3 +114,5 @@ chpwd() {
   print -l $PWD ${(u)dirstack} >$DIRSTACKFILE
 }
 
+# pip install pygments
+jcurl() { curl "$@" | python -m json.tool | pygmentize -l json; }
