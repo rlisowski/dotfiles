@@ -68,15 +68,13 @@ function prompt_info() {
 }
 
 function current_pwd {
-  # echo $(pwd | awk -F\/ '{print $(NF-1),$(NF)}' | sed 's/ /\//')
-  # echo $(pwd | sed -e "s,^$HOME,~,")
-  pwd_length=14
+  pwd_length=4
   pwd_symbol="..."
   newPWD="${PWD/#$HOME/~}"
-  if [ $(echo -n $newPWD | wc -c | tr -d " ") -gt $pwd_length ]
+  if [ $(echo -n $newPWD | tr -d -c '/' | awk '{ print length; }') -gt $pwd_length ]
+
   then
-    newPWD=$(echo -n $newPWD | awk -F '/' '{
-    print $1 "/" $2 "/.../" $(NF-1) "/" $(NF)}')
+    newPWD=$(echo -n $newPWD | awk -F '/' '{print $1 "/" $2 "/" $3 "/.../" $(NF-1) "/" $(NF)}')
   fi
     echo $newPWD
 }
