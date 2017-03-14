@@ -82,7 +82,7 @@ Plug 'https://github.com/AndrewRadev/switch.vim.git'          " switch segments 
 Plug 'https://github.com/junegunn/vim-peekaboo.git'           " Peekaboo extends \" and @ in normal mode and <CTRL-R> in insert mode so you can see the contents of the registers.
 Plug 'https://github.com/wincent/terminus.git'                " Enhanced terminal integration for Vim
 " Plug 'https://github.com/wincent/loupe.git'                   " Enhanced in-file search for Vim
-" Plug 'https://github.com/bogado/file-line.git'                " opening a file in a given line
+Plug 'https://github.com/bogado/file-line.git'                " opening a file in a given line
 " Plug 'https://github.com/kana/vim-submode.git'                " Create your own submodes
 Plug 'https://github.com/xolox/vim-misc.git'
 Plug 'https://github.com/xolox/vim-notes.git'                 " Take notes in vim
@@ -115,6 +115,7 @@ Plug 'https://github.com/nelstrom/vim-textobj-rubyblock.git' " ruby textobject
 " Plug 'https://github.com/t9md/vim-ruby-xmpfilter.git'        " display result in comment
 Plug 'https://github.com/tpope/vim-bundler.git'              " bundler helpers
 " Plug 'https://github.com/danchoi/ri.vim.git'                 " search and navigate Ruby library and gem documentation
+" Plug 'https://github.com/Chiel92/vim-autoformat.git'         " Format code
 
 " ---------------
 " ELIXIR
@@ -176,6 +177,7 @@ Plug 'https://github.com/scrooloose/vim-slumlord.git'                 " PlantUML
 Plug 'https://github.com/scrooloose/nerdtree.git'          " project tree navigation window
 " Plug 'https://github.com/tpope/vim-vinegar.git'            " improwments for netrw
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'           " find file/buffer
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " general-purpose command-line fuzzy finder
 Plug 'https://github.com/FelikZ/ctrlp-py-matcher.git'      " Fast vim CtrlP matcher based on python
 Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'  " list open buffers
 " Plug 'https://github.com/majutsushi/tagbar.git'            " navigate by tags
