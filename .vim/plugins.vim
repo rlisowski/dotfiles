@@ -10,7 +10,8 @@ Plug 'https://github.com/vim-scripts/L9.git'
 " ---------------
 Plug 'https://github.com/bling/vim-airline.git'                   " status bar
 " Plug 'https://github.com/Yggdroot/indentLine.git'                 " shiw indentation with neat lines
-Plug 'https://github.com/sjl/gundo.vim.git'                       " undo view
+" Plug 'https://github.com/sjl/gundo.vim.git'                       " undo view
+Plug 'https://github.com/mbbill/undotree.git'                     " undo view
 " Plug 'https://github.com/drmikehenry/vim-fontsize.git'            " adjust quickly font size
 
 " ---------------
@@ -92,6 +93,7 @@ Plug 'https://github.com/chrisbra/unicode.vim.git'            " handling of unic
 Plug 'https://github.com/git-time-metric/gtm-vim-plugin.git'  " automatically track time spent reading and working on code
 " Plug 'https://github.com/kana/vim-smartword.git'              " provide {motion}s on |word|s which are smarter
 " Plug 'https://github.com/ktonga/vim-follow-my-lead.git'       " showing all your <Leader> mappings
+Plug 'git@github.com:vim-scripts/diffchar.vim.git'
 
 " ---------------
 " SNIPPETS
@@ -170,6 +172,7 @@ Plug 'https://github.com/kewah/vim-stylefmt.git'                      " [S]CSS f
 Plug 'https://github.com/mxw/vim-jsx.git'
 Plug 'https://github.com/aklt/plantuml-syntax.git'                    " PlantUML syntax
 Plug 'https://github.com/scrooloose/vim-slumlord.git'                 " PlantUML live preview
+Plug 'https://github.com/WolfgangMehner/bash-support.git'
 
 " ---------------
 " NAVIGATION
