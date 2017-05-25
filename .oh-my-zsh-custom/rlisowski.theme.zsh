@@ -71,12 +71,11 @@ function current_pwd {
   pwd_length=4
   pwd_symbol="..."
   newPWD="${PWD/#$HOME/~}"
-  if [ $(echo -n $newPWD | tr -d -c '/' | awk '{ print length; }') -gt $pwd_length ]
-
+  if [ $newPWD != '~' ] && [ $(echo -n $newPWD | tr -d -c '/' | awk '{ print NF; }') -gt $pwd_length ]
   then
     newPWD=$(echo -n $newPWD | awk -F '/' '{print $1 "/" $2 "/" $3 "/.../" $(NF-1) "/" $(NF)}')
   fi
-    echo $newPWD
+  echo $newPWD
 }
 
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
