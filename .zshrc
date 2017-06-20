@@ -66,3 +66,5 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
   export DISABLE_AUTO_TITLE=true
 fi
+
+test -e ${HOME}/.zshrc.local && source ${HOME}/.zshrc.local
