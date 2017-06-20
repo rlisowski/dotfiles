@@ -59,7 +59,7 @@ alias e=$EDITOR
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
 # added by travis gem
-[ -f /Users/rlisowski/.travis/travis.sh ] && source /Users/rlisowski/.travis/travis.sh
+[ -f ${HOME}/.travis/travis.sh ] && source ${HOME}/.travis/travis.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
