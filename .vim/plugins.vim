@@ -122,6 +122,7 @@ Plug 'https://github.com/nelstrom/vim-textobj-rubyblock.git' " ruby textobject
 Plug 'https://github.com/tpope/vim-bundler.git'              " bundler helpers
 " Plug 'https://github.com/danchoi/ri.vim.git'                 " search and navigate Ruby library and gem documentation
 " Plug 'https://github.com/Chiel92/vim-autoformat.git'         " Format code
+" Plug 'https://github.com/splattael/rufo-vim.git'             " Format Ruby code
 
 " ---------------
 " ELIXIR
