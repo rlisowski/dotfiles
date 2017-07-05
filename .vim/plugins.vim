@@ -96,6 +96,7 @@ Plug 'https://github.com/git-time-metric/gtm-vim-plugin.git'  " automatically tr
 " Plug 'https://github.com/ktonga/vim-follow-my-lead.git'       " showing all your <Leader> mappings
 Plug 'git@github.com:vim-scripts/diffchar.vim.git'
 " Plug 'https://github.com/jszakmeister/vim-togglecursor.git'   " Change the cursor when entering mode
+Plug 'https://github.com/AndrewRadev/deleft.vim.git'          " Delete a wrapping if-clause, try-catch block, etc. and shift left.
 
 " ---------------
 " SNIPPETS
