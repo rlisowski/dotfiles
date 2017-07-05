@@ -95,6 +95,7 @@ Plug 'https://github.com/git-time-metric/gtm-vim-plugin.git'  " automatically tr
 " Plug 'https://github.com/kana/vim-smartword.git'              " provide {motion}s on |word|s which are smarter
 " Plug 'https://github.com/ktonga/vim-follow-my-lead.git'       " showing all your <Leader> mappings
 Plug 'git@github.com:vim-scripts/diffchar.vim.git'
+" Plug 'https://github.com/jszakmeister/vim-togglecursor.git'   " Change the cursor when entering mode
 
 " ---------------
 " SNIPPETS
