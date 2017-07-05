@@ -97,6 +97,7 @@ Plug 'https://github.com/git-time-metric/gtm-vim-plugin.git'  " automatically tr
 Plug 'git@github.com:vim-scripts/diffchar.vim.git'
 " Plug 'https://github.com/jszakmeister/vim-togglecursor.git'   " Change the cursor when entering mode
 Plug 'https://github.com/AndrewRadev/deleft.vim.git'          " Delete a wrapping if-clause, try-catch block, etc. and shift left.
+Plug 'https://github.com/machakann/vim-highlightedyank.git'   " Make the yanked region apparent!
 
 " ---------------
 " SNIPPETS
