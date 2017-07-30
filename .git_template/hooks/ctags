@@ -1,10 +1,11 @@
 #!/bin/sh
 set -e
 trap "rm -f .git/tags.$$" EXIT
+
 ripper=$(which ripper-tags)
 if [ -x "$ripper" ] ; then
-	ripper-tags --tag-relative --extra=q -R -f .git/tags.$$ --exclude=.git --exclude=.rsync_cache
+  ripper-tags --tag-relative --extra=q -R -f .git/tags.$$ --exclude=.git --exclude=.rsync_cache
 else
-	ctags -f .git/tags.$$
+  ctags -f .git/tags.$$
 fi
-mv .git/tags.$$ .git/tags
+mv -f .git/tags.$$ .git/tags

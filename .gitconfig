@@ -88,6 +88,7 @@
 	gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
 	clear = "!sh -c 'find . -name '*.orig' -delete'"
 	ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
+	cscope = "!sh -c '[ -f .git/hooks/cscope ] || git init; .git/hooks/cscope' git-cscope"
 	stats = "!(echo \"\nby hour\n--------------\") && (for i in 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23; do echo $( echo "$i\t"; git shortlog  -n --format='%ad %s' | grep " $i:" | wc -l); done) && (echo \"\n\nby day\n--------------\") && (for i in Mon Tue Wed Thu Fri Sat Sun; do echo $( echo "$i\t"; git shortlog  -n --format='%ad %s'| grep "$i " | wc -l); done) && (echo \"\n\nby user\n--------------\") && (git shortlog  -ns)"
 	latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
 
