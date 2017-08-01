@@ -6,7 +6,7 @@
 	# autocrlf = input # http://help.github.com/line-endings/
 [user]
 	name = Rafał Lisowski
-	email = lisukorin@gmail.com
+	email = lisowski.r@gmail.com
 	signingkey = B15787F1747EAE87
 [filter "lfs"]
         clean = git-lfs clean %f
