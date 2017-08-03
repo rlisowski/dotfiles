@@ -190,6 +190,7 @@ Plug 'https://github.com/FelikZ/ctrlp-py-matcher.git'      " Fast vim CtrlP matc
 Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'  " list open buffers
 Plug 'https://github.com/majutsushi/tagbar.git'            " navigate by tags
 " Plug 'https://github.com/lukaszkorecki/CoffeeTags.git'
+" Plug 'https://github.com/ludovicchabant/vim-gutentags.git' " takes care of the much needed management of tags files
 Plug 'https://github.com/vim-scripts/mru.vim.git'     " most recent used files
 " Plug 'https://github.com/rking/ag.vim.git'            " search plugin
 Plug 'https://github.com/gabesoft/vim-ags.git'        " Silver searcher (AG) plugin
