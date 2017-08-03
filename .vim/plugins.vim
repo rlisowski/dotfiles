@@ -188,7 +188,7 @@ Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'           " find file/buffer
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " general-purpose command-line fuzzy finder
 Plug 'https://github.com/FelikZ/ctrlp-py-matcher.git'      " Fast vim CtrlP matcher based on python
 Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'  " list open buffers
-" Plug 'https://github.com/majutsushi/tagbar.git'            " navigate by tags
+Plug 'https://github.com/majutsushi/tagbar.git'            " navigate by tags
 " Plug 'https://github.com/lukaszkorecki/CoffeeTags.git'
 Plug 'https://github.com/vim-scripts/mru.vim.git'     " most recent used files
 " Plug 'https://github.com/rking/ag.vim.git'            " search plugin
