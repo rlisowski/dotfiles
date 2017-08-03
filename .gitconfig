@@ -7,7 +7,7 @@
 [user]
 	name = Rafał Lisowski
 	email = lisowski.r@gmail.com
-	signingkey = B15787F1747EAE87
+	signingkey = FA12D4C2
 [filter "lfs"]
         clean = git-lfs clean %f
         smudge = git-lfs smudge %f
