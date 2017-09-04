@@ -126,6 +126,11 @@ Plug 'https://github.com/tpope/vim-bundler.git'              " bundler helpers
 " Plug 'https://github.com/splattael/rufo-vim.git'             " Format Ruby code
 
 " ---------------
+" GROOVY
+" ---------------
+Plug 'https://github.com/modille/groovy.vim.git'
+
+" ---------------
 " ELIXIR
 " ---------------
 " Plug 'https://github.com/elixir-lang/vim-elixir.git'         " elixir support
