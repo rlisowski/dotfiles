@@ -99,6 +99,7 @@ Plug 'git@github.com:vim-scripts/diffchar.vim.git'
 Plug 'https://github.com/AndrewRadev/deleft.vim.git'          " Delete a wrapping if-clause, try-catch block, etc. and shift left.
 Plug 'https://github.com/machakann/vim-highlightedyank.git'   " Make the yanked region apparent!
 Plug 'https://github.com/Konfekt/FastFold.git'                " Make vim fold fast again
+Plug 'https://github.com/vim-scripts/Mark--Karkat.git'        " highlight several words in different colors simultaneously
 
 " ---------------
 " SNIPPETS
