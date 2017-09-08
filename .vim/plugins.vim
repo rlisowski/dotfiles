@@ -185,6 +185,9 @@ Plug 'https://github.com/mxw/vim-jsx.git'
 Plug 'https://github.com/aklt/plantuml-syntax.git'                    " PlantUML syntax
 Plug 'https://github.com/scrooloose/vim-slumlord.git'                 " PlantUML live preview
 Plug 'https://github.com/WolfgangMehner/bash-support.git'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 
 " ---------------
 " NAVIGATION
