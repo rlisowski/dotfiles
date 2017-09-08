@@ -62,8 +62,8 @@
 	# commit
 	c = commit -m                     # commit with message
 	ca = commit -am                   # commit all with message
-	ci = commit -v
-	cia = commit -v -a
+	ci = commit
+	cia = commit -a
 	uncommit = reset --mixed HEAD~
 
 	# cherry-pick
