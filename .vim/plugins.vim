@@ -147,7 +147,8 @@ Plug 'https://github.com/tpope/vim-haml.git'
 " Plug 'https://github.com/tpope/vim-markdown.git'
 " Plug 'https://github.com/gabrielelana/vim-markdown.git'        " environment to create Markdown files with a syntax highlight
 " Plug 'https://github.com/suan/vim-instant-markdown.git'
-Plug 'https://github.com/rstacruz/sparkup.git'                 " write html faster
+" Plug 'https://github.com/rstacruz/sparkup.git'                 " write html faster
+Plug 'https://github.com/mattn/emmet-vim.git'
 " Plug 'https://github.com/tmux-plugins/vim-tmux.git'
 
 " ---------------
