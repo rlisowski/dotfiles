@@ -160,11 +160,11 @@ Plug 'https://github.com/metakirby5/codi.vim.git'                    " The inter
 " else
 " 	Plug 'https://github.com/vim-syntastic/syntastic.git'                   " syntax checker
 " endif
-Plug 'https://github.com/mmalecki/vim-node.js.git'                   " File type detect plugin for vim which detects node.js shebang
-Plug 'https://github.com/pangloss/vim-javascript.git'                " provides syntax and indent for javascript
+" Plug 'https://github.com/mmalecki/vim-node.js.git'                   " File type detect plugin for vim which detects node.js shebang
+" Plug 'https://github.com/pangloss/vim-javascript.git'                " provides syntax and indent for javascript
 " Plug 'https://github.com/burnettk/vim-angular.git'
-Plug 'https://github.com/jelera/vim-javascript-syntax.git'
-Plug 'https://github.com/isRuslan/vim-es6.git'
+" Plug 'https://github.com/jelera/vim-javascript-syntax.git'
+" Plug 'https://github.com/isRuslan/vim-es6.git'
 " Plug 'https://github.com/othree/javascript-libraries-syntax.vim.git'
 " Plug 'https://github.com/othree/xml.vim.git'
 Plug 'https://github.com/kchmck/vim-coffee-script.git'
