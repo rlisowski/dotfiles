@@ -17,13 +17,14 @@ Plug 'https://github.com/mbbill/undotree.git'                     " undo view
 " ---------------
 " GIT
 " ---------------
-Plug 'https://github.com/tpope/vim-git.git'              " git helpers, commit msg, diff etc
-Plug 'https://github.com/tpope/vim-rhubarb.git'          " better integration with github
-Plug 'https://github.com/chrisbra/vim-diff-enhanced.git' " creating better diffs (sometimes)
-Plug 'https://github.com/rhysd/committia.vim.git'        " More Pleasant Editing on Commit Message
-" Plug 'https://github.com/airblade/vim-gitgutter.git'     " mark changed lines in sign column
-Plug 'https://github.com/tpope/vim-fugitive.git'         " git wrapper
-" Plug 'https://github.com/gregsexton/gitv.git'            " gitk clone aka repository viewer
+Plug 'https://github.com/tpope/vim-git.git'                 " git helpers, commit msg, diff etc
+Plug 'https://github.com/tpope/vim-rhubarb.git'             " better integration with github
+Plug 'https://github.com/chrisbra/vim-diff-enhanced.git'    " creating better diffs (sometimes)
+Plug 'https://github.com/rhysd/committia.vim.git'           " More Pleasant Editing on Commit Message
+" Plug 'https://github.com/airblade/vim-gitgutter.git'        " mark changed lines in sign column
+Plug 'https://github.com/tpope/vim-fugitive.git'            " git wrapper
+" Plug 'https://github.com/gregsexton/gitv.git'              " gitk clone aka repository viewer
+Plug 'https://github.com/hotwatermorning/auto-git-diff.git' " git diff for Git Rebase Interactive
 
 " ---------------
 " BEHAVIOR
@@ -70,6 +71,7 @@ Plug 'https://github.com/dietsche/vim-lastplace.git'          " reopen files whe
 " Plug 'https://github.com/joonty/vdebug.git'                   " debug with vim
 " Plug 'https://github.com/ashisha/image.vim.git'               " image preview
 Plug 'https://github.com/tpope/vim-dispatch.git'              " async vim dispatcher
+Plug 'https://github.com/skywind3000/asyncrun.vim.git'        " Runs commands asynchronosuly using new APIs in Vim 8 and NeoVim
 Plug 'https://github.com/janko-m/vim-test.git'                " run any test
 Plug 'https://github.com/diepm/vim-rest-console.git'          " REST console
 Plug 'https://github.com/ConradIrwin/vim-bracketed-paste.git' " transparent pasting into vim
@@ -100,6 +102,7 @@ Plug 'https://github.com/AndrewRadev/deleft.vim.git'          " Delete a wrappin
 Plug 'https://github.com/machakann/vim-highlightedyank.git'   " Make the yanked region apparent!
 Plug 'https://github.com/Konfekt/FastFold.git'                " Make vim fold fast again
 Plug 'https://github.com/vim-scripts/Mark--Karkat.git'        " highlight several words in different colors simultaneously
+Plug 'https://github.com/thiagoalessio/rainbow_levels.vim.git' " highlights your code by indentation level
 
 " ---------------
 " SNIPPETS
@@ -125,6 +128,7 @@ Plug 'https://github.com/tpope/vim-bundler.git'              " bundler helpers
 " Plug 'https://github.com/danchoi/ri.vim.git'                 " search and navigate Ruby library and gem documentation
 " Plug 'https://github.com/Chiel92/vim-autoformat.git'         " Format code
 " Plug 'https://github.com/splattael/rufo-vim.git'             " Format Ruby code
+Plug 'https://github.com/sbdchd/neoformat.git' " uses a variety of formatters for many filetypes
 
 " ---------------
 " GROOVY
@@ -137,6 +141,11 @@ Plug 'https://github.com/modille/groovy.vim.git'
 " Plug 'https://github.com/elixir-lang/vim-elixir.git'         " elixir support
 " Plug 'https://github.com/edkolev/erlang-motions.vim.git'
 " Plug 'https://github.com/jimenezrick/vimerl.git'
+
+" ---------------
+" RUST
+" ---------------
+Plug 'https://github.com/racer-rust/vim-racer.git'
 
 " ---------------
 " MARKUP
@@ -154,7 +163,7 @@ Plug 'https://github.com/mattn/emmet-vim.git'
 " ---------------
 " SYNTAX
 " ---------------
-Plug 'https://github.com/metakirby5/codi.vim.git'                    " The interactive scratchpad
+" Plug 'https://github.com/metakirby5/codi.vim.git'                    " The interactive scratchpad
 " if has('nvim')
 	Plug 'https://github.com/neomake/neomake.git'                        " syntax checker
 " else
