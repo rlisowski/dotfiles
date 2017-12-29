@@ -62,6 +62,7 @@ test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_in
 [ -f ${HOME}/.travis/travis.sh ] && source ${HOME}/.travis/travis.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.cargo/bin:$PATH" # Add Rust to PATH
 
 if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
   export DISABLE_AUTO_TITLE=true
