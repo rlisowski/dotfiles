@@ -96,7 +96,7 @@ Plug 'https://github.com/chrisbra/unicode.vim.git'            " handling of unic
 Plug 'https://github.com/git-time-metric/gtm-vim-plugin.git'  " automatically track time spent reading and working on code
 " Plug 'https://github.com/kana/vim-smartword.git'              " provide {motion}s on |word|s which are smarter
 " Plug 'https://github.com/ktonga/vim-follow-my-lead.git'       " showing all your <Leader> mappings
-Plug 'git@github.com:vim-scripts/diffchar.vim.git'
+Plug 'https://github.com/rickhowe/diffchar.vim.git'
 " Plug 'https://github.com/jszakmeister/vim-togglecursor.git'   " Change the cursor when entering mode
 Plug 'https://github.com/AndrewRadev/deleft.vim.git'          " Delete a wrapping if-clause, try-catch block, etc. and shift left.
 Plug 'https://github.com/machakann/vim-highlightedyank.git'   " Make the yanked region apparent!
