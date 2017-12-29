@@ -4,7 +4,7 @@ trap "rm -f .git/tags.$$" EXIT
 
 ripper=$(which ripper-tags)
 if [ -x "$ripper" ] ; then
-  ripper-tags --tag-relative --extra=q -R -f .git/tags.$$ --exclude=.git --exclude=.rsync_cache
+  ripper-tags --tag-relative --extra=q -R -f .git/tags.$$ --exclude=.git --exclude=.rsync_cache --exclude=node_modules --exclude=vendor/bundle
 else
   ctags -f .git/tags.$$
 fi
