@@ -56,7 +56,7 @@
 	st = status -sb
 	d = diff
 	id = icdiff                       # https://github.com/jeffkaufman/icdiff
-	b = branch -v                     # branch (verbose)
+	b = branch -vv                    # branch (verbose)
 	refs = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 
 	# commit
