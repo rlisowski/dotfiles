@@ -138,9 +138,9 @@ Plug 'https://github.com/modille/groovy.vim.git'
 " ---------------
 " ELIXIR
 " ---------------
-" Plug 'https://github.com/elixir-lang/vim-elixir.git'         " elixir support
-" Plug 'https://github.com/edkolev/erlang-motions.vim.git'
-" Plug 'https://github.com/jimenezrick/vimerl.git'
+Plug 'https://github.com/elixir-lang/vim-elixir.git'         " elixir support
+Plug 'https://github.com/edkolev/erlang-motions.vim.git'
+Plug 'https://github.com/jimenezrick/vimerl.git'
 
 " ---------------
 " RUST
