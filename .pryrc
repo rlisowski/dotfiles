@@ -65,7 +65,7 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
   when "2"
     require 'console_app'
     require 'console_with_helpers'
-  when "3","4"
+  when "3","4", "5"
     require 'rails/console/app'
     require 'rails/console/helpers'
   else
