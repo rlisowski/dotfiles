@@ -71,11 +71,11 @@ alias remigrate='rake db:migrate && rake db:migrate:redo && rake db:schema:dump 
 alias npm-exec='PATH=$(npm bin):$PATH'
 
 # https://github.com/carlhuda/janus/wiki/Rvm
-vim() { rvm system do /usr/local/bin/vim $@ }
+# vim() { rvm system do /usr/local/bin/vim $@ }
 vm() { vim $(git status --short | awk ' { print $2 } '); }
 vc() { vim $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
 
-nvim() { rvm system do /usr/local/bin/nvim $@ }
+# nvim() { rvm system do /usr/local/bin/nvim $@ }
 nvm() { nvim $(git status --short | awk ' { print $2 } '); }
 nvc() { nvim $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
 
