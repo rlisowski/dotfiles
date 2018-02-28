@@ -48,7 +48,6 @@ config/alias
 installed.at
 rubies/
 share/
-src/
 user/
 wrappers/
 .projections.json
