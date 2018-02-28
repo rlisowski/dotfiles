@@ -1,8 +1,8 @@
 # http://www.kernel.org/pub/software/scm/git/docs/git-config.html
 [core]
 	excludesfile = ~/.gitignore_global
-	pager = diff-highlight | less -S
-	editor = vim
+	pager = diff-highlight | less -F -X $LESS
+	editor = $EDITOR
 	# autocrlf = input # http://help.github.com/line-endings/
 [user]
 	name = Rafał Lisowski
