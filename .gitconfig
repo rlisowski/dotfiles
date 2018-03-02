@@ -74,6 +74,10 @@
 	ci = commit
 	co = checkout
 
+	current-branch = !git branch | grep '^*' | sed s/\\*\\ //
+	track = !git fetch && git branch --set-upstream-to origin/$(git current-branch)
+	publish = !git push -u origin $(git current-branch)
+
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d %C(white)%s %Cgreen(%cr - %cd) %C(bold blue)<%an> (%cn)%Creset %C(bold blue)%Creset' --abbrev-commit
 	ls = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d %C(white)%s %Cgreen(%aN - %cr) %C(bold blue)%Creset' --abbrev-commit --since=last.mon --author="Rafał.Lisowski"
 	today = log --since=midnight --author='Rafał Lisowski' --oneline --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d %C(white)%s %Cgreen(%cr - %cd) %C(bold blue)<%cn>%Creset %C(bold blue)%Creset' --abbrev-commit
