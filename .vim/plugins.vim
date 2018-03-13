@@ -153,7 +153,8 @@ Plug 'https://github.com/racer-rust/vim-racer.git'
 " ---------------
 Plug 'https://github.com/tpope/vim-haml.git'
 " Plug 'https://github.com/slim-template/vim-slim.git'          " slim syntax highlighting
-Plug 'https://github.com/mustache/vim-mustache-handlebars.git'
+" Plug 'https://github.com/mustache/vim-mustache-handlebars.git'
+Plug 'https://github.com/joukevandermaas/vim-ember-hbs.git'
 Plug 'https://github.com/tpope/vim-markdown.git'
 " Plug 'https://github.com/gabrielelana/vim-markdown.git'        " environment to create Markdown files with a syntax highlight
 " Plug 'https://github.com/suan/vim-instant-markdown.git'
