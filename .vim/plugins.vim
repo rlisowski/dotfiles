@@ -103,6 +103,7 @@ Plug 'https://github.com/machakann/vim-highlightedyank.git'   " Make the yanked 
 Plug 'https://github.com/Konfekt/FastFold.git'                " Make vim fold fast again
 Plug 'https://github.com/vim-scripts/Mark--Karkat.git'        " highlight several words in different colors simultaneously
 Plug 'https://github.com/thiagoalessio/rainbow_levels.vim.git' " highlights your code by indentation level
+Plug 'https://github.com/tpope/vim-db.git'                    "
 
 " ---------------
 " SNIPPETS
