@@ -32,8 +32,8 @@ export PATH=$PATH:$HOME/node_modules/.bin:$HOME/bin:$HOME/.cabal/bin:/usr/local/
 [[ -s $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator.zsh ]] && source $HOME/.tmuxinator/scripts/tmuxinator.zsh
 [[ -s $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 [[ -s "$NVM_DIR/bash_completion" ]] && \. "$NVM_DIR/bash_completion"
+# [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # JAVA
 # JAVA_HOME=/usr/local/java/jdk1.8.0_05
