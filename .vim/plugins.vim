@@ -202,6 +202,9 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 
+Plug 'https://github.com/posva/vim-vue.git'
+Plug 'https://github.com/ternjs/tern_for_vim.git', { 'do': 'yarn' }
+
 " ---------------
 " NAVIGATION
 " ---------------
