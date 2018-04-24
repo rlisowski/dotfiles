@@ -174,6 +174,7 @@ Plug 'https://github.com/magicalbanana/sql-syntax-vim.git'
 " endif
 " Plug 'https://github.com/mmalecki/vim-node.js.git'                   " File type detect plugin for vim which detects node.js shebang
 " Plug 'https://github.com/pangloss/vim-javascript.git'                " provides syntax and indent for javascript
+Plug 'https://github.com/ianks/vim-tsx.git'
 " Plug 'https://github.com/burnettk/vim-angular.git'
 " Plug 'https://github.com/jelera/vim-javascript-syntax.git'
 " Plug 'https://github.com/isRuslan/vim-es6.git'
