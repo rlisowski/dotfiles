@@ -44,7 +44,7 @@ alias du="du -hs"
 alias df="df -h"
 
 #Miscellaneous
-alias j=jobs
+# alias j=jobs
 alias cd..="cd .." #work around a common typo
 
 #ruby aliases
