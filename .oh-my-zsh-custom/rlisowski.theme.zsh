@@ -1,62 +1,30 @@
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[yellow]%}›%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%b %{$fg[yellow]%}…%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_AHEAD="%b %{$fg[yellow]%}↑%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_BEHIND="%b %{$fg[yellow]%}↓%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_STASH="%b %{$fg[yellow]%}█%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_STAGED="%b %{$fg[yellow]%}♦%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CHANGED="%b %{$fg[yellow]%}‣%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_UNMERGED="%b %{$fg[yellow]%}≠%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%b"
-ZSH_THEME_GIT_PROMPT_SHA_BEFORE="%b "
-
-ZSH_THEME_SVN_PROMPT_DIRTY="%b %{$fg[yellow]%}✗%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$bg[blue]%} "
+ZSH_THEME_GIT_PROMPT_SUFFIX=" %{$reset_color$fg[blue]%}"
+ZSH_THEME_GIT_PROMPT_MODIFIED="%b%{$bg[blue]%} …"
+ZSH_THEME_GIT_PROMPT_AHEAD="%b%{$bg[blue]%} ↑"
+ZSH_THEME_GIT_PROMPT_BEHIND="%b%{$bg[blue]%} ↓"
+ZSH_THEME_GIT_PROMPT_STASH="%b%{$bg[blue]%} █"
+ZSH_THEME_GIT_PROMPT_ADDED="%b%{$bg[blue]%} ♦"
+ZSH_THEME_GIT_PROMPT_CHANGED="%b%{$bg[blue]%} ‣"
+ZSH_THEME_GIT_PROMPT_UNMERGED="%b%{$bg[blue]%} ≠"
+ZSH_THEME_SVN_PROMPT_DIRTY="%b%{$bg[blue]%} ✗"
+ZSH_THEME_GIT_PROMPT_CLEAN="%b%{$bg[blue]%}"
+ZSH_THEME_GIT_PROMPT_SHA_BEFORE="%b%{$bg[blue]%} "
+ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$bg[blue]%}"
 
 function git_prompt_info() {
-  ref=$(git symbolic-ref -q HEAD 2> /dev/null) || $(git name-rev --name-only --no-undefined --always HEAD 2> /dev/null) || return
-  echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(git_prompt_short_sha)$(parse_git_dirty)$(git_prompt_ahead)$(git_prompt_behind)$(git_prompt_stash)$(git_prompt_staged)$(git_prompt_changed)$ZSH_THEME_GIT_PROMPT_SUFFIX"
-}
-
-function git_prompt_ahead() {
-  if $(echo "$(git log $(git_current_upstream)/$(current_branch)..HEAD 2> /dev/null)" | grep '^commit' &> /dev/null); then
-    echo "$ZSH_THEME_GIT_PROMPT_AHEAD"
+  local ref
+  if [[ "$(command git config --get oh-my-zsh.hide-status 2>/dev/null)" != "1" ]]; then
+    ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
+    ref=$(command git rev-parse --short HEAD 2> /dev/null) || return 0
+    echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(git_prompt_short_sha) $(git_prompt_status)$ZSH_THEME_GIT_PROMPT_SUFFIX"
   fi
 }
 
-function git_prompt_behind() {
-  if $(echo "$(git log HEAD..$(git_current_upstream)/$(current_branch) 2> /dev/null)" | grep '^commit' &> /dev/null); then
-    echo "$ZSH_THEME_GIT_PROMPT_BEHIND"
-  fi
-}
-
-function git_prompt_stash() {
-  if $(echo "$(git stash list 2> /dev/null)" | grep '^stash' &> /dev/null); then
-    echo "$ZSH_THEME_GIT_PROMPT_STASH"
-  fi
-}
-
-function git_prompt_staged() {
-  if test $(git diff --staged --name-only --diff-filter=ACDMRT | wc -l) -gt "0"; then
-    echo "$ZSH_THEME_GIT_PROMPT_STAGED"
-  fi
-}
-
-function git_prompt_changed() {
-  if test $(git diff --name-only --diff-filter=ACDMRT | wc -l) -gt "0"; then
-    echo "$ZSH_THEME_GIT_PROMPT_CHANGED"
-  fi
-}
-
-function git_prompt_unmerged() {
-  if test $(git diff --staged --name-only --diff-filter=U | wc -l) -gt "0"; then
-    echo "$ZSH_THEME_GIT_PROMPT_UNMERGED"
-  fi
-}
-
-function git_current_upstream(){
-  local upstream=$(git config --get branch."$(current_branch)".remote) || return
-  echo $upstream
-}
+# function git_prompt_info() {
+#   ref=$(git symbolic-ref -q HEAD 2> /dev/null) || $(git name-rev --name-only --no-undefined --always HEAD 2> /dev/null) || return
+#   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(git_prompt_short_sha)$(parse_git_dirty)$(git_prompt_ahead)$(git_prompt_behind)$(git_prompt_stash)$(git_prompt_staged)$(git_prompt_changed)$ZSH_THEME_GIT_PROMPT_SUFFIX"
+# }
 
 function prompt_info() {
   # only proceed if there is actually a svn repository
@@ -80,14 +48,13 @@ function current_pwd {
 
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-local user_host='%{$terminfo[bold]$fg[green]%}%n@%m%{$reset_color%}'
-local current_dir='%{$terminfo[bold]$fg[yellow]%} $(current_pwd)%{$reset_color%}'
-local rvm_ruby='%{$fg[red]%}‹$(rvm-prompt i v p g)›%{$reset_color%}'
-# local rvm_ruby='%{$fg[red]%}‹$(rbenv version | sed -e "s/ (set.*$//")›%{$reset_color%}'
-local rev_info='$(prompt_info)%{$reset_color%}'
+local user_host='%{$terminfo[bold]$fg[green]%}%n@%m'
+local current_dir='%{$reset_color%} $(current_pwd)'
+local rvm_ruby='%{$reset_color%}%{$bg[red]%} $(rvm-prompt i v p g) %{$fg[red]$bg[blue]%}'
+local rev_info='%{$reset_color%}$(prompt_info)'
 
-PROMPT="%(!.$fg[red].)╭─ ${rvm_ruby} ${rev_info}${current_dir}
-%(!.$fg[red].)╰─%B%(!.#.$)%b "
+PROMPT="${rvm_ruby}${rev_info}${current_dir}
+%B%(!.#.$)%b "
 # RPS1="${return_code}"
 # RPS1="%D{[%I:%M:%S]}"
 
