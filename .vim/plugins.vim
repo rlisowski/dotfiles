@@ -105,6 +105,7 @@ Plug 'https://github.com/Konfekt/FastFold.git'                " Make vim fold fa
 Plug 'https://github.com/vim-scripts/Mark--Karkat.git'        " highlight several words in different colors simultaneously
 Plug 'https://github.com/thiagoalessio/rainbow_levels.vim.git' " highlights your code by indentation level
 Plug 'https://github.com/tpope/vim-db.git'                    "
+Plug 'https://github.com/wannesm/wmgraphviz.vim.git'          " Vim plugin for Graphviz dot.
 
 " ---------------
 " SNIPPETS
