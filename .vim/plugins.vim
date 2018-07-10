@@ -29,6 +29,7 @@ Plug 'https://github.com/hotwatermorning/auto-git-diff.git' " git diff for Git R
 " ---------------
 " BEHAVIOR
 " ---------------
+Plug 'https://github.com/editorconfig/editorconfig-vim.git'   " Acept editor config file
 Plug 'https://github.com/tpope/vim-abolish.git'               " mostly for better find and replace eg :%s/{S,s}ome/{O,o}ther/g
 Plug 'https://github.com/AndrewRadev/splitjoin.vim.git'       " easyli split/join ruby hashmap, json, javascript object
 " Plug 'https://github.com/tpope/vim-obsession.git'             " save/restore vim session
