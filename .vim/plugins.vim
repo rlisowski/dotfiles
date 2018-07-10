@@ -179,7 +179,7 @@ Plug 'https://github.com/magicalbanana/sql-syntax-vim.git'
 Plug 'https://github.com/ianks/vim-tsx.git'
 " Plug 'https://github.com/burnettk/vim-angular.git'
 " Plug 'https://github.com/jelera/vim-javascript-syntax.git'
-" Plug 'https://github.com/isRuslan/vim-es6.git'
+Plug 'https://github.com/isRuslan/vim-es6.git'
 " Plug 'https://github.com/othree/javascript-libraries-syntax.vim.git'
 " Plug 'https://github.com/othree/xml.vim.git'
 Plug 'https://github.com/kchmck/vim-coffee-script.git'
@@ -207,6 +207,7 @@ Plug 'prettier/vim-prettier', {
 
 Plug 'https://github.com/posva/vim-vue.git'
 Plug 'https://github.com/ternjs/tern_for_vim.git', { 'do': 'yarn' }
+Plug 'https://github.com/leafgarland/typescript-vim.git'
 
 " ---------------
 " NAVIGATION
