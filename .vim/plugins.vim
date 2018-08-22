@@ -209,6 +209,7 @@ Plug 'prettier/vim-prettier', {
 Plug 'https://github.com/posva/vim-vue.git'
 Plug 'https://github.com/ternjs/tern_for_vim.git', { 'do': 'yarn' }
 Plug 'https://github.com/leafgarland/typescript-vim.git'
+Plug 'https://github.com/HerringtonDarkholme/yats.vim.git'
 
 " ---------------
 " NAVIGATION
