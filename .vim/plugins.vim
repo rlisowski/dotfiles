@@ -228,7 +228,8 @@ Plug 'https://github.com/vim-scripts/mru.vim.git'     " most recent used files
 " Plug 'https://github.com/rking/ag.vim.git'            " search plugin
 Plug 'https://github.com/gabesoft/vim-ags.git'        " Silver searcher (AG) plugin
 " Plug 'https://github.com/wincent/ferret.git'          " multi-file search
-Plug 'https://github.com/vim-scripts/matchit.zip.git' " % behavior
+" Plug 'https://github.com/vim-scripts/matchit.zip.git' " % behavior
+Plug 'https://github.com/andymass/vim-matchup.git' " % behavior
 Plug 'https://github.com/dockyard/vim-easydir.git'    " simple way to create, edit and save files and directories
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 " Plug 'https://github.com/yuttie/comfortable-motion.vim.git' " physics-based smooth scrolling
