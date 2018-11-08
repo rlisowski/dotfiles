@@ -17,6 +17,9 @@ alias _='sudo'
 # Show history
 alias history='fc -l 1'
 
+alias be="bundle exec"
+alias g="git"
+
 # List direcory contents
 alias afind='ack-grep -il'
 
