@@ -235,7 +235,7 @@ Plug 'https://github.com/dockyard/vim-easydir.git'    " simple way to create, ed
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 " Plug 'https://github.com/yuttie/comfortable-motion.vim.git' " physics-based smooth scrolling
 
-Plug 'https://github.com/fatih/vim-go.git'
+" Plug 'https://github.com/fatih/vim-go.git', { 'do': ':GoUpdateBinaries' }
 Plug 'https://github.com/garyburd/go-explorer'
 Plug 'https://github.com/jodosha/vim-godebug'
 
