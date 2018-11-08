@@ -9,6 +9,7 @@
 ._*
 .bundle
 .idea
+.vscode
 .project
 .rspec
 .rsync_cache
