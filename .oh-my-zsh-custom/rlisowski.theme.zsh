@@ -28,11 +28,11 @@ function git_prompt_info() {
 
 function prompt_info() {
   # only proceed if there is actually a svn repository
-  if [ $(in_svn) ]; then
-    svn_prompt_info
-  else
+  # if [ $(in_svn) ]; then
+  #   svn_prompt_info
+  # else
     git_prompt_info
-  fi
+  # fi
 }
 
 function current_pwd {
