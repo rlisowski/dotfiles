@@ -1,3 +1,5 @@
+# zmodload zsh/zprof
+
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
@@ -16,7 +18,8 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gitfast svn cap gem bundler rails git-flow node zsh-autosuggestions)
+# plugins=(git gitfast svn cap gem bundler rails git-flow node zsh-autosuggestions)
+plugins=(git gitfast zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 source ~/bin/tmuxinator.zsh
@@ -27,12 +30,12 @@ cdpath=($HOME/workspace $HOME/workspace2)
 # Customize to your needs...
 unsetopt auto_name_dirs
 
-export COFFEELINT_CONFIG=$HOME/.coffeelint.json
-export PATH=$PATH:$HOME/.yarn/bin:$HOME/node_modules/.bin:$HOME/bin:$HOME/.cabal/bin:/usr/local/bin
+# export COFFEELINT_CONFIG=$HOME/.coffeelint.json
+# export PATH=$PATH:$HOME/.yarn/bin:$HOME/node_modules/.bin:$HOME/bin:$HOME/.cabal/bin:/usr/local/bin
 [[ -s $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator.zsh ]] && source $HOME/.tmuxinator/scripts/tmuxinator.zsh
-[[ -s $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-[[ -s "$NVM_DIR/bash_completion" ]] && \. "$NVM_DIR/bash_completion"
+# [[ -s $HOME/.tmuxinator/scripts/tmuxinator.zsh ]] && source $HOME/.tmuxinator/scripts/tmuxinator.zsh
+# [[ -s $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# [[ -s "$NVM_DIR/bash_completion" ]] && \. "$NVM_DIR/bash_completion"
 # [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # JAVA
@@ -44,23 +47,23 @@ export PATH=$PATH:$HOME/.yarn/bin:$HOME/node_modules/.bin:$HOME/bin:$HOME/.cabal
 # export ANT_HOME
 # export PATH
 
-vman() {
-  vim -c "SuperMan $*"
+# vman() {
+#   vim -c "SuperMan $*"
 
-  if [ "$?" != "0" ]; then
-    echo "No manual entry for $*"
-  fi
-}
-compdef vman="man"
+#   if [ "$?" != "0" ]; then
+#     echo "No manual entry for $*"
+#   fi
+# }
+# compdef vman="man"
 
 EDITOR=nvim
 export EDITOR
 alias e=$EDITOR
 
-test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+# test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
 # added by travis gem
-[ -f ${HOME}/.travis/travis.sh ] && source ${HOME}/.travis/travis.sh
+# [ -f ${HOME}/.travis/travis.sh ] && source ${HOME}/.travis/travis.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$HOME/.cargo/bin:$PATH" # Add Rust to PATH
@@ -70,3 +73,5 @@ if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
 fi
 
 test -e ${HOME}/.zshrc.local && source ${HOME}/.zshrc.local
+
+# zprof
