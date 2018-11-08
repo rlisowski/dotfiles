@@ -60,6 +60,10 @@
 	template = ~/.gitmessage
 	gpgsign = true
 
+[format]
+	# pretty = format:%C(auto,yellow)%h%C(auto,magenta)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(7,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D
+	pretty = format:%C(auto,red)%h%C(auto,magenta)% G? %Cgreen(%cr - %cd) %C(bold blue)<%an> (%cn)%Creset %C(bold blue)%Creset-%C(yellow)%d %C(white)%s
+
 [alias]
 	h = help
 	st = status -sb
