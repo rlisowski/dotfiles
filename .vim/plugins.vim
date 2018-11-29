@@ -29,7 +29,6 @@ Plug 'https://github.com/hotwatermorning/auto-git-diff.git' " git diff for Git R
 " ---------------
 " BEHAVIOR
 " ---------------
-Plug 'https://github.com/editorconfig/editorconfig-vim.git'   " Acept editor config file
 Plug 'https://github.com/tpope/vim-abolish.git'               " mostly for better find and replace eg :%s/{S,s}ome/{O,o}ther/g
 Plug 'https://github.com/AndrewRadev/splitjoin.vim.git'       " easyli split/join ruby hashmap, json, javascript object
 " Plug 'https://github.com/tpope/vim-obsession.git'             " save/restore vim session
@@ -53,7 +52,8 @@ Plug 'https://github.com/tpope/vim-speeddating.git'           " use CTRL-A/CTRL-
 Plug 'https://github.com/wellle/targets.vim.git'              " additional text objects like cin) da, etc.
 Plug 'https://github.com/terryma/vim-expand-region.git'       " easily expand region eg visual highlight
 Plug 'https://github.com/tpope/vim-rsi.git'                   " Readline key bindings in insert and command line mode
-Plug 'https://github.com/tpope/vim-sleuth'                    " keep shiftwidth and expandtab as in other file in the project
+"Plug 'https://github.com/tpope/vim-sleuth'                    " keep shiftwidth and expandtab as in other file in the project
+Plug 'https://github.com/editorconfig/editorconfig-vim.git'   " Acept editor config file
 " Plug 'https://github.com/tpope/vim-eunuch'                    " sugar for the UNIX shell commands
 " Plug 'https://github.com/mrmargolis/dogmatic.vim.git'         " disable arrows
 Plug 'https://github.com/kshenoy/vim-signature.git'           " place, toggle and display marks
@@ -101,7 +101,7 @@ Plug 'https://github.com/git-time-metric/gtm-vim-plugin.git'  " automatically tr
 Plug 'https://github.com/rickhowe/diffchar.vim.git'
 " Plug 'https://github.com/jszakmeister/vim-togglecursor.git'   " Change the cursor when entering mode
 Plug 'https://github.com/AndrewRadev/deleft.vim.git'          " Delete a wrapping if-clause, try-catch block, etc. and shift left.
-Plug 'https://github.com/machakann/vim-highlightedyank.git'   " Make the yanked region apparent!
+" Plug 'https://github.com/machakann/vim-highlightedyank.git'   " Make the yanked region apparent!
 Plug 'https://github.com/Konfekt/FastFold.git'                " Make vim fold fast again
 Plug 'https://github.com/vim-scripts/Mark--Karkat.git'        " highlight several words in different colors simultaneously
 Plug 'https://github.com/thiagoalessio/rainbow_levels.vim.git' " highlights your code by indentation level
@@ -155,7 +155,7 @@ Plug 'https://github.com/racer-rust/vim-racer.git'
 " MARKUP
 " ---------------
 Plug 'https://github.com/tpope/vim-haml.git'
-" Plug 'https://github.com/slim-template/vim-slim.git'          " slim syntax highlighting
+Plug 'https://github.com/slim-template/vim-slim.git'          " slim syntax highlighting
 " Plug 'https://github.com/mustache/vim-mustache-handlebars.git'
 Plug 'https://github.com/joukevandermaas/vim-ember-hbs.git'
 Plug 'https://github.com/tpope/vim-markdown.git'
@@ -177,7 +177,7 @@ Plug 'https://github.com/magicalbanana/sql-syntax-vim.git'
 " endif
 " Plug 'https://github.com/mmalecki/vim-node.js.git'                   " File type detect plugin for vim which detects node.js shebang
 " Plug 'https://github.com/pangloss/vim-javascript.git'                " provides syntax and indent for javascript
-Plug 'https://github.com/ianks/vim-tsx.git'
+" Plug 'https://github.com/ianks/vim-tsx.git'
 " Plug 'https://github.com/burnettk/vim-angular.git'
 " Plug 'https://github.com/jelera/vim-javascript-syntax.git'
 Plug 'https://github.com/isRuslan/vim-es6.git'
@@ -198,17 +198,18 @@ Plug 'https://github.com/cakebaker/scss-syntax.vim'
 Plug 'https://github.com/tpope/vim-dotenv.git'                        " Basic support for .env and Procfile
 Plug 'https://github.com/millermedeiros/vim-esformatter.git'          " ES formatter
 Plug 'https://github.com/kewah/vim-stylefmt.git'                      " [S]CSS formatter
-Plug 'https://github.com/mxw/vim-jsx.git'
+" Plug 'https://github.com/mxw/vim-jsx.git'
 Plug 'https://github.com/aklt/plantuml-syntax.git'                    " PlantUML syntax
 Plug 'https://github.com/scrooloose/vim-slumlord.git'                 " PlantUML live preview
 Plug 'https://github.com/WolfgangMehner/bash-support.git'
 Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
+	\ 'do': 'yarn install',
+	\ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 
 Plug 'https://github.com/posva/vim-vue.git'
 Plug 'https://github.com/ternjs/tern_for_vim.git', { 'do': 'yarn' }
-Plug 'https://github.com/leafgarland/typescript-vim.git'
+" Plug 'https://github.com/leafgarland/typescript-vim.git'
+" Plug 'https://github.com/peitalin/vim-jsx-typescript.git'
 Plug 'https://github.com/HerringtonDarkholme/yats.vim.git'
 
 " ---------------
@@ -236,8 +237,8 @@ Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 " Plug 'https://github.com/yuttie/comfortable-motion.vim.git' " physics-based smooth scrolling
 
 " Plug 'https://github.com/fatih/vim-go.git', { 'do': ':GoUpdateBinaries' }
-Plug 'https://github.com/garyburd/go-explorer'
-Plug 'https://github.com/jodosha/vim-godebug'
+" Plug 'https://github.com/garyburd/go-explorer'
+" Plug 'https://github.com/jodosha/vim-godebug'
 
 " ---------------
 " GAMES ;)
