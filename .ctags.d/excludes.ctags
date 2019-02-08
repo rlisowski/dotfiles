@@ -1,6 +1,7 @@
 --exclude=.git
 --exclude=.svn
 --exclude=node_modules
+--exclude=**/node_modules/*
 --exclude=.rsync_cache
 --exclude=**/*.war
 --exclude=**/*.jar
@@ -15,6 +16,7 @@
 --exclude=\*.map
 --exclude=\*.swp
 --exclude=\*.bak
+--exclude=.var
 --exclude=tags
 --exclude=bower_components
 --exclude=test
