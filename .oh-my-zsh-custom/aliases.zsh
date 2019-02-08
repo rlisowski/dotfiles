@@ -23,6 +23,8 @@ alias g="git"
 # List direcory contents
 alias afind='ack-grep -il'
 
+alias dc='docker-compose'
+
 
 #Aliases for improved directory listings
 #The --color=tty option shows items in different colors according to their type.
