@@ -18,11 +18,11 @@ Plug 'https://github.com/mbbill/undotree.git'                     " undo view
 " GIT
 " ---------------
 Plug 'https://github.com/tpope/vim-git.git'                 " git helpers, commit msg, diff etc
-Plug 'https://github.com/tpope/vim-rhubarb.git'             " better integration with github
 Plug 'https://github.com/chrisbra/vim-diff-enhanced.git'    " creating better diffs (sometimes)
 Plug 'https://github.com/rhysd/committia.vim.git'           " More Pleasant Editing on Commit Message
 " Plug 'https://github.com/airblade/vim-gitgutter.git'        " mark changed lines in sign column
 Plug 'https://github.com/tpope/vim-fugitive.git'            " git wrapper
+Plug 'https://github.com/tpope/vim-rhubarb.git'             " Enables :Gbrowse from fugitive.vim to open GitHub URLs.
 " Plug 'https://github.com/gregsexton/gitv.git'              " gitk clone aka repository viewer
 Plug 'https://github.com/hotwatermorning/auto-git-diff.git' " git diff for Git Rebase Interactive
 
@@ -63,9 +63,9 @@ Plug 'https://github.com/Lokaltog/vim-easymotion.git'         " simpler way to u
 Plug 'https://github.com/vim-scripts/BufOnly.vim.git'         " close any other buffers
 Plug 'https://github.com/vim-scripts/SyntaxRange.git'         " syntax highlight for region, required by vimdeck
 Plug 'https://github.com/vim-scripts/LargeFile.git'           " disables certain features of vim for large files
-Plug 'https://github.com/EinfachToll/DidYouMean.git'          " ask if I misspelled filename
+" Plug 'https://github.com/EinfachToll/DidYouMean.git'          " ask if I misspelled filename
 Plug 'https://github.com/DataWraith/auto_mkdir.git'           " save files into directories that do not exist yet
-Plug 'https://github.com/Z1MM32M4N/vim-superman.git'          " man pages in vim
+" Plug 'https://github.com/Z1MM32M4N/vim-superman.git'          " man pages in vim
 " Plug 'https://github.com/edkolev/tmuxline.vim.git'            " generate tmux status line from vim
 Plug 'https://github.com/dietsche/vim-lastplace.git'          " reopen files where you left off
 " Plug 'https://github.com/szw/vim-maximizer.git'               " maximize current window on demand
@@ -85,37 +85,48 @@ Plug 'https://github.com/AndrewRadev/switch.vim.git'          " switch segments 
 " Plug 'https://github.com/mhinz/vim-randomtag.git'             " Jump to random Vim documentation
 " Plug 'https://github.com/sk1418/Join.git'                     " a better (hopefully) :Join command in vim
 Plug 'https://github.com/junegunn/vim-peekaboo.git'           " Peekaboo extends \" and @ in normal mode and <CTRL-R> in insert mode so you can see the contents of the registers.
-Plug 'https://github.com/wincent/terminus.git'                " Enhanced terminal integration for Vim
+" Plug 'https://github.com/wincent/terminus.git'                " Enhanced terminal integration for Vim
 " Plug 'https://github.com/wincent/loupe.git'                   " Enhanced in-file search for Vim
 Plug 'https://github.com/bogado/file-line.git'                " opening a file in a given line
 " Plug 'https://github.com/kana/vim-submode.git'                " Create your own submodes
 Plug 'https://github.com/xolox/vim-misc.git'
-Plug 'https://github.com/xolox/vim-notes.git'                 " Take notes in vim
+" Plug 'https://github.com/xolox/vim-notes.git'                 " Take notes in vim
 " Plug 'https://github.com/vimwiki/vimwiki.git'                 " A Personal Wiki For Vim
-Plug 'https://github.com/t9md/vim-choosewin.git'              " display-pane feature, which enables you to choose a window interactively
-Plug 'https://github.com/andymass/vim-tradewinds.git'         " The missing window movement.
+" Plug 'https://github.com/t9md/vim-choosewin.git'              " display-pane feature, which enables you to choose a window interactively
+" Plug 'https://github.com/andymass/vim-tradewinds.git'         " The missing window movement.
 Plug 'https://github.com/chrisbra/unicode.vim.git'            " handling of unicode and digraphs chars
 Plug 'https://github.com/git-time-metric/gtm-vim-plugin.git'  " automatically track time spent reading and working on code
 " Plug 'https://github.com/kana/vim-smartword.git'              " provide {motion}s on |word|s which are smarter
 " Plug 'https://github.com/ktonga/vim-follow-my-lead.git'       " showing all your <Leader> mappings
-Plug 'https://github.com/rickhowe/diffchar.vim.git'
+" Plug 'https://github.com/rickhowe/diffchar.vim.git'
 " Plug 'https://github.com/jszakmeister/vim-togglecursor.git'   " Change the cursor when entering mode
 Plug 'https://github.com/AndrewRadev/deleft.vim.git'          " Delete a wrapping if-clause, try-catch block, etc. and shift left.
 " Plug 'https://github.com/machakann/vim-highlightedyank.git'   " Make the yanked region apparent!
-Plug 'https://github.com/Konfekt/FastFold.git'                " Make vim fold fast again
-Plug 'https://github.com/vim-scripts/Mark--Karkat.git'        " highlight several words in different colors simultaneously
-Plug 'https://github.com/thiagoalessio/rainbow_levels.vim.git' " highlights your code by indentation level
-Plug 'https://github.com/tpope/vim-db.git'                    "
-Plug 'https://github.com/wannesm/wmgraphviz.vim.git'          " Vim plugin for Graphviz dot.
+" Plug 'https://github.com/Konfekt/FastFold.git'                " Make vim fold fast again
+" Plug 'https://github.com/vim-scripts/Mark--Karkat.git'        " highlight several words in different colors simultaneously
+" Plug 'https://github.com/thiagoalessio/rainbow_levels.vim.git' " highlights your code by indentation level
+" Plug 'https://github.com/tpope/vim-db.git'                    "
+" Plug 'https://github.com/wannesm/wmgraphviz.vim.git'          " Vim plugin for Graphviz dot.
+Plug 'https://github.com/dhruvasagar/vim-zoom.git'              " A simple plugin to toggle zoom of current window within the current tab.
+" Plug 'https://github.com/svermeulen/vim-cutlass.git'            " overrides the delete operations to actually just delete
+Plug 'https://github.com/svermeulen/vim-yoink.git'              " automatically maintain a history of yanks
+Plug 'https://github.com/svermeulen/vim-subversive.git'         " easy to perform quick substitutions
 
 " ---------------
 " SNIPPETS
 " ---------------
-Plug 'https://github.com/Valloric/YouCompleteMe.git', { 'do': './install.py' } " code-completion engine
-Plug 'https://github.com/SirVer/ultisnips.git'   " snippets engine
-Plug 'https://github.com/honza/vim-snippets.git' " great snippers collection
-" Plug 'https://github.com/matthewsimo/angular-vim-snippets.git' " broken
+" Plug 'https://github.com/Valloric/YouCompleteMe.git', { 'do': './install.py --ts-completer' } " code-completion engine
+" Plug 'https://github.com/zxqfl/tabnine-vim.git'  " code-completion engine
+Plug 'https://github.com/Shougo/deoplete.nvim.git', { 'do': ':UpdateRemotePlugins' }
+Plug 'https://github.com/Shougo/neosnippet.vim.git'
+Plug 'https://github.com/Shougo/neosnippet-snippets.git'
+Plug 'https://github.com/tbodt/deoplete-tabnine.git', { 'do': './install.sh' }
+Plug 'https://github.com/takkii/Bignyanco.git'
+Plug 'https://github.com/Shougo/echodoc.vim.git'
+" Plug 'https://github.com/SirVer/ultisnips.git'   " snippets engine
+" Plug 'https://github.com/honza/vim-snippets.git' " great snippers collection
 
+" Plug 'https://github.com/matthewsimo/angular-vim-snippets.git' " broken
 " ---------------
 " RUBY
 " ---------------
@@ -165,6 +176,7 @@ Plug 'https://github.com/tpope/vim-markdown.git'
 Plug 'https://github.com/mattn/emmet-vim.git'
 Plug 'https://github.com/tmux-plugins/vim-tmux.git'
 Plug 'https://github.com/magicalbanana/sql-syntax-vim.git'
+Plug 'https://github.com/kylef/apiblueprint.vim.git'
 
 " ---------------
 " SYNTAX
@@ -180,10 +192,10 @@ Plug 'https://github.com/magicalbanana/sql-syntax-vim.git'
 " Plug 'https://github.com/ianks/vim-tsx.git'
 " Plug 'https://github.com/burnettk/vim-angular.git'
 " Plug 'https://github.com/jelera/vim-javascript-syntax.git'
-Plug 'https://github.com/isRuslan/vim-es6.git'
+" Plug 'https://github.com/isRuslan/vim-es6.git'
 " Plug 'https://github.com/othree/javascript-libraries-syntax.vim.git'
 " Plug 'https://github.com/othree/xml.vim.git'
-Plug 'https://github.com/kchmck/vim-coffee-script.git'
+" Plug 'https://github.com/kchmck/vim-coffee-script.git'
 Plug 'https://github.com/othree/html5.vim.git'
 " Plug 'https://github.com/rodjek/vim-puppet.git'
 " Plug 'https://github.com/vim-scripts/lua-support.git'
@@ -196,21 +208,20 @@ Plug 'https://github.com/cakebaker/scss-syntax.vim'
 " Plug 'https://github.com/ekalinin/Dockerfile.vim.git'                 " docker file syntax
 " Plug 'https://github.com/tmatilai/gitolite.vim.git'                   " gitolite syntax
 Plug 'https://github.com/tpope/vim-dotenv.git'                        " Basic support for .env and Procfile
-Plug 'https://github.com/millermedeiros/vim-esformatter.git'          " ES formatter
+" Plug 'https://github.com/millermedeiros/vim-esformatter.git'          " ES formatter
 Plug 'https://github.com/kewah/vim-stylefmt.git'                      " [S]CSS formatter
 " Plug 'https://github.com/mxw/vim-jsx.git'
-Plug 'https://github.com/aklt/plantuml-syntax.git'                    " PlantUML syntax
-Plug 'https://github.com/scrooloose/vim-slumlord.git'                 " PlantUML live preview
+" Plug 'https://github.com/aklt/plantuml-syntax.git'                    " PlantUML syntax
+" Plug 'https://github.com/scrooloose/vim-slumlord.git'                 " PlantUML live preview
 Plug 'https://github.com/WolfgangMehner/bash-support.git'
-Plug 'prettier/vim-prettier', {
-	\ 'do': 'yarn install',
-	\ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
+Plug 'https://github.com/prettier/vim-prettier.git', { 'do': 'yarn install' }
 
 Plug 'https://github.com/posva/vim-vue.git'
-Plug 'https://github.com/ternjs/tern_for_vim.git', { 'do': 'yarn' }
+" Plug 'https://github.com/ternjs/tern_for_vim.git', { 'do': 'yarn' }
 " Plug 'https://github.com/leafgarland/typescript-vim.git'
 " Plug 'https://github.com/peitalin/vim-jsx-typescript.git'
 Plug 'https://github.com/HerringtonDarkholme/yats.vim.git'
+Plug 'https://github.com/StanAngeloff/php.vim.git'
 
 " ---------------
 " NAVIGATION
