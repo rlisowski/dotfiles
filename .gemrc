@@ -5,5 +5,5 @@
 - https://rubygems.org/
 :update_sources: true
 :verbose: true
-benchmark: false
+:concurrent_downloads: 8
 gem: "--document=yri"
