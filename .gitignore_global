@@ -55,3 +55,9 @@ wrappers/
 config/projections.json
 .gtm/
 .elasticbeanstalk*
+.yardoc
+.solargraph.yml
+
+composer.json
+composer.lock
+vendor/
