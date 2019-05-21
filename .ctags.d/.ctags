@@ -1,6 +1,8 @@
 --recurse
 
 --exclude=.git
+--exclude="@.gitignore"
+--exclude="@/Users/rlisowski/.gitignore_global"
 --exclude=.svn
 --exclude=node_modules
 --exclude=.rsync_cache
