@@ -58,6 +58,4 @@ config/projections.json
 .yardoc
 .solargraph.yml
 
-composer.json
-composer.lock
 vendor/
