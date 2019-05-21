@@ -117,18 +117,26 @@ Plug 'https://github.com/svermeulen/vim-subversive.git'         " easy to perfor
 " ---------------
 " SNIPPETS
 " ---------------
-" Plug 'https://github.com/Valloric/YouCompleteMe.git', { 'do': './install.py --ts-completer' } " code-completion engine
-" Plug 'https://github.com/zxqfl/tabnine-vim.git'  " code-completion engine
-Plug 'https://github.com/Shougo/deoplete.nvim.git', { 'do': ':UpdateRemotePlugins' }
-Plug 'https://github.com/Shougo/neosnippet.vim.git'
-Plug 'https://github.com/Shougo/neosnippet-snippets.git'
-Plug 'https://github.com/tbodt/deoplete-tabnine.git', { 'do': './install.sh' }
-Plug 'https://github.com/takkii/Bignyanco.git'
-Plug 'https://github.com/Shougo/echodoc.vim.git'
 " Plug 'https://github.com/SirVer/ultisnips.git'   " snippets engine
-" Plug 'https://github.com/honza/vim-snippets.git' " great snippers collection
+
+Plug 'https://github.com/Shougo/neosnippet.vim.git'
+Plug 'https://github.com/honza/vim-snippets.git' " great snippers collection
+Plug 'https://github.com/Shougo/neosnippet-snippets.git'
+
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+
+Plug 'https://github.com/liuchengxu/vista.vim.git'  " View and search LSP symbols, tags in Vim/NeoVim.
+
+" Plug 'https://github.com/Valloric/YouCompleteMe.git', { 'do': './install.py' } " code-completion engine
+
+" Plug 'https://github.com/zxqfl/tabnine-vim.git'  " code-completion engine
+" Plug 'https://github.com/Shougo/deoplete.nvim.git', { 'do': ':UpdateRemotePlugins' }
+" Plug 'https://github.com/tbodt/deoplete-tabnine.git', { 'do': './install.sh' }
+" Plug 'https://github.com/takkii/Bignyanco.git'
+" Plug 'https://github.com/Shougo/echodoc.vim.git'
 
 " Plug 'https://github.com/matthewsimo/angular-vim-snippets.git' " broken
+
 " ---------------
 " RUBY
 " ---------------
