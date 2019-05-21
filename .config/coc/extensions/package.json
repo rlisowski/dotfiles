@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "coc-css": "^1.0.7",
+    "coc-dictionary": "^1.2.2",
+    "coc-emmet": "^1.0.9",
+    "coc-emoji": "^1.2.3",
+    "coc-highlight": "^1.1.2",
+    "coc-html": "^1.0.7",
+    "coc-json": "^1.0.17",
+    "coc-neosnippet": "^1.2.2",
+    "coc-snippets": "^2.0.10",
+    "coc-solargraph": "^1.0.7",
+    "coc-tag": "^1.2.2",
+    "coc-tsserver": "^1.2.1",
+    "coc-word": "^1.2.2"
+  }
+}
