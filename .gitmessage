@@ -1,24 +1,39 @@
+TYPE(SCOPE): SUBJECT
 
+BODY
 
-Why:
+FOOTER
 
-*
-
-This change addresses the need by:
-
-*
-
-# Separate subject from body with a blank line
-# Limit the subject line to 50 characters (69 is a hard limit)
-# Capitalize the subject line
-# Do not end the subject line with a period
-# Use the imperative mood in the subject line
-# Wrap the body at 72 characters
-# Use the body to explain what and why vs. how
-# http://chris.beams.io/posts/git-commit/
-#
-# If applied, this commit will refactor subsystem X for readability
-# If applied, this commit will update getting started documentation
-# If applied, this commit will remove deprecated methods
-# If applied, this commit will release version 1.0.0
-# If applied, this commit will merge pull request #123 from user/branch
+# Please note that:
+#  - The HEADER is a single line of max. 50 characters that
+#    contains a succinct description of the change. It contains a
+#    type, an optional scope, and a subject
+#       + <type> describes the kind of change that this commit is
+#                providing. Allowed types are:
+#             * feat (feature)
+#             * fix (bug fix)
+#             * docs (documentation)
+#             * style (formatting, missing semicolons, …)
+#             * refactor
+#             * test (when adding missing tests)
+#             * chore (maintain)
+#       + <scope> can be anything specifying the place of the commit
+#                 change
+#       + <subject> is a very short description of the change, in
+#                   the following format:
+#             * imperative, present tense: "change" not "changed"/"changes"
+#             * no capitalised first letter
+#             * no dot (.) at the end
+#             * limit the subject line to 50 characters
+#             * If applied, this commit will
+#               ** refactor subsystem X for readability
+#               ** update getting started documentation
+#               ** remove deprecated methods
+#               ** release version 1.0.0
+#               ** merge pull request #123 from user/branch
+#  - The BODY should include the motivation for the change and
+#    contrast this with previous behavior and must be phrased in
+#    imperative present tense
+#  - The FOOTER should contain any information about Breaking
+#    Changes and is also the place to reference GitHub issues that
+#    this commit closes
