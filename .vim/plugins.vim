@@ -25,6 +25,8 @@ Plug 'https://github.com/tpope/vim-fugitive.git'            " git wrapper
 Plug 'https://github.com/tpope/vim-rhubarb.git'             " Enables :Gbrowse from fugitive.vim to open GitHub URLs.
 " Plug 'https://github.com/gregsexton/gitv.git'              " gitk clone aka repository viewer
 Plug 'https://github.com/hotwatermorning/auto-git-diff.git' " git diff for Git Rebase Interactive
+Plug 'https://github.com/rhysd/git-messenger.vim.git'       " shows the history of commits under the cursor in popup window
+Plug 'https://github.com/mhinz/vim-signify.git'             " uses the sign column to indicate added, modified and removed lines
 
 " ---------------
 " BEHAVIOR
