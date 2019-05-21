@@ -187,6 +187,7 @@ Plug 'https://github.com/mattn/emmet-vim.git'
 Plug 'https://github.com/tmux-plugins/vim-tmux.git'
 Plug 'https://github.com/magicalbanana/sql-syntax-vim.git'
 Plug 'https://github.com/kylef/apiblueprint.vim.git'
+Plug 'https://github.com/M4R7iNP/vim-inky.git'
 
 " ---------------
 " SYNTAX
