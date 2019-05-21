@@ -1,0 +1,14 @@
+{
+	"suggest.noselect": false,
+	"suggest.preferCompleteThanJumpPlaceholder": true,
+	"suggest.maxPreviewWidth": 120,
+	"suggest.previewIsKeyword": "",
+	"coc.preferences.enableFloatHighlight": false,
+	"coc.source.emoji.enable": true,
+	"coc.source.emoji.filetypes": [
+			"markdown",
+			"ruby",
+			"typescript",
+			"javascript"
+	]
+}
