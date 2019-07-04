@@ -78,3 +78,5 @@ fi
 test -e ${HOME}/.zshrc.local && source ${HOME}/.zshrc.local
 
 # zprof
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
