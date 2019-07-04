@@ -113,6 +113,7 @@ Plug 'https://github.com/dhruvasagar/vim-zoom.git'              " A simple plugi
 " Plug 'https://github.com/svermeulen/vim-cutlass.git'            " overrides the delete operations to actually just delete
 Plug 'https://github.com/svermeulen/vim-yoink.git'              " automatically maintain a history of yanks
 Plug 'https://github.com/svermeulen/vim-subversive.git'         " easy to perform quick substitutions
+Plug 'https://github.com/alok/notational-fzf-vim'               " Notational Velocity - note-taking app
 
 " ---------------
 " SNIPPETS
@@ -240,7 +241,8 @@ Plug 'https://github.com/StanAngeloff/php.vim.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'          " project tree navigation window
 " Plug 'https://github.com/tpope/vim-vinegar.git'            " improwments for netrw
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'           " find file/buffer
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " general-purpose command-line fuzzy finder
+Plug 'junegunn/fzf', { 'do': './install --all' } " general-purpose command-line fuzzy finder
+Plug 'junegunn/fzf.vim'
 Plug 'https://github.com/FelikZ/ctrlp-py-matcher.git'      " Fast vim CtrlP matcher based on python
 Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'  " list open buffers
 Plug 'https://github.com/majutsushi/tagbar.git'            " navigate by tags
