@@ -1,0 +1,91 @@
+let g:CtrlSpaceDefaultMappingKey = "<C-space> "
+" let g:typescript_compiler_options = "--project tsconfig.json"
+let g:typescript_compiler_options = '--jsx react'
+
+" set diffopt+=internal,algorithm:patience
+
+" set Vim-specific sequences for RGB colors
+" let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+" let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+" moving lines
+nmap ∆ ]e==
+nmap Ż [e==
+imap ∆ <Esc>]e==i
+imap Ż <Esc>[e==i
+vmap ∆ ]egv=gv
+vmap Ż [egv=gv
+
+" Press Ctrl-Tab to switch between open tabs (like browser tabs) to
+" the right side. Ctrl-Shift-Tab goes the other way.
+noremap <D-Right> :tabnext<CR>
+noremap <D-Left> :tabprev<CR>
+
+" Switch to specific tab numbers with Command-number
+noremap <D-A-1> :tabn 1<CR>
+noremap <D-A-2> :tabn 2<CR>
+noremap <D-A-3> :tabn 3<CR>
+noremap <D-A-4> :tabn 4<CR>
+noremap <D-A-5> :tabn 5<CR>
+noremap <D-A-6> :tabn 6<CR>
+noremap <D-A-7> :tabn 7<CR>
+noremap <D-A-8> :tabn 8<CR>
+noremap <D-A-9> :tabn 9<CR>
+" Command-0 goes to the last tab
+noremap <D-A-0> :tablast<CR>
+
+function! HighlightSearch(timer)
+    if (exists("g:searching") && g:searching)
+        let searchString = getcmdline()
+        if searchString == ""
+            let searchString = "."
+        endif
+        let newBG = search(searchString) != 0 ? "green" : "red"
+        if searchString == "."
+            set whichwrap+=h
+            normal h
+            set whichwrap-=h
+        endif
+        let g:highlightTimer = timer_start(50, 'HighlightSearch')
+        let g:searchString = searchString
+    else
+        if exists("g:highlightTimer")
+            call timer_stop(g:highlightTimer)
+            call HighlightCursorMatch()
+        endif
+    endif
+endfunction
+function! HighlightCursorMatch()
+    try
+        let l:patt = '\%#'
+        if &ic | let l:patt = '\c' . l:patt | endif
+        exec 'match IncSearch /' . l:patt . g:searchString . '/'
+    endtry
+endfunction
+nnoremap n n:call HighlightCursorMatch()<CR>
+nnoremap N N:call HighlightCursorMatch()<CR>
+augroup betterSeachHighlighting
+    autocmd!
+    autocmd CmdlineEnter * if (index(['?', '/'], getcmdtype()) >= 0) | let g:searching = 1 | call timer_start(1, 'HighlightSearch') | endif
+    autocmd CmdlineLeave * let g:searching = 0
+augroup END
+
+" https://github.com/svermeulen/vim-subversive
+" s for substitute
+nmap s <plug>(SubversiveSubstitute)
+nmap ss <plug>(SubversiveSubstituteLine)
+nmap S <plug>(SubversiveSubstituteToEndOfLine)
+
+" inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<TAB>"
+" let g:coc_snippet_next = '<TAB>'
+" let g:coc_snippet_prev = '<S-TAB>'
+
+
+set wildoptions=pum
+set pumblend=0
+
+let g:markdown_fenced_languages = ['ruby', 'css', 'javascript', 'js=javascript', 'typescript', 'ts=typescript']
+
+nnoremap <C-f> :call Fzf_dev()<CR>
+
+let g:nv_search_paths = ['~/notes', './docs', './README.md', '../README.md', './*/README.md']
