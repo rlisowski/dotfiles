@@ -3,7 +3,9 @@
 	"suggest.preferCompleteThanJumpPlaceholder": true,
 	"suggest.maxPreviewWidth": 120,
 	"suggest.previewIsKeyword": "",
+	"suggest.maxCompleteItemCount": 10,
 	"coc.preferences.enableFloatHighlight": false,
+	"coc.preferences.hoverTarget": "float",
 	"coc.source.emoji.enable": true,
 	"coc.source.emoji.filetypes": [
 			"markdown",
