@@ -113,7 +113,7 @@ Plug 'https://github.com/dhruvasagar/vim-zoom.git'              " A simple plugi
 " Plug 'https://github.com/svermeulen/vim-cutlass.git'            " overrides the delete operations to actually just delete
 Plug 'https://github.com/svermeulen/vim-yoink.git'              " automatically maintain a history of yanks
 Plug 'https://github.com/svermeulen/vim-subversive.git'         " easy to perform quick substitutions
-Plug 'https://github.com/alok/notational-fzf-vim'               " Notational Velocity - note-taking app
+Plug 'https://github.com/alok/notational-fzf-vim.git'               " Notational Velocity - note-taking app
 
 " ---------------
 " SNIPPETS
