@@ -32,7 +32,7 @@ unsetopt auto_name_dirs
 
 # export COFFEELINT_CONFIG=$HOME/.coffeelint.json
 # export PATH=$PATH:$HOME/.yarn/bin:$HOME/node_modules/.bin:$HOME/bin:$HOME/.cabal/bin:/usr/local/bin
-export PATH="$PATH:./node_modules/.bin"
+export PATH="$PATH:$HOME/go/bin:$HOME/bin:./node_modules/.bin"
 # [[ -s $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
 # [[ -s $HOME/.tmuxinator/scripts/tmuxinator.zsh ]] && source $HOME/.tmuxinator/scripts/tmuxinator.zsh
 # [[ -s $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
