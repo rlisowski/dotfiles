@@ -7,7 +7,7 @@
 [user]
 	name = Rafał Lisowski
 	email = lisowski.r@gmail.com
-	signingkey = FA12D4C2
+	signingkey = 0C0DF446
 
 [init]
 	templatedir = ~/.git_template
