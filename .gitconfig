@@ -73,12 +73,13 @@
 	dt = difftool
 	id = icdiff                       # https://github.com/jeffkaufman/icdiff
 
-	bb = branch -vv
-	b = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+	b = branch -vv
+	ref = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 	refs = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 
 	ci = commit
 	co = checkout
+	came = commit --amend --no-edit
 
 	current-branch = !git branch | grep '^*' | sed s/\\*\\ //
 	track = !git fetch && git branch --set-upstream-to origin/$(git current-branch)
