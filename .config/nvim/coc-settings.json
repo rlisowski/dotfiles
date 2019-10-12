@@ -1,5 +1,6 @@
 {
-	"suggest.noselect": false,
+	"suggest.autoTrigger": "trigger",
+	"suggest.noselect": true,
 	"suggest.preferCompleteThanJumpPlaceholder": true,
 	"suggest.maxPreviewWidth": 120,
 	"suggest.previewIsKeyword": "",
