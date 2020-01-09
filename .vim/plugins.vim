@@ -94,7 +94,7 @@ Plug 'https://github.com/AndrewRadev/switch.vim.git'          " switch segments 
 Plug 'https://github.com/junegunn/vim-peekaboo.git'           " Peekaboo extends \" and @ in normal mode and <CTRL-R> in insert mode so you can see the contents of the registers.
 " Plug 'https://github.com/wincent/terminus.git'                " Enhanced terminal integration for Vim
 " Plug 'https://github.com/wincent/loupe.git'                   " Enhanced in-file search for Vim
-Plug 'https://github.com/bogado/file-line.git'                " opening a file in a given line
+" Plug 'https://github.com/bogado/file-line.git'                " opening a file in a given line
 " Plug 'https://github.com/kana/vim-submode.git'                " Create your own submodes
 Plug 'https://github.com/xolox/vim-misc.git'
 " Plug 'https://github.com/xolox/vim-notes.git'                 " Take notes in vim
