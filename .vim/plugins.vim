@@ -217,7 +217,7 @@ Plug 'https://github.com/M4R7iNP/vim-inky.git'
 " Plug 'https://github.com/isRuslan/vim-es6.git'
 " Plug 'https://github.com/othree/javascript-libraries-syntax.vim.git'
 " Plug 'https://github.com/othree/xml.vim.git'
-" Plug 'https://github.com/kchmck/vim-coffee-script.git'
+Plug 'https://github.com/kchmck/vim-coffee-script.git'
 Plug 'https://github.com/othree/html5.vim.git'
 " Plug 'https://github.com/rodjek/vim-puppet.git'
 " Plug 'https://github.com/vim-scripts/lua-support.git'
@@ -244,6 +244,7 @@ Plug 'https://github.com/prettier/vim-prettier.git', { 'do': 'yarn install' }
 " Plug 'https://github.com/peitalin/vim-jsx-typescript.git'
 Plug 'https://github.com/HerringtonDarkholme/yats.vim.git'
 " Plug 'https://github.com/StanAngeloff/php.vim.git'
+Plug 'https://github.com/ElmCast/elm-vim.git'
 
 " ---------------
 " NAVIGATION
@@ -270,7 +271,7 @@ Plug 'https://github.com/dockyard/vim-easydir.git'    " simple way to create, ed
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 " Plug 'https://github.com/yuttie/comfortable-motion.vim.git' " physics-based smooth scrolling
 
-" Plug 'https://github.com/fatih/vim-go.git', { 'do': ':GoUpdateBinaries' }
+Plug 'https://github.com/fatih/vim-go.git', { 'do': ':GoUpdateBinaries' }
 " Plug 'https://github.com/garyburd/go-explorer'
 " Plug 'https://github.com/jodosha/vim-godebug'
 
