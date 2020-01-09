@@ -35,9 +35,6 @@ public/download/assets/*
 public/system/*
 rails_best_practices_output.html
 spec/tmp/*
-tags
-tags.lock
-tags.temp
 tmp/*
 vendor/bundle
 vpn*
@@ -59,3 +56,5 @@ config/projections.json
 .solargraph.yml
 
 vendor/
+.ignore
+.rgignore
