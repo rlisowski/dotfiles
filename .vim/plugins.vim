@@ -205,6 +205,7 @@ Plug 'https://github.com/M4R7iNP/vim-inky.git'
 " Plug 'https://github.com/metakirby5/codi.vim.git'                    " The interactive scratchpad
 " if has('nvim')
 	Plug 'https://github.com/neomake/neomake.git'                        " syntax checker
+	" Plug 'https://github.com/dense-analysis/ale.git'                       " Asynchronous Lint Engine
 " else
 " 	Plug 'https://github.com/vim-syntastic/syntastic.git'                   " syntax checker
 " endif
