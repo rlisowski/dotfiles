@@ -120,6 +120,7 @@ Plug 'https://github.com/dhruvasagar/vim-zoom.git'              " A simple plugi
 " Plug 'https://github.com/svermeulen/vim-subversive.git'         " easy to perform quick substitutions
 Plug 'https://github.com/alok/notational-fzf-vim.git'               " Notational Velocity - note-taking app
 " Plug 'https://github.com/kamykn/spelunker.vim.git'              " spell check for code
+Plug 'https://github.com/terryma/vim-multiple-cursors.git'      " awesome multiple selection feature
 
 " ---------------
 " SNIPPETS
