@@ -96,6 +96,7 @@
 
 	i = !~/bin/git-info-short
 	clear = "!sh -c 'find . -name '*.orig' -delete'"
+	clear-refs = "!sh -c 'git-clear-refs'"
 
 	ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
 	cscope = "!sh -c '[ -f .git/hooks/cscope ] || git init; .git/hooks/cscope' git-cscope"
