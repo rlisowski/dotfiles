@@ -127,9 +127,9 @@ Plug 'https://github.com/terryma/vim-multiple-cursors.git'      " awesome multip
 " ---------------
 " Plug 'https://github.com/SirVer/ultisnips.git'   " snippets engine
 
-Plug 'https://github.com/Shougo/neosnippet.vim.git'
+" Plug 'https://github.com/Shougo/neosnippet.vim.git'
 Plug 'https://github.com/honza/vim-snippets.git' " great snippers collection
-Plug 'https://github.com/Shougo/neosnippet-snippets.git'
+" Plug 'https://github.com/Shougo/neosnippet-snippets.git'
 
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
