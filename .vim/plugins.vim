@@ -145,6 +145,8 @@ Plug 'https://github.com/liuchengxu/vista.vim.git'  " View and search LSP symbol
 
 " Plug 'https://github.com/matthewsimo/angular-vim-snippets.git' " broken
 
+Plug 'https://github.com/liuchengxu/vim-clap.git'            " modern generic interactive finder and dispatcher,
+
 " ---------------
 " RUBY
 " ---------------
