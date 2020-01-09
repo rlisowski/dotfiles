@@ -116,7 +116,7 @@ Plug 'https://github.com/AndrewRadev/deleft.vim.git'          " Delete a wrappin
 " Plug 'https://github.com/wannesm/wmgraphviz.vim.git'          " Vim plugin for Graphviz dot.
 Plug 'https://github.com/dhruvasagar/vim-zoom.git'              " A simple plugin to toggle zoom of current window within the current tab.
 " Plug 'https://github.com/svermeulen/vim-cutlass.git'            " overrides the delete operations to actually just delete
-Plug 'https://github.com/svermeulen/vim-yoink.git'              " automatically maintain a history of yanks
+" Plug 'https://github.com/svermeulen/vim-yoink.git'              " automatically maintain a history of yanks
 " Plug 'https://github.com/svermeulen/vim-subversive.git'         " easy to perform quick substitutions
 Plug 'https://github.com/alok/notational-fzf-vim.git'               " Notational Velocity - note-taking app
 " Plug 'https://github.com/kamykn/spelunker.vim.git'              " spell check for code
