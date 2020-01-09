@@ -39,7 +39,8 @@ Plug 'https://github.com/AndrewRadev/splitjoin.vim.git'       " easyli split/joi
 Plug 'https://github.com/airblade/vim-rooter.git'             " set working directory
 " Plug 'https://github.com/godlygeek/tabular.git'               " easy align by char
 Plug 'https://github.com/junegunn/vim-easy-align.git'         " easy align by char eg gaipa=
-Plug 'https://github.com/Raimondi/delimitMate.git'            " automatically close parentheses
+" Plug 'https://github.com/Raimondi/delimitMate.git'            " automatically close parentheses
+Plug 'https://github.com/jiangmiao/auto-pairs.git'            " Insert or delete brackets, parens, quotes in pair.
 Plug 'https://github.com/tpope/vim-endwise.git'               " end certain structures automatically
 Plug 'https://github.com/tpope/vim-surround.git'              " delete, change and add such surroundings (parentheses, brackets, quotes etc) in pairs
 Plug 'https://github.com/tpope/vim-unimpaired.git'            " useful mappings
