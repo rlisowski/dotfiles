@@ -85,6 +85,7 @@ Plug 'https://github.com/ConradIrwin/vim-bracketed-paste.git' " transparent past
 Plug 'https://github.com/chrisbra/Recover.vim.git'            " Show differences for recovered files
 Plug 'https://github.com/mhinz/vim-startify.git'              " A fancy start screen for Vim
 " Plug 'https://github.com/haya14busa/incsearch.vim.git'
+Plug 'https://github.com/romainl/vim-cool.git'                " disables search highlighting when you are done searching and re-enables it when you search again.
 Plug 'https://github.com/wellle/visual-split.vim.git'         " Vim plugin to control splits with visual selections or text objects
 " Plug 'https://github.com/unblevable/quick-scope.git'          " Lightning fast left-right movement in Vim
 Plug 'https://github.com/AndrewRadev/switch.vim.git'          " switch segments of text with predefined replacements
