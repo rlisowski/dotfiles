@@ -121,6 +121,7 @@ Plug 'https://github.com/dhruvasagar/vim-zoom.git'              " A simple plugi
 Plug 'https://github.com/alok/notational-fzf-vim.git'               " Notational Velocity - note-taking app
 " Plug 'https://github.com/kamykn/spelunker.vim.git'              " spell check for code
 Plug 'https://github.com/terryma/vim-multiple-cursors.git'      " awesome multiple selection feature
+Plug 'https://github.com/axelf4/vim-strip-trailing-whitespace.git' " removes trailing whitespace
 
 " ---------------
 " SNIPPETS
