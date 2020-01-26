@@ -40,7 +40,7 @@ Plug 'https://github.com/airblade/vim-rooter.git'             " set working dire
 " Plug 'https://github.com/godlygeek/tabular.git'               " easy align by char
 Plug 'https://github.com/junegunn/vim-easy-align.git'         " easy align by char eg gaipa=
 " Plug 'https://github.com/Raimondi/delimitMate.git'            " automatically close parentheses
-Plug 'https://github.com/jiangmiao/auto-pairs.git'            " Insert or delete brackets, parens, quotes in pair.
+" Plug 'https://github.com/jiangmiao/auto-pairs.git'            " Insert or delete brackets, parens, quotes in pair.
 " Plug 'https://github.com/AndrewRadev/sideways.vim.git'        " move the item under the cursor left or right
 Plug 'https://github.com/tpope/vim-endwise.git'               " end certain structures automatically
 Plug 'https://github.com/tpope/vim-surround.git'              " delete, change and add such surroundings (parentheses, brackets, quotes etc) in pairs
@@ -64,7 +64,7 @@ Plug 'https://github.com/editorconfig/editorconfig-vim.git'   " Acept editor con
 Plug 'https://github.com/kshenoy/vim-signature.git'           " place, toggle and display marks
 Plug 'https://github.com/vim-scripts/VisIncr.git'             " making a column of increasing or decreasing numbers, dates, or daynames
 Plug 'https://github.com/tpope/vim-commentary.git'            " easyli toggle lines as comments
-Plug 'https://github.com/Lokaltog/vim-easymotion.git'         " simpler way to use some motions
+Plug 'https://github.com/easymotion/vim-easymotion.git'         " simpler way to use some motions
 Plug 'https://github.com/vim-scripts/BufOnly.vim.git'         " close any other buffers
 " Plug 'https://github.com/ap/vim-buftabline.git'               " buffer list that lives in the tabline
 Plug 'https://github.com/vim-scripts/SyntaxRange.git'         " syntax highlight for region, required by vimdeck
@@ -73,7 +73,7 @@ Plug 'https://github.com/vim-scripts/LargeFile.git'           " disables certain
 Plug 'https://github.com/DataWraith/auto_mkdir.git'           " save files into directories that do not exist yet
 " Plug 'https://github.com/Z1MM32M4N/vim-superman.git'          " man pages in vim
 " Plug 'https://github.com/edkolev/tmuxline.vim.git'            " generate tmux status line from vim
-Plug 'https://github.com/dietsche/vim-lastplace.git'          " reopen files where you left off
+Plug 'https://github.com/farmergreg/vim-lastplace.git'          " reopen files where you left off
 " Plug 'https://github.com/szw/vim-maximizer.git'               " maximize current window on demand
 " Plug 'https://github.com/joonty/vdebug.git'                   " debug with vim
 " Plug 'https://github.com/ashisha/image.vim.git'               " image preview
@@ -122,6 +122,7 @@ Plug 'https://github.com/alok/notational-fzf-vim.git'               " Notational
 " Plug 'https://github.com/kamykn/spelunker.vim.git'              " spell check for code
 Plug 'https://github.com/terryma/vim-multiple-cursors.git'      " awesome multiple selection feature
 Plug 'https://github.com/axelf4/vim-strip-trailing-whitespace.git' " removes trailing whitespace
+Plug 'https://github.com/liuchengxu/vim-which-key.git', { 'on': ['WhichKey', 'WhichKey!'] } " displays available keybindings
 
 " ---------------
 " SNIPPETS
@@ -181,7 +182,8 @@ Plug 'https://github.com/jimenezrick/vimerl.git'
 " ---------------
 " RUST
 " ---------------
-Plug 'https://github.com/racer-rust/vim-racer.git'
+" Plug 'https://github.com/racer-rust/vim-racer.git' " Rust code completion and navigation
+Plug 'https://github.com/rust-lang/rust.vim.git'     " Vim configuration for Rust
 
 " ---------------
 " MARKUP
@@ -254,8 +256,8 @@ Plug 'https://github.com/scrooloose/nerdtree.git'          " project tree naviga
 " Plug 'https://github.com/tpope/vim-vinegar.git'            " improwments for netrw
 " Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'           " find file/buffer
 " Plug 'https://github.com/FelikZ/ctrlp-py-matcher.git'      " Fast vim CtrlP matcher based on python
-Plug 'junegunn/fzf', { 'do': './install --all' } " general-purpose command-line fuzzy finder
-Plug 'junegunn/fzf.vim'
+Plug 'https://github.com/junegunn/fzf.git', { 'do': './install --all' } " general-purpose command-line fuzzy finder
+Plug 'https://github.com/junegunn/fzf.vim.git'
 Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'  " list open buffers
 Plug 'https://github.com/majutsushi/tagbar.git'            " navigate by tags
 " Plug 'https://github.com/lukaszkorecki/CoffeeTags.git'
