@@ -4,7 +4,6 @@
     "coc-dictionary": ">=1.2.2",
     "coc-emmet": ">=1.1.4",
     "coc-emoji": ">=1.2.3",
-    "coc-explorer": ">=0.2.17",
     "coc-highlight": ">=1.2.5",
     "coc-html": ">=1.2.1",
     "coc-json": ">=1.2.4",
