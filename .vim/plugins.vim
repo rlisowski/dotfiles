@@ -41,8 +41,9 @@ Plug 'https://github.com/airblade/vim-rooter.git'             " set working dire
 Plug 'https://github.com/junegunn/vim-easy-align.git'         " easy align by char eg gaipa=
 " Plug 'https://github.com/Raimondi/delimitMate.git'            " automatically close parentheses
 " Plug 'https://github.com/jiangmiao/auto-pairs.git'            " Insert or delete brackets, parens, quotes in pair.
+Plug 'https://github.com/cohama/lexima.vim.git'               " Auto close parentheses
 " Plug 'https://github.com/AndrewRadev/sideways.vim.git'        " move the item under the cursor left or right
-Plug 'https://github.com/tpope/vim-endwise.git'               " end certain structures automatically
+" Plug 'https://github.com/tpope/vim-endwise.git'               " end certain structures automatically
 Plug 'https://github.com/tpope/vim-surround.git'              " delete, change and add such surroundings (parentheses, brackets, quotes etc) in pairs
 Plug 'https://github.com/tpope/vim-unimpaired.git'            " useful mappings
 Plug 'https://github.com/tpope/vim-repeat.git'                " better . command
