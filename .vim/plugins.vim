@@ -124,6 +124,7 @@ Plug 'https://github.com/alok/notational-fzf-vim.git'               " Notational
 Plug 'https://github.com/terryma/vim-multiple-cursors.git'      " awesome multiple selection feature
 Plug 'https://github.com/axelf4/vim-strip-trailing-whitespace.git' " removes trailing whitespace
 Plug 'https://github.com/liuchengxu/vim-which-key.git', { 'on': ['WhichKey', 'WhichKey!'] } " displays available keybindings
+" Plug 'https://github.com/wellle/context.vim.git'                " shows the context of the currently visible buffer
 
 " ---------------
 " SNIPPETS
