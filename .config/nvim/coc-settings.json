@@ -8,7 +8,7 @@
 	"suggest.triggerAfterInsertEnter": false,
 	"suggest.minTriggerInputLength": 2,
 	"suggest.snippetIndicator": "►",
-	"suggest.noselect": true,
+	"suggest.noselect": false,
 	"suggest.preferCompleteThanJumpPlaceholder": true,
 	"suggest.maxPreviewWidth": 120,
 	"suggest.previewIsKeyword": "",
@@ -23,7 +23,6 @@
 		"markdown"
 	],
 
-	"tabnine.priority": 120,
 	"coc.source.neosnippet.priority": 110,
 	"coc.source.dictionary.priority": 100,
 	"coc.source.word.priority": 90,
