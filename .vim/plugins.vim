@@ -93,9 +93,11 @@ Plug 'https://github.com/AndrewRadev/switch.vim.git'          " switch segments 
 " Plug 'https://github.com/mhinz/vim-randomtag.git'             " Jump to random Vim documentation
 " Plug 'https://github.com/sk1418/Join.git'                     " a better (hopefully) :Join command in vim
 Plug 'https://github.com/junegunn/vim-peekaboo.git'           " Peekaboo extends \" and @ in normal mode and <CTRL-R> in insert mode so you can see the contents of the registers.
+Plug 'https://github.com/kassio/neoterm.git'                  " Use the same terminal for everything.
+Plug 'https://github.com/voldikss/vim-floaterm.git'           " Use neovim terminal in the floating window.
 " Plug 'https://github.com/wincent/terminus.git'                " Enhanced terminal integration for Vim
 " Plug 'https://github.com/wincent/loupe.git'                   " Enhanced in-file search for Vim
-" Plug 'https://github.com/bogado/file-line.git'                " opening a file in a given line
+Plug 'https://github.com/bogado/file-line.git'                " opening a file in a given line
 " Plug 'https://github.com/kana/vim-submode.git'                " Create your own submodes
 Plug 'https://github.com/xolox/vim-misc.git'
 " Plug 'https://github.com/xolox/vim-notes.git'                 " Take notes in vim
@@ -258,9 +260,11 @@ Plug 'https://github.com/scrooloose/nerdtree.git'          " project tree naviga
 " Plug 'https://github.com/tpope/vim-vinegar.git'            " improwments for netrw
 " Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'           " find file/buffer
 " Plug 'https://github.com/FelikZ/ctrlp-py-matcher.git'      " Fast vim CtrlP matcher based on python
+Plug 'https://github.com/Shougo/neomru.vim.git'
 Plug 'https://github.com/junegunn/fzf.git', { 'do': './install --all' } " general-purpose command-line fuzzy finder
-Plug 'https://github.com/junegunn/fzf.vim.git'
-Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'  " list open buffers
+" Plug 'https://github.com/junegunn/fzf.vim.git'
+Plug 'https://github.com/yuki-ycino/fzf-preview.vim.git'
+" Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'  " list open buffers
 Plug 'https://github.com/majutsushi/tagbar.git'            " navigate by tags
 " Plug 'https://github.com/lukaszkorecki/CoffeeTags.git'
 " Plug 'https://github.com/ludovicchabant/vim-gutentags.git' " takes care of the much needed management of tags files
