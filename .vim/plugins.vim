@@ -263,7 +263,9 @@ Plug 'https://github.com/scrooloose/nerdtree.git'          " project tree naviga
 Plug 'https://github.com/Shougo/neomru.vim.git'
 Plug 'https://github.com/junegunn/fzf.git', { 'do': './install --all' } " general-purpose command-line fuzzy finder
 " Plug 'https://github.com/junegunn/fzf.vim.git'
-Plug 'https://github.com/yuki-ycino/fzf-preview.vim.git'
+" Plug 'https://github.com/yuki-ycino/fzf-preview.vim.git'
+Plug 'https://github.com/MattesGroeger/vim-bookmarks.git'
+Plug 'git@github.com:rlisowski/fzf-preview.vim.git'
 " Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'  " list open buffers
 Plug 'https://github.com/majutsushi/tagbar.git'            " navigate by tags
 " Plug 'https://github.com/lukaszkorecki/CoffeeTags.git'

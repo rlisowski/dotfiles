@@ -1,7 +1,9 @@
 if v:progname =~? "evim"
   finish
 endif
-let mapleader = ","
+
+" let mapleader = ","
+let mapleader = "\<Space>"
 
 set nocompatible               " be iMproved
 set hidden

@@ -53,5 +53,9 @@
 		"openAction": {
 			"strategy": "previousBuffer"
 		}
+	},
+
+	"tsserver": {
+		"reportStyleChecksAsWarnings": false
 	}
 }

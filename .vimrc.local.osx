@@ -1,9 +1,0 @@
-let g:CtrlSpaceDefaultMappingKey = "<C-space> "
-
-" moving lines
-nmap ∆ ]e==
-nmap Ż [e==
-imap ∆ <Esc>]e==i
-imap Ż <Esc>[e==i
-vmap ∆ ]egv=gv
-vmap Ż [egv=gv

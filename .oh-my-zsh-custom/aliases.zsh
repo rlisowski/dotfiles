@@ -79,8 +79,8 @@ alias npm-exec='PATH=$(npm bin):$PATH'
 
 # https://github.com/carlhuda/janus/wiki/Rvm
 # vim() { rvm system do /usr/local/bin/vim $@ }
-vm() { $EDITOR $(git status --short | awk ' { print $2 } '); }
-vc() { $EDITOR $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
+vm() { $EDITOR -O $(git status --short | awk ' { print $2 } '); }
+vc() { $EDITOR -O $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
 
 codi() {
   local syntax="${1:-python}"
