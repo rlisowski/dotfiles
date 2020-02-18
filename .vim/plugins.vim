@@ -67,6 +67,7 @@ Plug 'https://github.com/vim-scripts/VisIncr.git'             " making a column 
 Plug 'https://github.com/tpope/vim-commentary.git'            " easyli toggle lines as comments
 Plug 'https://github.com/easymotion/vim-easymotion.git'         " simpler way to use some motions
 Plug 'https://github.com/vim-scripts/BufOnly.vim.git'         " close any other buffers
+Plug 'https://github.com/moll/vim-bbye.git'                   " delete buffers without closing your windows
 " Plug 'https://github.com/ap/vim-buftabline.git'               " buffer list that lives in the tabline
 Plug 'https://github.com/vim-scripts/SyntaxRange.git'         " syntax highlight for region, required by vimdeck
 Plug 'https://github.com/vim-scripts/LargeFile.git'           " disables certain features of vim for large files
@@ -151,7 +152,7 @@ Plug 'https://github.com/liuchengxu/vista.vim.git'  " View and search LSP symbol
 
 " Plug 'https://github.com/matthewsimo/angular-vim-snippets.git' " broken
 
-Plug 'https://github.com/liuchengxu/vim-clap.git'            " modern generic interactive finder and dispatcher,
+" Plug 'https://github.com/liuchengxu/vim-clap.git'            " modern generic interactive finder and dispatcher,
 
 " ---------------
 " RUBY
