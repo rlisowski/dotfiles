@@ -11,7 +11,7 @@
     "coc-neosnippet": ">=1.2.2",
     "coc-phpls": ">=2.1.7",
     "coc-rls": ">=1.1.4",
-    "coc-snippets": ">=2.1.18",
+    "coc-snippets": ">=2.1.19",
     "coc-solargraph": ">=1.1.6",
     "coc-tag": ">=1.2.4",
     "coc-tsserver": ">=1.4.9",
