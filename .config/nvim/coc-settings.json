@@ -1,61 +1,68 @@
 {
-	"solargraph.useBundler": false,
-	"solargraph.completion": true,
-	"solargraph.hover": true,
-	"solargraph.references": true,
+  "solargraph.useBundler": false,
+  "solargraph.completion": true,
+  "solargraph.hover": true,
+  "solargraph.references": true,
 
-	"suggest.autoTrigger": "always",
-	"suggest.triggerAfterInsertEnter": false,
-	"suggest.minTriggerInputLength": 2,
-	"suggest.snippetIndicator": "►",
-	"suggest.noselect": false,
-	"suggest.preferCompleteThanJumpPlaceholder": true,
-	"suggest.maxPreviewWidth": 120,
-	"suggest.previewIsKeyword": "",
-	"suggest.maxCompleteItemCount": 20,
-	"suggest.languageSourcePriority": 120,
+  "suggest.autoTrigger": "always",
+  "suggest.triggerAfterInsertEnter": false,
+  "suggest.minTriggerInputLength": 2,
+  "suggest.snippetIndicator": "►",
+  "suggest.noselect": false,
+  "suggest.preferCompleteThanJumpPlaceholder": true,
+  "suggest.maxPreviewWidth": 120,
+  "suggest.previewIsKeyword": "",
+  "suggest.maxCompleteItemCount": 20,
+  "suggest.languageSourcePriority": 120,
 
-	"coc.preferences.enableFloatHighlight": false,
-	"coc.preferences.hoverTarget": "float",
+  "coc.preferences.enableFloatHighlight": false,
+  "coc.preferences.hoverTarget": "float",
 
-	"coc.source.emoji.enable": true,
-	"coc.source.emoji.filetypes": [
-		"markdown"
-	],
+  "coc.source.emoji.enable": true,
+  "coc.source.emoji.filetypes": ["markdown"],
 
-	"coc.source.neosnippet.priority": 110,
-	"coc.source.dictionary.priority": 100,
-	"coc.source.word.priority": 90,
+  "coc.source.neosnippet.priority": 110,
+  "coc.source.dictionary.priority": 100,
+  "coc.source.word.priority": 90,
 
-	"languageserver": {
-		"golang": {
-			"command": "gopls",
-			"rootPatterns": ["go.mod"],
-			"filetypes": ["go"]
-		},
-		"elmLS": {
-			"command": "elm-language-server",
-			"filetypes": ["elm"],
-			"rootPatterns": ["elm.json"],
-			"initializationOptions": {
-				"elmPath": "elm",
-				"elmFormatPath": "elm-format",
-				"elmTestPath": "elm-test",
-				"elmAnalyseTrigger": "change"
-			}
-		}
-	},
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "filetypes": ["go"]
+    },
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"],
+      "initializationOptions": {
+        "elmPath": "elm",
+        "elmFormatPath": "elm-format",
+        "elmTestPath": "elm-test",
+        "elmAnalyseTrigger": "change"
+      }
+    }
+  },
 
-	"explorer": {
-		"width": 50,
-		"position": "right",
-		"quitOnOpen": true,
-		"openAction": {
-			"strategy": "previousBuffer"
-		}
-	},
+  "explorer": {
+    "width": 50,
+    "position": "right",
+    "quitOnOpen": true,
+    "openAction": {
+      "strategy": "previousBuffer"
+    }
+  },
 
-	"tsserver": {
-		"reportStyleChecksAsWarnings": false
-	}
+  "tsserver": {
+    "reportStyleChecksAsWarnings": false
+  },
+
+  "explorer": {
+    "buffer": {
+      "howHiddenBuffers": true
+    },
+    "previewAction": {
+      "onHover": false
+    }
+  }
 }
