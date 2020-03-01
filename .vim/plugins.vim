@@ -94,7 +94,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'ElmCast/elm-vim'
 Plug 'Shougo/neomru.vim'
 Plug 'junegunn/fzf', { 'do': './install --all' }                   " general-purpose command-line fuzzy finder
-Plug 'yuki-ycino/fzf-preview.vim'
+Plug 'git@github.com:rlisowski/fzf-preview.vim.git'
 Plug 'dyng/ctrlsf.vim'
 Plug 'andymass/vim-matchup'                                        " % behavior
 Plug 'dockyard/vim-easydir'                                        " simple way to create, edit and save files and directories
