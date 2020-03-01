@@ -21,6 +21,7 @@ alias history='fc -l 1'
 
 alias be="bundle exec"
 alias g="git"
+alias m="git checkout master"
 
 # List direcory contents
 alias afind='ack-grep -il'
@@ -79,8 +80,12 @@ alias npm-exec='PATH=$(npm bin):$PATH'
 
 # https://github.com/carlhuda/janus/wiki/Rvm
 # vim() { rvm system do /usr/local/bin/vim $@ }
-vm() { $EDITOR -O $(git status --short | awk ' { print $2 } '); }
-vc() { $EDITOR -O $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
+vm() { $EDITOR $(git status --short | awk ' { print $2 } '); }
+vc() { $EDITOR $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
+
+phrase () {
+  phraseapp $@ | jq -R '. as $raw | try fromjson catch $raw'
+}
 
 codi() {
   local syntax="${1:-python}"
