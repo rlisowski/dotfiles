@@ -102,7 +102,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'voldikss/vim-floaterm'                                       " Use neovim terminal in the floating window.
 Plug 'tpope/vim-vinegar'                                           " improwments for netrw
-Plug 'haorenW1025/floatLf-nvim'                                    " use lf(the file manager) easily in floating window
+Plug 'scrooloose/nerdtree'                                         " project tree navigation window
 
 
 Plug 'rlisowski/vim_plugins_settings'
@@ -239,12 +239,12 @@ Plug 'rlisowski/vim_core_settings'
 " Plug 'majutsushi/tagbar'                                             " navigate by tags
 " Plug 'chrisbra/vim-diff-enhanced'                                    " creating better diffs (sometimes)
 " Plug 'MattesGroeger/vim-bookmarks'                                   " bookmark plugin
-" Plug 'scrooloose/nerdtree'                                           " project tree navigation window
 " Plug 'voldikss/vim-codelf'                                           " searching useful variable names from CODELF
 " Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }        " modern generic interactive finder and dispatcher,
 " Plug 'vim-scripts/mru.vim'                                           " most recent used files
 " Plug 'junegunn/goyo.vim'                                             " Distraction-free writing in Vim.
 " Plug 'DataWraith/auto_mkdir'                                         " save files into directories that do not exist yet
+" Plug 'haorenW1025/floatLf-nvim'                                      " use lf(the file manager) easily in floating window
 
 
 
