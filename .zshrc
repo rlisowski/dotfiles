@@ -28,7 +28,7 @@ export DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(git gitfast svn cap gem bundler rails git-flow node zsh-autosuggestions)
-plugins=(git gitfast zsh-autosuggestions jira)
+plugins=(gitfast zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 source ~/bin/tmuxinator.zsh
@@ -39,8 +39,16 @@ cdpath=($HOME/workspace $HOME/workspace2)
 # Customize to your needs...
 unsetopt auto_name_dirs
 
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+DEFAULT_NODE_VERSION='13.9.0'
+
+# Ensure we have a default node version in our PATH at startup
+if [ -d "${HOME}/.nvm/versions/node/v${DEFAULT_NODE_VERSION}/bin" ] ; then
+  PATH="${HOME}/.nvm/versions/node/v${DEFAULT_NODE_VERSION}/bin:${PATH}"
+fi
+
+# Avoid using the slow `nvm use` at startup.
+# We already have a default node available in our PATH.
+[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh" --no-use
 
 EDITOR=nvim
 export EDITOR
@@ -59,3 +67,5 @@ test -e ${HOME}/.zshrc.local && source ${HOME}/.zshrc.local
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export FZF_DEFAULT_COMMAND='rg --files --ignore-vcs --hidden'
+
+# zprof

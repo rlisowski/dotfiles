@@ -21,20 +21,6 @@ function git_prompt_info() {
   fi
 }
 
-# function git_prompt_info() {
-#   ref=$(git symbolic-ref -q HEAD 2> /dev/null) || $(git name-rev --name-only --no-undefined --always HEAD 2> /dev/null) || return
-#   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(git_prompt_short_sha)$(parse_git_dirty)$(git_prompt_ahead)$(git_prompt_behind)$(git_prompt_stash)$(git_prompt_staged)$(git_prompt_changed)$ZSH_THEME_GIT_PROMPT_SUFFIX"
-# }
-
-function prompt_info() {
-  # only proceed if there is actually a svn repository
-  # if [ $(in_svn) ]; then
-  #   svn_prompt_info
-  # else
-    git_prompt_info
-  # fi
-}
-
 function current_pwd {
   pwd_length=4
   pwd_symbol="..."
@@ -51,7 +37,7 @@ local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 local user_host='%{$terminfo[bold]$fg[green]%}%n@%m'
 local current_dir='%{$reset_color%} $(current_pwd)'
 local rvm_ruby='%{$reset_color%}%{$bg[red]%} $(rvm-prompt i v p g) %{$fg[red]$bg[blue]%}'
-local rev_info='%{$reset_color%}$(prompt_info)'
+local rev_info='%{$reset_color%}$(git_prompt_info)'
 
 PROMPT="${rvm_ruby}${rev_info}${current_dir}
 %B%(!.#.$)%b "
