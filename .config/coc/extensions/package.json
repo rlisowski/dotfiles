@@ -4,7 +4,6 @@
     "coc-dictionary": ">=1.2.2",
     "coc-emmet": ">=1.1.4",
     "coc-emoji": ">=1.2.3",
-    "coc-explorer": ">=0.3.7",
     "coc-highlight": ">=1.2.5",
     "coc-html": ">=1.2.3",
     "coc-json": ">=1.2.5",
@@ -15,7 +14,7 @@
     "coc-snippets": ">=2.1.20",
     "coc-solargraph": ">=1.1.6",
     "coc-tag": ">=1.2.4",
-    "coc-tsserver": ">=1.4.9",
+    "coc-tsserver": ">=1.4.11",
     "coc-word": ">=1.2.2"
   }
 }
