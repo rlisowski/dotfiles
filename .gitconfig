@@ -22,8 +22,7 @@
 	autocorrect = 10
 
 [merge]
-	summary = true
-	; tool = vimdiff
+	stat  = true
 	tool = nvimdiff
 	conflictstyle = diff3
 	verbosity = 1
@@ -32,7 +31,12 @@
 	prompt = false
 
 [mergetool "nvimdiff"]
-	cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+	; +--------------------------------+
+	; | LOCAL  |     BASE     | REMOTE |
+	; +--------------------------------+
+	; |             MERGED             |
+	; +--------------------------------+
+	cmd = nvim -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 
 [push]
 	default = simple
@@ -42,17 +46,12 @@
 
 [diff]
 	renames = true
-	; tool = vimdiff
-	tool = icdiff
 	# Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
 	# instead of a/b/c/d as prefixes for patches
 	mnemonicprefix = true
 
 [difftool]
 	prompt = false
-
-[difftool "icdiff"]
-	cmd = icdiff --highlight --line-numbers  \"$LOCAL\" \"$REMOTE\" | less
 
 [rerere]
 	enabled = true
@@ -71,8 +70,6 @@
 	st = status -sb
 
 	d = diff
-	dt = difftool
-	id = icdiff                       # https://github.com/jeffkaufman/icdiff
 
 	b = branch -vv
 	ref = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
