@@ -52,8 +52,6 @@ Plug 'romainl/vim-cool'                                            " disables se
 Plug 'AndrewRadev/switch.vim'                                      " switch segments of text with predefined replacements
 Plug 'junegunn/vim-peekaboo'                                       " Peekaboo extends \" and @ in normal mode and <CTRL-R> in insert mode so you can see the contents of the registers.
 Plug 'bogado/file-line'                                            " opening a file in a given line
-Plug 'git-time-metric/gtm-vim-plugin'                              " automatically track time spent reading and working on code
-Plug 'alok/notational-fzf-vim'                                     " Notational Velocity - note-taking app
 Plug 'axelf4/vim-strip-trailing-whitespace'                        " removes trailing whitespace
 Plug 'honza/vim-snippets'                                          " great snippers collection
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " Intellisense engine
@@ -245,7 +243,7 @@ Plug 'rlisowski/vim_core_settings'
 " Plug 'junegunn/goyo.vim'                                             " Distraction-free writing in Vim.
 " Plug 'DataWraith/auto_mkdir'                                         " save files into directories that do not exist yet
 " Plug 'haorenW1025/floatLf-nvim'                                      " use lf(the file manager) easily in floating window
-
-
+" Plug 'git-time-metric/gtm-vim-plugin'                              " automatically track time spent reading and working on code
+" Plug 'alok/notational-fzf-vim'                                     " Notational Velocity - note-taking app
 
 call plug#end()
