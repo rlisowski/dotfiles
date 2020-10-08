@@ -68,4 +68,6 @@ test -e ${HOME}/.zshrc.local && source ${HOME}/.zshrc.local
 
 export FZF_DEFAULT_COMMAND='rg --files --ignore-vcs --hidden'
 
+export GPG_TTY=$(tty)
+
 # zprof
