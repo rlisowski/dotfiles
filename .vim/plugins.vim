@@ -53,8 +53,35 @@ Plug 'AndrewRadev/switch.vim'                                      " switch segm
 Plug 'junegunn/vim-peekaboo'                                       " Peekaboo extends \" and @ in normal mode and <CTRL-R> in insert mode so you can see the contents of the registers.
 Plug 'bogado/file-line'                                            " opening a file in a given line
 Plug 'axelf4/vim-strip-trailing-whitespace'                        " removes trailing whitespace
-Plug 'honza/vim-snippets'                                          " great snippers collection
+Plug 'SirVer/ultisnips'                                            " snippets engine
+Plug 'honza/vim-snippets'                                          " great snippets collection
+
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " Intellisense engine
+let g:coc_global_extensions = [
+  \ 'coc-css',
+  \ 'coc-emmet',
+  \ 'coc-emoji',
+  \ 'coc-go',
+  \ 'coc-highlight',
+  \ 'coc-html',
+  \ 'coc-json',
+  \ 'coc-lists',
+  \ 'coc-ultisnips',
+  \ 'coc-phpls',
+  \ 'coc-rls',
+  \ 'coc-snippets',
+  \ 'coc-solargraph',
+  \ 'coc-tag',
+  \ 'coc-tsserver',
+  \ 'coc-vetur'
+  \ ]
+if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+  let g:coc_global_extensions += ['coc-eslint']
+endif
+if isdirectory('./node_modules') && isdirectory('./node_modules/stylelint')
+  let g:coc_global_extensions += ['coc-stylelint']
+endif
+
 Plug 'liuchengxu/vista.vim'                                        " View and search LSP symbols, tags in Vim/NeoVim.
 Plug 'vim-ruby/vim-ruby'                                           " help vim understand ruby, motions textobjects etc
 Plug 'tpope/vim-rake'                                              " rake wraper
@@ -64,7 +91,7 @@ Plug 'keith/rspec.vim'                                             " Better rspe
 Plug 'sunaku/vim-ruby-minitest'                                    " syntax and completion for ruby minitest
 Plug 'nelstrom/vim-textobj-rubyblock'                              " ruby textobject
 Plug 'tpope/vim-bundler'                                           " bundler helpers
-Plug 'sbdchd/neoformat'                                            " uses a variety of formatters for many filetypes
+" Plug 'sbdchd/neoformat'                                            " uses a variety of formatters for many filetypes
 Plug 'modille/groovy.vim'                                          " Custom vim indenting and syntax highlighting for Groovy
 Plug 'elixir-lang/vim-elixir'                                      " elixir support
 Plug 'edkolev/erlang-motions.vim'                                  " Motions and text objects for erlang
@@ -92,7 +119,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'ElmCast/elm-vim'
 Plug 'Shougo/neomru.vim'
 Plug 'junegunn/fzf', { 'do': './install --all' }                   " general-purpose command-line fuzzy finder
-Plug 'git@github.com:rlisowski/fzf-preview.vim.git'
+Plug 'rlisowski/fzf-preview.vim'                                   " fork of 'yuki-ycino/fzf-preview.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'andymass/vim-matchup'                                        " % behavior
 Plug 'dockyard/vim-easydir'                                        " simple way to create, edit and save files and directories
@@ -101,6 +128,21 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'voldikss/vim-floaterm'                                       " Use neovim terminal in the floating window.
 Plug 'tpope/vim-vinegar'                                           " improwments for netrw
 Plug 'scrooloose/nerdtree'                                         " project tree navigation window
+Plug 'tpope/vim-dadbod'                                            " interacting with databases
+Plug 'justinmk/vim-dirvish'                                        " Directory viewer for Vim 
+Plug 'RRethy/vim-illuminate'                                       " highlighting other uses of the current word
+Plug 't9md/vim-textmanip'                                          " easy text manupilation
+Plug 'sedm0784/vim-you-autocorrect'                                " replacing spelling mistakes and typos as you type
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'hsanson/vim-openapi'                                         " Detect OpenApi 3 (YAML) files from its contents and sets openapi filetype.
+Plug 'xavierchow/vim-swagger-preview'                              " previewing swagger/openAPI spec in Chrome with swagger-ui.
+Plug 'mustache/vim-mustache-handlebars'                            " vim plugin for working with mustache and handlebars templates
+Plug 'cespare/vim-toml'                                            " Vim syntax for TOML.
+Plug 'digitaltoad/vim-pug'                                         " https://pugjs.org/api/getting-started.html
+Plug 'dNitro/vim-pug-complete'
 
 
 Plug 'rlisowski/vim_plugins_settings'
@@ -112,6 +154,7 @@ Plug 'rlisowski/vim_core_settings'
 
 " Plug 'katono/rogue.vim'                                              " Roogue like vim game
 " Plug 'Yggdroot/indentLine'                                           " shiw indentation with neat lines
+" Plug 'lukas-reineke/indent-blankline.nvim'                           " Indent Blankline
 " Plug 'sjl/gundo.vim'                                                 " undo view
 " Plug 'drmikehenry/vim-fontsize'                                      " adjust quickly font size
 " Plug 'airblade/vim-gitgutter'                                        " mark changed lines in sign column
@@ -170,9 +213,6 @@ Plug 'rlisowski/vim_core_settings'
 " Plug 'terryma/vim-multiple-cursors'                                  " awesome multiple selection feature
 " Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] } " displays available keybindings
 " Plug 'wellle/context.vim'                                            " shows the context of the currently visible buffer
-" Plug 'SirVer/ultisnips'                                              " snippets engine
-" Plug 'Shougo/neosnippet.vim'
-" Plug 'Shougo/neosnippet-snippets'
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }              " code-completion engine
 " Plug 'zxqfl/tabnine-vim'                                             " code-completion engine
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -186,7 +226,6 @@ Plug 'rlisowski/vim_core_settings'
 " Plug 'Chiel92/vim-autoformat'                                        " Format code
 " Plug 'splattael/rufo-vim'                                            " Format Ruby code
 " Plug 'racer-rust/vim-racer'                                          " Rust code completion and navigation
-" Plug 'mustache/vim-mustache-handlebars'
 " Plug 'gabrielelana/vim-markdown'                                     " environment to create Markdown files with a syntax highlight
 " Plug 'suan/vim-instant-markdown'
 " Plug 'rstacruz/sparkup'                                              " write html faster
@@ -245,5 +284,8 @@ Plug 'rlisowski/vim_core_settings'
 " Plug 'haorenW1025/floatLf-nvim'                                      " use lf(the file manager) easily in floating window
 " Plug 'git-time-metric/gtm-vim-plugin'                              " automatically track time spent reading and working on code
 " Plug 'alok/notational-fzf-vim'                                     " Notational Velocity - note-taking app
+" Plug 'Shougo/neosnippet.vim'
+" Plug 'Shougo/neosnippet-snippets'
+" Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }            " file explorer
 
 call plug#end()

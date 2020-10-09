@@ -15,22 +15,15 @@
   "suggest.maxCompleteItemCount": 20,
   "suggest.languageSourcePriority": 120,
 
-  "coc.preferences.enableFloatHighlight": false,
+  "coc.preferences.enableFloatHighlight": true,
   "coc.preferences.hoverTarget": "float",
 
   "coc.source.emoji.enable": true,
   "coc.source.emoji.filetypes": ["markdown"],
 
   "coc.source.neosnippet.priority": 110,
-  "coc.source.dictionary.priority": 100,
-  "coc.source.word.priority": 90,
 
   "languageserver": {
-    "golang": {
-      "command": "gopls",
-      "rootPatterns": ["go.mod"],
-      "filetypes": ["go"]
-    },
     "elmLS": {
       "command": "elm-language-server",
       "filetypes": ["elm"],
@@ -44,25 +37,18 @@
     }
   },
 
-  "explorer": {
-    "width": 50,
-    "position": "right",
-    "quitOnOpen": true,
-    "openAction": {
-      "strategy": "previousBuffer"
-    }
-  },
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
 
-  "tsserver": {
-    "reportStyleChecksAsWarnings": false
-  },
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
 
-  "explorer": {
-    "buffer": {
-      "howHiddenBuffers": true
-    },
-    "previewAction": {
-      "onHover": false
-    }
+  "go.goplsOptions": {
+    "completeUnimported": true
   }
 }

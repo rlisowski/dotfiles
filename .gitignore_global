@@ -22,6 +22,7 @@ capybara-*.html
 config/application.yml
 config/database.yml
 config/nagios.yml
+config/master.key
 coverage/
 db/*.sqlite3
 db/schema.rb
@@ -58,3 +59,7 @@ config/projections.json
 vendor/
 .ignore
 .rgignore
+
+GOOGLE_APPLICATION_CREDENTIALS.json
+
+spec/support/ui.rb

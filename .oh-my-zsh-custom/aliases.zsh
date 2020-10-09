@@ -1,4 +1,5 @@
 alias r=bin/rspec
+# alias rch='r $(git ls-files --modified --others spec | grep _spec)'
 
 # Push and pop directories on directory stack
 alias pu='pushd'
@@ -83,9 +84,9 @@ alias npm-exec='PATH=$(npm bin):$PATH'
 vm() { $EDITOR $(git status --short | awk ' { print $2 } '); }
 vc() { $EDITOR $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
 
-phrase () {
-  phraseapp $@ | jq -R '. as $raw | try fromjson catch $raw'
-}
+# phrase () {
+#   phraseapp $@ | jq -R '. as $raw | try fromjson catch $raw'
+# }
 
 codi() {
   local syntax="${1:-python}"

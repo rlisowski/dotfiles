@@ -34,7 +34,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/bin/tmuxinator.zsh
 
 setopt auto_cd
-cdpath=($HOME/workspace $HOME/workspace2)
+cdpath=($HOME/workspace $HOME/workspace2 $HOME/go/src/github.com/phrase)
 
 # Customize to your needs...
 unsetopt auto_name_dirs
@@ -48,6 +48,7 @@ fi
 
 # Avoid using the slow `nvm use` at startup.
 # We already have a default node available in our PATH.
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh" --no-use
 
 EDITOR=nvim
@@ -69,5 +70,9 @@ test -e ${HOME}/.zshrc.local && source ${HOME}/.zshrc.local
 export FZF_DEFAULT_COMMAND='rg --files --ignore-vcs --hidden'
 
 export GPG_TTY=$(tty)
+
+eval "$(gh completion -s zsh)"
+
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # zprof
