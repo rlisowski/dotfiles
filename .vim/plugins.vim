@@ -55,7 +55,6 @@ Plug 'bogado/file-line'                                            " opening a f
 Plug 'axelf4/vim-strip-trailing-whitespace'                        " removes trailing whitespace
 Plug 'honza/vim-snippets'                                          " great snippets collection
 
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " Intellisense engine
 let g:coc_global_extensions = [
   \ 'coc-css',
   \ 'coc-emmet',
@@ -81,6 +80,7 @@ endif
 if isdirectory('./node_modules') && isdirectory('./node_modules/stylelint')
   let g:coc_global_extensions += ['coc-stylelint']
 endif
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " Intellisense engine
 
 Plug 'liuchengxu/vista.vim'                                        " View and search LSP symbols, tags in Vim/NeoVim.
 Plug 'vim-ruby/vim-ruby'                                           " help vim understand ruby, motions textobjects etc
