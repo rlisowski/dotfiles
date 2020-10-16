@@ -22,7 +22,7 @@ alias history='fc -l 1'
 
 alias be="bundle exec"
 alias g="git"
-alias m="git checkout master"
+alias m="git checkout main"
 
 # List direcory contents
 alias afind='ack-grep -il'
