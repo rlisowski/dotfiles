@@ -57,7 +57,7 @@ alias e=$EDITOR
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$HOME/.cargo/bin:$PATH" # Add Rust to PATH
-export PATH="./bin:$HOME/go/bin:$HOME/bin:./node_modules/.bin:$PATH"
+export PATH="./bin:$HOME/.local/bin/:$HOME/go/bin:$HOME/bin:./node_modules/.bin:$PATH"
 
 if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
   export DISABLE_AUTO_TITLE=true
