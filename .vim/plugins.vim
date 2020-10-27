@@ -143,6 +143,7 @@ Plug 'mustache/vim-mustache-handlebars'                            " vim plugin 
 Plug 'cespare/vim-toml'                                            " Vim syntax for TOML.
 Plug 'digitaltoad/vim-pug'                                         " https://pugjs.org/api/getting-started.html
 Plug 'dNitro/vim-pug-complete'
+Plug 'pearofducks/ansible-vim'                                     " syntax plugin for Ansible 2.x
 
 
 Plug 'rlisowski/vim_plugins_settings'
