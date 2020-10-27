@@ -59,6 +59,9 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$HOME/.cargo/bin:$PATH" # Add Rust to PATH
 export PATH="./bin:$HOME/.local/bin/:$HOME/go/bin:$HOME/bin:./node_modules/.bin:$PATH"
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
 if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
   export DISABLE_AUTO_TITLE=true
 fi
