@@ -63,3 +63,4 @@ vendor/
 GOOGLE_APPLICATION_CREDENTIALS.json
 
 spec/support/ui.rb
+public/assets
