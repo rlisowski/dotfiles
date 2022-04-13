@@ -127,3 +127,4 @@ chpwd() {
 jcurl() { curl "$@" | python -m json.tool | pygmentize -l json; }
 
 alias tailf='tail -f'
+alias open=xdg-open

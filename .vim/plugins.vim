@@ -18,7 +18,6 @@ Plug 'mhinz/vim-signify'                                           " uses the si
 Plug 'tpope/vim-abolish'                                           " mostly for better find and replace eg :%s/{S,s}ome/{O,o}ther/g
 Plug 'airblade/vim-rooter'                                         " set working directory
 Plug 'junegunn/vim-easy-align'                                     " easy align by char eg gaipa=
-Plug 'cohama/lexima.vim'                                           " Auto close parentheses
 Plug 'tpope/vim-surround'                                          " delete, change and add such surroundings (parentheses, brackets, quotes etc) in pairs
 Plug 'tpope/vim-unimpaired'                                        " useful mappings
 Plug 'tpope/vim-repeat'                                            " better . command
@@ -47,41 +46,11 @@ Plug 'janko-m/vim-test'                                            " run any tes
 Plug 'diepm/vim-rest-console'                                      " REST console
 Plug 'ConradIrwin/vim-bracketed-paste'                             " transparent pasting into vim
 Plug 'chrisbra/Recover.vim'                                        " Show differences for recovered files
-Plug 'mhinz/vim-startify'                                          " A fancy start screen for Vim
 Plug 'romainl/vim-cool'                                            " disables search highlighting when you are done searching and re-enables it when you search again.
 Plug 'AndrewRadev/switch.vim'                                      " switch segments of text with predefined replacements
 Plug 'junegunn/vim-peekaboo'                                       " Peekaboo extends \" and @ in normal mode and <CTRL-R> in insert mode so you can see the contents of the registers.
 Plug 'bogado/file-line'                                            " opening a file in a given line
 Plug 'axelf4/vim-strip-trailing-whitespace'                        " removes trailing whitespace
-Plug 'honza/vim-snippets'                                          " great snippets collection
-
-let g:coc_global_extensions = [
-  \ 'coc-css',
-  \ 'coc-emmet',
-  \ 'coc-emoji',
-  \ 'coc-go',
-  \ 'coc-highlight',
-  \ 'coc-html',
-  \ 'coc-json',
-  \ 'coc-lists',
-  \ 'coc-lua',
-  \ 'coc-phpls',
-  \ 'coc-rls',
-  \ 'coc-snippets',
-  \ 'coc-solargraph',
-  \ 'coc-tag',
-  \ 'coc-tsserver',
-  \ 'coc-ultisnips',
-  \ 'coc-vetur'
-  \ ]
-if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
-  let g:coc_global_extensions += ['coc-eslint']
-endif
-if isdirectory('./node_modules') && isdirectory('./node_modules/stylelint')
-  let g:coc_global_extensions += ['coc-stylelint']
-endif
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " Intellisense engine
-
 Plug 'liuchengxu/vista.vim'                                        " View and search LSP symbols, tags in Vim/NeoVim.
 Plug 'vim-ruby/vim-ruby'                                           " help vim understand ruby, motions textobjects etc
 Plug 'tpope/vim-rake'                                              " rake wraper
@@ -91,7 +60,6 @@ Plug 'keith/rspec.vim'                                             " Better rspe
 Plug 'sunaku/vim-ruby-minitest'                                    " syntax and completion for ruby minitest
 Plug 'nelstrom/vim-textobj-rubyblock'                              " ruby textobject
 Plug 'tpope/vim-bundler'                                           " bundler helpers
-" Plug 'sbdchd/neoformat'                                            " uses a variety of formatters for many filetypes
 Plug 'modille/groovy.vim'                                          " Custom vim indenting and syntax highlighting for Groovy
 Plug 'elixir-lang/vim-elixir'                                      " elixir support
 Plug 'edkolev/erlang-motions.vim'                                  " Motions and text objects for erlang
@@ -107,29 +75,24 @@ Plug 'tmux-plugins/vim-tmux'
 Plug 'magicalbanana/sql-syntax-vim'
 Plug 'kylef/apiblueprint.vim'
 Plug 'M4R7iNP/vim-inky'
-Plug 'neomake/neomake'                                             " syntax checker
-Plug 'kchmck/vim-coffee-script'
 Plug 'othree/html5.vim'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'tpope/vim-dotenv'                                            " Basic support for .env and Procfile
-Plug 'kewah/vim-stylefmt'                                          " [S]CSS formatter
 Plug 'WolfgangMehner/bash-support'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'ElmCast/elm-vim'
 Plug 'Shougo/neomru.vim'
 Plug 'junegunn/fzf', { 'do': './install --all' }                   " general-purpose command-line fuzzy finder
-Plug 'rlisowski/fzf-preview.vim'                                   " fork of 'yuki-ycino/fzf-preview.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'andymass/vim-matchup'                                        " % behavior
 Plug 'dockyard/vim-easydir'                                        " simple way to create, edit and save files and directories
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'voldikss/vim-floaterm'                                       " Use neovim terminal in the floating window.
-Plug 'tpope/vim-vinegar'                                           " improwments for netrw
-Plug 'scrooloose/nerdtree'                                         " project tree navigation window
+Plug 'kyazdani42/nvim-web-devicons'                                " for file icons
+Plug 'kyazdani42/nvim-tree.lua'                                    " project tree navigation window
 Plug 'tpope/vim-dadbod'                                            " interacting with databases
-Plug 'justinmk/vim-dirvish'                                        " Directory viewer for Vim 
 Plug 'RRethy/vim-illuminate'                                       " highlighting other uses of the current word
 Plug 't9md/vim-textmanip'                                          " easy text manupilation
 Plug 'sedm0784/vim-you-autocorrect'                                " replacing spelling mistakes and typos as you type
@@ -144,7 +107,34 @@ Plug 'cespare/vim-toml'                                            " Vim syntax 
 Plug 'digitaltoad/vim-pug'                                         " https://pugjs.org/api/getting-started.html
 Plug 'dNitro/vim-pug-complete'
 Plug 'pearofducks/ansible-vim'                                     " syntax plugin for Ansible 2.x
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'                               " fuzzy finder over lists
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-telescope/telescope-file-browser.nvim'
+Plug 'folke/todo-comments.nvim'
+Plug 'filipdutescu/renamer.nvim', { 'branch': 'master' }           " renaming UI for Neovim
+Plug 'neovim/nvim-lspconfig'                                       " A collection of common configurations for Neovim's built-in language server client.
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'RishabhRD/popfix'
+Plug 'RishabhRD/nvim-lsputils'
+Plug 'github/copilot.vim'
+Plug 'hrsh7th/cmp-copilot'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'rafamadriz/friendly-snippets'
+Plug 'nathom/filetype.nvim'                                        " faster built-in autocommands
 
+" remove 
+Plug 'zeertzjq/nvim-paste-fix'
 
 Plug 'rlisowski/vim_plugins_settings'
 Plug 'rlisowski/vim_core_settings'
@@ -153,6 +143,44 @@ Plug 'rlisowski/vim_core_settings'
 " GRAVEYARD
 " ---------------
 
+" Plug 'honza/vim-snippets'                                          " great snippets collection
+" Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}                          " auto completion main plugin
+" Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}               " auto completion 9000+ Snippets
+" Plug 'sbdchd/neoformat'                                            " uses a variety of formatters for many filetypes
+" Plug 'neomake/neomake'                                             " syntax checker
+" Plug 'kchmck/vim-coffee-script'
+" let g:coc_global_extensions = [
+"   \ 'coc-css',
+"   \ 'coc-emoji',
+"   \ 'coc-go',
+"   \ 'coc-highlight',
+"   \ 'coc-html',
+"   \ 'coc-json',
+"   \ 'coc-lists',
+"   \ 'coc-lua',
+"   \ 'coc-phpls',
+"   \ 'coc-rls',
+"   \ 'coc-snippets',
+"   \ 'coc-solargraph',
+"   \ 'coc-tag',
+"   \ 'coc-tsserver',
+"   \ 'coc-ultisnips',
+"   \ 'coc-vetur'
+"   \ ]
+" if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+"   let g:coc_global_extensions += ['coc-eslint']
+" endif
+" if isdirectory('./node_modules') && isdirectory('./node_modules/stylelint')
+"   let g:coc_global_extensions += ['coc-stylelint']
+" endif
+" Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " Intellisense engine
+" Plug 'kewah/vim-stylefmt'                                          " [S]CSS formatter
+" Plug 'folke/lsp-colors.nvim'
+" Plug 'cohama/lexima.vim'                                            " Auto close parentheses
+" Plug 'rlisowski/fzf-preview.vim'                                    " fork of 'yuki-ycino/fzf-preview.vim'
+" Plug 'tpope/vim-vinegar'                                            " improwments for netrw
+" Plug 'scrooloose/nerdtree'                                          " project tree navigation window
+" Plug 'justinmk/vim-dirvish'                                         " Directory viewer for Vim
 " Plug 'katono/rogue.vim'                                              " Roogue like vim game
 " Plug 'Yggdroot/indentLine'                                           " shiw indentation with neat lines
 " Plug 'lukas-reineke/indent-blankline.nvim'                           " Indent Blankline
@@ -289,5 +317,9 @@ Plug 'rlisowski/vim_core_settings'
 " Plug 'Shougo/neosnippet-snippets'
 " Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }            " file explorer
 " Plug 'SirVer/ultisnips'                                              " snippets engine
+" Plug 'cohama/lexima.vim'                                             " Auto close parentheses
+" Plug 'cohama/lexima.vim'                                             " Auto close parentheses
+" Plug 'folke/twilight.nvim'                                           " dims inactive portions of the code
+" Plug 'mhinz/vim-startify'                                            " A fancy start screen for Vim
 
 call plug#end()
