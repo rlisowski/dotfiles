@@ -134,6 +134,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'rafamadriz/friendly-snippets'
 Plug 'nathom/filetype.nvim'                                        " faster built-in autocommands
+Plug 'andythigpen/nvim-coverage'
 
 " remove 
 Plug 'zeertzjq/nvim-paste-fix'
