@@ -92,4 +92,8 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# export PATH="$PATH:$HOME/.rvm/bin"
+# Load .gem binaries
+# PATH=/Users/rlisowski/.gem/bin:$PATH
+. $(brew --prefix)/opt/asdf/libexec/asdf.sh
+unset GEM_HOME

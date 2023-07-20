@@ -90,8 +90,8 @@ Plug 'dockyard/vim-easydir'                                        " simple way 
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'voldikss/vim-floaterm'                                       " Use neovim terminal in the floating window.
-Plug 'kyazdani42/nvim-web-devicons'                                " for file icons
-Plug 'kyazdani42/nvim-tree.lua'                                    " project tree navigation window
+Plug 'nvim-tree/nvim-web-devicons'                                " for file icons
+Plug 'nvim-tree/nvim-tree.lua'                                    " project tree navigation window
 Plug 'tpope/vim-dadbod'                                            " interacting with databases
 Plug 'RRethy/vim-illuminate'                                       " highlighting other uses of the current word
 Plug 't9md/vim-textmanip'                                          " easy text manupilation
@@ -107,7 +107,7 @@ Plug 'cespare/vim-toml'                                            " Vim syntax 
 Plug 'digitaltoad/vim-pug'                                         " https://pugjs.org/api/getting-started.html
 Plug 'dNitro/vim-pug-complete'
 Plug 'pearofducks/ansible-vim'                                     " syntax plugin for Ansible 2.x
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'nvim-lua/popup.nvim'
@@ -117,14 +117,17 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug 'folke/todo-comments.nvim'
 Plug 'filipdutescu/renamer.nvim', { 'branch': 'master' }           " renaming UI for Neovim
+" Plug 'williamboman/nvim-lsp-installer'
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'glepnir/lspsaga.nvim'
 Plug 'neovim/nvim-lspconfig'                                       " A collection of common configurations for Neovim's built-in language server client.
-Plug 'williamboman/nvim-lsp-installer'
-Plug 'RishabhRD/popfix'
-Plug 'RishabhRD/nvim-lsputils'
+" Plug 'RishabhRD/popfix'
+" Plug 'RishabhRD/nvim-lsputils'
 Plug 'onsails/lspkind.nvim'
+Plug 'github/copilot.vim', { 'branch': 'release' }
 " Plug 'zbirenbaum/copilot.lua'
 " Plug 'zbirenbaum/copilot-cmp'
-Plug 'github/copilot.vim'
 Plug 'hrsh7th/cmp-copilot'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
@@ -136,9 +139,6 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'rafamadriz/friendly-snippets'
 Plug 'nathom/filetype.nvim'                                        " faster built-in autocommands
 Plug 'andythigpen/nvim-coverage'
-
-" remove 
-Plug 'zeertzjq/nvim-paste-fix'
 
 Plug 'rlisowski/vim_plugins_settings'
 Plug 'rlisowski/vim_core_settings'
@@ -205,6 +205,7 @@ Plug 'rlisowski/vim_core_settings'
 " Plug 'mrmargolis/dogmatic.vim'                                       " disable arrows
 " Plug 'easymotion/vim-easymotion'                                     " simpler way to use some motions
 " Plug 'ap/vim-buftabline'                                             " buffer list that lives in the tabline
+" Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }                    " buffer list that lives in the tabline
 " Plug 'vim-scripts/SyntaxRange'                                       " syntax highlight for region, required by vimdeck
 " Plug 'EinfachToll/DidYouMean'                                        " ask if I misspelled filename
 " Plug 'Z1MM32M4N/vim-superman'                                        " man pages in vim
