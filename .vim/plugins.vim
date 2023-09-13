@@ -125,10 +125,10 @@ Plug 'neovim/nvim-lspconfig'                                       " A collectio
 " Plug 'RishabhRD/popfix'
 " Plug 'RishabhRD/nvim-lsputils'
 Plug 'onsails/lspkind.nvim'
-Plug 'github/copilot.vim', { 'branch': 'release' }
-" Plug 'zbirenbaum/copilot.lua'
-" Plug 'zbirenbaum/copilot-cmp'
-Plug 'hrsh7th/cmp-copilot'
+" Plug 'github/copilot.vim' { 'branch': 'release' }
+Plug 'zbirenbaum/copilot.lua'
+Plug 'zbirenbaum/copilot-cmp'
+" Plug 'hrsh7th/cmp-copilot'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
