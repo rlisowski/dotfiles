@@ -51,7 +51,7 @@ fi
 # We already have a default node available in our PATH.
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh" --no-use
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 EDITOR=nvim
 export EDITOR
@@ -79,7 +79,6 @@ eval "$(gh completion -s zsh)"
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
-# zprof
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -97,3 +96,5 @@ fi
 # PATH=/Users/rlisowski/.gem/bin:$PATH
 . $(brew --prefix)/opt/asdf/libexec/asdf.sh
 unset GEM_HOME
+
+# zprof > /tmp/zprof_output
