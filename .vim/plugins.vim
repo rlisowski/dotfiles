@@ -116,7 +116,7 @@ Plug 'nvim-telescope/telescope.nvim'                               " fuzzy finde
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug 'folke/todo-comments.nvim'
-Plug 'filipdutescu/renamer.nvim', { 'branch': 'master' }           " renaming UI for Neovim
+" Plug 'filipdutescu/renamer.nvim', { 'branch': 'master' }           " renaming UI for Neovim
 " Plug 'williamboman/nvim-lsp-installer'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
