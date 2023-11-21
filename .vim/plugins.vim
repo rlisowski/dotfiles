@@ -12,7 +12,8 @@ Plug 'rhysd/committia.vim'                                         " More Pleasa
 Plug 'tpope/vim-fugitive'                                          " git wrapper
 Plug 'tpope/vim-rhubarb'                                           " Enables :Gbrowse from fugitive.vim to open GitHub URLs.
 Plug 'rbong/vim-flog'                                              " A lightweight and powerful git branch viewer for vim.
-Plug 'hotwatermorning/auto-git-diff'                               " git diff for Git Rebase Interactive
+" Plug 'hotwatermorning/auto-git-diff'                               " git diff for Git Rebase Interactive
+Plug 'sindrets/diffview.nvim'                                      " Single tabpage interface for easily cycling through diffs for all modified files for any git rev.
 Plug 'rhysd/git-messenger.vim'                                     " shows the history of commits under the cursor in popup window
 Plug 'mhinz/vim-signify'                                           " uses the sign column to indicate added, modified and removed lines
 Plug 'tpope/vim-abolish'                                           " mostly for better find and replace eg :%s/{S,s}ome/{O,o}ther/g
