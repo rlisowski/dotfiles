@@ -110,12 +110,12 @@ Plug 'dNitro/vim-pug-complete'
 Plug 'pearofducks/ansible-vim'                                     " syntax plugin for Ansible 2.x
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
-Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+" Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'                               " fuzzy finder over lists
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-Plug 'nvim-telescope/telescope-file-browser.nvim'
+" Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug 'folke/todo-comments.nvim'
 " Plug 'filipdutescu/renamer.nvim', { 'branch': 'master' }           " renaming UI for Neovim
 " Plug 'williamboman/nvim-lsp-installer'
