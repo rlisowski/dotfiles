@@ -64,3 +64,13 @@ GOOGLE_APPLICATION_CREDENTIALS.json
 
 spec/support/ui.rb
 public/assets
+
+.node-version
+.ruby-version
+.overmind.env
+Procfile.dev
+Gemfile.arm64
+Gemfile.arm64.lock
+.tool-versions
+Procfile.workers
+.npmrc

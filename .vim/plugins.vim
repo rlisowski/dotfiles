@@ -12,7 +12,6 @@ Plug 'rhysd/committia.vim'                                         " More Pleasa
 Plug 'tpope/vim-fugitive'                                          " git wrapper
 Plug 'tpope/vim-rhubarb'                                           " Enables :Gbrowse from fugitive.vim to open GitHub URLs.
 Plug 'rbong/vim-flog'                                              " A lightweight and powerful git branch viewer for vim.
-" Plug 'hotwatermorning/auto-git-diff'                               " git diff for Git Rebase Interactive
 Plug 'sindrets/diffview.nvim'                                      " Single tabpage interface for easily cycling through diffs for all modified files for any git rev.
 Plug 'rhysd/git-messenger.vim'                                     " shows the history of commits under the cursor in popup window
 Plug 'mhinz/vim-signify'                                           " uses the sign column to indicate added, modified and removed lines
@@ -67,11 +66,6 @@ Plug 'edkolev/erlang-motions.vim'                                  " Motions and
 Plug 'jimenezrick/vimerl'                                          " The Erlang plugin for Vim.
 Plug 'rust-lang/rust.vim'                                          " Vim configuration for Rust
 Plug 'arzg/vim-rust-syntax-ext'                                    " enhances Rust syntax highlighting
-Plug 'tpope/vim-haml'                                              " runtime files for Haml, Sass, and SCSS
-Plug 'slim-template/vim-slim'                                      " slim syntax highlighting
-Plug 'joukevandermaas/vim-ember-hbs'
-Plug 'tpope/vim-markdown'
-Plug 'mattn/emmet-vim'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'magicalbanana/sql-syntax-vim'
 Plug 'kylef/apiblueprint.vim'
@@ -110,26 +104,19 @@ Plug 'dNitro/vim-pug-complete'
 Plug 'pearofducks/ansible-vim'                                     " syntax plugin for Ansible 2.x
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
-" Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'                               " fuzzy finder over lists
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-" Plug 'nvim-telescope/telescope-file-browser.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 Plug 'folke/todo-comments.nvim'
-" Plug 'filipdutescu/renamer.nvim', { 'branch': 'master' }           " renaming UI for Neovim
-" Plug 'williamboman/nvim-lsp-installer'
+Plug 'folke/trouble.nvim'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'neovim/nvim-lspconfig'                                       " A collection of common configurations for Neovim's built-in language server client.
-" Plug 'RishabhRD/popfix'
-" Plug 'RishabhRD/nvim-lsputils'
 Plug 'onsails/lspkind.nvim'
-" Plug 'github/copilot.vim' { 'branch': 'release' }
 Plug 'zbirenbaum/copilot.lua'
 Plug 'zbirenbaum/copilot-cmp'
-" Plug 'hrsh7th/cmp-copilot'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
@@ -140,14 +127,49 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'rafamadriz/friendly-snippets'
 Plug 'nathom/filetype.nvim'                                        " faster built-in autocommands
 Plug 'andythigpen/nvim-coverage'
+Plug 'stevearc/conform.nvim'
+Plug 'johmsalas/text-case.nvim'
+Plug 'olimorris/codecompanion.nvim'
+Plug 'ravitemer/mcphub.nvim', { 'do': 'npm install -g mcp-hub@latest' }
+Plug 'OXY2DEV/markview.nvim'
+
+Plug 'stevearc/dressing.nvim'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'MeanderingProgrammer/render-markdown.nvim'
+Plug 'HakonHarnes/img-clip.nvim'
+Plug 'yetone/avante.nvim', { 'branch': 'main', 'do': 'make' }
 
 Plug 'rlisowski/vim_plugins_settings'
 Plug 'rlisowski/vim_core_settings'
+
+call plug#end()
+
+function! ToPascalCase(s)
+    return join(map(split(a:s, '/'), {_, val -> substitute(toupper(val[0]), '[a-z]', '\u&', 'g') . substitute(val[1:], '_\([a-z]\)', '\u\1', 'g')}), '::')
+endfunction
 
 " ---------------
 " GRAVEYARD
 " ---------------
 
+" Plug 'giuxtaposition/blink-cmp-copilot'
+" Plug 'saghen/blink.cmp', { 'do': 'cargo build --release' }
+" Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+" Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+" Plug 'nvim-telescope/telescope-file-browser.nvim'
+" Plug 'CopilotC-Nvim/CopilotChat.nvim'
+" Plug 'tpope/vim-haml'                                              " runtime files for Haml, Sass, and SCSS
+" Plug 'slim-template/vim-slim'                                      " slim syntax highlighting
+" Plug 'joukevandermaas/vim-ember-hbs'
+" Plug 'tpope/vim-markdown'
+" Plug 'mattn/emmet-vim'
+" Plug 'RishabhRD/popfix'
+" Plug 'RishabhRD/nvim-lsputils'
+" Plug 'github/copilot.vim' { 'branch': 'release' }
+" Plug 'hrsh7th/cmp-copilot'
+" Plug 'filipdutescu/renamer.nvim', { 'branch': 'master' }           " renaming UI for Neovim
+" Plug 'williamboman/nvim-lsp-installer'
+" Plug 'hotwatermorning/auto-git-diff'                               " git diff for Git Rebase Interactive
 " Plug 'honza/vim-snippets'                                          " great snippets collection
 " Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}                          " auto completion main plugin
 " Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}               " auto completion 9000+ Snippets
@@ -328,4 +350,3 @@ Plug 'rlisowski/vim_core_settings'
 " Plug 'folke/twilight.nvim'                                           " dims inactive portions of the code
 " Plug 'mhinz/vim-startify'                                            " A fancy start screen for Vim
 
-call plug#end()

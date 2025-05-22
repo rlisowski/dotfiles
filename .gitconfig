@@ -1,8 +1,18 @@
 # http://www.kernel.org/pub/software/scm/git/docs/git-config.html
 [core]
 	excludesfile = ~/.gitignore_global
-	pager = less -F -X -R
+  # pager = less -F -X -R
+  pager = delta
 	editor = $EDITOR
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true  # use n and N to move between diff sections
+  dark = true      # or light = true, or omit for auto-detection
+  # side-by-side = true
+  theme = zenburn
 
 [user]
 	name = Rafał Lisowski
@@ -23,8 +33,9 @@
 
 [merge]
 	stat  = true
-	tool = nvimdiff
-	conflictstyle = diff3
+  # tool = nvimdiff
+  # conflictstyle = diff3
+  conflictstyle = zdiff3
 	verbosity = 1
 
 [mergetool]
@@ -49,6 +60,10 @@
 	# Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
 	# instead of a/b/c/d as prefixes for patches
 	mnemonicprefix = true
+
+[diff "enc"]
+  textconv = rails encrypted:show
+  cachetextconv = false
 
 [difftool]
 	prompt = false
