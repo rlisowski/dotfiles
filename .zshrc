@@ -29,36 +29,25 @@ export DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(git gitfast svn cap gem bundler rails git-flow node zsh-autosuggestions)
-plugins=(gitfast zsh-autosuggestions asdf)
+plugins=(gitfast zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 source ~/bin/tmuxinator.zsh
 
 setopt auto_cd
-cdpath=($HOME/workspace $HOME/workspace2 $HOME/go/src/github.com/phrase)
+cdpath=($HOME/workspace)
 
 # Customize to your needs...
 unsetopt auto_name_dirs
 
 DEFAULT_NODE_VERSION='13.9.0'
 
-# Ensure we have a default node version in our PATH at startup
-if [ -d "${HOME}/.nvm/versions/node/v${DEFAULT_NODE_VERSION}/bin" ] ; then
-  PATH="${HOME}/.nvm/versions/node/v${DEFAULT_NODE_VERSION}/bin:${PATH}"
-fi
-
-# Avoid using the slow `nvm use` at startup.
-# We already have a default node available in our PATH.
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh" --no-use
-
-
 EDITOR=nvim
 export EDITOR
 alias e=$EDITOR
 
 export PATH="$HOME/.cargo/bin:$PATH" # Add Rust to PATH
-export PATH="./bin:$HOME/.local/bin/:$HOME/go/bin:$HOME/bin:./node_modules/.bin:$PATH"
+export PATH="./bin:$HOME/.local/bin/:$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$HOME/go/bin:$HOME/bin:./node_modules/.bin:$PATH"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -94,7 +83,8 @@ fi
 # export PATH="$PATH:$HOME/.rvm/bin"
 # Load .gem binaries
 # PATH=/Users/rlisowski/.gem/bin:$PATH
-. $(brew --prefix)/opt/asdf/libexec/asdf.sh
-unset GEM_HOME
+# . $(brew --prefix)/opt/asdf/libexec/asdf.sh
+# unset GEM_HOME
 
 # zprof > /tmp/zprof_output
+eval "$(~/.local/bin/mise activate zsh)"

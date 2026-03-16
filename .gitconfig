@@ -33,21 +33,27 @@
 
 [merge]
 	stat  = true
-  # tool = nvimdiff
+  # tool = meld
+  tool = nvimdiff4
   # conflictstyle = diff3
   conflictstyle = zdiff3
-	verbosity = 1
+  verbosity = 1
+  prompt = false
 
 [mergetool]
 	prompt = false
 
-[mergetool "nvimdiff"]
+[difftool "nvimdiff"]
+	cmd = nvim -d \"$LOCAL\" \"$REMOTE\" -c \"wincmd w\" -c \"wincmd L\"
+
+[mergetool "nvimdiff4"]
 	; +--------------------------------+
 	; | LOCAL  |     BASE     | REMOTE |
 	; +--------------------------------+
 	; |             MERGED             |
 	; +--------------------------------+
-	cmd = nvim -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+	cmd = nvim -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J' -c 'set diffopt&' -c 'set diffopt+=algorithm:patience'
+	keepBackup = false
 
 [push]
 	default = simple
@@ -60,6 +66,9 @@
 	# Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
 	# instead of a/b/c/d as prefixes for patches
 	mnemonicprefix = true
+	algorithm = patience
+	compactionHeuristic = true
+	tool = nvimdiff
 
 [diff "enc"]
   textconv = rails encrypted:show

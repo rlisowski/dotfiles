@@ -74,3 +74,6 @@ Gemfile.arm64.lock
 .tool-versions
 Procfile.workers
 .npmrc
+
+.cursor
+.claude

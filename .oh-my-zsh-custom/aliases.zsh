@@ -1,4 +1,7 @@
 alias r=bin/rspec
+alias rr='gst | xargs ls -1 2>/dev/null | grep _spec.rb | xargs bundle exec rspec'
+alias ru='bundle exec rubocop'
+alias rum='gst | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop  -a'
 # alias rch='r $(git ls-files --modified --others spec | grep _spec)'
 
 # Push and pop directories on directory stack
@@ -23,6 +26,8 @@ alias history='fc -l 1'
 alias be="bundle exec"
 alias g="git"
 alias m="git checkout main"
+alias ms="git checkout master"
+alias s="git checkout staging"
 
 # List direcory contents
 alias afind='ack-grep -il'
@@ -35,7 +40,7 @@ alias dc='docker-compose'
 #For example, directories are blue, executable files are green, symlinks are cyan, etc.
 #The -F option appends a symbol after entries to indicate their types.
 #You might not like both options at the same time.
-alias ls='ls -F' #regular ls
+alias ls='eza -l --icons --time-style=long-iso --group-directories-first' #regular ls
 alias l.='ls -dF .[a-zA-Z0-9]*' #only show dotfiles
 alias ll='ls -lhF' #long listing
 alias lsa='ls -lah'
@@ -127,4 +132,6 @@ chpwd() {
 jcurl() { curl "$@" | python -m json.tool | pygmentize -l json; }
 
 alias tailf='tail -f'
-alias open=xdg-open
+# alias open=xdg-open
+alias :q='exit'
+alias lg='lazygit'
