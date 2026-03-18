@@ -4,12 +4,12 @@ return {
     explorer = {
       auto_close = true,
     },
-    picker = {
-      sources = {
-        explorer = {
-          jump = { close = true },
-        },
-      },
-    },
+    -- picker = {
+    --   sources = {
+    --     explorer = {
+    --       jump = { close = true },
+    --     },
+    --   },
+    -- },
   },
 }
