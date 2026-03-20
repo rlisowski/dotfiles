@@ -17,6 +17,7 @@
     "lazyvim.plugins.extras.lang.ruby",
     "lazyvim.plugins.extras.lang.sql",
     "lazyvim.plugins.extras.lang.toml",
+    "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.ui.treesitter-context",
     "lazyvim.plugins.extras.util.dot",

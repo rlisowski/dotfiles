@@ -1,4 +1,5 @@
 {
+  "FixCursorHold.nvim": { "branch": "master", "commit": "1900f89dc17c603eec29960f57c00bd9ae696495" },
   "LazyVim": { "branch": "main", "commit": "fca0af57cc3851b14f96a795a9c9bfafc5096dd1" },
   "SchemaStore.nvim": { "branch": "main", "commit": "cf2b276dc88696b35d55ea4bd55dfaf7d608c9a2" },
   "blink-copilot": { "branch": "main", "commit": "7ad8209b2f880a2840c94cdcd80ab4dc511d4f39" },
@@ -6,6 +7,7 @@
   "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },
   "catppuccin": { "branch": "main", "commit": "384f304c8b04664c9e0091fbfb3923c5f97c1bcf" },
   "claudecode.nvim": { "branch": "main", "commit": "432121f0f5b9bda041030d1e9e83b7ba3a93dd8f" },
+  "codediff.nvim": { "branch": "main", "commit": "93cd80c56f71af4671388c568a37d4c84c3ddefa" },
   "conform.nvim": { "branch": "master", "commit": "086a40dc7ed8242c03be9f47fbcee68699cc2395" },
   "copilot.lua": { "branch": "master", "commit": "0552b44fceedf0c4cba2cd4953d3976633b2509a" },
   "dial.nvim": { "branch": "master", "commit": "f2634758455cfa52a8acea6f142dcd6271a1bf57" },
@@ -30,6 +32,7 @@
   "mini.pairs": { "branch": "main", "commit": "b7fde3719340946feb75017ef9d75edebdeb0566" },
   "mini.snippets": { "branch": "main", "commit": "0d0b435e3f9563965f73703a6a6d17acb432a93c" },
   "mini.surround": { "branch": "main", "commit": "d205d1741d1fcc1f3117b4e839bf00f74ad72fa2" },
+  "neogit": { "branch": "master", "commit": "d3890fc3cdf0859845a86b2be306bba01458df1a" },
   "neotest": { "branch": "master", "commit": "deadfb1af5ce458742671ad3a013acb9a6b41178" },
   "neotest-rspec": { "branch": "main", "commit": "e7dc67c1167a9e593c804a6be6808ba9a5920d43" },
   "noice.nvim": { "branch": "main", "commit": "7bfd942445fb63089b59f97ca487d605e715f155" },
