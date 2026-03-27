@@ -1,5 +1,6 @@
 alias r=bin/rspec
 alias rr='gst | xargs ls -1 2>/dev/null | grep _spec.rb | xargs bundle exec rspec'
+rc() { git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d' | grep _spec.rb | xargs bundle exec rspec }
 alias ru='bundle exec rubocop'
 alias rum='gst | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop  -a'
 # alias rch='r $(git ls-files --modified --others spec | grep _spec)'
