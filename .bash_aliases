@@ -67,18 +67,6 @@ alias apt_dis='sudo apt-get dist-upgrade'
 alias acs='apt-cache search'
 alias acsh='apt-cache show'
 
-#ssh connections
-alias con_prod='ssh rafal@sentor.pl -p 8822'
-alias lcon_prod='ssh rafal@192.168.1.115'
-#alias con_db='ssh rafal@sentor.pl -p 8824'
-alias con_main='ssh server@sentor.pl -p 8824'
-alias lcon_main='ssh rafal@192.168.1.108'
-#touch passenger
-alias tpass='touch tmp/restart.txt'
-#route
-alias cd_work='cd /media/media/workspace/netbeans'
-alias cd_apache='cd /etc/apache2'
-
 #edit
 alias snano='sudo nano'
 alias sgedit='sudo gedit'
