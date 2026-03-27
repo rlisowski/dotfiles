@@ -9,15 +9,14 @@ return {
         },
       },
     },
-    explorer = {
-      auto_close = true,
+    picker = {
+      sources = {
+        explorer = {
+          auto_close = true,
+          hidden = true,
+          ignored = true,
+        },
+      },
     },
-    -- picker = {
-    --   sources = {
-    --     explorer = {
-    --       jump = { close = true },
-    --     },
-    --   },
-    -- },
   },
 }
