@@ -1,18 +1,19 @@
 # http://www.kernel.org/pub/software/scm/git/docs/git-config.html
 [core]
 	excludesfile = ~/.gitignore_global
-  # pager = less -F -X -R
-  pager = delta
+  pager = less -F -X -R
+  # pager = delta
+  # pager = hunk pager
 	editor = $EDITOR
 
-[interactive]
-  diffFilter = delta --color-only
+# [interactive]
+#   diffFilter = delta --color-only
 
-[delta]
-  navigate = true  # use n and N to move between diff sections
-  dark = true      # or light = true, or omit for auto-detection
-  # side-by-side = true
-  theme = zenburn
+# [delta]
+#   navigate = true  # use n and N to move between diff sections
+#   dark = true      # or light = true, or omit for auto-detection
+#   # side-by-side = true
+#   theme = zenburn
 
 [user]
 	name = Rafał Lisowski
@@ -21,6 +22,7 @@
 
 [init]
 	templatedir = ~/.git_template
+	defaultBranch = main
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -130,5 +132,9 @@
 	stats = "!(echo \"\nby hour\n--------------\") && (for i in 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23; do echo $( echo "$i\t"; git shortlog  -n --format='%ad %s' | grep " $i:" | wc -l); done) && (echo \"\n\nby day\n--------------\") && (for i in Mon Tue Wed Thu Fri Sat Sun; do echo $( echo "$i\t"; git shortlog  -n --format='%ad %s'| grep "$i " | wc -l); done) && (echo \"\n\nby user\n--------------\") && (git shortlog  -ns)"
 	latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
 
+	touch-dates = "!f() { git rebase \"${1:-staging}\" --exec \"GIT_COMMITTER_DATE=\\\"$(date)\\\" git commit --amend --no-edit --date=\\\"$(date)\\\"\"; }; f"
+
 [include]
 	path = ~/.gitconfig.local
+# [pager]
+# 	diff = diffnav

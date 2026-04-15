@@ -1,7 +1,25 @@
 return {
   {
+    "rachartier/tiny-inline-diagnostic.nvim",
+    event = "VeryLazy",
+    priority = 1000,
+    opts = {
+      override_open_float = true,
+      add_messages = {
+        display_count = true,
+      },
+      multilines = {
+        enabled = true,
+      },
+      show_source = {
+        enabled = true,
+      },
+    },
+  },
+  {
     "neovim/nvim-lspconfig",
     opts = {
+      diagnostics = { virtual_text = false },
       servers = {
         yamlls = {
           capabilities = {
@@ -20,6 +38,10 @@ return {
               format = { enable = false }, -- disable yamlls built-in formatter
             },
           },
+        },
+        ruby_lsp = {
+          mason = false,
+          cmd = { "mise", "x", "--", "ruby-lsp" },
         },
       },
     },
@@ -70,8 +92,6 @@ return {
       ensure_installed = {
         "stylua",
         "shfmt",
-        "lua_ls",
-        "ruby_lsp",
       },
     },
   },

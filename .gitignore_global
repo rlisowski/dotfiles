@@ -74,7 +74,16 @@ Gemfile.arm64.lock
 .tool-versions
 Procfile.workers
 .npmrc
+.markdownlint.yaml
 
 .cursor
 .claude
 docs/superpowers
+docs/notion
+
+*.http
+http-client.env.json
+docs/data
+docs/adr
+.bookmarks
+skills-lock.json

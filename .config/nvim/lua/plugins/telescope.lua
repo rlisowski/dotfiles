@@ -6,13 +6,13 @@ return {
       "nvim-telescope/telescope-ui-select.nvim",
     },
   },
-  keys = {
-    {
-      "<leader>/",
-      ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
-      desc = "Grep (Root Dir)",
-    },
-  },
+  -- keys = {
+  --   {
+  --     "<leader>/",
+  --     ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
+  --     desc = "Grep (Root Dir)",
+  --   },
+  -- },
   config = function()
     local telescope = require("telescope")
     local actions = require("telescope.actions")

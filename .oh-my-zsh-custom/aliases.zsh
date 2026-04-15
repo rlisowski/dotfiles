@@ -1,9 +1,47 @@
-alias r=bin/rspec
-alias rr='gst | xargs ls -1 2>/dev/null | grep _spec.rb | xargs bundle exec rspec'
-rc() { git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d' | grep _spec.rb | xargs bundle exec rspec }
+alias r='bin/rspec -fp'
+rr () {
+  git st -sb | awk '$1 != "D" && $1 != "AD" && $1 != "RD" {print $NF}' | grep '_spec\.rb$' | xargs bundle exec rspec -fp "$@"
+} 
+rrc() { git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d' | grep _spec.rb | xargs bundle exec rspec -fp "$@" }
+rrp() { git diff "${1:-staging}" "${2:-HEAD}" --name-only --oneline --no-commit-id --diff-filter=AM | sed '$d' | grep _spec.rb | xargs bundle exec rspec -fp "$@" }
+
 alias ru='bundle exec rubocop'
-alias rum='gst | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop  -a'
-# alias rch='r $(git ls-files --modified --others spec | grep _spec)'
+
+rum() { 
+  local rev="${1:-HEAD}"
+  [[ $# -gt 0 ]] && shift
+  local cops=( "$@" )
+  (( ${#cops[@]} == 0 )) && cops=(-a)
+
+    git st -sb | \
+      awk '$1 != "D" && $1 != "AD" && $1 != "RD" {print $NF}' | \
+      grep '\.rb$' | \
+      xargs bundle exec rubocop "${cops[@]}"
+} 
+
+ruc () {
+    local rev="${1:-HEAD}"
+    [[ $# -gt 0 ]] && shift
+    local cops=( "$@" )
+    (( ${#cops[@]} == 0 )) && cops=(-a)
+
+    git show "$rev" --name-only --oneline --no-commit-id | \
+        awk '$1 != "D" && $1 != "AD" && $1 != "RD" {print $NF}' | \
+        grep '\.rb$' | \
+        xargs bundle exec rubocop "${cops[@]}"
+}
+
+rup () {
+  local base="${1:-staging}"
+  local head="${2:-HEAD}"
+  shift 2 2>/dev/null
+  local cops=( "$@" )
+  (( ${#cops[@]} == 0 )) && cops=(-a)
+
+    git diff "$base" "$head" --name-only --diff-filter=AM | \
+      grep '\.rb$' | \
+      xargs bundle exec rubocop "${cops[@]}"
+}
 
 # Push and pop directories on directory stack
 alias pu='pushd'
@@ -22,7 +60,7 @@ alias now='date +%Y-%m-%d_%H:%M:%S'
 alias _='sudo'
 
 # Show history
-alias history='fc -l 1'
+# alias history='fc -l 1'
 
 alias be="bundle exec"
 alias g="git"
@@ -89,6 +127,7 @@ alias npm-exec='PATH=$(npm bin):$PATH'
 # vim() { rvm system do /usr/local/bin/vim $@ }
 vm() { $EDITOR $(git status --short | awk ' { print $2 } '); }
 vc() { $EDITOR $(git show "${1:-HEAD}" --name-only --oneline --no-commit-id | sed '$d'); }
+vp() { $EDITOR $(git diff "${1:-staging}" "${2:-HEAD}" --name-only --oneline --no-commit-id --diff-filter=AM | sed '$d'); }
 
 # phrase () {
 #   phraseapp $@ | jq -R '. as $raw | try fromjson catch $raw'

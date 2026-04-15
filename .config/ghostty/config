@@ -1,0 +1,6 @@
+term = xterm-ghostty
+macos-option-as-alt = left
+fullscreen = non-native-visible-menu
+theme = dark:Catppuccin Frappe,light:Catppuccin Latte
+confirm-close-surface = false
+quit-after-last-window-closed = true

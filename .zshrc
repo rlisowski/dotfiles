@@ -42,6 +42,9 @@ unsetopt auto_name_dirs
 
 DEFAULT_NODE_VERSION='13.9.0'
 
+TERM=xterm-ghostty
+export TERM
+
 EDITOR=nvim
 export EDITOR
 alias e=$EDITOR
@@ -58,7 +61,7 @@ fi
 
 test -e ${HOME}/.zshrc.local && source ${HOME}/.zshrc.local
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export FZF_DEFAULT_COMMAND='rg --files --ignore-vcs --hidden'
 
@@ -86,5 +89,15 @@ fi
 # . $(brew --prefix)/opt/asdf/libexec/asdf.sh
 # unset GEM_HOME
 
+. "$HOME/.cargo/env" 
 # zprof > /tmp/zprof_output
 eval "$(~/.local/bin/mise activate zsh)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/rafallisowski/.lmstudio/bin"
+# End of LM Studio CLI section
+
+eval "$(zoxide init zsh)"
+eval "$(direnv hook zsh)"
+eval "$(tv init zsh)"
+# source "$HOME/.config/television/shell/integration.zsh"
